@@ -20,10 +20,12 @@
   color-scheme: light;
 }
 
-.dark {
-  --background: #15161a;
-  --foreground: #f5f6f4;
-  color-scheme: dark;
+/* Force light mode (P0-6 option B): ship one consistent, audited light
+   theme rather than a half-implemented dark mode. color-scheme stays light
+   for every visitor; remove this block only when P0-6 option A (class-based
+   dark mode with toggle) is fully implemented and dark-audited. */
+:root {
+  color-scheme: light;
 }
 
 body {
