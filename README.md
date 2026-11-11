@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Visa Expeditor
 
-## Getting Started
+Trilingual (EN / ES / FR) passport, visa and immigration help site built with
+Next.js 16 (App Router, Turbopack), TypeScript, Tailwind CSS v4, Clerk and
+next-intl.
 
-First, run the development server:
+## Requirements
+
+- Node.js 20+ (see `.nvmrc` if present)
+- npm
+
+## Local development
 
 ```bash
+cp .env.example .env.local   # fill in what you have
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 — the default locale (`en`) is served from `/`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Script | Purpose |
+| --- | --- |
+| `npm run dev` | Start the dev server |
+| `npm run build` | Production build |
+| `npm run start` | Run the production build |
+| `npm run lint` | ESLint |
+| `npm run typecheck` | TypeScript, no emit |
+| `npm run i18n:check` | Locale key parity + empty-string check |
+| `npm run launch-check` | Report launch blockers (warns; `LAUNCH_STRICT=1` fails) |
+| `npm run images:placeholders` | Regenerate placeholder images |
+| `npm run images:manifest` | Rebuild the image manifest |
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+messages/{locale}/{namespace}.json   All user-facing copy (en/es/fr)
+src/app/[locale]/                    Routes (App Router)
+src/components/                      UI components
+src/content/                         Typed page content configs
+src/i18n/                            next-intl routing, navigation, messages
+src/lib/                             Data, helpers, image slots
+src/proxy.ts                         Clerk + next-intl proxy (Next 16)
+scripts/                             i18n, image and launch checks
+public/images/                       Placeholders + final images
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Rules of the road
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Every user-facing string lives in `messages/{locale}/`, never in components.
+  Add keys to all three locales in the same change; `npm run i18n:check` must
+  pass.
+- Import `Link`, `useRouter`, `usePathname` from `@/i18n/navigation`.
+- Keep `src/i18n/request.ts` on static imports (Turbopack panics on dynamic
+  template-literal imports).
+- Never create `middleware.ts`; Next 16 uses `src/proxy.ts`.
+- Images go through the slot system (`src/lib/image-slots.ts` +
+  `getImage(slot)`), never hotlinked.
+- Unknown facts stay hidden behind config/env vars. Sample visa data is labelled
+  as sample in the UI.
+- Run `rm -rf .next` after moving or renaming files.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See `BLOCKERS.md` for owner-only items and `ROADMAP` notes in the repo root.

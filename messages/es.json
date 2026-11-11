@@ -1,0 +1,366 @@
+{
+  "nav": {
+    "passports": {
+      "label": "Pasaportes",
+      "items": {
+        "new": { "label": "Pasaporte Nuevo", "description": "Solicitudes por primera vez, de principio a fin" },
+        "renewal": { "label": "Renovación", "description": "¿Ya tienes uno? Mantenlo vigente" },
+        "nameChange": { "label": "Cambio de Nombre", "description": "Matrimonio, divorcio o actualizaciones legales de nombre" },
+        "lostStolen": { "label": "Perdido o Robado", "description": "Reporta y reemplaza, rápido" }
+      }
+    },
+    "visas": {
+      "label": "Visas",
+      "items": {
+        "tourist": { "label": "Visa de Turista", "description": "Vacaciones y viajes de corta estancia" },
+        "business": { "label": "Visa de Negocios", "description": "Conferencias, reuniones y negocios" },
+        "student": { "label": "Visa de Estudiante", "description": "Estudia en el extranjero, bien hecho" },
+        "work": { "label": "Visa de Trabajo", "description": "Viajes patrocinados por el empleador" }
+      }
+    },
+    "immigration": {
+      "label": "Inmigración",
+      "items": {
+        "greenCards": { "label": "Tarjetas Verdes", "description": "Vías hacia la residencia permanente" },
+        "citizenship": { "label": "Ciudadanía", "description": "Naturalización, de inicio al juramento" },
+        "investor": { "label": "Visas de Inversionista", "description": "EB-5 y vías para inversionistas" },
+        "family": { "label": "Patrocinio Familiar", "description": "Trae a tus familiares" }
+      }
+    },
+    "tools": {
+      "label": "Herramientas",
+      "viewAll": "Ver Todas las Herramientas",
+      "items": {
+        "visaChecker": { "label": "Verificador de Visa", "description": "Descubre si necesitas visa, al instante" },
+        "passportPower": { "label": "Poder del Pasaporte", "description": "Descubre a dónde te lleva tu pasaporte" },
+        "checklist": { "label": "Lista de Documentos", "description": "Lo que necesitarás, con anticipación" },
+        "passportValidity": { "label": "Verificador de Vigencia", "description": "Asegúrate de que no expire durante tu viaje" }
+      }
+    },
+    "resources": {
+      "label": "Recursos",
+      "viewAll": "Ver Todos los Recursos",
+      "items": {
+        "processingTimes": { "label": "Tiempos de Procesamiento", "description": "Estimaciones actuales por servicio" },
+        "guides": { "label": "Guías", "description": "Ayuda detallada para cada paso" },
+        "faqs": { "label": "Preguntas Frecuentes", "description": "Respuestas a preguntas comunes" },
+        "insights": { "label": "Perspectivas", "description": "Análisis a fondo sobre visas y viajes" }
+      }
+    }
+  },
+  "auth": {
+    "signIn": "Iniciar Sesión",
+    "getStarted": "Comenzar",
+    "dashboard": "Panel"
+  },
+  "hero": {
+    "badge": "Visas {country} agilizadas por ex oficiales de visa",
+    "headline": "Cualquier frontera. Un camino claro.",
+    "subhead": "Descubre qué necesitas para cualquier destino, luego deja que un especialista real se encargue del resto.",
+    "destinationLabel": "Mi destino",
+    "destinationPlaceholder": "¿A dónde vas?",
+    "cta": "Ver Requisitos"
+  },
+  "destinations": {
+    "heading": "Principales Destinos de Viaje",
+    "subheading": "Requisitos para titulares de pasaporte {country}",
+    "typeLabel": "Tipo",
+    "validLabel": "Vigencia",
+    "processingLabel": "Trámite",
+    "validDays": "{days} días",
+    "checkRequirements": "Ver requisitos",
+    "type": {
+      "visaFree": "Sin Visa",
+      "etaRequired": "ETA Requerida"
+    },
+    "processing": {
+      "none": "No requiere",
+      "minutes": "Minutos"
+    },
+    "countries": {
+      "mexico": "México",
+      "canada": "Canadá",
+      "unitedKingdom": "Reino Unido",
+      "france": "Francia",
+      "italy": "Italia",
+      "japan": "Japón",
+      "germany": "Alemania",
+      "spain": "España",
+      "thailand": "Tailandia",
+      "australia": "Australia",
+      "southKorea": "Corea del Sur",
+      "ireland": "Irlanda",
+      "switzerland": "Suiza",
+      "netherlands": "Países Bajos",
+      "singapore": "Singapur",
+      "newZealand": "Nueva Zelanda",
+      "uae": "Emiratos Árabes Unidos"
+    }
+  },
+  "visaChecker": {
+    "eyebrow": "Verificador de Visa",
+    "title": "Verificador de Requisitos de Visa",
+    "emptyHeading": "¿A dónde te diriges?",
+    "emptyBody": "Ingresa tu destino arriba y te mostraremos exactamente qué se requiere.",
+    "notFoundHeading": "Aún no tenemos ese destino",
+    "notFoundBody": "Seguimos ampliando nuestra base de destinos. Un especialista puede darte una respuesta exacta hoy mismo.",
+    "noDataHeading": "Aún no tenemos esto disponible para titulares de pasaporte {country}",
+    "noDataBody": "Los requisitos de visa varían mucho según la nacionalidad, y preferimos no decirte nada antes que adivinar mal. Un especialista puede darte una respuesta exacta hoy mismo.",
+    "resultHeading": "Lo que necesitan los titulares de pasaporte {passport} para {destination}",
+    "startApplication": "Comienza Tu Solicitud",
+    "talkToSpecialist": "Habla con un Especialista"
+  },
+  "entryTypeInfo": {
+    "visaFree": {
+      "documentsHeading": "Lo Que Generalmente Necesitarás",
+      "documents": [
+        "Pasaporte válido que cubra toda tu estadía",
+        "Comprobante de viaje de continuación o regreso",
+        "Comprobante de fondos suficientes para tu viaje",
+        "Detalles de tu alojamiento"
+      ],
+      "explainerTitle": "Qué Significa \"Sin Visa\"",
+      "explainerBody": "Sin solicitud, sin papeleo, sin espera. Simplemente presentas tu pasaporte en la frontera y un oficial de inmigración lo revisa y te sella el ingreso."
+    },
+    "etaRequired": {
+      "documentsHeading": "Lo Que Generalmente Necesitarás",
+      "documents": [
+        "Pasaporte válido",
+        "Solicitud de ETA completada, enviada en línea antes de viajar",
+        "Pago de la tarifa de la ETA",
+        "Comprobante de viaje de continuación o regreso"
+      ],
+      "explainerTitle": "Qué Significa \"ETA Requerida\"",
+      "explainerBody": "Una ETA no es una visa completa — es un formulario en línea breve que completas antes de volar, usualmente aprobado en minutos y vinculado electrónicamente a tu pasaporte. Igual debes solicitarla antes de viajar, solo que no en un consulado."
+    }
+  },
+  "passportOverview": {
+    "US": {
+      "eyebrow": "Guía de Viaje para Titulares de Pasaporte de Estados Unidos",
+      "heading": "Lo Que Deben Saber los Titulares de Pasaporte de EE. UU. Antes de Viajar",
+      "statsCovered": "Destinos Cubiertos",
+      "statsCoveredLabel": "Y creciendo cada mes",
+      "statsVisaFree": "Destinos Sin Visa",
+      "statsVisaFreeLabel": "Sin solicitud previa necesaria",
+      "statsEta": "Destinos con ETA Rápida",
+      "statsEtaLabel": "Aprobada en línea, usualmente en minutos",
+      "sections": {
+        "howItVaries": {
+          "title": "Cómo Varían los Requisitos Según el Destino",
+          "body": "No todos los destinos tratan un pasaporte de EE. UU. de la misma manera. Algunos países permiten llegar sin ningún trámite más allá del pasaporte. Otros piden una breve autorización electrónica completada en línea antes de volar — sin visitar un consulado, solo un formulario rápido. Un número menor requiere una solicitud de visa completa presentada con anticipación. Busca cualquier destino arriba para ver exactamente en qué categoría cae."
+        },
+        "whatYouNeed": {
+          "title": "Lo Que Generalmente Necesitarás",
+          "body": "Sin importar el destino, algunas cosas se mantienen constantes: un pasaporte válido bastante después de tu fecha de regreso planeada, comprobante de viaje de continuación o regreso, y evidencia de que puedes mantenerte durante el viaje. Los destinos que requieren ETA o visa pedirán un poco más — te mostraremos exactamente qué una vez que busques."
+        },
+        "howWeHelp": {
+          "title": "Solicitando a Través de Visa Expeditor",
+          "body": "Una vez que sepas qué se requiere, nosotros nos encargamos de las partes que normalmente consumen una tarde entera — formularios completados correctamente desde la primera vez, revisados por antiguos oficiales de visa antes de enviarlos, con seguimiento en tiempo real desde el envío hasta la entrega."
+        }
+      }
+    }
+  },
+  "destinationGuides": {
+    "mexico": {
+      "overview": [
+        "México atrae a más visitantes internacionales que casi cualquier otro lugar de América, y la variedad es parte del atractivo — ciudades coloniales con siglos de historia superpuesta, costas del Caribe y el Pacífico, desierto y selva, todo a pocas horas de distancia.",
+        "Para la mayoría de los titulares de pasaportes occidentales, la entrada es sencilla: sin solicitud de visa previa, solo un pasaporte válido y el papeleo turístico estándar emitido a la llegada. Esa simplicidad es exactamente por qué sigue siendo uno de los países más visitados del mundo año tras año."
+      ],
+      "attractionsHeading": "Principales Atracciones",
+      "attractions": [
+        { "name": "Chichén Itzá", "description": "Una de las Nuevas Siete Maravillas del Mundo, y el sitio arqueológico más visitado de México." },
+        { "name": "Tulum", "description": "Ruinas mayas asomadas directamente sobre playas caribeñas, algo único en la región." },
+        { "name": "Zócalo y Templo Mayor, Ciudad de México", "description": "El corazón histórico de la capital, construido sobre las ruinas del templo principal del imperio azteca." },
+        { "name": "Teotihuacán", "description": "Antigua ciudad piramidal a las afueras de la Ciudad de México, hogar de la Pirámide del Sol." },
+        { "name": "Playa del Carmen", "description": "Una base relajada para explorar las playas y cenotes de la Riviera Maya." }
+      ]
+    },
+    "france": {
+      "overview": [
+        "Francia es constantemente el país más visitado del mundo por llegadas internacionales, y París por sí solo representa solo una parte del atractivo — la Riviera Francesa, los castillos del Valle del Loira y las regiones vinícolas de Burdeos y Borgoña atraen su propio flujo constante de viajeros.",
+        "Como parte del Espacio Schengen, las reglas de entrada de Francia se comparten con otros 26 países europeos — una sola exención de visa cubre estadías cortas en toda la zona, no solo en Francia, algo importante a saber si un viaje abarca varios países."
+      ],
+      "attractionsHeading": "Principales Atracciones",
+      "attractions": [
+        { "name": "Torre Eiffel", "description": "El monumento de pago más visitado del mundo, y el símbolo definitorio de París." },
+        { "name": "Museo del Louvre", "description": "El museo más visitado del mundo, y hogar de la Mona Lisa." },
+        { "name": "Palacio de Versalles", "description": "La opulenta antigua residencia real a las afueras de París, con jardines que se extienden por más de 800 hectáreas." },
+        { "name": "Catedral de Notre-Dame", "description": "Una obra maestra de la arquitectura gótica francesa, aún uno de los sitios más icónicos del Sena." },
+        { "name": "Riviera Francesa", "description": "La glamorosa costa mediterránea que se extiende desde Cannes hasta Menton." }
+      ]
+    }
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "heading": "Cada trámite. Un equipo experto.",
+    "subheading": "Desde tu primer pasaporte hasta tu próxima visa — a cargo de especialistas con experiencia real.",
+    "items": {
+      "passports": {
+        "tag": "Todos los Tipos",
+        "title": "Pasaportes",
+        "description": "Solicitudes nuevas, renovaciones, cambios de nombre y trámite expedito."
+      },
+      "visas": {
+        "tag": "190+ Países",
+        "title": "Visas",
+        "description": "Visas de turista, negocios, estudiante y trabajo, para donde sea que vayas."
+      },
+      "immigration": {
+        "tag": "Todas las Vías",
+        "title": "Inmigración",
+        "description": "Tarjetas verdes, ciudadanía y programas de inversionistas, guiados de principio a fin."
+      },
+      "idp": {
+        "tag": "150+ Países",
+        "title": "Permiso Internacional de Conducir",
+        "description": "Conduce legalmente en el extranjero con un permiso reconocido casi donde viajes."
+      }
+    }
+  },
+  "immigrationShowcase": {
+    "eyebrow": "Inmigración",
+    "heading": "Vías reales, para destinos reales.",
+    "subheading": "Cada camino hacia un nuevo país es distinto. Empieza por tu destino, o por el tipo de vía que necesitas.",
+    "items": {
+      "unitedStates": {
+        "label": "Estados Unidos",
+        "description": "Tarjetas verdes, visas de trabajo y la lotería de visas de diversidad — todas las vías para vivir y trabajar en EE. UU."
+      },
+      "canada": {
+        "label": "Canadá",
+        "description": "Express Entry, Programas de Nominados Provinciales y patrocinio familiar hacia uno de los sistemas más receptivos del mundo."
+      },
+      "unitedKingdom": {
+        "label": "Reino Unido",
+        "description": "Visas de Trabajador Calificado, visas familiares y rutas de residencia permanente para instalarte en el Reino Unido."
+      },
+      "australia": {
+        "label": "Australia",
+        "description": "Migración calificada, patrocinio del empleador y visas familiares para uno de los destinos más buscados para la migración permanente."
+      },
+      "portugal": {
+        "label": "Portugal",
+        "description": "Golden Visa y la ruta D7 de ingresos pasivos — uno de los caminos más accesibles hacia la residencia en Europa."
+      },
+      "newZealand": {
+        "label": "Nueva Zelanda",
+        "description": "Visas de Migrante Calificado y familiares para uno de los destinos mejor valorados en calidad de vida."
+      },
+      "greenCardLottery": {
+        "label": "Lotería de Green Card",
+        "description": "Participa en la Lotería de Visas de Diversidad de EE. UU. correctamente, con tu solicitud revisada para evitar los errores que descalifican miles de participaciones cada año."
+      },
+      "investorVisas": {
+        "label": "Visas de Inversionista y Golden Visa",
+        "description": "Residencia a través de una inversión calificada, disponible en decenas de países con programas creados para esto exactamente."
+      },
+      "familySponsorship": {
+        "label": "Patrocinio Familiar",
+        "description": "Trae a tu cónyuge, padre o hijo contigo — guiado por personas que saben exactamente qué categorías familiares avanzan más rápido."
+      },
+      "citizenship": {
+        "label": "Ciudadanía y Naturalización",
+        "description": "Desde la residencia hasta la naturalización, te guiamos en cada requisito del camino hacia la ciudadanía."
+      },
+      "skilledWorker": {
+        "label": "Visas de Trabajador Calificado",
+        "description": "Rutas por sistema de puntos y patrocinio del empleador para profesionales con habilidades demandadas."
+      },
+      "digitalNomad": {
+        "label": "Visas de Nómada Digital",
+        "description": "Vive y trabaja de forma remota, legalmente, en uno de los cada vez más países creados exactamente para esto."
+      }
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Cómo Funciona",
+    "heading": "De la búsqueda a la entrega, en cuatro pasos.",
+    "subheading": "Sin conjeturas, sin callejones sin salida — solo un camino claro hasta tus documentos.",
+    "steps": {
+      "search": {
+        "title": "Cuéntanos tu destino",
+        "description": "Busca tu destino y pasaporte — te mostramos exactamente qué se requiere."
+      },
+      "prepare": {
+        "title": "Nosotros preparamos todo",
+        "description": "Tu solicitud, completada y verificada antes de salir de nuestras manos."
+      },
+      "review": {
+        "title": "Revisado por especialistas",
+        "description": "Antiguos oficiales de visa la revisan antes de enviarla."
+      },
+      "deliver": {
+        "title": "Seguimiento hasta la entrega",
+        "description": "Actualizaciones en tiempo real desde el envío hasta que tengas tus documentos."
+      }
+    }
+  },
+  "comparison": {
+    "heading": "La Diferencia Visa Expeditor",
+    "subheading": "La misma solicitud, una experiencia muy distinta según cómo la hagas.",
+    "vs": "VS",
+    "cta": "Comienza Tu Solicitud",
+    "us": {
+      "title": "Con Visa Expeditor",
+      "tagline": "Bien Hecho Desde el Principio"
+    },
+    "diy": {
+      "title": "Haciéndolo Tú Mismo",
+      "tagline": "Sin Guía, Sin Revisión"
+    },
+    "points": {
+      "guidance": {
+        "us": { "title": "Guía en lenguaje sencillo", "description": "Cada formulario explicado paso a paso — sin jerga gubernamental que descifrar." },
+        "diy": { "title": "Formularios oficiales densos", "description": "Navega terminología y formatos gubernamentales que varían por país." }
+      },
+      "review": {
+        "us": { "title": "Revisado por antiguos oficiales de visa", "description": "Una segunda revisión experta de tu solicitud antes de enviarla." },
+        "diy": { "title": "Sin segunda opinión", "description": "Envías y esperas — los errores suelen detectarse solo tras un rechazo." }
+      },
+      "pricing": {
+        "us": { "title": "Precios claros y desglosados", "description": "Ve el costo total — tarifas gubernamentales y de servicio — antes de comprometerte." },
+        "diy": { "title": "Tarifas que descubres en el camino", "description": "Notarización, mensajería y trámites suelen aparecer uno por uno." }
+      },
+      "tracking": {
+        "us": { "title": "Seguimiento en tiempo real", "description": "Sabe exactamente en qué etapa está tu solicitud, del envío a la entrega." },
+        "diy": { "title": "Silencio mientras esperas", "description": "Una vez enviada, hay poca visibilidad sobre su estado." }
+      },
+      "language": {
+        "us": { "title": "Ayuda en tu idioma", "description": "Recibe orientación y soporte en el idioma con el que te sientas más cómodo." },
+        "diy": { "title": "Requisitos en un solo idioma", "description": "Las instrucciones suelen publicarse solo en el idioma oficial del país destino." }
+      }
+    }
+  },
+  "cta": {
+    "button": "Comienza Tu Solicitud",
+    "slides": {
+      "begin": {
+        "word": "EMPIEZA",
+        "description": "Tu solicitud comienza con un formulario simple."
+      },
+      "reviewed": {
+        "word": "REVISADO",
+        "description": "Revisado por antiguos oficiales de visa antes de enviarlo."
+      },
+      "delivered": {
+        "word": "ENTREGADO",
+        "description": "Con seguimiento en cada paso, de tu escritorio a tu puerta."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Ayuda con pasaportes y visas, bien hecha.",
+    "services": "Servicios",
+    "company": "Empresa",
+    "legal": "Legal",
+    "passports": "Pasaportes",
+    "visas": "Visas",
+    "immigration": "Inmigración",
+    "about": "Acerca de",
+    "support": "Soporte",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "disclaimer": "Aviso Legal",
+    "copyright": "© {year} Visa Expeditor. No afiliado con ninguna agencia gubernamental."
+  }
+}
