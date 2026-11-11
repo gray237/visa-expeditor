@@ -73,10 +73,10 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
       <div className="relative flex max-h-[85vh] w-full max-w-md flex-col overflow-hidden rounded-3xl bg-[#F5F6F4] shadow-2xl">
         <div className="flex items-start justify-between px-6 pt-6">
           <div>
-            <h2 className="font-(family-name:--font-display) text-xl font-semibold text-[#0F2444]">
+            <h2 className="font-display text-xl font-semibold text-[#0F2444]">
               {t("selectPassport")}
             </h2>
-            <p className="mt-1 font-(family-name:--font-body) text-sm text-[#161B22]/60">
+            <p className="mt-1 font-body text-sm text-[#161B22]/60">
               {t("selectPassportSubtitle")}
             </p>
           </div>
@@ -124,7 +124,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder={t("searchCountry")}
-              className="w-full rounded-xl border border-[#0F2444]/15 bg-white py-2.5 pl-10 pr-3.5 font-(family-name:--font-body) text-sm outline-none focus:border-[#B8925A]"
+              className="w-full rounded-xl border border-[#0F2444]/15 bg-white py-2.5 pl-10 pr-3.5 font-body text-sm outline-none focus:border-[#B8925A]"
             />
           </div>
         </div>
@@ -147,7 +147,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
                 >
                   <span className="flex items-center gap-3">
                     <FlagChip code={country.code} />
-                    <span className="font-(family-name:--font-body) text-sm text-[#161B22]">
+                    <span className="font-body text-sm text-[#161B22]">
                       {country.name}
                     </span>
                   </span>
@@ -168,7 +168,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
           </ul>
 
           {filtered && filtered.length === 0 && (
-            <p className="px-3 py-8 text-center font-(family-name:--font-body) text-sm text-[#161B22]/50">
+            <p className="px-3 py-8 text-center font-body text-sm text-[#161B22]/50">
               {t("noMatches")} {t("noMatchesHint")}
             </p>
           )}
@@ -200,7 +200,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
                 />
               </svg>
             </span>
-            <span className="font-(family-name:--font-body) text-sm text-[#161B22]/80">
+            <span className="font-body text-sm text-[#161B22]/80">
               {t("liveElsewhere", { country: pending.name })}
             </span>
           </label>
@@ -209,7 +209,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
             <select
               value={residenceCode}
               onChange={(event) => setResidenceCode(event.target.value)}
-              className="mt-3 w-full rounded-xl border border-[#0F2444]/15 bg-white px-3.5 py-2.5 font-(family-name:--font-body) text-sm outline-none focus:border-[#B8925A]"
+              className="mt-3 w-full rounded-xl border border-[#0F2444]/15 bg-white px-3.5 py-2.5 font-body text-sm outline-none focus:border-[#B8925A]"
             >
               {countries.map((country) => (
                 <option key={country.code} value={country.code}>
@@ -222,7 +222,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
           <button
             type="button"
             onClick={confirm}
-            className="mt-4 w-full rounded-xl bg-[#0F2444] py-3 font-(family-name:--font-body) text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
+            className="mt-4 w-full rounded-xl bg-[#0F2444] py-3 font-body text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
           >
             {t("continue")}
           </button>
@@ -244,7 +244,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
       >
         <FlagChip code={selected.code} />
         {variant === "pill" ? (
-          <span className="hidden font-(family-name:--font-body) font-medium text-[#161B22] sm:inline">
+          <span className="hidden font-body font-medium text-[#161B22] sm:inline">
             {selected.name}
           </span>
         ) : (
@@ -252,7 +252,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
             <span className="font-mono text-[11px] uppercase tracking-wider text-[#161B22]/50">
               {t("myPassport")}
             </span>
-            <span className="font-(family-name:--font-body) text-sm font-semibold text-[#161B22]">
+            <span className="font-body text-sm font-semibold text-[#161B22]">
               {selected.name}
             </span>
           </span>

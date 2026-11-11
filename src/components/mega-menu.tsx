@@ -24,7 +24,7 @@ export function MegaMenuTrigger({ item }: { item: NavItem }) {
     <div className="relative" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
       <Link
         href={item.href}
-        className="flex items-center gap-1 font-(family-name:--font-body) text-[15px] text-[#161B22]/80 transition-colors hover:text-[#0F2444]"
+        className="flex items-center gap-1 font-body text-[15px] text-[#161B22]/80 transition-colors hover:text-[#0F2444]"
       >
         {t("label")}
         <ChevronDown className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
@@ -49,10 +49,10 @@ export function MegaMenuTrigger({ item }: { item: NavItem }) {
                     <Icon className="h-4.5 w-4.5" strokeWidth={1.75} />
                   </span>
                   <span>
-                    <span className="block font-(family-name:--font-body) text-sm font-semibold text-[#161B22]">
+                    <span className="block font-body text-sm font-semibold text-[#161B22]">
                       {t(`items.${sub.key}.label`)}
                     </span>
-                    <span className="mt-0.5 block font-(family-name:--font-body) text-[13px] text-[#161B22]/60">
+                    <span className="mt-0.5 block font-body text-[13px] text-[#161B22]/60">
                       {t(`items.${sub.key}.description`)}
                     </span>
                   </span>
@@ -64,7 +64,7 @@ export function MegaMenuTrigger({ item }: { item: NavItem }) {
           {item.viewAllHref && (
             <Link
               href={item.viewAllHref}
-              className="mt-1 flex items-center justify-center gap-1.5 rounded-xl border border-[#0F2444]/10 py-2.5 font-(family-name:--font-body) text-sm font-semibold text-[#0F2444] transition-colors hover:bg-[#0F2444]/5"
+              className="mt-1 flex items-center justify-center gap-1.5 rounded-xl border border-[#0F2444]/10 py-2.5 font-body text-sm font-semibold text-[#0F2444] transition-colors hover:bg-[#0F2444]/5"
             >
               {t("viewAll")}
               <ArrowRight className="h-3.5 w-3.5" />

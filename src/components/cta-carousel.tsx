@@ -54,7 +54,7 @@ export function CtaCarousel() {
           />
 
           <span
-            className="relative font-(family-name:--font-display) font-bold leading-none"
+            className="relative font-display font-bold leading-none"
             style={{
               fontSize: "clamp(3.5rem, 11vw, 8rem)",
               backgroundImage: "linear-gradient(to bottom, #E4C081, rgba(184,146,90,0.25))",
@@ -66,13 +66,13 @@ export function CtaCarousel() {
             {t(`slides.${slide.key}.word`)}
           </span>
 
-          <p className="relative mt-4 max-w-md font-(family-name:--font-body) text-[#F5F6F4]/70">
+          <p className="relative mt-4 max-w-md font-body text-[#F5F6F4]/70">
             {t(`slides.${slide.key}.description`)}
           </p>
 
           <Link
             href="/start"
-            className="group relative mt-8 flex items-center gap-2 rounded-full bg-[#F5F6F4] px-7 py-3.5 font-(family-name:--font-body) text-sm font-semibold text-[#0F2444] transition-transform hover:-translate-y-0.5"
+            className="group relative mt-8 flex items-center gap-2 rounded-full bg-[#F5F6F4] px-7 py-3.5 font-body text-sm font-semibold text-[#0F2444] transition-transform hover:-translate-y-0.5"
           >
             {t("button")}
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

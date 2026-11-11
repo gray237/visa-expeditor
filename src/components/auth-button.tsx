@@ -9,7 +9,7 @@ export function AuthButton({ fullWidth = false }: { fullWidth?: boolean }) {
   const { isSignedIn, isLoaded } = useUser();
   const t = useTranslations("auth");
 
-  const buttonClass = `flex h-9 items-center justify-center rounded-full bg-[#0F2444] px-6 font-[family-name:var(--font-body)] text-[13px] font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90 ${
+  const buttonClass = `flex h-9 items-center justify-center rounded-full bg-[#0F2444] px-6 font-body text-[13px] font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90 ${
     fullWidth ? "w-full" : ""
   }`;
 

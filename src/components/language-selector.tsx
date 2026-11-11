@@ -55,7 +55,7 @@ export function LanguageSelector() {
               key={code}
               type="button"
               onClick={() => switchTo(code)}
-              className={`flex w-full items-center justify-between rounded-xl px-3 py-2 text-left font-(family-name:--font-body) text-sm transition-colors ${
+              className={`flex w-full items-center justify-between rounded-xl px-3 py-2 text-left font-body text-sm transition-colors ${
                 code === locale ? "bg-[#0F2444]/6 font-semibold text-[#0F2444]" : "text-[#161B22] hover:bg-[#0F2444]/4"
               }`}
             >

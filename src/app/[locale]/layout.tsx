@@ -11,21 +11,21 @@ import { SiteFooter } from "@/components/layout/site-footer";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-display",
+  variable: "--font-fraunces",
   weight: ["400", "500", "600"],
   display: "swap",
 });
 
 const plexSans = IBM_Plex_Sans({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-plex-sans",
   weight: ["400", "500", "600"],
   display: "swap",
 });
 
 const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--font-plex-mono",
   weight: ["400", "500"],
   display: "swap",
 });
@@ -62,7 +62,7 @@ export default async function LocaleLayout({
     <ClerkProvider>
       <html lang={locale}>
         <body
-          className={`${fraunces.variable} ${plexSans.variable} ${plexMono.variable} font-(family-name:--font-body) antialiased`}
+          className={`${fraunces.variable} ${plexSans.variable} ${plexMono.variable} font-body antialiased`}
         >
           <NextIntlClientProvider>
             <SiteHeader />

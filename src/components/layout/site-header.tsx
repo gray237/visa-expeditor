@@ -75,7 +75,7 @@ export function SiteHeader() {
                   <Link
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
-                    className="flex-1 py-3 font-(family-name:--font-body) text-[15px] text-[#161B22]/80"
+                    className="flex-1 py-3 font-body text-[15px] text-[#161B22]/80"
                   >
                     {t(`nav.${item.key}.label`)}
                   </Link>
@@ -103,7 +103,7 @@ export function SiteHeader() {
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#0F2444]/6 text-[#0F2444]">
                             <Icon className="h-4 w-4" strokeWidth={1.75} />
                           </span>
-                          <span className="font-(family-name:--font-body) text-sm text-[#161B22]">
+                          <span className="font-body text-sm text-[#161B22]">
                             {t(`nav.${item.key}.items.${sub.key}.label`)}
                           </span>
                         </Link>
@@ -114,7 +114,7 @@ export function SiteHeader() {
                       <Link
                         href={item.viewAllHref}
                         onClick={() => setMenuOpen(false)}
-                        className="flex items-center justify-center gap-1.5 rounded-xl border border-[#0F2444]/10 py-2.5 font-(family-name:--font-body) text-sm font-semibold text-[#0F2444]"
+                        className="flex items-center justify-center gap-1.5 rounded-xl border border-[#0F2444]/10 py-2.5 font-body text-sm font-semibold text-[#0F2444]"
                       >
                         {t(`nav.${item.key}.viewAll`)}
                         <ArrowRight className="h-3.5 w-3.5" />

@@ -105,10 +105,10 @@ export function ImmigrationShowcase() {
           <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#B8925A]">
             {t("eyebrow")}
           </p>
-          <h2 className="mt-2 font-(family-name:--font-display) text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
+          <h2 className="mt-2 font-display text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
             {t("heading")}
           </h2>
-          <p className="mt-3 font-(family-name:--font-body) text-[#161B22]/70 dark:text-[#F5F6F4]/70">
+          <p className="mt-3 font-body text-[#161B22]/70 dark:text-[#F5F6F4]/70">
             {t("subheading")}
           </p>
         </div>
@@ -161,7 +161,7 @@ export function ImmigrationShowcase() {
                 <div className="absolute inset-x-0 bottom-0 z-10 h-2/5 bg-linear-to-t from-black/75 to-transparent" />
 
                 <div className="relative z-20 flex items-center justify-between gap-2 px-5 py-4 transition-all duration-500 group-hover/card:bg-[#0F2444]/70 group-hover/card:backdrop-blur-[3px]">
-                  <span className="font-(family-name:--font-display) text-base font-semibold leading-tight text-[#F5F6F4] sm:text-lg">
+                  <span className="font-display text-base font-semibold leading-tight text-[#F5F6F4] sm:text-lg">
                     {t(`items.${service.key}.label`)}
                   </span>
                   {service.countryCode ? (
@@ -177,7 +177,7 @@ export function ImmigrationShowcase() {
                 </div>
 
                 <div className="relative z-20 mt-auto p-5 sm:p-6">
-                  <p className="font-(family-name:--font-body) text-[13px] leading-relaxed text-[#F5F6F4]/85 sm:text-sm">
+                  <p className="font-body text-[13px] leading-relaxed text-[#F5F6F4]/85 sm:text-sm">
                     {t(`items.${service.key}.description`)}
                   </p>
                 </div>
@@ -189,7 +189,7 @@ export function ImmigrationShowcase() {
 
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-40 flex translate-y-1/4 justify-center">
         <span
-          className="select-none whitespace-nowrap font-(family-name:--font-display) font-bold leading-none"
+          className="select-none whitespace-nowrap font-display font-bold leading-none"
           style={{
             fontSize: "clamp(3rem, 12vw, 9rem)",
             backgroundImage: "linear-gradient(to bottom, #B8925A, rgba(184,146,90,0.15))",

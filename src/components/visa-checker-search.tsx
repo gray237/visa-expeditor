@@ -28,7 +28,7 @@ export function VisaCheckerSearch({
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-[5px] rounded-3xl border border-[#0F2444]/10 bg-white p-3 shadow-lg sm:flex-row sm:items-center"
+      className="flex flex-col gap-1.25 rounded-3xl border border-[#0F2444]/10 bg-white p-3 shadow-lg sm:flex-row sm:items-center"
     >
       <div className="flex-1">
         <PassportSelector value={passportCode} onChange={setPassportCode} variant="field" />
@@ -43,7 +43,7 @@ export function VisaCheckerSearch({
 
       <button
         type="submit"
-        className="flex shrink-0 items-center justify-center gap-1.5 rounded-2xl bg-[#0F2444] px-6 py-3.5 font-(family-name:--font-body) text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
+        className="flex shrink-0 items-center justify-center gap-1.5 rounded-2xl bg-[#0F2444] px-6 py-3.5 font-body text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
       >
         {t("cta")}
         <ArrowRight className="h-4 w-4" />

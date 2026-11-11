@@ -76,16 +76,16 @@ export function Hero({ passportCode, onPassportChange }: HeroProps) {
                 />
               ))}
             </div>
-            <span className="font-(family-name:--font-body) text-[13px] text-[#F5F6F4]/90">
+            <span className="font-body text-[13px] text-[#F5F6F4]/90">
               {t("badge", { country: shortCountryName(passportCode, locale) })}
             </span>
           </div>
 
-          <h1 className="mt-6 font-(family-name:--font-display) text-4xl font-semibold leading-[1.1] text-[#F5F6F4] sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.1] text-[#F5F6F4] sm:text-5xl lg:text-6xl">
             {t("headline")}
           </h1>
 
-          <p className="mt-5 max-w-lg font-(family-name:--font-body) text-base text-[#F5F6F4]/70 sm:text-lg">
+          <p className="mt-5 max-w-lg font-body text-base text-[#F5F6F4]/70 sm:text-lg">
             {t("subhead")}
           </p>
         </div>
@@ -107,7 +107,7 @@ export function Hero({ passportCode, onPassportChange }: HeroProps) {
 
           <button
             type="submit"
-            className="flex shrink-0 items-center justify-center gap-1.5 rounded-2xl bg-[#0F2444] px-6 py-3.5 font-(family-name:--font-body) text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
+            className="flex shrink-0 items-center justify-center gap-1.5 rounded-2xl bg-[#0F2444] px-6 py-3.5 font-body text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
           >
             {t("cta")}
             <ArrowRight className="h-4 w-4" />

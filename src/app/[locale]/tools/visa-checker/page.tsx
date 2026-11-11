@@ -54,7 +54,7 @@ export default async function VisaCheckerPage({
           <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#B8925A]">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-2 font-(family-name:--font-display) text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
+          <h1 className="mt-2 font-display text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
             {t("title")}
           </h1>
         </div>
@@ -68,13 +68,13 @@ export default async function VisaCheckerPage({
             <p className="font-mono text-[11px] uppercase tracking-wider text-[#B8925A]">
               {tp(`${passport}.eyebrow`)}
             </p>
-            <h2 className="mt-2 font-(family-name:--font-display) text-2xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+            <h2 className="mt-2 font-display text-2xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
               {tp(`${passport}.heading`)}
             </h2>
 
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-5 dark:border-white/10 dark:bg-white/5">
-                <p className="font-(family-name:--font-display) text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
+                <p className="font-display text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
                   {stats.covered}
                 </p>
                 <p className="mt-1 text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
@@ -85,7 +85,7 @@ export default async function VisaCheckerPage({
                 </p>
               </div>
               <div className="rounded-2xl border border-[#B8925A]/25 bg-[#B8925A]/5 p-5">
-                <p className="font-(family-name:--font-display) text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
+                <p className="font-display text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
                   {stats.visaFree}
                 </p>
                 <p className="mt-1 text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
@@ -96,7 +96,7 @@ export default async function VisaCheckerPage({
                 </p>
               </div>
               <div className="rounded-2xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-5 dark:border-white/10 dark:bg-white/5">
-                <p className="font-(family-name:--font-display) text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
+                <p className="font-display text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
                   {stats.etaRequired}
                 </p>
                 <p className="mt-1 text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
@@ -111,7 +111,7 @@ export default async function VisaCheckerPage({
             <div className="mt-6 grid grid-cols-1 gap-6 rounded-3xl border border-[#0F2444]/10 bg-white p-7 dark:border-white/10 dark:bg-[#1a1b20] sm:grid-cols-3 sm:p-8">
               {OVERVIEW_SECTION_KEYS.map((key) => (
                 <div key={key}>
-                  <h3 className="font-(family-name:--font-display) text-base font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                  <h3 className="font-display text-base font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                     {tp(`${passport}.sections.${key}.title`)}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/70">
@@ -127,10 +127,10 @@ export default async function VisaCheckerPage({
           {!destination ? (
             <div className="rounded-3xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-8 dark:border-white/10 dark:bg-white/5">
               <CircleAlert className="h-6 w-6 text-[#B8925A]" strokeWidth={1.75} />
-              <h2 className="mt-4 font-(family-name:--font-display) text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+              <h2 className="mt-4 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                 {to ? t("notFoundHeading") : t("emptyHeading")}
               </h2>
-              <p className="mt-2 font-(family-name:--font-body) text-sm leading-relaxed text-[#161B22]/65 dark:text-[#F5F6F4]/65">
+              <p className="mt-2 font-body text-sm leading-relaxed text-[#161B22]/65 dark:text-[#F5F6F4]/65">
                 {to ? t("notFoundBody") : t("emptyBody")}
               </p>
             </div>
@@ -139,7 +139,7 @@ export default async function VisaCheckerPage({
               <div className="rounded-3xl border border-[#0F2444]/10 bg-white p-8 dark:border-white/10 dark:bg-[#1a1b20]">
                 <div className="flex items-center gap-4">
                   <ResultFlag code={destination.countryCode} />
-                  <h2 className="font-(family-name:--font-display) text-xl font-semibold text-[#161B22] sm:text-2xl dark:text-[#F5F6F4]">
+                  <h2 className="font-display text-xl font-semibold text-[#161B22] sm:text-2xl dark:text-[#F5F6F4]">
                     {t("resultHeading", {
                       passport: fullCountryName(passport, locale),
                       destination: td(`countries.${destination.key}`),
@@ -152,7 +152,7 @@ export default async function VisaCheckerPage({
                     <p className="font-mono text-[10px] uppercase tracking-wider text-[#161B22]/40 dark:text-[#F5F6F4]/40">
                       {td("typeLabel")}
                     </p>
-                    <p className="mt-1 font-(family-name:--font-body) text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                    <p className="mt-1 font-body text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                       {td(`type.${requirement.type}`)}
                     </p>
                   </div>
@@ -160,7 +160,7 @@ export default async function VisaCheckerPage({
                     <p className="font-mono text-[10px] uppercase tracking-wider text-[#161B22]/40 dark:text-[#F5F6F4]/40">
                       {td("validLabel")}
                     </p>
-                    <p className="mt-1 font-(family-name:--font-body) text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                    <p className="mt-1 font-body text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                       {td("validDays", { days: requirement.validityDays })}
                     </p>
                   </div>
@@ -168,7 +168,7 @@ export default async function VisaCheckerPage({
                     <p className="font-mono text-[10px] uppercase tracking-wider text-[#161B22]/40 dark:text-[#F5F6F4]/40">
                       {td("processingLabel")}
                     </p>
-                    <p className="mt-1 font-(family-name:--font-body) text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                    <p className="mt-1 font-body text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                       {td(`processing.${requirement.processing}`)}
                     </p>
                   </div>
@@ -176,21 +176,21 @@ export default async function VisaCheckerPage({
 
                 <Link
                   href="/start"
-                  className="mt-8 flex items-center justify-center rounded-2xl bg-[#0F2444] px-6 py-3.5 font-(family-name:--font-body) text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
+                  className="mt-8 flex items-center justify-center rounded-2xl bg-[#0F2444] px-6 py-3.5 font-body text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
                 >
                   {t("startApplication")}
                 </Link>
               </div>
 
               <div className="rounded-3xl border border-[#0F2444]/10 bg-white p-8 dark:border-white/10 dark:bg-[#1a1b20]">
-                <h3 className="font-(family-name:--font-display) text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                <h3 className="font-display text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                   {te(`${requirement.type}.documentsHeading`)}
                 </h3>
                 <ul className="mt-4 space-y-3">
                   {documents.map((doc, i) => (
                     <li key={i} className="flex gap-3">
                       <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#B8925A]" strokeWidth={2} />
-                      <span className="font-(family-name:--font-body) text-sm text-[#161B22]/80 dark:text-[#F5F6F4]/80">
+                      <span className="font-body text-sm text-[#161B22]/80 dark:text-[#F5F6F4]/80">
                         {doc}
                       </span>
                     </li>
@@ -200,10 +200,10 @@ export default async function VisaCheckerPage({
 
               <div className="rounded-3xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-8 dark:border-white/10 dark:bg-white/5">
                 <Info className="h-5 w-5 text-[#B8925A]" strokeWidth={1.75} />
-                <h3 className="mt-3 font-(family-name:--font-display) text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                <h3 className="mt-3 font-display text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                   {te(`${requirement.type}.explainerTitle`)}
                 </h3>
-                <p className="mt-2 font-(family-name:--font-body) text-sm leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/70">
+                <p className="mt-2 font-body text-sm leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/70">
                   {te(`${requirement.type}.explainerBody`)}
                 </p>
               </div>
@@ -213,13 +213,13 @@ export default async function VisaCheckerPage({
                   {guideOverview.map((para, i) => (
                     <p
                       key={i}
-                      className="font-(family-name:--font-body) text-sm leading-relaxed text-[#161B22]/75 dark:text-[#F5F6F4]/75 [&:not(:first-child)]:mt-3"
+                      className="font-body text-sm leading-relaxed text-[#161B22]/75 dark:text-[#F5F6F4]/75 [&:not(:first-child)]:mt-3"
                     >
                       {para}
                     </p>
                   ))}
 
-                  <h3 className="mt-6 font-(family-name:--font-display) text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                  <h3 className="mt-6 font-display text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                     {tg(`${destination.key}.attractionsHeading`)}
                   </h3>
                   <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -240,15 +240,15 @@ export default async function VisaCheckerPage({
           ) : (
             <div className="rounded-3xl border border-[#B8925A]/30 bg-[#B8925A]/5 p-8 dark:bg-[#B8925A]/10">
               <MessageCircle className="h-6 w-6 text-[#B8925A]" strokeWidth={1.75} />
-              <h2 className="mt-4 font-(family-name:--font-display) text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+              <h2 className="mt-4 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                 {t("noDataHeading", { country: fullCountryName(passport, locale) })}
               </h2>
-              <p className="mt-2 font-(family-name:--font-body) text-sm leading-relaxed text-[#161B22]/65 dark:text-[#F5F6F4]/65">
+              <p className="mt-2 font-body text-sm leading-relaxed text-[#161B22]/65 dark:text-[#F5F6F4]/65">
                 {t("noDataBody")}
               </p>
               <Link
                 href="/start"
-                className="mt-6 inline-flex items-center justify-center rounded-2xl bg-[#0F2444] px-6 py-3.5 font-(family-name:--font-body) text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
+                className="mt-6 inline-flex items-center justify-center rounded-2xl bg-[#0F2444] px-6 py-3.5 font-body text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
               >
                 {t("talkToSpecialist")}
               </Link>

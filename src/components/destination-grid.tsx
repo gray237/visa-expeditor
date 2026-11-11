@@ -26,10 +26,10 @@ export function DestinationGrid({ passportCode }: { passportCode: string }) {
       <div className="mx-auto max-w-350 px-6">
         <div className="mb-10 flex flex-col justify-between gap-4 sm:mb-12 sm:flex-row sm:items-end">
           <div>
-            <h2 className="font-(family-name:--font-display) text-3xl font-semibold text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
+            <h2 className="font-display text-3xl font-semibold text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
               {t("heading")}
             </h2>
-            <p className="mt-2 font-(family-name:--font-body) text-[#161B22]/60 dark:text-[#F5F6F4]/70">
+            <p className="mt-2 font-body text-[#161B22]/60 dark:text-[#F5F6F4]/70">
               {t("subheading", { country: fullCountryName(passportCode, locale) })}
             </p>
           </div>
@@ -55,7 +55,7 @@ export function DestinationGrid({ passportCode }: { passportCode: string }) {
                   <CardFlag code={destination.countryCode} />
                 </div>
 
-                <h3 className="relative font-(family-name:--font-display) text-xl font-semibold text-white sm:text-2xl">
+                <h3 className="relative font-display text-xl font-semibold text-white sm:text-2xl">
                   {t(`countries.${destination.key}`)}
                 </h3>
 
@@ -66,7 +66,7 @@ export function DestinationGrid({ passportCode }: { passportCode: string }) {
                         <p className="font-mono text-[9px] uppercase tracking-wider text-white/50">
                           {t("typeLabel")}
                         </p>
-                        <p className="font-(family-name:--font-body) text-[12px] font-semibold leading-tight text-white">
+                        <p className="font-body text-[12px] font-semibold leading-tight text-white">
                           {t(`type.${requirement.type}`)}
                         </p>
                       </div>
@@ -74,7 +74,7 @@ export function DestinationGrid({ passportCode }: { passportCode: string }) {
                         <p className="font-mono text-[9px] uppercase tracking-wider text-white/50">
                           {t("validLabel")}
                         </p>
-                        <p className="font-(family-name:--font-body) text-[12px] font-semibold leading-tight text-white">
+                        <p className="font-body text-[12px] font-semibold leading-tight text-white">
                           {t("validDays", { days: requirement.validityDays })}
                         </p>
                       </div>
@@ -82,13 +82,13 @@ export function DestinationGrid({ passportCode }: { passportCode: string }) {
                         <p className="font-mono text-[9px] uppercase tracking-wider text-white/50">
                           {t("processingLabel")}
                         </p>
-                        <p className="font-(family-name:--font-body) text-[12px] font-semibold leading-tight text-white">
+                        <p className="font-body text-[12px] font-semibold leading-tight text-white">
                           {t(`processing.${requirement.processing}`)}
                         </p>
                       </div>
                     </div>
                   ) : (
-                    <span className="flex items-center gap-1 font-(family-name:--font-body) text-[13px] font-semibold text-white">
+                    <span className="flex items-center gap-1 font-body text-[13px] font-semibold text-white">
                       {t("checkRequirements")}
                       <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                     </span>

@@ -82,10 +82,10 @@ export function Services() {
           <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#B8925A]">
             {t("eyebrow")}
           </p>
-          <h2 className="mt-2 font-(family-name:--font-display) text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
+          <h2 className="mt-2 font-display text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
             {t("heading")}
           </h2>
-          <p className="mt-3 font-(family-name:--font-body) text-[#161B22]/60 dark:text-[#F5F6F4]/70">
+          <p className="mt-3 font-body text-[#161B22]/60 dark:text-[#F5F6F4]/70">
             {t("subheading")}
           </p>
         </div>
@@ -103,10 +103,10 @@ export function Services() {
               <span className="font-mono text-[11px] uppercase tracking-wider text-[#161B22]/40 dark:text-[#F5F6F4]/40">
                 {t(`items.${service.key}.tag`)}
               </span>
-              <h3 className="mt-3 font-(family-name:--font-display) text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+              <h3 className="mt-3 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                 {t(`items.${service.key}.title`)}
               </h3>
-              <p className="mt-2 font-(family-name:--font-body) text-sm leading-relaxed text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+              <p className="mt-2 font-body text-sm leading-relaxed text-[#161B22]/60 dark:text-[#F5F6F4]/60">
                 {t(`items.${service.key}.description`)}
               </p>
 
