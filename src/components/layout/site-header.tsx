@@ -10,10 +10,11 @@ import { MegaMenuTrigger } from "@/components/mega-menu";
 import { AuthButton } from "@/components/auth-button";
 import { LanguageSelector } from "@/components/language-selector";
 import { NAV_ITEMS } from "@/lib/nav";
+import { usePassport } from "@/components/providers/passport-provider";
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [passportCode, setPassportCode] = useState("US");
+  const { passport: passportCode, setPassport: setPassportCode } = usePassport();
   const [expandedMobile, setExpandedMobile] = useState<string | null>(null);
   const t = useTranslations();
   const tc = useTranslations("common");

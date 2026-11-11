@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import { useRouter } from "@/i18n/navigation";
 import { PassportSelector } from "@/components/passport-selector";
 import { DestinationSelector } from "@/components/destination-selector";
+import { usePassport } from "@/components/providers/passport-provider";
 import { shortCountryName } from "@/lib/countries";
 
 // Placeholder avatars — swap each URL for a real, consented team photo before launch.
@@ -17,12 +18,8 @@ const EXPERT_AVATARS = [
   "https://i.pravatar.cc/150?img=68",
 ];
 
-type HeroProps = {
-  passportCode: string;
-  onPassportChange: (code: string) => void;
-};
-
-export function Hero({ passportCode, onPassportChange }: HeroProps) {
+export function Hero() {
+  const { passport: passportCode, setPassport: setPassportCode } = usePassport();
   const t = useTranslations("hero");
   const locale = useLocale();
   const router = useRouter();
@@ -95,7 +92,7 @@ export function Hero({ passportCode, onPassportChange }: HeroProps) {
           className="mt-10 flex max-w-3xl flex-col gap-1.25 rounded-3xl border border-white/40 bg-white/90 p-3 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] backdrop-blur-2xl sm:flex-row sm:items-center"
         >
           <div className="flex-1">
-            <PassportSelector value={passportCode} onChange={onPassportChange} variant="field" />
+            <PassportSelector value={passportCode} onChange={setPassportCode} variant="field" />
           </div>
 
           <div className="hidden h-10 w-px shrink-0 self-center bg-[#0F2444]/10 sm:block" />

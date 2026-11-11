@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { DESTINATIONS, MOST_VISITED_BY_PASSPORT, DEFAULT_FEATURED } from "@/lib/destinations";
 import { fullCountryName } from "@/lib/countries";
+import { usePassport } from "@/components/providers/passport-provider";
 
 function CardFlag({ code }: { code: string }) {
   const Flag = Flags[code as keyof typeof Flags];
@@ -16,7 +17,8 @@ function CardFlag({ code }: { code: string }) {
   );
 }
 
-export function DestinationGrid({ passportCode }: { passportCode: string }) {
+export function DestinationGrid() {
+  const { passport: passportCode } = usePassport();
   const t = useTranslations("destinations");
   const locale = useLocale();
   const featuredKey = MOST_VISITED_BY_PASSPORT[passportCode] ?? DEFAULT_FEATURED;

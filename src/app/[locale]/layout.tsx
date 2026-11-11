@@ -8,6 +8,7 @@ import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { PassportProvider } from "@/components/providers/passport-provider";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -65,9 +66,11 @@ export default async function LocaleLayout({
           className={`${fraunces.variable} ${plexSans.variable} ${plexMono.variable} font-body antialiased`}
         >
           <NextIntlClientProvider>
-            <SiteHeader />
-            <main>{children}</main>
-            <SiteFooter />
+            <PassportProvider>
+              <SiteHeader />
+              <main>{children}</main>
+              <SiteFooter />
+            </PassportProvider>
           </NextIntlClientProvider>
         </body>
       </html>
