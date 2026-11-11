@@ -1,0 +1,109 @@
+{
+  "passports": {
+    "label": "Pasaportes",
+    "items": {
+      "new": {
+        "label": "Pasaporte Nuevo",
+        "description": "Solicitudes por primera vez, de principio a fin"
+      },
+      "renewal": {
+        "label": "Renovación",
+        "description": "¿Ya tienes uno? Mantenlo vigente"
+      },
+      "nameChange": {
+        "label": "Cambio de Nombre",
+        "description": "Matrimonio, divorcio o actualizaciones legales de nombre"
+      },
+      "lostStolen": {
+        "label": "Perdido o Robado",
+        "description": "Reporta y reemplaza, rápido"
+      }
+    }
+  },
+  "visas": {
+    "label": "Visas",
+    "items": {
+      "tourist": {
+        "label": "Visa de Turista",
+        "description": "Vacaciones y viajes de corta estancia"
+      },
+      "business": {
+        "label": "Visa de Negocios",
+        "description": "Conferencias, reuniones y negocios"
+      },
+      "student": {
+        "label": "Visa de Estudiante",
+        "description": "Estudia en el extranjero, bien hecho"
+      },
+      "work": {
+        "label": "Visa de Trabajo",
+        "description": "Viajes patrocinados por el empleador"
+      }
+    }
+  },
+  "immigration": {
+    "label": "Inmigración",
+    "items": {
+      "greenCards": {
+        "label": "Tarjetas Verdes",
+        "description": "Vías hacia la residencia permanente"
+      },
+      "citizenship": {
+        "label": "Ciudadanía",
+        "description": "Naturalización, de inicio al juramento"
+      },
+      "investor": {
+        "label": "Visas de Inversionista",
+        "description": "EB-5 y vías para inversionistas"
+      },
+      "family": {
+        "label": "Patrocinio Familiar",
+        "description": "Trae a tus familiares"
+      }
+    }
+  },
+  "tools": {
+    "label": "Herramientas",
+    "viewAll": "Ver Todas las Herramientas",
+    "items": {
+      "visaChecker": {
+        "label": "Verificador de Visa",
+        "description": "Descubre si necesitas visa, al instante"
+      },
+      "passportPower": {
+        "label": "Poder del Pasaporte",
+        "description": "Descubre a dónde te lleva tu pasaporte"
+      },
+      "checklist": {
+        "label": "Lista de Documentos",
+        "description": "Lo que necesitarás, con anticipación"
+      },
+      "passportValidity": {
+        "label": "Verificador de Vigencia",
+        "description": "Asegúrate de que no expire durante tu viaje"
+      }
+    }
+  },
+  "resources": {
+    "label": "Recursos",
+    "viewAll": "Ver Todos los Recursos",
+    "items": {
+      "processingTimes": {
+        "label": "Tiempos de Procesamiento",
+        "description": "Estimaciones actuales por servicio"
+      },
+      "guides": {
+        "label": "Guías",
+        "description": "Ayuda detallada para cada paso"
+      },
+      "faqs": {
+        "label": "Preguntas Frecuentes",
+        "description": "Respuestas a preguntas comunes"
+      },
+      "insights": {
+        "label": "Perspectivas",
+        "description": "Análisis a fondo sobre visas y viajes"
+      }
+    }
+  }
+}

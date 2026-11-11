@@ -1,0 +1,109 @@
+{
+  "passports": {
+    "label": "Passports",
+    "items": {
+      "new": {
+        "label": "New Passport",
+        "description": "First-time applications, start to finish"
+      },
+      "renewal": {
+        "label": "Renewal",
+        "description": "Already have one? Keep it current"
+      },
+      "nameChange": {
+        "label": "Name Change",
+        "description": "Marriage, divorce, or legal name updates"
+      },
+      "lostStolen": {
+        "label": "Lost or Stolen",
+        "description": "Report and replace, fast"
+      }
+    }
+  },
+  "visas": {
+    "label": "Visas",
+    "items": {
+      "tourist": {
+        "label": "Tourist Visa",
+        "description": "Vacation and short-stay travel"
+      },
+      "business": {
+        "label": "Business Visa",
+        "description": "Conferences, meetings, and deals"
+      },
+      "student": {
+        "label": "Student Visa",
+        "description": "Study abroad, done right"
+      },
+      "work": {
+        "label": "Work Visa",
+        "description": "Employment-sponsored travel"
+      }
+    }
+  },
+  "immigration": {
+    "label": "Immigration",
+    "items": {
+      "greenCards": {
+        "label": "Green Cards",
+        "description": "Permanent residency pathways"
+      },
+      "citizenship": {
+        "label": "Citizenship",
+        "description": "Naturalization, start to oath"
+      },
+      "investor": {
+        "label": "Investor Visas",
+        "description": "EB-5 and investor pathways"
+      },
+      "family": {
+        "label": "Family Sponsorship",
+        "description": "Bring family members over"
+      }
+    }
+  },
+  "tools": {
+    "label": "Tools",
+    "viewAll": "View All Tools",
+    "items": {
+      "visaChecker": {
+        "label": "Visa Checker",
+        "description": "See if you need a visa, instantly"
+      },
+      "passportPower": {
+        "label": "Passport Power",
+        "description": "See where your passport gets you"
+      },
+      "checklist": {
+        "label": "Document Checklist",
+        "description": "What you'll need, in advance"
+      },
+      "passportValidity": {
+        "label": "Passport Validity Checker",
+        "description": "Make sure it won't expire mid-trip"
+      }
+    }
+  },
+  "resources": {
+    "label": "Resources",
+    "viewAll": "View All Resources",
+    "items": {
+      "processingTimes": {
+        "label": "Processing Times",
+        "description": "Current estimates by service"
+      },
+      "guides": {
+        "label": "Guides",
+        "description": "In-depth help for every step"
+      },
+      "faqs": {
+        "label": "FAQs",
+        "description": "Answers to common questions"
+      },
+      "insights": {
+        "label": "Insights",
+        "description": "Deep dives on visas & travel"
+      }
+    }
+  }
+}

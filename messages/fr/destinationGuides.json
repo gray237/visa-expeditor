@@ -1,0 +1,60 @@
+{
+  "mexico": {
+    "overview": [
+      "Le Mexique attire plus de visiteurs internationaux que presque tout autre pays des Amériques, et cette diversité fait partie de son attrait — villes coloniales chargées de siècles d'histoire, côtes des Caraïbes et du Pacifique, désert et jungle, le tout à quelques heures les uns des autres.",
+      "Pour la plupart des titulaires de passeports occidentaux, l'entrée est simple : aucune demande de visa préalable, juste un passeport valide et les formalités touristiques standards délivrées à l'arrivée. Cette simplicité explique pourquoi il reste l'un des pays les plus visités au monde, année après année."
+    ],
+    "attractionsHeading": "Principales Attractions",
+    "attractions": [
+      {
+        "name": "Chichén Itzá",
+        "description": "L'une des Nouvelles Sept Merveilles du Monde, et le site archéologique le plus visité du Mexique."
+      },
+      {
+        "name": "Tulum",
+        "description": "Des ruines mayas perchées directement au-dessus de plages caribéennes, une configuration unique dans la région."
+      },
+      {
+        "name": "Zócalo et Templo Mayor, Mexico",
+        "description": "Le cœur historique de la capitale, construit sur les ruines du temple principal de l'empire aztèque."
+      },
+      {
+        "name": "Teotihuacán",
+        "description": "Ancienne cité pyramidale juste à l'extérieur de Mexico, abritant la Pyramide du Soleil."
+      },
+      {
+        "name": "Playa del Carmen",
+        "description": "Une base tranquille pour explorer les plages et cenotes de la Riviera Maya."
+      }
+    ]
+  },
+  "france": {
+    "overview": [
+      "La France est de façon constante le pays le plus visité au monde en arrivées internationales, et Paris seul n'explique qu'une partie de cet attrait — la Côte d'Azur, les châteaux de la Loire et les régions viticoles de Bordeaux et de Bourgogne attirent chacun leur propre flux régulier de voyageurs.",
+      "En tant que membre de l'espace Schengen, les règles d'entrée de la France sont partagées avec 26 autres pays européens — une seule exemption de visa couvre les courts séjours dans toute la zone, pas seulement en France, ce qui est utile à savoir si un voyage traverse plusieurs pays."
+    ],
+    "attractionsHeading": "Principales Attractions",
+    "attractions": [
+      {
+        "name": "Tour Eiffel",
+        "description": "Le monument payant le plus visité au monde, et le symbole incontournable de Paris."
+      },
+      {
+        "name": "Musée du Louvre",
+        "description": "Le musée le plus visité au monde, abritant la Joconde."
+      },
+      {
+        "name": "Château de Versailles",
+        "description": "L'ancienne résidence royale somptueuse aux portes de Paris, avec des jardins s'étendant sur plus de 800 hectares."
+      },
+      {
+        "name": "Cathédrale Notre-Dame",
+        "description": "Un chef-d'œuvre de l'architecture gothique française, toujours l'un des sites les plus emblématiques de la Seine."
+      },
+      {
+        "name": "Côte d'Azur",
+        "description": "Le glamour du littoral méditerranéen s'étendant de Cannes à Menton."
+      }
+    ]
+  }
+}

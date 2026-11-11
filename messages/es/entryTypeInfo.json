@@ -1,0 +1,24 @@
+{
+  "visaFree": {
+    "documentsHeading": "Lo Que Generalmente Necesitarás",
+    "documents": [
+      "Pasaporte válido que cubra toda tu estadía",
+      "Comprobante de viaje de continuación o regreso",
+      "Comprobante de fondos suficientes para tu viaje",
+      "Detalles de tu alojamiento"
+    ],
+    "explainerTitle": "Qué Significa \"Sin Visa\"",
+    "explainerBody": "Sin solicitud, sin papeleo, sin espera. Simplemente presentas tu pasaporte en la frontera y un oficial de inmigración lo revisa y te sella el ingreso."
+  },
+  "etaRequired": {
+    "documentsHeading": "Lo Que Generalmente Necesitarás",
+    "documents": [
+      "Pasaporte válido",
+      "Solicitud de ETA completada, enviada en línea antes de viajar",
+      "Pago de la tarifa de la ETA",
+      "Comprobante de viaje de continuación o regreso"
+    ],
+    "explainerTitle": "Qué Significa \"ETA Requerida\"",
+    "explainerBody": "Una ETA no es una visa completa — es un formulario en línea breve que completas antes de volar, usualmente aprobado en minutos y vinculado electrónicamente a tu pasaporte. Igual debes solicitarla antes de viajar, solo que no en un consulado."
+  }
+}

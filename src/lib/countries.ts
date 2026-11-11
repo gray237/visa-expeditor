@@ -1,74 +1,101 @@
+export const COUNTRY_CODES = [
+  "US",
+  "GB",
+  "CA",
+  "AU",
+  "IN",
+  "NG",
+  "DE",
+  "FR",
+  "BR",
+  "MX",
+  "JP",
+  "CN",
+  "KR",
+  "ES",
+  "IT",
+  "NL",
+  "AE",
+  "KE",
+  "GH",
+  "CM",
+  "ZA",
+  "PH",
+  "PK",
+  "ID",
+  "EG",
+  "TR",
+  "IE",
+  "NZ",
+  "SG",
+  "SE",
+  "CH",
+  "PT",
+  "PL",
+  "AR",
+  "CO",
+  "SA",
+  "IL",
+  "TH",
+  "VN",
+  "MY",
+  "BE",
+  "AT",
+  "NO",
+  "DK",
+] as const;
+
+export type CountryCode = (typeof COUNTRY_CODES)[number];
+
 export type Country = {
-  name: string;
   code: string;
 };
 
-export const COUNTRIES: Country[] = [
-  { name: "United States", code: "US" },
-  { name: "United Kingdom", code: "GB" },
-  { name: "Canada", code: "CA" },
-  { name: "Australia", code: "AU" },
-  { name: "India", code: "IN" },
-  { name: "Nigeria", code: "NG" },
-  { name: "Germany", code: "DE" },
-  { name: "France", code: "FR" },
-  { name: "Brazil", code: "BR" },
-  { name: "Mexico", code: "MX" },
-  { name: "Japan", code: "JP" },
-  { name: "China", code: "CN" },
-  { name: "South Korea", code: "KR" },
-  { name: "Spain", code: "ES" },
-  { name: "Italy", code: "IT" },
-  { name: "Netherlands", code: "NL" },
-  { name: "United Arab Emirates", code: "AE" },
-  { name: "Kenya", code: "KE" },
-  { name: "Ghana", code: "GH" },
-  { name: "Cameroon", code: "CM" },
-  { name: "South Africa", code: "ZA" },
-  { name: "Philippines", code: "PH" },
-  { name: "Pakistan", code: "PK" },
-  { name: "Indonesia", code: "ID" },
-  { name: "Egypt", code: "EG" },
-  { name: "Turkey", code: "TR" },
-  { name: "Ireland", code: "IE" },
-  { name: "New Zealand", code: "NZ" },
-  { name: "Singapore", code: "SG" },
-  { name: "Sweden", code: "SE" },
-  { name: "Switzerland", code: "CH" },
-  { name: "Portugal", code: "PT" },
-  { name: "Poland", code: "PL" },
-  { name: "Argentina", code: "AR" },
-  { name: "Colombia", code: "CO" },
-  { name: "Saudi Arabia", code: "SA" },
-  { name: "Israel", code: "IL" },
-  { name: "Thailand", code: "TH" },
-  { name: "Vietnam", code: "VN" },
-  { name: "Malaysia", code: "MY" },
-  { name: "Belgium", code: "BE" },
-  { name: "Austria", code: "AT" },
-  { name: "Norway", code: "NO" },
-  { name: "Denmark", code: "DK" },
-];
+export const COUNTRIES: Country[] = COUNTRY_CODES.map((code) => ({ code }));
 
-export const POPULAR_COUNTRY_CODES = ["US", "GB", "CA", "IN", "NG", "DE"];
+export const POPULAR_COUNTRY_CODES: string[] = ["US", "GB", "CA", "IN", "NG", "DE"];
+
+const displayNamesCache = new Map<string, Intl.DisplayNames>();
+
+function getDisplayNames(locale: string): Intl.DisplayNames {
+  const cached = displayNamesCache.get(locale);
+  if (cached) return cached;
+
+  let names: Intl.DisplayNames;
+  try {
+    names = new Intl.DisplayNames([locale], { type: "region" });
+  } catch {
+    names = new Intl.DisplayNames(["en"], { type: "region" });
+  }
+  displayNamesCache.set(locale, names);
+  return names;
+}
+
+export function countryName(code: string, locale: string): string {
+  try {
+    return getDisplayNames(locale).of(code) ?? code;
+  } catch {
+    return code;
+  }
+}
+
+export function localizedCountries(locale: string): { code: string; name: string }[] {
+  return COUNTRIES.map((country) => ({
+    code: country.code,
+    name: countryName(country.code, locale),
+  })).sort((a, b) => a.name.localeCompare(b.name, locale));
+}
+
+export function shortCountryName(code: string, locale: string): string {
+  return countryName(code, locale);
+}
+
+export function fullCountryName(code: string, locale: string): string {
+  return countryName(code, locale);
+}
 
 export function flagEmoji(countryCode: string) {
   return countryCode
     .toUpperCase()
     .replace(/./g, (char) => String.fromCodePoint(127397 + char.charCodeAt(0)));
-}
-
-const SHORT_NAMES: Record<string, string> = {
-  US: "US",
-  GB: "UK",
-  AE: "UAE",
-};
-
-export function shortCountryName(code: string): string {
-  const country = COUNTRIES.find((c) => c.code === code);
-  return SHORT_NAMES[code] ?? country?.name ?? code;
-}
-
-export function fullCountryName(code: string): string {
-  return COUNTRIES.find((c) => c.code === code)?.name ?? code;
 }

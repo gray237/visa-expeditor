@@ -1,0 +1,27 @@
+{
+  "eyebrow": "Services",
+  "heading": "Chaque démarche. Une équipe experte.",
+  "subheading": "De votre premier passeport à votre prochain visa — pris en charge par de vrais spécialistes.",
+  "items": {
+    "passports": {
+      "tag": "Tous les Types",
+      "title": "Passeports",
+      "description": "Nouvelles demandes, renouvellements, changements de nom et traitement accéléré."
+    },
+    "visas": {
+      "tag": "190+ Pays",
+      "title": "Visas",
+      "description": "Visas touristiques, d'affaires, étudiantes et de travail, où que vous alliez."
+    },
+    "immigration": {
+      "tag": "Toutes les Voies",
+      "title": "Immigration",
+      "description": "Cartes vertes, citoyenneté et programmes d'investisseurs, accompagnés de bout en bout."
+    },
+    "idp": {
+      "tag": "150+ Pays",
+      "title": "Permis de Conduire International",
+      "description": "Conduisez légalement à l'étranger avec un permis reconnu presque partout où vous irez."
+    }
+  }
+}

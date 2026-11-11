@@ -2,8 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { useLocale, useTranslations } from "next-intl";
 import * as Flags from "country-flag-icons/react/3x2";
-import { COUNTRIES, POPULAR_COUNTRY_CODES } from "@/lib/countries";
+import { localizedCountries, POPULAR_COUNTRY_CODES } from "@/lib/countries";
 
 function FlagChip({ code, className = "" }: { code: string; className?: string }) {
   const Flag = Flags[code as keyof typeof Flags];
@@ -23,6 +24,8 @@ type PassportSelectorProps = {
 };
 
 export function PassportSelector({ value, onChange, variant = "pill" }: PassportSelectorProps) {
+  const locale = useLocale();
+  const t = useTranslations("common");
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [pendingCode, setPendingCode] = useState(value);
@@ -30,11 +33,12 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
   const [residenceCode, setResidenceCode] = useState(value);
   const searchRef = useRef<HTMLInputElement>(null);
 
-  const selected = COUNTRIES.find((c) => c.code === value) ?? COUNTRIES[0];
-  const pending = COUNTRIES.find((c) => c.code === pendingCode) ?? selected;
-  const popular = COUNTRIES.filter((c) => POPULAR_COUNTRY_CODES.includes(c.code));
+  const countries = localizedCountries(locale);
+  const selected = countries.find((c) => c.code === value) ?? countries[0];
+  const pending = countries.find((c) => c.code === pendingCode) ?? selected;
+  const popular = countries.filter((c) => POPULAR_COUNTRY_CODES.includes(c.code));
   const filtered = query
-    ? COUNTRIES.filter((c) => c.name.toLowerCase().includes(query.toLowerCase()))
+    ? countries.filter((c) => c.name.toLowerCase().includes(query.toLowerCase()))
     : null;
 
   useEffect(() => {
@@ -70,16 +74,16 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
         <div className="flex items-start justify-between px-6 pt-6">
           <div>
             <h2 className="font-(family-name:--font-display) text-xl font-semibold text-[#0F2444]">
-              Select your passport
+              {t("selectPassport")}
             </h2>
             <p className="mt-1 font-(family-name:--font-body) text-sm text-[#161B22]/60">
-              Requirements are personalized to your passport country.
+              {t("selectPassportSubtitle")}
             </p>
           </div>
           <button
             type="button"
             onClick={() => setOpen(false)}
-            aria-label="Close"
+            aria-label={t("close")}
             className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[#161B22]/50 transition-colors hover:bg-[#0F2444]/5 hover:text-[#0F2444]"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -119,7 +123,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
               type="text"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Search country..."
+              placeholder={t("searchCountry")}
               className="w-full rounded-xl border border-[#0F2444]/15 bg-white py-2.5 pl-10 pr-3.5 font-(family-name:--font-body) text-sm outline-none focus:border-[#B8925A]"
             />
           </div>
@@ -128,7 +132,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
         <div className="mt-2 flex-1 overflow-y-auto px-6 pb-2">
           {!filtered && (
             <p className="mb-1.5 mt-3 px-1 font-mono text-[11px] uppercase tracking-wider text-[#161B22]/40">
-              Popular
+              {t("popular")}
             </p>
           )}
           <ul>
@@ -165,7 +169,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
 
           {filtered && filtered.length === 0 && (
             <p className="px-3 py-8 text-center font-(family-name:--font-body) text-sm text-[#161B22]/50">
-              No matches — try a different search.
+              {t("noMatches")} {t("noMatchesHint")}
             </p>
           )}
         </div>
@@ -197,7 +201,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
               </svg>
             </span>
             <span className="font-(family-name:--font-body) text-sm text-[#161B22]/80">
-              I currently live somewhere other than {pending.name}
+              {t("liveElsewhere", { country: pending.name })}
             </span>
           </label>
 
@@ -207,7 +211,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
               onChange={(event) => setResidenceCode(event.target.value)}
               className="mt-3 w-full rounded-xl border border-[#0F2444]/15 bg-white px-3.5 py-2.5 font-(family-name:--font-body) text-sm outline-none focus:border-[#B8925A]"
             >
-              {COUNTRIES.map((country) => (
+              {countries.map((country) => (
                 <option key={country.code} value={country.code}>
                   {country.name}
                 </option>
@@ -220,7 +224,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
             onClick={confirm}
             className="mt-4 w-full rounded-xl bg-[#0F2444] py-3 font-(family-name:--font-body) text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
           >
-            Continue
+            {t("continue")}
           </button>
         </div>
       </div>
@@ -246,7 +250,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
         ) : (
           <span className="flex flex-col">
             <span className="font-mono text-[11px] uppercase tracking-wider text-[#161B22]/50">
-              My passport
+              {t("myPassport")}
             </span>
             <span className="font-(family-name:--font-body) text-sm font-semibold text-[#161B22]">
               {selected.name}

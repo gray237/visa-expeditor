@@ -1,0 +1,36 @@
+{
+  "heading": "Meilleures Destinations de Voyage",
+  "subheading": "Exigences pour les titulaires d'un passeport {country}",
+  "typeLabel": "Type",
+  "validLabel": "Validité",
+  "processingLabel": "Délai",
+  "validDays": "{days} jours",
+  "checkRequirements": "Voir les exigences",
+  "type": {
+    "visaFree": "Sans Visa",
+    "etaRequired": "AVE Requise"
+  },
+  "processing": {
+    "none": "Aucune démarche",
+    "minutes": "Quelques minutes"
+  },
+  "countries": {
+    "mexico": "Mexique",
+    "canada": "Canada",
+    "unitedKingdom": "Royaume-Uni",
+    "france": "France",
+    "italy": "Italie",
+    "japan": "Japon",
+    "germany": "Allemagne",
+    "spain": "Espagne",
+    "thailand": "Thaïlande",
+    "australia": "Australie",
+    "southKorea": "Corée du Sud",
+    "ireland": "Irlande",
+    "switzerland": "Suisse",
+    "netherlands": "Pays-Bas",
+    "singapore": "Singapour",
+    "newZealand": "Nouvelle-Zélande",
+    "uae": "Émirats arabes unis"
+  }
+}

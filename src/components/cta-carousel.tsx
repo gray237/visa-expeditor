@@ -13,6 +13,7 @@ const SLIDES = [
 
 export function CtaCarousel() {
   const t = useTranslations("cta");
+  const tc = useTranslations("common");
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const reducedMotion = useRef(false);
@@ -85,7 +86,7 @@ export function CtaCarousel() {
             key={slide.key}
             type="button"
             onClick={() => setActive(i)}
-            aria-label={`Slide ${i + 1}`}
+            aria-label={tc("slide", { number: i + 1 })}
             className={`h-2 rounded-full transition-all ${
               i === active ? "w-6 bg-[#B8925A]" : "w-2 bg-white/25 hover:bg-white/40"
             }`}

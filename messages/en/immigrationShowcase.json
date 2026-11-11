@@ -1,0 +1,55 @@
+{
+  "eyebrow": "Immigration",
+  "heading": "Real pathways, for real destinations.",
+  "subheading": "Every route into a new country is different. Start with where you're headed, or with the kind of pathway you need.",
+  "items": {
+    "unitedStates": {
+      "label": "United States",
+      "description": "Green cards, work visas, and the DV lottery — the full range of pathways to living and working in the US."
+    },
+    "canada": {
+      "label": "Canada",
+      "description": "Express Entry, Provincial Nominee Programs, and family sponsorship into one of the world's most welcoming systems."
+    },
+    "unitedKingdom": {
+      "label": "United Kingdom",
+      "description": "Skilled Worker visas, family visas, and settlement routes for building a life in the UK."
+    },
+    "australia": {
+      "label": "Australia",
+      "description": "Skilled migration, employer sponsorship, and family visas for one of the most sought-after destinations for permanent migration."
+    },
+    "portugal": {
+      "label": "Portugal",
+      "description": "Golden Visa and D7 passive income routes — one of Europe's most accessible paths to residency."
+    },
+    "newZealand": {
+      "label": "New Zealand",
+      "description": "Skilled Migrant and family visas for one of the most consistently ranked destinations for quality of life."
+    },
+    "greenCardLottery": {
+      "label": "Green Card Lottery",
+      "description": "Enter the US Diversity Visa Lottery the right way, with your application checked for the mistakes that disqualify thousands of entries every year."
+    },
+    "investorVisas": {
+      "label": "Investor & Golden Visas",
+      "description": "Residency through qualifying investment, available in dozens of countries with programs built for exactly this."
+    },
+    "familySponsorship": {
+      "label": "Family Sponsorship",
+      "description": "Bring a spouse, parent, or child to join you — guided by people who know exactly which relationship categories move fastest."
+    },
+    "citizenship": {
+      "label": "Citizenship & Naturalization",
+      "description": "From residency to naturalization, we guide you through every requirement on the path to becoming a citizen."
+    },
+    "skilledWorker": {
+      "label": "Skilled Worker Visas",
+      "description": "Points-based and employer-sponsored routes for professionals with in-demand skills."
+    },
+    "digitalNomad": {
+      "label": "Digital Nomad Visas",
+      "description": "Live and work remotely, legally, in one of the growing number of countries built for exactly that."
+    }
+  }
+}

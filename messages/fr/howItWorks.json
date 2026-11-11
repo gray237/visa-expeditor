@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Comment Ça Marche",
+  "heading": "De la recherche à la livraison, en quatre étapes.",
+  "subheading": "Aucune supposition, aucune impasse — juste un chemin clair jusqu'à vos documents.",
+  "steps": {
+    "search": {
+      "title": "Indiquez votre destination",
+      "description": "Recherchez votre destination et passeport — nous vous montrons ce qui est requis."
+    },
+    "prepare": {
+      "title": "Nous préparons tout",
+      "description": "Votre dossier, rempli et vérifié avant même de quitter nos mains."
+    },
+    "review": {
+      "title": "Vérifié par des spécialistes",
+      "description": "D'anciens agents des visas l'examinent avant tout dépôt."
+    },
+    "deliver": {
+      "title": "Suivi jusqu'à la livraison",
+      "description": "Mises à jour en temps réel, du dépôt jusqu'à la réception de vos documents."
+    }
+  }
+}

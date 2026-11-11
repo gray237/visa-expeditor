@@ -1,0 +1,60 @@
+{
+  "mexico": {
+    "overview": [
+      "México atrae a más visitantes internacionales que casi cualquier otro lugar de América, y la variedad es parte del atractivo — ciudades coloniales con siglos de historia superpuesta, costas del Caribe y el Pacífico, desierto y selva, todo a pocas horas de distancia.",
+      "Para la mayoría de los titulares de pasaportes occidentales, la entrada es sencilla: sin solicitud de visa previa, solo un pasaporte válido y el papeleo turístico estándar emitido a la llegada. Esa simplicidad es exactamente por qué sigue siendo uno de los países más visitados del mundo año tras año."
+    ],
+    "attractionsHeading": "Principales Atracciones",
+    "attractions": [
+      {
+        "name": "Chichén Itzá",
+        "description": "Una de las Nuevas Siete Maravillas del Mundo, y el sitio arqueológico más visitado de México."
+      },
+      {
+        "name": "Tulum",
+        "description": "Ruinas mayas asomadas directamente sobre playas caribeñas, algo único en la región."
+      },
+      {
+        "name": "Zócalo y Templo Mayor, Ciudad de México",
+        "description": "El corazón histórico de la capital, construido sobre las ruinas del templo principal del imperio azteca."
+      },
+      {
+        "name": "Teotihuacán",
+        "description": "Antigua ciudad piramidal a las afueras de la Ciudad de México, hogar de la Pirámide del Sol."
+      },
+      {
+        "name": "Playa del Carmen",
+        "description": "Una base relajada para explorar las playas y cenotes de la Riviera Maya."
+      }
+    ]
+  },
+  "france": {
+    "overview": [
+      "Francia es constantemente el país más visitado del mundo por llegadas internacionales, y París por sí solo representa solo una parte del atractivo — la Riviera Francesa, los castillos del Valle del Loira y las regiones vinícolas de Burdeos y Borgoña atraen su propio flujo constante de viajeros.",
+      "Como parte del Espacio Schengen, las reglas de entrada de Francia se comparten con otros 26 países europeos — una sola exención de visa cubre estadías cortas en toda la zona, no solo en Francia, algo importante a saber si un viaje abarca varios países."
+    ],
+    "attractionsHeading": "Principales Atracciones",
+    "attractions": [
+      {
+        "name": "Torre Eiffel",
+        "description": "El monumento de pago más visitado del mundo, y el símbolo definitorio de París."
+      },
+      {
+        "name": "Museo del Louvre",
+        "description": "El museo más visitado del mundo, y hogar de la Mona Lisa."
+      },
+      {
+        "name": "Palacio de Versalles",
+        "description": "La opulenta antigua residencia real a las afueras de París, con jardines que se extienden por más de 800 hectáreas."
+      },
+      {
+        "name": "Catedral de Notre-Dame",
+        "description": "Una obra maestra de la arquitectura gótica francesa, aún uno de los sitios más icónicos del Sena."
+      },
+      {
+        "name": "Riviera Francesa",
+        "description": "La glamorosa costa mediterránea que se extiende desde Cannes hasta Menton."
+      }
+    ]
+  }
+}

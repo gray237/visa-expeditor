@@ -1,0 +1,66 @@
+{
+  "heading": "La Diferencia Visa Expeditor",
+  "subheading": "La misma solicitud, una experiencia muy distinta según cómo la hagas.",
+  "vs": "VS",
+  "cta": "Comienza Tu Solicitud",
+  "us": {
+    "title": "Con Visa Expeditor",
+    "tagline": "Bien Hecho Desde el Principio"
+  },
+  "diy": {
+    "title": "Haciéndolo Tú Mismo",
+    "tagline": "Sin Guía, Sin Revisión"
+  },
+  "points": {
+    "guidance": {
+      "us": {
+        "title": "Guía en lenguaje sencillo",
+        "description": "Cada formulario explicado paso a paso — sin jerga gubernamental que descifrar."
+      },
+      "diy": {
+        "title": "Formularios oficiales densos",
+        "description": "Navega terminología y formatos gubernamentales que varían por país."
+      }
+    },
+    "review": {
+      "us": {
+        "title": "Revisado por antiguos oficiales de visa",
+        "description": "Una segunda revisión experta de tu solicitud antes de enviarla."
+      },
+      "diy": {
+        "title": "Sin segunda opinión",
+        "description": "Envías y esperas — los errores suelen detectarse solo tras un rechazo."
+      }
+    },
+    "pricing": {
+      "us": {
+        "title": "Precios claros y desglosados",
+        "description": "Ve el costo total — tarifas gubernamentales y de servicio — antes de comprometerte."
+      },
+      "diy": {
+        "title": "Tarifas que descubres en el camino",
+        "description": "Notarización, mensajería y trámites suelen aparecer uno por uno."
+      }
+    },
+    "tracking": {
+      "us": {
+        "title": "Seguimiento en tiempo real",
+        "description": "Sabe exactamente en qué etapa está tu solicitud, del envío a la entrega."
+      },
+      "diy": {
+        "title": "Silencio mientras esperas",
+        "description": "Una vez enviada, hay poca visibilidad sobre su estado."
+      }
+    },
+    "language": {
+      "us": {
+        "title": "Ayuda en tu idioma",
+        "description": "Recibe orientación y soporte en el idioma con el que te sientas más cómodo."
+      },
+      "diy": {
+        "title": "Requisitos en un solo idioma",
+        "description": "Las instrucciones suelen publicarse solo en el idioma oficial del país destino."
+      }
+    }
+  }
+}

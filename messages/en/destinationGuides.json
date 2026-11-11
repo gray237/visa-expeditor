@@ -1,0 +1,60 @@
+{
+  "mexico": {
+    "overview": [
+      "Mexico draws more international visitors than almost anywhere else in the Americas, and the range is part of the appeal — colonial cities with centuries of layered history, Caribbean and Pacific coastlines, desert and jungle, all within a few hours of each other.",
+      "For most Western passport holders, entry is refreshingly simple: no advance visa application, just a valid passport and the standard tourist paperwork issued on arrival. That simplicity is exactly why it remains one of the most-visited countries in the world year after year."
+    ],
+    "attractionsHeading": "Top Attractions",
+    "attractions": [
+      {
+        "name": "Chichén Itzá",
+        "description": "One of the New Seven Wonders of the World, and the most visited archaeological site in Mexico."
+      },
+      {
+        "name": "Tulum",
+        "description": "Maya ruins perched directly above Caribbean beaches, unlike anywhere else in the region."
+      },
+      {
+        "name": "Mexico City Zócalo & Templo Mayor",
+        "description": "The historic heart of the capital, built atop the ruins of the Aztec empire's main temple."
+      },
+      {
+        "name": "Teotihuacán",
+        "description": "Ancient pyramid city just outside Mexico City, home to the Pyramid of the Sun."
+      },
+      {
+        "name": "Playa del Carmen",
+        "description": "A laid-back base for exploring the Riviera Maya's beaches and cenotes."
+      }
+    ]
+  },
+  "france": {
+    "overview": [
+      "France is consistently the most-visited country on Earth by international arrivals, and Paris alone accounts for only part of the draw — the French Riviera, the châteaux of the Loire Valley, and the wine regions of Bordeaux and Burgundy all pull their own steady stream of travelers.",
+      "As part of the Schengen Area, France's entry rules are shared with 26 other European countries — a single visa-free allowance covers short stays across the whole zone, not just France, which is worth knowing if a trip spans multiple countries."
+    ],
+    "attractionsHeading": "Top Attractions",
+    "attractions": [
+      {
+        "name": "Eiffel Tower",
+        "description": "The most-visited paid monument in the world, and the defining symbol of Paris."
+      },
+      {
+        "name": "Louvre Museum",
+        "description": "The world's most-visited museum, and home to the Mona Lisa."
+      },
+      {
+        "name": "Palace of Versailles",
+        "description": "The opulent former royal residence just outside Paris, with gardens stretching over 800 hectares."
+      },
+      {
+        "name": "Notre-Dame Cathedral",
+        "description": "A masterpiece of French Gothic architecture, still one of the most iconic sights on the Seine."
+      },
+      {
+        "name": "French Riviera",
+        "description": "The glamorous Mediterranean coastline stretching from Cannes to Menton."
+      }
+    ]
+  }
+}

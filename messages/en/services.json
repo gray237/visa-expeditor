@@ -1,0 +1,27 @@
+{
+  "eyebrow": "Services",
+  "heading": "Every path. One expert team.",
+  "subheading": "From your first passport to your next visa — handled by specialists who've done this before.",
+  "items": {
+    "passports": {
+      "tag": "All Types",
+      "title": "Passports",
+      "description": "New applications, renewals, name changes, and expedited processing."
+    },
+    "visas": {
+      "tag": "190+ Countries",
+      "title": "Visas",
+      "description": "Tourist, business, student, and work visas, wherever you're headed."
+    },
+    "immigration": {
+      "tag": "All Pathways",
+      "title": "Immigration",
+      "description": "Green cards, citizenship, and investor programs, guided start to finish."
+    },
+    "idp": {
+      "tag": "150+ Countries",
+      "title": "International Driving Permit",
+      "description": "Drive legally abroad with a permit recognized nearly everywhere you'll travel."
+    }
+  }
+}

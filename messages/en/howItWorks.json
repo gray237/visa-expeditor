@@ -1,0 +1,23 @@
+{
+  "eyebrow": "How It Works",
+  "heading": "From search to delivery, in four steps.",
+  "subheading": "No guesswork, no dead ends — just a clear path from here to your documents.",
+  "steps": {
+    "search": {
+      "title": "Tell us your destination",
+      "description": "Search your destination and passport — we'll show exactly what's required."
+    },
+    "prepare": {
+      "title": "We prepare everything",
+      "description": "Your application, filled out and double-checked before it ever leaves our hands."
+    },
+    "review": {
+      "title": "Reviewed by specialists",
+      "description": "Former visa officers give it a second look before anything is submitted."
+    },
+    "deliver": {
+      "title": "Tracked to delivery",
+      "description": "Real-time updates from submission until your documents are in hand."
+    }
+  }
+}

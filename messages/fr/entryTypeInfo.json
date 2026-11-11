@@ -1,0 +1,24 @@
+{
+  "visaFree": {
+    "documentsHeading": "Ce Dont Vous Aurez Généralement Besoin",
+    "documents": [
+      "Un passeport valide couvrant tout votre séjour",
+      "Preuve de voyage de continuation ou de retour",
+      "Preuve de fonds suffisants pour votre voyage",
+      "Les détails de votre hébergement"
+    ],
+    "explainerTitle": "Ce Que Signifie \"Sans Visa\"",
+    "explainerBody": "Aucune demande, aucune paperasse, aucune attente. Vous présentez simplement votre passeport à la frontière, et un agent d'immigration l'examine et tamponne votre entrée."
+  },
+  "etaRequired": {
+    "documentsHeading": "Ce Dont Vous Aurez Généralement Besoin",
+    "documents": [
+      "Un passeport valide",
+      "Une demande d'AVE complétée, soumise en ligne avant le départ",
+      "Le paiement des frais de l'AVE",
+      "Preuve de voyage de continuation ou de retour"
+    ],
+    "explainerTitle": "Ce Que Signifie \"AVE Requise\"",
+    "explainerBody": "Une AVE n'est pas un visa complet — c'est un court formulaire en ligne que vous remplissez avant de partir, généralement approuvé en quelques minutes et lié électroniquement à votre passeport. Vous devez tout de même la demander avant de voyager, simplement pas auprès d'un consulat."
+  }
+}

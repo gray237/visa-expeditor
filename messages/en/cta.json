@@ -1,0 +1,17 @@
+{
+  "button": "Start Your Application",
+  "slides": {
+    "begin": {
+      "word": "BEGIN",
+      "description": "Your application starts with one simple form."
+    },
+    "reviewed": {
+      "word": "REVIEWED",
+      "description": "Checked by former visa officers before it's ever submitted."
+    },
+    "delivered": {
+      "word": "DELIVERED",
+      "description": "Tracked every step, from your desk to your door."
+    }
+  }
+}

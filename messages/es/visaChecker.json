@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Verificador de Visa",
+  "title": "Verificador de Requisitos de Visa",
+  "emptyHeading": "¿A dónde te diriges?",
+  "emptyBody": "Ingresa tu destino arriba y te mostraremos exactamente qué se requiere.",
+  "notFoundHeading": "Aún no tenemos ese destino",
+  "notFoundBody": "Seguimos ampliando nuestra base de destinos. Un especialista puede darte una respuesta exacta hoy mismo.",
+  "noDataHeading": "Aún no tenemos esto disponible para titulares de pasaporte {country}",
+  "noDataBody": "Los requisitos de visa varían mucho según la nacionalidad, y preferimos no decirte nada antes que adivinar mal. Un especialista puede darte una respuesta exacta hoy mismo.",
+  "resultHeading": "Lo que necesitan los titulares de pasaporte {passport} para {destination}",
+  "startApplication": "Comienza Tu Solicitud",
+  "talkToSpecialist": "Habla con un Especialista"
+}

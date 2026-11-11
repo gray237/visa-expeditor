@@ -19,10 +19,13 @@ function ResultFlag({ code }: { code: string }) {
 const OVERVIEW_SECTION_KEYS = ["howItVaries", "whatYouNeed", "howWeHelp"] as const;
 
 export default async function VisaCheckerPage({
+  params,
   searchParams,
 }: {
+  params: Promise<{ locale: string }>;
   searchParams: Promise<{ passport?: string; to?: string }>;
 }) {
+  const { locale } = await params;
   const { passport = "US", to = "" } = await searchParams;
   const t = await getTranslations("visaChecker");
   const td = await getTranslations("destinations");
@@ -138,7 +141,7 @@ export default async function VisaCheckerPage({
                   <ResultFlag code={destination.countryCode} />
                   <h2 className="font-(family-name:--font-display) text-xl font-semibold text-[#161B22] sm:text-2xl dark:text-[#F5F6F4]">
                     {t("resultHeading", {
-                      passport: fullCountryName(passport),
+                      passport: fullCountryName(passport, locale),
                       destination: td(`countries.${destination.key}`),
                     })}
                   </h2>
@@ -238,7 +241,7 @@ export default async function VisaCheckerPage({
             <div className="rounded-3xl border border-[#B8925A]/30 bg-[#B8925A]/5 p-8 dark:bg-[#B8925A]/10">
               <MessageCircle className="h-6 w-6 text-[#B8925A]" strokeWidth={1.75} />
               <h2 className="mt-4 font-(family-name:--font-display) text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                {t("noDataHeading", { country: fullCountryName(passport) })}
+                {t("noDataHeading", { country: fullCountryName(passport, locale) })}
               </h2>
               <p className="mt-2 font-(family-name:--font-body) text-sm leading-relaxed text-[#161B22]/65 dark:text-[#F5F6F4]/65">
                 {t("noDataBody")}

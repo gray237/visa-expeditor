@@ -1,0 +1,36 @@
+{
+  "heading": "Principales Destinos de Viaje",
+  "subheading": "Requisitos para titulares de pasaporte {country}",
+  "typeLabel": "Tipo",
+  "validLabel": "Vigencia",
+  "processingLabel": "Trámite",
+  "validDays": "{days} días",
+  "checkRequirements": "Ver requisitos",
+  "type": {
+    "visaFree": "Sin Visa",
+    "etaRequired": "ETA Requerida"
+  },
+  "processing": {
+    "none": "No requiere",
+    "minutes": "Minutos"
+  },
+  "countries": {
+    "mexico": "México",
+    "canada": "Canadá",
+    "unitedKingdom": "Reino Unido",
+    "france": "Francia",
+    "italy": "Italia",
+    "japan": "Japón",
+    "germany": "Alemania",
+    "spain": "España",
+    "thailand": "Tailandia",
+    "australia": "Australia",
+    "southKorea": "Corea del Sur",
+    "ireland": "Irlanda",
+    "switzerland": "Suiza",
+    "netherlands": "Países Bajos",
+    "singapore": "Singapur",
+    "newZealand": "Nueva Zelanda",
+    "uae": "Emiratos Árabes Unidos"
+  }
+}

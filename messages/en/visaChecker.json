@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Visa Checker",
+  "title": "Visa Requirement Checker",
+  "emptyHeading": "Where are you headed?",
+  "emptyBody": "Enter your destination above and we'll show you exactly what's required.",
+  "notFoundHeading": "We don't have that destination yet",
+  "notFoundBody": "We're still building out our destination database. A specialist can still give you an exact answer today.",
+  "noDataHeading": "We don't have this pre-loaded for {country} passport holders yet",
+  "noDataBody": "Visa rules vary a lot by nationality, and we'd rather tell you nothing than guess wrong. A specialist can give you an exact answer today.",
+  "resultHeading": "What {passport} passport holders need for {destination}",
+  "startApplication": "Start Your Application",
+  "talkToSpecialist": "Talk to a Specialist"
+}

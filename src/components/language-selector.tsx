@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Check } from "lucide-react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
@@ -15,6 +15,7 @@ const LOCALE_LABELS: Record<string, string> = {
 export function LanguageSelector() {
   const [open, setOpen] = useState(false);
   const locale = useLocale();
+  const t = useTranslations("common");
   const pathname = usePathname();
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -39,7 +40,7 @@ export function LanguageSelector() {
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        aria-label="Change language"
+        aria-label={t("changeLanguage")}
         className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#0F2444]/15 bg-white text-[#161B22] transition-colors hover:bg-[#0F2444]/5"
       >
         <span className="font-mono text-[12px] font-semibold tracking-wide">

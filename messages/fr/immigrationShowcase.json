@@ -1,0 +1,55 @@
+{
+  "eyebrow": "Immigration",
+  "heading": "De vraies voies, pour de vraies destinations.",
+  "subheading": "Chaque chemin vers un nouveau pays est différent. Commencez par votre destination, ou par le type de voie dont vous avez besoin.",
+  "items": {
+    "unitedStates": {
+      "label": "États-Unis",
+      "description": "Cartes vertes, visas de travail et loterie de la diversité — toutes les voies pour vivre et travailler aux États-Unis."
+    },
+    "canada": {
+      "label": "Canada",
+      "description": "Entrée express, Programmes des candidats des provinces et parrainage familial vers l'un des systèmes les plus accueillants au monde."
+    },
+    "unitedKingdom": {
+      "label": "Royaume-Uni",
+      "description": "Visas Skilled Worker, visas familiales et voies d'installation pour bâtir une vie au Royaume-Uni."
+    },
+    "australia": {
+      "label": "Australie",
+      "description": "Migration qualifiée, parrainage par un employeur et visas familiaux pour l'une des destinations les plus recherchées pour la migration permanente."
+    },
+    "portugal": {
+      "label": "Portugal",
+      "description": "Golden Visa et le visa D7 pour revenus passifs — l'une des voies les plus accessibles vers la résidence en Europe."
+    },
+    "newZealand": {
+      "label": "Nouvelle-Zélande",
+      "description": "Visas Skilled Migrant et familiaux pour l'une des destinations les mieux classées pour la qualité de vie."
+    },
+    "greenCardLottery": {
+      "label": "Loterie de la Green Card",
+      "description": "Participez à la loterie de la diversité américaine correctement, avec votre dossier vérifié pour éviter les erreurs qui disqualifient des milliers de candidatures chaque année."
+    },
+    "investorVisas": {
+      "label": "Visas Investisseur et Golden Visa",
+      "description": "La résidence via un investissement qualifiant, disponible dans des dizaines de pays avec des programmes conçus exactement pour cela."
+    },
+    "familySponsorship": {
+      "label": "Parrainage Familial",
+      "description": "Faites venir un conjoint, un parent ou un enfant — accompagné par des personnes qui savent exactement quelles catégories familiales avancent le plus vite."
+    },
+    "citizenship": {
+      "label": "Citoyenneté et Naturalisation",
+      "description": "De la résidence à la naturalisation, nous vous guidons à travers chaque exigence sur le chemin vers la citoyenneté."
+    },
+    "skilledWorker": {
+      "label": "Visas Travailleur Qualifié",
+      "description": "Voies à points et par parrainage employeur pour les professionnels aux compétences recherchées."
+    },
+    "digitalNomad": {
+      "label": "Visas Nomade Numérique",
+      "description": "Vivez et travaillez à distance, légalement, dans l'un des pays de plus en plus nombreux conçus exactement pour cela."
+    }
+  }
+}

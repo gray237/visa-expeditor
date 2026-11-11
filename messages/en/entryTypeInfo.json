@@ -1,0 +1,24 @@
+{
+  "visaFree": {
+    "documentsHeading": "What You'll Typically Need",
+    "documents": [
+      "A valid passport covering your full stay",
+      "Proof of onward or return travel",
+      "Proof of sufficient funds for your trip",
+      "Your accommodation details"
+    ],
+    "explainerTitle": "What \"Visa-Free\" Means",
+    "explainerBody": "No application, no paperwork, no waiting. You simply present your passport at the border and an immigration officer reviews and stamps you in on arrival."
+  },
+  "etaRequired": {
+    "documentsHeading": "What You'll Typically Need",
+    "documents": [
+      "A valid passport",
+      "A completed ETA application, submitted online before you travel",
+      "Payment for the ETA fee",
+      "Proof of onward or return travel"
+    ],
+    "explainerTitle": "What \"ETA Required\" Means",
+    "explainerBody": "An ETA isn't a full visa — it's a short online form you complete before you fly, usually approved within minutes and linked electronically to your passport. You still apply before you travel, just not through a consulate."
+  }
+}

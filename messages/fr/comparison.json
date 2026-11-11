@@ -1,0 +1,66 @@
+{
+  "heading": "La Différence Visa Expeditor",
+  "subheading": "La même demande, une expérience très différente selon la manière dont vous vous y prenez.",
+  "vs": "VS",
+  "cta": "Commencer Votre Demande",
+  "us": {
+    "title": "Avec Visa Expeditor",
+    "tagline": "Bien Fait Du Premier Coup"
+  },
+  "diy": {
+    "title": "En Le Faisant Vous-Même",
+    "tagline": "Aucun Accompagnement, Aucune Vérification"
+  },
+  "points": {
+    "guidance": {
+      "us": {
+        "title": "Accompagnement en langage clair",
+        "description": "Chaque formulaire expliqué étape par étape — sans jargon administratif."
+      },
+      "diy": {
+        "title": "Formulaires officiels denses",
+        "description": "Naviguez une terminologie et des formats qui varient selon les pays."
+      }
+    },
+    "review": {
+      "us": {
+        "title": "Vérifié par d'anciens agents des visas",
+        "description": "Un second regard expert sur votre dossier avant son dépôt."
+      },
+      "diy": {
+        "title": "Aucun second avis",
+        "description": "Vous déposez et espérez — les erreurs sont souvent découvertes après un refus."
+      }
+    },
+    "pricing": {
+      "us": {
+        "title": "Tarifs clairs et détaillés",
+        "description": "Voyez le coût total — frais gouvernementaux et de service — avant de vous engager."
+      },
+      "diy": {
+        "title": "Des frais découverts en chemin",
+        "description": "Notarisation, coursier et traitement apparaissent souvent un par un."
+      }
+    },
+    "tracking": {
+      "us": {
+        "title": "Suivi en temps réel",
+        "description": "Sachez exactement où en est votre dossier, du dépôt à la livraison."
+      },
+      "diy": {
+        "title": "Silence radio pendant l'attente",
+        "description": "Une fois déposé, vous avez peu de visibilité sur son état d'avancement."
+      }
+    },
+    "language": {
+      "us": {
+        "title": "Assistance dans votre langue",
+        "description": "Recevez des conseils et un accompagnement dans la langue de votre choix."
+      },
+      "diy": {
+        "title": "Exigences dans une seule langue",
+        "description": "Les instructions ne sont souvent publiées que dans la langue officielle du pays de destination."
+      }
+    }
+  }
+}

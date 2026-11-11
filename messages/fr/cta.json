@@ -1,0 +1,17 @@
+{
+  "button": "Commencer votre demande",
+  "slides": {
+    "begin": {
+      "word": "COMMENCER",
+      "description": "Votre demande commence par un simple formulaire."
+    },
+    "reviewed": {
+      "word": "VÉRIFIÉ",
+      "description": "Vérifié par d'anciens agents de visa avant d'être soumis."
+    },
+    "delivered": {
+      "word": "LIVRÉ",
+      "description": "Suivi à chaque étape, de votre bureau à votre porte."
+    }
+  }
+}

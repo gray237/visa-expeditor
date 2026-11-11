@@ -1,0 +1,17 @@
+{
+  "button": "Comienza Tu Solicitud",
+  "slides": {
+    "begin": {
+      "word": "EMPIEZA",
+      "description": "Tu solicitud comienza con un formulario simple."
+    },
+    "reviewed": {
+      "word": "REVISADO",
+      "description": "Revisado por antiguos oficiales de visa antes de enviarlo."
+    },
+    "delivered": {
+      "word": "ENTREGADO",
+      "description": "Con seguimiento en cada paso, de tu escritorio a tu puerta."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "US": {
+    "eyebrow": "Guide de Voyage pour les Titulaires d'un Passeport Américain",
+    "heading": "Ce Que les Titulaires d'un Passeport Américain Doivent Savoir Avant de Voyager",
+    "statsCovered": "Destinations Couvertes",
+    "statsCoveredLabel": "Et en croissance chaque mois",
+    "statsVisaFree": "Destinations Sans Visa",
+    "statsVisaFreeLabel": "Aucune demande préalable requise",
+    "statsEta": "Destinations avec AVE Rapide",
+    "statsEtaLabel": "Approuvée en ligne, généralement en quelques minutes",
+    "sections": {
+      "howItVaries": {
+        "title": "Comment les Exigences Varient Selon la Destination",
+        "body": "Toutes les destinations ne traitent pas un passeport américain de la même façon. Certains pays permettent d'arriver sans aucune formalité au-delà du passeport. D'autres demandent une courte autorisation électronique complétée en ligne avant le départ — toujours sans passer par un consulat, juste un formulaire rapide. Un nombre plus restreint exige une demande de visa complète soumise à l'avance. Recherchez n'importe quelle destination ci-dessus pour voir exactement dans quelle catégorie elle se situe."
+      },
+      "whatYouNeed": {
+        "title": "Ce Dont Vous Aurez Généralement Besoin",
+        "body": "Quelle que soit la destination, certains éléments restent constants : un passeport valide bien au-delà de votre date de retour prévue, une preuve de voyage de continuation ou de retour, et la preuve que vous pouvez subvenir à vos besoins durant le voyage. Les destinations nécessitant une AVE ou un visa demanderont un peu plus — nous vous montrerons exactement quoi dès que vous effectuerez une recherche."
+      },
+      "howWeHelp": {
+        "title": "Faire Votre Demande via Visa Expeditor",
+        "body": "Une fois que vous savez ce qui est requis, nous nous occupons des parties qui prennent habituellement tout un après-midi — des formulaires remplis correctement du premier coup, vérifiés par d'anciens agents des visas avant tout dépôt, avec un suivi en temps réel du dépôt jusqu'à la livraison."
+      }
+    }
+  }
+}

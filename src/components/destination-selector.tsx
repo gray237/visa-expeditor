@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { Search } from "lucide-react";
 import * as Flags from "country-flag-icons/react/3x2";
-import { COUNTRIES, POPULAR_COUNTRY_CODES } from "@/lib/countries";
+import { localizedCountries, POPULAR_COUNTRY_CODES } from "@/lib/countries";
 
 function CountryFlag({ code }: { code: string }) {
   const Flag = Flags[code as keyof typeof Flags];
@@ -21,6 +22,8 @@ export function DestinationSelector({
   value: string;
   onChange: (code: string) => void;
 }) {
+  const locale = useLocale();
+  const t = useTranslations("common");
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const rootRef = useRef<HTMLDivElement>(null);
@@ -35,10 +38,11 @@ export function DestinationSelector({
     return () => document.removeEventListener("mousedown", handleOutside);
   }, []);
 
-  const selected = COUNTRIES.find((c) => c.code === value);
-  const popular = COUNTRIES.filter((c) => POPULAR_COUNTRY_CODES.includes(c.code));
+  const countries = localizedCountries(locale);
+  const selected = countries.find((c) => c.code === value);
+  const popular = countries.filter((c) => POPULAR_COUNTRY_CODES.includes(c.code));
   const list = query
-    ? COUNTRIES.filter((c) => c.name.toLowerCase().includes(query.toLowerCase()))
+    ? countries.filter((c) => c.name.toLowerCase().includes(query.toLowerCase()))
     : popular;
 
   function handleSelect(code: string) {
@@ -57,10 +61,10 @@ export function DestinationSelector({
         <Search className="h-4 w-4 shrink-0 text-[#161B22]/40" />
         <span className="flex-1 overflow-hidden">
           <span className="block font-mono text-[10px] uppercase tracking-wider text-[#161B22]/40">
-            My destination
+            {t("myDestination")}
           </span>
           <span className="block truncate text-sm text-[#161B22]">
-            {selected ? selected.name : "Where are you going?"}
+            {selected ? selected.name : t("whereGoing")}
           </span>
         </span>
       </button>
@@ -73,14 +77,14 @@ export function DestinationSelector({
               autoFocus
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search destinations..."
+              placeholder={t("searchDestinations")}
               className="w-full bg-transparent text-sm text-[#161B22] outline-none dark:text-[#F5F6F4]"
             />
           </div>
 
           {!query && (
             <p className="mb-1 mt-3 px-1 font-mono text-[10px] uppercase tracking-wider text-[#161B22]/40 dark:text-[#F5F6F4]/40">
-              Popular
+              {t("popular")}
             </p>
           )}
 
@@ -98,7 +102,7 @@ export function DestinationSelector({
             ))}
             {list.length === 0 && (
               <p className="p-4 text-center text-sm text-[#161B22]/50 dark:text-[#F5F6F4]/50">
-                No matches found
+                {t("noMatches")}
               </p>
             )}
           </div>

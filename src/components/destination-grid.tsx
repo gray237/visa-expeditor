@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import * as Flags from "country-flag-icons/react/3x2";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -18,6 +18,7 @@ function CardFlag({ code }: { code: string }) {
 
 export function DestinationGrid({ passportCode }: { passportCode: string }) {
   const t = useTranslations("destinations");
+  const locale = useLocale();
   const featuredKey = MOST_VISITED_BY_PASSPORT[passportCode] ?? DEFAULT_FEATURED;
 
   return (
@@ -29,7 +30,7 @@ export function DestinationGrid({ passportCode }: { passportCode: string }) {
               {t("heading")}
             </h2>
             <p className="mt-2 font-(family-name:--font-body) text-[#161B22]/60 dark:text-[#F5F6F4]/70">
-              {t("subheading", { country: fullCountryName(passportCode) })}
+              {t("subheading", { country: fullCountryName(passportCode, locale) })}
             </p>
           </div>
         </div>

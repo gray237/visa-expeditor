@@ -1,0 +1,27 @@
+{
+  "eyebrow": "Servicios",
+  "heading": "Cada trámite. Un equipo experto.",
+  "subheading": "Desde tu primer pasaporte hasta tu próxima visa — a cargo de especialistas con experiencia real.",
+  "items": {
+    "passports": {
+      "tag": "Todos los Tipos",
+      "title": "Pasaportes",
+      "description": "Solicitudes nuevas, renovaciones, cambios de nombre y trámite expedito."
+    },
+    "visas": {
+      "tag": "190+ Países",
+      "title": "Visas",
+      "description": "Visas de turista, negocios, estudiante y trabajo, para donde sea que vayas."
+    },
+    "immigration": {
+      "tag": "Todas las Vías",
+      "title": "Inmigración",
+      "description": "Tarjetas verdes, ciudadanía y programas de inversionistas, guiados de principio a fin."
+    },
+    "idp": {
+      "tag": "150+ Países",
+      "title": "Permiso Internacional de Conducir",
+      "description": "Conduce legalmente en el extranjero con un permiso reconocido casi donde viajes."
+    }
+  }
+}

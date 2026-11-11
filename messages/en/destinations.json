@@ -1,0 +1,36 @@
+{
+  "heading": "Top Travel Destinations",
+  "subheading": "Requirements shown for {country} passport holders",
+  "typeLabel": "Type",
+  "validLabel": "Valid",
+  "processingLabel": "Processing",
+  "validDays": "{days} days",
+  "checkRequirements": "Check requirements",
+  "type": {
+    "visaFree": "Visa-Free",
+    "etaRequired": "ETA Required"
+  },
+  "processing": {
+    "none": "None needed",
+    "minutes": "Minutes"
+  },
+  "countries": {
+    "mexico": "Mexico",
+    "canada": "Canada",
+    "unitedKingdom": "United Kingdom",
+    "france": "France",
+    "italy": "Italy",
+    "japan": "Japan",
+    "germany": "Germany",
+    "spain": "Spain",
+    "thailand": "Thailand",
+    "australia": "Australia",
+    "southKorea": "South Korea",
+    "ireland": "Ireland",
+    "switzerland": "Switzerland",
+    "netherlands": "Netherlands",
+    "singapore": "Singapore",
+    "newZealand": "New Zealand",
+    "uae": "United Arab Emirates"
+  }
+}

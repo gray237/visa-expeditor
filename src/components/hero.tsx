@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "@/i18n/navigation";
 import { PassportSelector } from "@/components/passport-selector";
@@ -24,6 +24,7 @@ type HeroProps = {
 
 export function Hero({ passportCode, onPassportChange }: HeroProps) {
   const t = useTranslations("hero");
+  const locale = useLocale();
   const router = useRouter();
   const [destinationCode, setDestinationCode] = useState("");
 
@@ -76,7 +77,7 @@ export function Hero({ passportCode, onPassportChange }: HeroProps) {
               ))}
             </div>
             <span className="font-(family-name:--font-body) text-[13px] text-[#F5F6F4]/90">
-              {t("badge", { country: shortCountryName(passportCode) })}
+              {t("badge", { country: shortCountryName(passportCode, locale) })}
             </span>
           </div>
 

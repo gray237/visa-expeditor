@@ -68,6 +68,7 @@ const SERVICES = [
 
 export function Services() {
   const t = useTranslations("services");
+  const tc = useTranslations("common");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   function scroll(direction: "left" | "right") {
@@ -123,7 +124,7 @@ export function Services() {
           <button
             type="button"
             onClick={() => scroll("left")}
-            aria-label="Scroll left"
+            aria-label={tc("scrollLeft")}
             className="flex h-10 w-10 items-center justify-center rounded-full border border-[#0F2444]/15 text-[#161B22]/60 transition-colors hover:bg-[#0F2444]/5 dark:border-white/15 dark:text-[#F5F6F4]/60 dark:hover:bg-white/10"
           >
             <ChevronLeft className="h-4 w-4" />
@@ -131,7 +132,7 @@ export function Services() {
           <button
             type="button"
             onClick={() => scroll("right")}
-            aria-label="Scroll right"
+            aria-label={tc("scrollRight")}
             className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#B8925A] text-[#0F2444] transition-colors hover:bg-[#B8925A]/10 dark:text-[#F5F6F4] dark:hover:bg-[#B8925A]/20"
           >
             <ChevronRight className="h-4 w-4" />

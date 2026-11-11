@@ -1,0 +1,55 @@
+{
+  "eyebrow": "Inmigración",
+  "heading": "Vías reales, para destinos reales.",
+  "subheading": "Cada camino hacia un nuevo país es distinto. Empieza por tu destino, o por el tipo de vía que necesitas.",
+  "items": {
+    "unitedStates": {
+      "label": "Estados Unidos",
+      "description": "Tarjetas verdes, visas de trabajo y la lotería de visas de diversidad — todas las vías para vivir y trabajar en EE. UU."
+    },
+    "canada": {
+      "label": "Canadá",
+      "description": "Express Entry, Programas de Nominados Provinciales y patrocinio familiar hacia uno de los sistemas más receptivos del mundo."
+    },
+    "unitedKingdom": {
+      "label": "Reino Unido",
+      "description": "Visas de Trabajador Calificado, visas familiares y rutas de residencia permanente para instalarte en el Reino Unido."
+    },
+    "australia": {
+      "label": "Australia",
+      "description": "Migración calificada, patrocinio del empleador y visas familiares para uno de los destinos más buscados para la migración permanente."
+    },
+    "portugal": {
+      "label": "Portugal",
+      "description": "Golden Visa y la ruta D7 de ingresos pasivos — uno de los caminos más accesibles hacia la residencia en Europa."
+    },
+    "newZealand": {
+      "label": "Nueva Zelanda",
+      "description": "Visas de Migrante Calificado y familiares para uno de los destinos mejor valorados en calidad de vida."
+    },
+    "greenCardLottery": {
+      "label": "Lotería de Green Card",
+      "description": "Participa en la Lotería de Visas de Diversidad de EE. UU. correctamente, con tu solicitud revisada para evitar los errores que descalifican miles de participaciones cada año."
+    },
+    "investorVisas": {
+      "label": "Visas de Inversionista y Golden Visa",
+      "description": "Residencia a través de una inversión calificada, disponible en decenas de países con programas creados para esto exactamente."
+    },
+    "familySponsorship": {
+      "label": "Patrocinio Familiar",
+      "description": "Trae a tu cónyuge, padre o hijo contigo — guiado por personas que saben exactamente qué categorías familiares avanzan más rápido."
+    },
+    "citizenship": {
+      "label": "Ciudadanía y Naturalización",
+      "description": "Desde la residencia hasta la naturalización, te guiamos en cada requisito del camino hacia la ciudadanía."
+    },
+    "skilledWorker": {
+      "label": "Visas de Trabajador Calificado",
+      "description": "Rutas por sistema de puntos y patrocinio del empleador para profesionales con habilidades demandadas."
+    },
+    "digitalNomad": {
+      "label": "Visas de Nómada Digital",
+      "description": "Vive y trabaja de forma remota, legalmente, en uno de los cada vez más países creados exactamente para esto."
+    }
+  }
+}

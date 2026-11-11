@@ -16,6 +16,7 @@ export function SiteHeader() {
   const [passportCode, setPassportCode] = useState("US");
   const [expandedMobile, setExpandedMobile] = useState<string | null>(null);
   const t = useTranslations();
+  const tc = useTranslations("common");
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#0F2444]/10 bg-[#F5F6F4]/95 backdrop-blur">
@@ -40,7 +41,7 @@ export function SiteHeader() {
             type="button"
             onClick={() => setMenuOpen((open) => !open)}
             className="flex h-10 w-10 items-center justify-center rounded-full lg:hidden"
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-label={menuOpen ? tc("closeMenu") : tc("openMenu")}
             aria-expanded={menuOpen}
           >
             <div className="flex flex-col gap-1.5">
@@ -81,7 +82,7 @@ export function SiteHeader() {
                   <button
                     type="button"
                     onClick={() => setExpandedMobile(isExpanded ? null : item.href)}
-                    aria-label={isExpanded ? "Collapse" : "Expand"}
+                    aria-label={isExpanded ? tc("collapse") : tc("expand")}
                     className="flex h-9 w-9 shrink-0 items-center justify-center text-[#161B22]/50"
                   >
                     <ChevronDown className={`h-4 w-4 transition-transform ${isExpanded ? "rotate-180" : ""}`} />
