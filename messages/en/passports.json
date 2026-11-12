@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Passport Services — Visa Expeditor",
+    "description": "Fast, guided passport assistance for new passports, renewals, legal name changes, and lost or stolen documents."
+  },
+  "hero": {
+    "eyebrow": "Government Document Services",
+    "heading": "Passport Assistance, Simplified",
+    "subhead": "Step-by-step guidance, pre-submission review, and support for your passport needs."
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "passports": "Passports"
+  },
+  "grid": {
+    "heading": "Select a Passport Service",
+    "subhead": "Choose the path that matches your current travel and identification situation."
+  },
+  "items": {
+    "new": {
+      "label": "First-Time Passport",
+      "description": "Complete paperwork preparation, identity documentation review, and submission steps for adult and minor first-time applicants."
+    },
+    "renewal": {
+      "label": "Passport Renewal",
+      "description": "Streamlined renewal package check for expiring or recently expired passports with expedited processing options."
+    },
+    "nameChange": {
+      "label": "Name Change & Corrections",
+      "description": "Update your valid passport following marriage, divorce, or court order with verified supporting evidence."
+    },
+    "lostStolen": {
+      "label": "Lost, Stolen, or Damaged",
+      "description": "Immediate reporting guidance, invalidation protection, and replacement application processing."
+    }
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "q1": "How quickly can I renew my passport?",
+    "a1": "Standard government processing typically takes several weeks, but expedited processing can significantly reduce turnaround time depending on jurisdiction and availability.",
+    "q2": "What documents do I need to renew my passport?",
+    "a2": "You will generally need your most recent passport book, a compliant passport photo, the appropriate government application form, and required government fees.",
+    "q3": "Can I travel while my passport is being renewed?",
+    "a3": "No. When you submit your current passport for renewal, it is surrendered until the new passport is issued and returned to you.",
+    "q4": "Are government fees included in service pricing?",
+    "a4": "Government fees are statutory payments mandated by issuing authorities and are listed separately from document preparation and concierge fees.",
+    "q5": "What happens if my application has an error?",
+    "a5": "Our team reviews your forms and documentation before submission to catch common mistakes, omissions, and photo non-compliance."
+  },
+  "cta": {
+    "title": "Ready to get your passport sorted?",
+    "body": "Start your intake in minutes. We will verify your documentation and guide every step.",
+    "button": "Start Passport Application"
+  }
+}

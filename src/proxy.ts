@@ -4,9 +4,13 @@ import { routing } from "@/i18n/routing";
 
 const intlMiddleware = createMiddleware(routing);
 
-export default clerkMiddleware(async (auth, req) => {
+// Next.js 16 proxy: use named `proxy` export (checked before mod.default in the
+// CJS interop template). A default-only export causes ProxyMissingExportError.
+export const proxy = clerkMiddleware(async (_auth, req) => {
   return intlMiddleware(req);
 });
+
+export default proxy;
 
 export const config = {
   matcher: [

@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Services de Passeport — Visa Expeditor",
+    "description": "Accompagnement rapide et guidé pour les premières demandes, renouvellements, changements de nom et passeports perdus ou volés."
+  },
+  "hero": {
+    "eyebrow": "Services de Documents Officiels",
+    "heading": "Vos Démarches de Passeport, Simplifiées",
+    "subhead": "Accompagnement pas à pas, vérification avant soumission et assistance dédiée pour toutes vos démarches de passeport."
+  },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "passports": "Passeports"
+  },
+  "grid": {
+    "heading": "Sélectionnez un Service de Passeport",
+    "subhead": "Choisissez la démarche correspondant à votre situation actuelle de voyage et d'état civil."
+  },
+  "items": {
+    "new": {
+      "label": "Première Demande de Passeport",
+      "description": "Préparation intégrale du dossier, vérification des justificatifs d'identité et étapes de dépôt pour adultes et mineurs."
+    },
+    "renewal": {
+      "label": "Renouvellement de Passeport",
+      "description": "Examen minutieux de votre dossier de renouvellement pour passeports expirants avec options de traitement rapide."
+    },
+    "nameChange": {
+      "label": "Changement de Nom et Rectifications",
+      "description": "Mise à jour de votre passeport en cours de validité suite à un mariage, divorce ou décision juridique avec justificatifs conformes."
+    },
+    "lostStolen": {
+      "label": "Passeport Perdu, Volé ou Endommagé",
+      "description": "Orientation immédiate pour la déclaration de perte, sécurisation du dossier et procédure de remplacement."
+    }
+  },
+  "faqs": {
+    "heading": "Foire Aux Questions",
+    "q1": "Combien de temps faut-il pour renouveler un passeport ?",
+    "a1": "Les délais administratifs habituels prennent souvent plusieurs semaines, mais des procédures accélérées permettent de raccourcir ces durées selon les autorités émettrices.",
+    "q2": "Quels documents dois-je fournir pour le renouvellement ?",
+    "a2": "Il vous faudra en général votre passeport actuel, une photo d'identité aux normes réglementaires, le formulaire administratif officiel et les droits de timbre correspondants.",
+    "q3": "Puis-je voyager pendant que mon passeport est en cours de renouvellement ?",
+    "a3": "Non. Le passeport en cours est généralement retenu ou invalidé par l'administration jusqu'à la délivrance du nouveau titre.",
+    "q4": "Les frais administratifs officiels sont-ils compris dans le tarif ?",
+    "a4": "Les frais d'État obligatoires sont prélevés par les autorités gouvernementales et sont indiqués distinctement des honoraires de préparation et d'accompagnement.",
+    "q5": "Que se passe-t-il si mon dossier présente une anomalie ?",
+    "a5": "Nos équipes contrôlent l'exactitude de vos formulaires et documents avant transmission officielle pour prévenir tout rejet ou retard."
+  },
+  "cta": {
+    "title": "Prêt à finaliser votre passeport ?",
+    "body": "Démarrez votre formulaire en quelques minutes. Nous contrôlons l'ensemble de vos pièces justificatives.",
+    "button": "Commencer ma Demande de Passeport"
+  }
+}

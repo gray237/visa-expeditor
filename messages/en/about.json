@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "About Us — Visa Expeditor",
+    "description": "Learn about Visa Expeditor: our mission to eliminate visa stress, how we operate, and our commitment to accuracy and customer care."
+  },
+  "hero": {
+    "eyebrow": "Who We Are",
+    "heading": "Clear Guidance for Global Travelers",
+    "subhead": "We help individuals, families, and businesses navigate the complex world of visas, passports, and entry regulations."
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "about": "About"
+  },
+  "content": {
+    "p1": "Navigating international travel requirements shouldn't feel like deciphering legal code. Consular regulations shift rapidly, paperwork guidelines are unforgiving, and a single mistake on an application can delay a journey or cancel an overseas commitment.",
+    "p2": "Visa Expeditor was built to deliver clarity and precision to international travel preparation. We combine real-time regulation intelligence with meticulous pre-submission reviews to ensure every application satisfies the strict requirements of consular authorities.",
+    "p3": "We are an independent document preparation and concierge service. While we are not a government agency and not a law firm, we work closely alongside official guidelines to help travelers prepare correct, complete, and timely applications.",
+    "p4": "Whether you are renewing a passport for vacation, securing a business visa on tight turnaround, or planning a long-term relocation, our team provides transparent steps, direct status updates, and human support at each juncture."
+  },
+  "cta": {
+    "title": "Have upcoming international travel?",
+    "body": "Check entry requirements instantly or talk with our team about your specific destination.",
+    "button": "Check Visa Requirements"
+  }
+}

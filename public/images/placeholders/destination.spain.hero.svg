@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1000" viewBox="0 0 2400 1000">
+    <defs>
+      <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0f2444" />
+        <stop offset="100%" stop-color="#4f5b72" />
+      </linearGradient>
+    </defs>
+    <rect width="2400" height="1000" fill="url(#g)" />
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="24" fill="#ffffffaa" letter-spacing="0.06em">
+      PLACEHOLDER &middot; destination.spain.hero &middot; 2400&#215;1000
+    </text>
+  </svg>

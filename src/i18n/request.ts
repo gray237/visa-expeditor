@@ -18,6 +18,8 @@ import enCta from "../../messages/en/cta.json";
 import enFooter from "../../messages/en/footer.json";
 import enCommon from "../../messages/en/common.json";
 import enMeta from "../../messages/en/meta.json";
+import enPassports from "../../messages/en/passports.json";
+import enAbout from "../../messages/en/about.json";
 
 import esNav from "../../messages/es/nav.json";
 import esAuth from "../../messages/es/auth.json";
@@ -35,6 +37,8 @@ import esCta from "../../messages/es/cta.json";
 import esFooter from "../../messages/es/footer.json";
 import esCommon from "../../messages/es/common.json";
 import esMeta from "../../messages/es/meta.json";
+import esPassports from "../../messages/es/passports.json";
+import esAbout from "../../messages/es/about.json";
 
 import frNav from "../../messages/fr/nav.json";
 import frAuth from "../../messages/fr/auth.json";
@@ -52,6 +56,8 @@ import frCta from "../../messages/fr/cta.json";
 import frFooter from "../../messages/fr/footer.json";
 import frCommon from "../../messages/fr/common.json";
 import frMeta from "../../messages/fr/meta.json";
+import frPassports from "../../messages/fr/passports.json";
+import frAbout from "../../messages/fr/about.json";
 
 const messagesByLocale = {
   en: {
@@ -71,6 +77,8 @@ const messagesByLocale = {
     footer: enFooter,
     common: enCommon,
     meta: enMeta,
+    passports: enPassports,
+    about: enAbout,
   },
   es: {
     nav: esNav,
@@ -89,6 +97,8 @@ const messagesByLocale = {
     footer: esFooter,
     common: esCommon,
     meta: esMeta,
+    passports: esPassports,
+    about: esAbout,
   },
   fr: {
     nav: frNav,
@@ -107,6 +117,8 @@ const messagesByLocale = {
     footer: frFooter,
     common: frCommon,
     meta: frMeta,
+    passports: frPassports,
+    about: frAbout,
   },
 } as const;
 

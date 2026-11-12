@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Servicios de Pasaporte — Visa Expeditor",
+    "description": "Asistencia rápida y guiada para pasaportes nuevos, renovaciones, cambios de nombre y documentos extraviados o robados."
+  },
+  "hero": {
+    "eyebrow": "Servicios de Documentos Gubernamentales",
+    "heading": "Gestión de Pasaportes, Simplificada",
+    "subhead": "Orientación paso a paso, revisión previa a la entrega y asistencia experta para sus trámites de pasaporte."
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "passports": "Pasaportes"
+  },
+  "grid": {
+    "heading": "Seleccione un Servicio de Pasaporte",
+    "subhead": "Elija la opción que corresponda a su situación actual de viaje e identificación."
+  },
+  "items": {
+    "new": {
+      "label": "Pasaporte por Primera Vez",
+      "description": "Preparación completa de formularios, revisión de documentos de identidad y pasos de presentación para adultos y menores."
+    },
+    "renewal": {
+      "label": "Renovación de Pasaporte",
+      "description": "Revisión ágil del paquete de renovación para pasaportes por vencer o vencidos con opciones de tramitación acelerada."
+    },
+    "nameChange": {
+      "label": "Cambio de Nombre y Correcciones",
+      "description": "Actualice su pasaporte vigente tras matrimonio, divorcio u orden judicial con pruebas documentales verificadas."
+    },
+    "lostStolen": {
+      "label": "Extraviado, Robado o Dañado",
+      "description": "Guía inmediata para el reporte, protección contra invalidación y tramitación de la solicitud de reemplazo."
+    }
+  },
+  "faqs": {
+    "heading": "Preguntas Frecuentes",
+    "q1": "¿Con qué rapidez puedo renovar mi pasaporte?",
+    "a1": "El procesamiento oficial ordinario suele demorar varias semanas, pero la opción acelerada puede acortar considerablemente los plazos según la jurisdicción.",
+    "q2": "¿Qué documentos requiero para renovar mi pasaporte?",
+    "a2": "Por lo general, requerirá su libreta de pasaporte más reciente, una fotografía con los requisitos oficiales, el formulario correspondiente y las tasas consulares.",
+    "q3": "¿Puedo viajar mientras renuevan mi pasaporte?",
+    "a3": "No. Al entregar su pasaporte actual para la renovación, este queda en custodia del organismo oficial hasta la emisión del nuevo ejemplar.",
+    "q4": "¿Las tarifas oficiales gubernamentales están incluidas en el servicio?",
+    "a4": "Las tarifas gubernamentales son exigidas por las autoridades emisoras y se detallan de forma independiente de los honorarios de gestión.",
+    "q5": "¿Qué ocurre si mi solicitud contiene un error?",
+    "a5": "Nuestro equipo revisa sus documentos antes del envío final para detectar inexactitudes, omisiones y problemas fotográficos comunes."
+  },
+  "cta": {
+    "title": "¿Listo para tramitar su pasaporte?",
+    "body": "Comience su registro en minutos. Verificaremos sus antecedentes y le orientaremos en cada etapa.",
+    "button": "Comenzar Solicitud de Pasaporte"
+  }
+}

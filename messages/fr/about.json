@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "À Propos de Nous — Visa Expeditor",
+    "description": "Découvrez Visa Expeditor : notre vocation pour simplifier les formalités consulaires, nos méthodes et nos engagements envers nos voyageurs."
+  },
+  "hero": {
+    "eyebrow": "Qui Sommes-Nous",
+    "heading": "Une Assistance Précise pour les Voyageurs du Monde",
+    "subhead": "Nous guidons les particuliers, les familles et les entreprises à travers les exigences consulaires, formalités de passeport et règles d'entrée."
+  },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "about": "À Propos"
+  },
+  "content": {
+    "p1": "Comprendre les exigences internationales de voyage ne devrait pas être une épreuve administrative. Les dispositions consulaires évoluent vite, les consignes sont strictes et la moindre inexactitude peut compromettre un déplacement prévu de longue date.",
+    "p2": "Visa Expeditor a été conçu pour apporter lisibilité et rigueur à la préparation de vos dossiers. Nous allions une veille réglementaire continue à un contrôle rigoureux avant dépôt afin d'assurer la parfaite conformité de chaque demande.",
+    "p3": "Nous sommes une entreprise indépendante d'assistance et de préparation administrative. Nous ne sommes ni une agence gouvernementale ni un cabinet juridique, mais un service dédié qui aide les voyageurs à constituer des dossiers recevables et complets.",
+    "p4": "Qu'il s'agisse de renouveler un passeport pour les vacances, d'obtenir un visa professionnel dans des délais courts ou d'envisager une installation à l'étranger, nous vous offrons un suivi limpide et une écoute humaine permanente."
+  },
+  "cta": {
+    "title": "Un déplacement international en prévision ?",
+    "body": "Vérifiez vos conditions d'entrée dès maintenant ou échangez avec notre équipe pour votre projet de voyage.",
+    "button": "Consulter les Conditions de Visa"
+  }
+}
