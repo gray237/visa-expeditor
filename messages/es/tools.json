@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Herramientas de Viaje — Visa Expeditor",
+    "description": "Herramientas gratuitas para verificar requisitos de visa, vigencia del pasaporte y los documentos que necesita antes de viajar."
+  },
+  "hero": {
+    "eyebrow": "Planifique con Anticipación",
+    "heading": "Herramientas para un Viaje más Fluido",
+    "subhead": "Revise los detalles que causan más demoras antes de reservar, para que nada lo tome por sorpresa."
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "tools": "Herramientas"
+  },
+  "grid": {
+    "heading": "Elija una Herramienta",
+    "subhead": "Cada herramienta se centra en una decisión y le indica el siguiente paso adecuado."
+  },
+  "items": {
+    "visaChecker": {
+      "label": "Verificador de Visas",
+      "description": "Consulte si su pasaporte necesita una visa para un destino, según nuestro conjunto de datos de muestra."
+    },
+    "passportValidity": {
+      "label": "Verificador de Vigencia del Pasaporte",
+      "description": "Verifique si el vencimiento de su pasaporte cumple las reglas de entrada de su destino."
+    },
+    "checklist": {
+      "label": "Lista de Documentos",
+      "description": "Cree una lista de los documentos que su tipo de entrada suele necesitar."
+    },
+    "passportPower": {
+      "label": "Poder del Pasaporte",
+      "description": "Vea adónde puede llevarlo su pasaporte, calculado a partir de nuestro propio conjunto de datos."
+    }
+  },
+  "faqs": {
+    "heading": "Preguntas Frecuentes",
+    "q1": "¿Estas herramientas son gratuitas?",
+    "a1": "Sí. Las herramientas son de uso gratuito. Si más adelante desea ayuda con una solicitud, ese es un servicio aparte.",
+    "q2": "¿La información es oficial?",
+    "a2": "No. Nuestras herramientas usan datos de muestra con fines demostrativos y no son fuentes oficiales. Confirme siempre con las autoridades del destino.",
+    "q3": "¿Las herramientas almacenan mis datos?",
+    "a3": "El verificador de vigencia del pasaporte se ejecuta en su navegador. Otras herramientas pueden guardar su elección de pasaporte en una cookie para que el sitio la recuerde.",
+    "q4": "¿Puede una herramienta decirme si me aprobarán?",
+    "a4": "No. Las decisiones de entrada y visa las toman las autoridades. Nuestras herramientas solo le ayudan a preparar y verificar detalles.",
+    "q5": "¿Qué pasa si una herramienta no muestra datos?",
+    "a5": "Nuestro conjunto de datos sigue creciendo. Cuando no tenemos un registro, lo decimos en lugar de adivinar. Contáctenos y le ayudaremos directamente."
+  },
+  "cta": {
+    "title": "¿Necesita ayuda después de revisar?",
+    "body": "Si una herramienta le genera una duda, nuestro equipo puede explicarle qué espera su destino.",
+    "button": "Contáctenos"
+  },
+  "detail": {
+    "passportValidity": {
+      "meta": {
+        "title": "Verificador de Vigencia del Pasaporte — Visa Expeditor",
+        "description": "Verifique si la fecha de vencimiento de su pasaporte cumple las reglas de entrada de su destino antes de viajar."
+      },
+      "hero": {
+        "eyebrow": "Revisión Previa al Viaje",
+        "heading": "Verificador de Vigencia del Pasaporte",
+        "subhead": "Verifique si la fecha de vencimiento de su pasaporte cumple las reglas de entrada de su destino."
+      },
+      "overview": {
+        "heading": "Qué hace esta herramienta",
+        "p1": "Muchos países exigen que su pasaporte siga vigente durante un período determinado después de su salida prevista, a menudo seis meses. Un pasaporte que aún está vigente puede ser rechazado si no cumple esa regla.",
+        "p2": "Esta herramienta compara el vencimiento de su pasaporte con sus fechas de viaje y la regla de vigencia que seleccione, para que pueda renovarlo a tiempo si es necesario."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Viajeros que revisan un pasaporte antes de reservar vuelos.",
+        "i2": "Cualquier persona cuyo pasaporte venza dentro de un año.",
+        "i3": "Familias que coordinan varios pasaportes a la vez."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Ingrese su fecha de vencimiento",
+          "description": "Use la fecha impresa en el campo de vencimiento de su pasaporte."
+        },
+        "s2": {
+          "title": "Ingrese sus fechas de viaje",
+          "description": "Agregue sus fechas previstas de salida y regreso."
+        },
+        "s3": {
+          "title": "Elija la regla de vigencia",
+          "description": "Seleccione la regla que aplica su destino, o la regla común de seis meses si no está seguro."
+        },
+        "s4": {
+          "title": "Lea el resultado",
+          "description": "La herramienta le indica si su pasaporte parece cumplir la regla y qué hacer a continuación."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que necesitará",
+        "r1": {
+          "label": "Fecha de vencimiento",
+          "value": "La fecha de vencimiento impresa en su pasaporte."
+        },
+        "r2": {
+          "label": "Fechas de viaje",
+          "value": "Sus fechas previstas de salida y regreso."
+        },
+        "r3": {
+          "label": "Regla del destino",
+          "value": "La vigencia mínima que exige su destino, si la conoce."
+        },
+        "r4": {
+          "label": "Una nota del resultado",
+          "value": "Si su pasaporte no cumple, contáctenos sobre las opciones de renovación."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Qué es la regla de los seis meses?",
+        "a1": "Es un requisito común de que un pasaporte permanezca vigente seis meses después de su salida prevista. No todos los países la aplican.",
+        "q2": "¿La regla aplica en todas partes?",
+        "a2": "No. Algunos países exigen tres meses, otros seis y algunos solo exigen vigencia durante su estadía. Confirme la regla para su destino.",
+        "q3": "¿Qué pasa si mi pasaporte vence durante mi viaje?",
+        "a3": "Por lo general, eso es un problema. Renueve antes de viajar si puede y contáctenos para planificar los tiempos.",
+        "q4": "¿Cuánto tarda la renovación?",
+        "a4": "Los tiempos de procesamiento varían según el país y la temporada, y cambian con el tiempo, así que solicítela lo antes posible.",
+        "q5": "¿Esta herramienta es oficial?",
+        "a5": "No. Es una estimación útil. Confirme siempre los requisitos con las autoridades oficiales del destino antes de viajar."
+      },
+      "cta": {
+        "title": "¿Su pasaporte vence pronto?",
+        "body": "Si su pasaporte no cumple la regla, hable con nosotros sobre las opciones de renovación.",
+        "button": "Contáctenos"
+      }
+    }
+  }
+}

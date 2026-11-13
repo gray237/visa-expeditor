@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Resources — Visa Expeditor",
+    "description": "FAQs, guides and processing-time notes to help you prepare passport and visa applications with confidence."
+  },
+  "hero": {
+    "eyebrow": "Knowledge Base",
+    "heading": "Resources for Your Application",
+    "subhead": "Straight answers and practical guides, written to help you avoid the common hold-ups."
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "resources": "Resources"
+  },
+  "grid": {
+    "heading": "Browse Resources",
+    "subhead": "Start with the FAQs for quick answers, or explore guides for a deeper walkthrough."
+  },
+  "items": {
+    "faqs": {
+      "label": "FAQs",
+      "description": "Quick answers to the questions we hear most often."
+    },
+    "guides": {
+      "label": "Guides",
+      "description": "Step-by-step walkthroughs for common applications."
+    },
+    "processingTimes": {
+      "label": "Processing Times",
+      "description": "General notes on what affects how long an application takes."
+    },
+    "insights": {
+      "label": "Insights",
+      "description": "Explanations of changes and trends in travel rules."
+    }
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "q1": "What does Visa Expeditor do?",
+    "a1": "We help you prepare passport and visa applications: confirming requirements, organizing documents and reviewing forms before you submit.",
+    "q2": "Are you a government agency?",
+    "a2": "No. Visa Expeditor is an independent service and is not affiliated with any government agency.",
+    "q3": "Do you provide legal advice?",
+    "a3": "No. We are not a law firm and do not provide legal advice. We help with document preparation and process guidance.",
+    "q4": "Can you guarantee an approval?",
+    "a4": "No. Decisions are made by the relevant authorities. We help you submit a complete and consistent application.",
+    "q5": "How do I get started?",
+    "a5": "Tell us your nationality, destination and purpose of travel through the contact form and we will explain the next steps."
+  },
+  "cta": {
+    "title": "Still have a question?",
+    "body": "Send us the details and we will point you in the right direction.",
+    "button": "Contact Us"
+  },
+  "faqsPage": {
+    "meta": {
+      "title": "Frequently Asked Questions — Visa Expeditor",
+      "description": "Answers to common questions about passports, visas, processing, fees and working with Visa Expeditor."
+    },
+    "hero": {
+      "eyebrow": "Answers",
+      "heading": "Frequently Asked Questions",
+      "subhead": "The questions we hear most, answered plainly. If yours is not here, contact us."
+    },
+    "breadcrumbs": {
+      "faqs": "FAQs"
+    },
+    "faqs": {
+      "heading": "Common Questions",
+      "q1": "What does Visa Expeditor do?",
+      "a1": "We help you prepare passport and visa applications. That includes confirming requirements, organizing documents and reviewing forms before you submit them.",
+      "q2": "Are you a government agency?",
+      "a2": "No. Visa Expeditor is an independent service. We are not affiliated with any government agency, consulate or embassy.",
+      "q3": "Do you provide legal advice?",
+      "a3": "No. We are not a law firm and we do not provide legal advice. For legal questions, please consult a qualified professional.",
+      "q4": "Can you guarantee an approval?",
+      "a4": "No. Entry and visa decisions are made solely by the relevant authorities. We help you submit a complete, accurate application.",
+      "q5": "How much do your services cost?",
+      "a5": "Pricing depends on the service and destination. Government fees are separate and paid to the official authority. Contact us for a clear breakdown.",
+      "q6": "How long does an application take?",
+      "a6": "Processing times vary by destination, season and application type, and they change over time. Apply as early as the destination allows.",
+      "q7": "Do you handle government fees?",
+      "a7": "No. Government fees are paid directly to the official authority. Any service fee we charge is separate and shown clearly.",
+      "q8": "What documents will I need?",
+      "a8": "It depends on the application. Common items include a valid passport, a compliant photo, proof of funds and supporting documents. We provide a tailored checklist.",
+      "q9": "Can I apply if I have been refused before?",
+      "a9": "Yes, you can apply again. We can help you review what happened and prepare a stronger application, but we cannot guarantee a different result.",
+      "q10": "How do I contact you?",
+      "a10": "Use the contact form on this site. Tell us your nationality, destination and purpose of travel, and we will respond with next steps."
+    },
+    "cta": {
+      "title": "Question not answered?",
+      "body": "Send us your details and we will get back to you with a clear answer.",
+      "button": "Contact Us"
+    }
+  }
+}

@@ -51,5 +51,319 @@
     "title": "Ready to get your passport sorted?",
     "body": "Start your intake in minutes. We will verify your documentation and guide every step.",
     "button": "Start Passport Application"
+  },
+  "detail": {
+    "new": {
+      "meta": {
+        "title": "New Passport Assistance — Visa Expeditor",
+        "description": "First-time passport application help: identity documents, forms, photos and submission steps."
+      },
+      "hero": {
+        "eyebrow": "First-Time Applicants",
+        "heading": "New Passport Assistance",
+        "subhead": "Prepare a first-time passport application with the right identity documents and a reviewed form."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "A first passport proves your identity and citizenship, usually for an adult or a child applying for the first time. The exact documents depend on your country and your circumstances.",
+        "p2": "We help you confirm what to provide, prepare the supporting evidence and review the form before submission."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Adults applying for their first passport.",
+        "i2": "Parents or guardians applying for a child.",
+        "i3": "Applicants unsure which identity documents are accepted."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Confirm the requirements",
+          "description": "We check what your country asks of first-time applicants, including for minors."
+        },
+        "s2": {
+          "title": "Gather identity documents",
+          "description": "We help you collect proof of identity, citizenship and any parental consent."
+        },
+        "s3": {
+          "title": "Complete the application",
+          "description": "We review the form and photo against the official requirements."
+        },
+        "s4": {
+          "title": "Submit and wait",
+          "description": "You submit through the official channel and we explain the expected stages."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Photos",
+          "value": "Compliant passport photographs for each applicant."
+        },
+        "r2": {
+          "label": "Proof of identity",
+          "value": "A recognized photo identity document."
+        },
+        "r3": {
+          "label": "Proof of citizenship",
+          "value": "A birth certificate or equivalent, as your country requires."
+        },
+        "r4": {
+          "label": "Application form",
+          "value": "The completed official form, signed as required."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "What documents prove citizenship?",
+        "a1": "Usually a birth certificate or an equivalent record. The accepted evidence depends on your country and situation.",
+        "q2": "Can I apply for my child?",
+        "a2": "Yes. Minors generally need additional consent and evidence of the parent or guardian's identity.",
+        "q3": "How long is a first passport valid?",
+        "a3": "Validity periods vary by country and by the applicant's age. Check the rule that applies to you.",
+        "q4": "What if I have no birth certificate?",
+        "a4": "Alternative evidence may be accepted. Tell us your situation and we will help you identify what to provide.",
+        "q5": "Do I need to apply in person?",
+        "a5": "Some countries require an in-person appointment for first passports. We explain what your destination requires."
+      },
+      "cta": {
+        "title": "Applying for the first time?",
+        "body": "Tell us about your case and we will prepare the documents involved.",
+        "button": "Contact Us"
+      }
+    },
+    "renewal": {
+      "meta": {
+        "title": "Passport Renewal Assistance — Visa Expeditor",
+        "description": "Renew an expiring or recently expired passport with a checked application and organized supporting documents."
+      },
+      "hero": {
+        "eyebrow": "Keep It Current",
+        "heading": "Passport Renewal Assistance",
+        "subhead": "Renew an expiring or recently expired passport with a reviewed application."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "Renewing keeps your passport current and avoids last-minute problems at the airport. Most countries allow renewal before expiry, and some allow a short grace period after.",
+        "p2": "We help you confirm you qualify for renewal, prepare the required items and review the form before you submit."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Holders of a passport nearing expiry.",
+        "i2": "Travelers with a recently expired passport.",
+        "i3": "Anyone whose destination requires more validity than their passport has."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Check eligibility",
+          "description": "We confirm whether your passport qualifies for renewal or needs a different process."
+        },
+        "s2": {
+          "title": "Prepare documents and photo",
+          "description": "We help you gather the current passport, photo and any supporting evidence."
+        },
+        "s3": {
+          "title": "Complete the renewal form",
+          "description": "We review the form for accuracy and consistency with your details."
+        },
+        "s4": {
+          "title": "Submit and track",
+          "description": "You submit through the official channel and we explain what happens next."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Current passport",
+          "value": "Your existing passport, which is usually surrendered during renewal."
+        },
+        "r2": {
+          "label": "Photo",
+          "value": "A recent photograph meeting the current specifications."
+        },
+        "r3": {
+          "label": "Application form",
+          "value": "The completed renewal form for your country."
+        },
+        "r4": {
+          "label": "Name-change evidence",
+          "value": "Supporting documents if your name or details have changed."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "When should I renew?",
+        "a1": "Renew before your passport fails a destination's validity rule. Many travelers renew within a year of expiry.",
+        "q2": "Can I renew a recently expired passport?",
+        "a2": "Many countries allow renewal after expiry within a limited period. Check the rule that applies to your passport.",
+        "q3": "Can I travel while it is being renewed?",
+        "a3": "Usually not, because your current passport is surrendered or invalidated during the process.",
+        "q4": "Do I need a new photo?",
+        "a4": "Yes, in most cases. Photos must meet the current requirements and cannot be reused from an old passport.",
+        "q5": "What if my details have changed?",
+        "a5": "A name or detail change may need supporting evidence or a different application. Tell us and we will advise."
+      },
+      "cta": {
+        "title": "Passport up for renewal?",
+        "body": "Talk to us and we will prepare a clean renewal application.",
+        "button": "Contact Us"
+      }
+    },
+    "nameChange": {
+      "meta": {
+        "title": "Passport Name Change Assistance — Visa Expeditor",
+        "description": "Update your passport after marriage, divorce or a legal name change with the right supporting evidence."
+      },
+      "hero": {
+        "eyebrow": "Name and Details",
+        "heading": "Passport Name Change Assistance",
+        "subhead": "Update your passport after marriage, divorce or a legal name change with verified evidence."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "A name change updates your passport to match a legal name change, such as marriage, divorce or a court order. The accepted evidence depends on your country.",
+        "p2": "We help you identify the documents that support the change and prepare a consistent application."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "People who changed their name through marriage or divorce.",
+        "i2": "Applicants with a court-ordered name change.",
+        "i3": "Travelers whose passport details no longer match other documents."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Confirm the evidence",
+          "description": "We identify which document supports your change of name."
+        },
+        "s2": {
+          "title": "Prepare the documents",
+          "description": "We help you gather the certificate, order or record required."
+        },
+        "s3": {
+          "title": "Complete the application",
+          "description": "We review the form so the new name matches your evidence exactly."
+        },
+        "s4": {
+          "title": "Submit and track",
+          "description": "You submit through the official channel and we explain the next steps."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Current passport",
+          "value": "Your existing passport, where the change is an amendment or renewal."
+        },
+        "r2": {
+          "label": "Marriage or divorce record",
+          "value": "The certificate that shows the change, where relevant."
+        },
+        "r3": {
+          "label": "Court order",
+          "value": "A legal name-change order, where applicable."
+        },
+        "r4": {
+          "label": "Photo",
+          "value": "A recent photograph meeting the current specifications."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "Which document proves a name change?",
+        "a1": "A marriage certificate, divorce decree or court order, depending on the change. The accepted document varies by country.",
+        "q2": "Do I need a new passport or an amendment?",
+        "a2": "It depends on your country and how much time remains on your passport. We can help you work out which applies.",
+        "q3": "Can I keep my old passport?",
+        "a3": "Often the old passport is cancelled or returned with a hole punch. The rule depends on your country.",
+        "q4": "How long does it take?",
+        "a4": "Processing times vary by country and season and change over time, so apply as early as you can.",
+        "q5": "What if my tickets are in the old name?",
+        "a5": "Travel documents should match your passport name. Contact your airline about updating the booking before you travel."
+      },
+      "cta": {
+        "title": "Changed your name?",
+        "body": "Send us the details and we will prepare the evidence and forms.",
+        "button": "Contact Us"
+      }
+    },
+    "lostStolen": {
+      "meta": {
+        "title": "Lost or Stolen Passport Assistance — Visa Expeditor",
+        "description": "Report and replace a lost, stolen or damaged passport with clear steps and organized documents."
+      },
+      "hero": {
+        "eyebrow": "Urgent Replacement",
+        "heading": "Lost, Stolen or Damaged Passport",
+        "subhead": "Report and replace a lost, stolen or damaged passport with clear, organized steps."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "If your passport is lost, stolen or damaged, report it as soon as you can so it cannot be misused, then apply for a replacement. The steps differ depending on whether you are at home or abroad.",
+        "p2": "We help you understand the reporting and replacement process and prepare the supporting documents it requires."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Travelers who have lost or had a passport stolen.",
+        "i2": "Holders of a damaged passport that is no longer valid.",
+        "i3": "People who need a replacement quickly."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Report the loss",
+          "description": "We explain how to report the passport so it cannot be used by anyone else."
+        },
+        "s2": {
+          "title": "Gather supporting documents",
+          "description": "We help you collect identity, citizenship and, if relevant, police documents."
+        },
+        "s3": {
+          "title": "Complete the replacement application",
+          "description": "We review the form and evidence before you submit."
+        },
+        "s4": {
+          "title": "Submit and follow up",
+          "description": "You submit through the official channel and we explain the timeline and options."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Police report",
+          "value": "A report, where the passport was stolen or the country requires one."
+        },
+        "r2": {
+          "label": "Proof of identity",
+          "value": "A recognized identity document or a copy of the lost passport."
+        },
+        "r3": {
+          "label": "Proof of citizenship",
+          "value": "A birth certificate or equivalent, as required."
+        },
+        "r4": {
+          "label": "Photo",
+          "value": "A recent photograph meeting the current specifications."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "What should I do first?",
+        "a1": "Report the passport as lost or stolen to the relevant authority as soon as possible, then begin the replacement process.",
+        "q2": "Do I need a police report?",
+        "a2": "For a stolen passport, usually yes. For a lost passport, requirements vary by country.",
+        "q3": "Can I travel with a damaged passport?",
+        "a3": "A damaged passport may be refused at the border. If it is damaged, treat it as invalid and apply for a replacement.",
+        "q4": "How long does a replacement take?",
+        "a4": "Timelines vary by country and urgency and change over time. Tell us your travel date and we will help you plan.",
+        "q5": "Can I get an emergency passport?",
+        "a5": "Some countries issue emergency travel documents for urgent cases. Availability and eligibility depend on your country."
+      },
+      "cta": {
+        "title": "Lost or damaged your passport?",
+        "body": "Contact us and we will help you plan the replacement.",
+        "button": "Contact Us"
+      }
+    }
   }
 }

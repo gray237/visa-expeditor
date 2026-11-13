@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "title": "Services d'Immigration — Visa Expeditor",
+    "description": "Accompagnement pour les cartes vertes, la citoyenneté, le parrainage familial et les visas d'investisseur, avec les documents exigés par chaque voie."
+  },
+  "hero": {
+    "eyebrow": "Installation à Long Terme",
+    "heading": "L'Immigration, Expliquée",
+    "subhead": "Explorez les voies de résidence et de citoyenneté avec des étapes claires et des documents organisés."
+  },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "immigration": "Immigration"
+  },
+  "grid": {
+    "heading": "Sélectionnez un Service d'Immigration",
+    "subhead": "Chaque voie a ses propres règles d'éligibilité et justificatifs. Commencez par celle qui correspond à votre objectif."
+  },
+  "items": {
+    "greenCards": {
+      "label": "Cartes Vertes",
+      "description": "Voies d'accès à la résidence permanente par la famille, l'emploi ou d'autres catégories éligibles."
+    },
+    "citizenship": {
+      "label": "Citoyenneté",
+      "description": "Accompagnement pour la naturalisation, de l'éligibilité aux documents et tests requis."
+    },
+    "family": {
+      "label": "Parrainage Familial",
+      "description": "Pétition pour des proches éligibles avec des preuves de lien familial et de parrainage organisées."
+    },
+    "investorVisas": {
+      "label": "Visas d'Investisseur",
+      "description": "Voies de résidence fondées sur l'investissement et les documents financiers qu'elles exigent."
+    }
+  },
+  "faqs": {
+    "heading": "Foire Aux Questions",
+    "q1": "Quelle voie d'immigration me convient ?",
+    "a1": "Cela dépend de vos liens familiaux, de votre emploi, de vos investissements et de vos objectifs. Décrivez-nous votre situation et nous vous expliquerons les options.",
+    "q2": "Fournissez-vous des conseils juridiques ?",
+    "a2": "Non. Visa Expeditor n'est pas un cabinet juridique et ne fournit pas de conseils juridiques. Nous vous aidons à organiser et à préparer vos documents.",
+    "q3": "Pouvez-vous garantir une acceptation ?",
+    "a3": "Non. Les décisions relèvent des autorités compétentes. Nous vous aidons à présenter une demande complète et cohérente.",
+    "q4": "Combien de temps prennent les procédures d'immigration ?",
+    "a4": "Les délais varient fortement selon la voie et l'autorité et évoluent avec le temps ; nous évitons donc de citer des chiffres qui pourraient être obsolètes.",
+    "q5": "Ai-je besoin d'un avocat ?",
+    "a5": "Certains dossiers bénéficient de conseils juridiques, en particulier lorsque l'éligibilité est complexe. Nous pouvons vous aider à préparer les documents dans tous les cas."
+  },
+  "cta": {
+    "title": "Vous préparez une installation à long terme ?",
+    "body": "Décrivez-nous votre objectif et nous présenterons les documents nécessaires pour la voie qui vous convient.",
+    "button": "Nous Contacter"
+  },
+  "detail": {
+    "greenCards": {
+      "meta": {
+        "title": "Assistance Carte Verte — Visa Expeditor",
+        "description": "Comprenez les voies d'accès à la résidence permanente et préparez les documents qu'exige un dossier de carte verte."
+      },
+      "hero": {
+        "eyebrow": "Résidence Permanente",
+        "heading": "Assistance Carte Verte",
+        "subhead": "Comprenez les voies d'accès à la résidence permanente et préparez les documents qu'exige votre dossier."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Une carte verte confère la résidence permanente légale aux États-Unis, vous permettant d'y vivre et d'y travailler indéfiniment. L'éligibilité dépend généralement de la famille, de l'emploi ou d'une autre catégorie admissible.",
+        "p2": "Nous vous aidons à organiser les preuves et les formulaires qu'implique généralement une demande de résidence permanente, et nous expliquons la signification de chaque étape."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les membres de la famille de citoyens américains ou de résidents permanents.",
+        "i2": "Les employés parrainés par un employeur américain.",
+        "i3": "Les personnes qui explorent une catégorie admissible de résidence permanente."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Identifiez votre catégorie",
+          "description": "Nous examinons votre situation pour déterminer quelle catégorie de résidence permanente peut s'appliquer."
+        },
+        "s2": {
+          "title": "Rassemblez les justificatifs",
+          "description": "Nous vous aidons à réunir les documents d'état civil, financiers et relatifs au lien familial pour le dossier."
+        },
+        "s3": {
+          "title": "Préparez les formulaires",
+          "description": "Nous vérifions chaque formulaire pour qu'il soit cohérent avec vos justificatifs et votre catégorie."
+        },
+        "s4": {
+          "title": "Déposez et suivez",
+          "description": "Vous déposez votre demande par la voie officielle et nous vous expliquons à quoi vous attendre à chaque étape."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Passeport",
+          "value": "Un passeport valide ou un autre document d'identité."
+        },
+        "r2": {
+          "label": "Preuve d'éligibilité",
+          "value": "Des documents attestant le lien familial ou professionnel admissible."
+        },
+        "r3": {
+          "label": "Documents du parrain",
+          "value": "La pétition et les documents de soutien financier du parrain, le cas échéant."
+        },
+        "r4": {
+          "label": "Documents d'état civil",
+          "value": "Actes de naissance, de mariage et autres registres d'état civil, selon les exigences."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Qu'est-ce qu'une carte verte ?",
+        "a1": "C'est la preuve de la résidence permanente légale aux États-Unis, vous permettant d'y vivre et d'y travailler indéfiniment, dans le respect de la loi.",
+        "q2": "Qui peut me parrainer ?",
+        "a2": "Des membres de la famille ou des employeurs éligibles peuvent parrainer certaines catégories. Les options dépendent de votre lien et de votre situation.",
+        "q3": "Combien de temps prend la procédure ?",
+        "a3": "Les délais varient fortement selon la catégorie et l'autorité et évoluent avec le temps. Nous évitons de citer des chiffres qui pourraient être obsolètes.",
+        "q4": "Puis-je travailler pendant l'attente ?",
+        "a4": "Certains demandeurs peuvent solliciter une autorisation de travail pendant l'examen de leur dossier. L'éligibilité dépend de votre catégorie et de votre statut.",
+        "q5": "Ai-je besoin d'un avocat ?",
+        "a5": "Certains dossiers bénéficient de conseils juridiques. Nous ne sommes pas un cabinet juridique ; nous vous aidons à organiser et à préparer vos documents."
+      },
+      "cta": {
+        "title": "Vous explorez la résidence permanente ?",
+        "body": "Décrivez-nous votre situation et nous vous expliquerons les documents nécessaires.",
+        "button": "Nous Contacter"
+      }
+    },
+    "citizenship": {
+      "meta": {
+        "title": "Assistance Citoyenneté — Visa Expeditor",
+        "description": "Préparez une demande de naturalisation avec des conseils clairs sur l'éligibilité et les documents requis."
+      },
+      "hero": {
+        "eyebrow": "Naturalisation",
+        "heading": "Assistance Citoyenneté",
+        "subhead": "Préparez une demande de naturalisation avec des conseils clairs sur l'éligibilité et les documents."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "La citoyenneté, souvent par la naturalisation, est l'étape finale pour les résidents permanents éligibles. Les conditions comprennent généralement une période de résidence, une bonne moralité et des connaissances linguistiques ou civiques.",
+        "p2": "Nous vous aidons à réunir les documents qu'exige généralement une demande de naturalisation et à comprendre à quoi vous attendre à chaque étape."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les résidents permanents qui remplissent les conditions de résidence.",
+        "i2": "Les demandeurs qui préparent une exigence civique ou linguistique.",
+        "i3": "Les familles qui déposent ensemble ou pour un enfant."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Vérifiez l'éligibilité",
+          "description": "Nous examinons votre historique de résidence et votre statut pour déterminer quelles conditions s'appliquent."
+        },
+        "s2": {
+          "title": "Préparez les documents",
+          "description": "Nous vous aidons à réunir les documents d'identité, de résidence et de situation personnelle."
+        },
+        "s3": {
+          "title": "Complétez la demande",
+          "description": "Nous vérifions le formulaire pour son exactitude et sa cohérence avec vos documents."
+        },
+        "s4": {
+          "title": "Préparez l'entretien",
+          "description": "Nous expliquons les exigences civiques et linguistiques et le déroulement de l'entretien."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Passeport",
+          "value": "Un passeport valide ou un titre de voyage."
+        },
+        "r2": {
+          "label": "Preuve de résidence",
+          "value": "Une preuve de votre résidence permanente et du temps passé dans le pays."
+        },
+        "r3": {
+          "label": "Historique de résidence",
+          "value": "L'historique des adresses et des voyages pour la période admissible."
+        },
+        "r4": {
+          "label": "Documents de situation personnelle",
+          "value": "Les documents pertinents concernant la moralité et l'éligibilité, selon les exigences."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Combien de temps dois-je être résident ?",
+        "a1": "Les conditions de résidence varient et dépendent de votre catégorie et de votre situation. Vérifiez les règles en vigueur pour votre dossier.",
+        "q2": "Qu'est-ce que le test civique ?",
+        "a2": "C'est un test de connaissances sur l'histoire et le gouvernement du pays, souvent associé à une exigence d'anglais.",
+        "q3": "Puis-je conserver ma nationalité d'origine ?",
+        "a3": "Cela dépend des règles des deux pays. Certains autorisent la double nationalité et d'autres non ; vérifiez les deux côtés.",
+        "q4": "Et si j'ai un casier judiciaire ?",
+        "a4": "Cela peut affecter l'éligibilité. Comme il s'agit d'une appréciation juridique, nous recommandons un conseil juridique pour tout élément au-delà d'une affaire mineure.",
+        "q5": "Combien de temps cela prend-il ?",
+        "a5": "Les délais varient selon l'autorité et la charge de dossiers et évoluent avec le temps ; nous évitons donc de citer des chiffres qui pourraient être obsolètes."
+      },
+      "cta": {
+        "title": "Prêt pour la prochaine étape ?",
+        "body": "Parlez-nous de votre dossier et nous présenterons les documents nécessaires à votre naturalisation.",
+        "button": "Nous Contacter"
+      }
+    },
+    "family": {
+      "meta": {
+        "title": "Assistance Parrainage Familial — Visa Expeditor",
+        "description": "Réunissez les membres éligibles de votre famille avec des documents de parrainage et de lien familial organisés."
+      },
+      "hero": {
+        "eyebrow": "Regroupement Familial",
+        "heading": "Assistance Parrainage Familial",
+        "subhead": "Réunissez les membres éligibles de votre famille avec des documents de parrainage organisés."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Le parrainage familial permet à un citoyen ou à un résident permanent de présenter une pétition pour que certains proches le rejoignent. L'éligibilité dépend du lien familial et du statut du parrain.",
+        "p2": "Nous aidons les parrains et les demandeurs à organiser les preuves de lien familial et les formulaires qu'exige généralement un dossier familial."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les citoyens ou résidents qui parrainent un conjoint ou un enfant.",
+        "i2": "Les parents qui présentent une pétition pour un enfant, ou les enfants pour un parent.",
+        "i3": "Les familles qui préparent des preuves de lien familial."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Confirmez l'éligibilité",
+          "description": "Nous examinons le lien familial et le statut du parrain pour déterminer quelle catégorie s'applique."
+        },
+        "s2": {
+          "title": "Constituez les preuves de lien familial",
+          "description": "Nous vous aidons à organiser les documents qui attestent un lien familial réel et admissible."
+        },
+        "s3": {
+          "title": "Préparez les formulaires",
+          "description": "Nous vérifions la pétition et les formulaires justificatifs pour leur cohérence."
+        },
+        "s4": {
+          "title": "Déposez et suivez",
+          "description": "Vous déposez votre demande par la voie officielle et nous vous expliquons les étapes suivantes."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Passeport",
+          "value": "Les documents d'identité du parrain et du proche."
+        },
+        "r2": {
+          "label": "Preuve de lien familial",
+          "value": "Des documents attestant le lien familial admissible."
+        },
+        "r3": {
+          "label": "Statut du parrain",
+          "value": "La preuve de la citoyenneté ou de la résidence permanente du parrain."
+        },
+        "r4": {
+          "label": "Documents financiers",
+          "value": "Une preuve de revenus ou de soutien lorsque la voie l'exige."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Quels proches puis-je parrainer ?",
+        "a1": "Cela dépend du pays et du statut du parrain. Les catégories courantes comprennent les conjoints, les enfants et les parents.",
+        "q2": "Qu'est-ce qui prouve un lien familial réel ?",
+        "a2": "Une combinaison de documents d'état civil, de finances partagées, de correspondance et de photographies. Les exigences diffèrent selon le dossier.",
+        "q3": "Combien de temps prend un parrainage familial ?",
+        "a3": "Les délais varient selon la catégorie et l'autorité et évoluent avec le temps ; nous évitons donc de citer des chiffres qui pourraient être obsolètes.",
+        "q4": "Mon proche peut-il travailler pendant l'attente ?",
+        "a4": "Cela dépend du pays et de l'étape du dossier. De nombreuses voies n'autorisent pas le travail avant l'obtention de la résidence.",
+        "q5": "Et si mes revenus sont faibles ?",
+        "a5": "Certaines voies exigent un revenu minimum ou un co-parrain. Nous pouvons vous expliquer quels justificatifs sont généralement attendus."
+      },
+      "cta": {
+        "title": "Vous réunissez votre famille ?",
+        "body": "Parlez-nous de votre lien familial et nous vous expliquerons les documents nécessaires.",
+        "button": "Nous Contacter"
+      }
+    },
+    "investorVisas": {
+      "meta": {
+        "title": "Assistance Visa d'Investisseur — Visa Expeditor",
+        "description": "Explorez les voies de résidence fondées sur l'investissement et préparez les documents financiers et d'identité qu'elles exigent."
+      },
+      "hero": {
+        "eyebrow": "Voies d'Investissement",
+        "heading": "Assistance Visa d'Investisseur",
+        "subhead": "Explorez les voies de résidence fondées sur l'investissement et préparez les documents qu'elles exigent."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Les visas d'investisseur permettent à des personnes éligibles d'obtenir la résidence, et parfois la citoyenneté, en échange d'un investissement substantiel. Les programmes diffèrent largement selon le pays et évoluent souvent.",
+        "p2": "Nous vous aidons à comprendre la structure générale d'une voie d'investissement et à organiser les documents financiers et d'identité qu'un programme peut demander. Nous ne fournissons pas de conseils en investissement."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les personnes qui explorent les programmes de résidence par investissement.",
+        "i2": "Les entrepreneurs qui délocalisent une entreprise ou un capital.",
+        "i3": "Les familles qui planifient une résidence internationale à long terme."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Comparez les voies",
+          "description": "Nous expliquons les caractéristiques générales des programmes que vous envisagez, sans en recommander un."
+        },
+        "s2": {
+          "title": "Organisez vos documents",
+          "description": "Nous vous aidons à préparer les documents d'identité, d'origine des fonds et d'investissement."
+        },
+        "s3": {
+          "title": "Préparez la demande",
+          "description": "Nous vérifions les formulaires et les justificatifs pour leur exhaustivité."
+        },
+        "s4": {
+          "title": "Déposez par la voie officielle",
+          "description": "Vous déposez votre demande auprès de l'autorité compétente, avec nos conseils sur la procédure."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Passeport",
+          "value": "Un passeport valide pour vous et toute personne à charge."
+        },
+        "r2": {
+          "label": "Preuve de fonds",
+          "value": "Une preuve que les fonds d'investissement sont disponibles et acquis légalement."
+        },
+        "r3": {
+          "label": "Origine des fonds",
+          "value": "Des documents expliquant la provenance des fonds."
+        },
+        "r4": {
+          "label": "Plan d'investissement",
+          "value": "Les détails de l'investissement admissible, selon les exigences du programme."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Qu'est-ce qu'un visa d'investisseur ?",
+        "a1": "C'est une voie de résidence qui exige un investissement admissible. Le montant, les conditions et les avantages varient selon le pays.",
+        "q2": "Quels pays les proposent ?",
+        "a2": "Plusieurs pays gèrent de tels programmes, et ceux-ci changent fréquemment. Nous pouvons expliquer la structure générale, sans en recommander un.",
+        "q3": "Combien dois-je investir ?",
+        "a3": "Les montants diffèrent selon le programme et évoluent avec le temps. Nous évitons de citer des chiffres qui pourraient être obsolètes ; consultez la source officielle.",
+        "q4": "Cela mène-t-il à la citoyenneté ?",
+        "a4": "Certains programmes offrent une voie vers la citoyenneté et d'autres seulement la résidence. Cela dépend du pays et de ses règles.",
+        "q5": "Donnez-vous des conseils en investissement ?",
+        "a5": "Non. Nous ne sommes ni conseillers financiers ni juridiques. Les décisions d'investissement vous appartiennent ; nous vous aidons pour les formalités d'immigration."
+      },
+      "cta": {
+        "title": "Vous envisagez une voie d'investissement ?",
+        "body": "Parlez-nous des documents nécessaires ; les décisions d'investissement vous appartiennent.",
+        "button": "Nous Contacter"
+      }
+    }
+  }
+}

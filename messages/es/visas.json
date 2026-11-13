@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "title": "Servicios de Visa — Visa Expeditor",
+    "description": "Asistencia guiada para visas de turista, negocios, estudiante y trabajo. Requisitos claros, revisión de documentos y apoyo en la presentación."
+  },
+  "hero": {
+    "eyebrow": "Autorización de Viaje",
+    "heading": "Servicios de Visa, con Claridad",
+    "subhead": "Elija su motivo de viaje y obtenga una ruta sencilla desde los requisitos hasta la presentación."
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "visas": "Visas"
+  },
+  "grid": {
+    "heading": "Seleccione un Servicio de Visa",
+    "subhead": "Cada ruta incluye una lista personalizada, revisión de documentos y orientación paso a paso."
+  },
+  "items": {
+    "tourist": {
+      "label": "Visa de Turista",
+      "description": "Viajes de visita y vacaciones, con lista completa de documentos y revisión de la solicitud."
+    },
+    "business": {
+      "label": "Visa de Negocios",
+      "description": "Reuniones, conferencias y negociaciones, con los documentos de empresa e invitación organizados."
+    },
+    "student": {
+      "label": "Visa de Estudiante",
+      "description": "Programas de estudio, con matrícula, financiación y documentos académicos preparados correctamente."
+    },
+    "work": {
+      "label": "Visa de Trabajo",
+      "description": "Viajes por empleo, coordinando documentos del empleador y del empleado."
+    }
+  },
+  "faqs": {
+    "heading": "Preguntas Frecuentes",
+    "q1": "¿Cómo sé qué visa necesito?",
+    "a1": "Depende de su nacionalidad, destino y motivo de viaje. Cuéntenos los detalles de su viaje y le indicaremos la ruta correcta.",
+    "q2": "¿Pueden garantizar la aprobación de mi visa?",
+    "a2": "No. La aprobación la decide la autoridad del destino. Le ayudamos a presentar una solicitud completa y precisa.",
+    "q3": "¿Las tasas oficiales están incluidas?",
+    "a3": "No. Las tasas oficiales se pagan a la autoridad competente y son independientes de cualquier honorario de servicio.",
+    "q4": "¿Cuánto tarda una visa?",
+    "a4": "Los plazos varían según el destino y la temporada y pueden cambiar, por lo que conviene solicitar lo antes posible.",
+    "q5": "¿Qué pasa si ya me la rechazaron?",
+    "a5": "Podemos ayudarle a revisar lo ocurrido y preparar una solicitud más sólida, pero no podemos garantizar un resultado distinto."
+  },
+  "cta": {
+    "title": "¿No sabe qué visa le conviene?",
+    "body": "Díganos adónde va y por qué, y detallaremos los documentos necesarios.",
+    "button": "Contáctenos"
+  },
+  "detail": {
+    "tourist": {
+      "meta": {
+        "title": "Asistencia para Visa de Turista — Visa Expeditor",
+        "description": "Ayuda guiada para preparar una visa de turista: requisitos, formularios, documentos de respaldo y pasos de presentación."
+      },
+      "hero": {
+        "eyebrow": "Viaje de Visita",
+        "heading": "Asistencia para Visa de Turista",
+        "subhead": "Prepare una solicitud de visa de visitante completa y precisa con orientación paso a paso."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "Una visa de turista le permite visitar un país por ocio, turismo o visita familiar, normalmente por una estadía limitada. Los requisitos varían según el destino, la nacionalidad y el motivo.",
+        "p2": "Le ayudamos a confirmar qué aplica a su viaje, reunir los documentos correctos y presentar una solicitud clara que refleje sus planes."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Viajeros que visitan un país por turismo, vacaciones o visita familiar.",
+        "i2": "Solicitantes primerizos que quieren revisar su documentación antes de presentarla.",
+        "i3": "Viajeros que necesitan una idea más clara de los documentos que exige su destino."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Confirme sus requisitos",
+          "description": "Indíquenos su nacionalidad, destino y fechas de viaje para identificar la ruta de visa aplicable."
+        },
+        "s2": {
+          "title": "Prepare sus documentos",
+          "description": "Le damos una lista personalizada y revisamos cada punto para verificar que esté completo y sea coherente."
+        },
+        "s3": {
+          "title": "Complete los formularios",
+          "description": "Le ayudamos a completar la solicitud con precisión y a señalar cualquier punto que pueda causar demoras."
+        },
+        "s4": {
+          "title": "Presente con confianza",
+          "description": "Usted presenta por el canal oficial, con nuestra orientación sobre tasas, citas y próximos pasos."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Pasaporte",
+          "value": "Un pasaporte válido con vigencia suficiente para su destino."
+        },
+        "r2": {
+          "label": "Fotografía",
+          "value": "Una fotografía reciente tipo pasaporte que cumpla las especificaciones del destino."
+        },
+        "r3": {
+          "label": "Itinerario",
+          "value": "Fechas de viaje y, cuando se exija, prueba de alojamiento o de salida del país."
+        },
+        "r4": {
+          "label": "Documentos de respaldo",
+          "value": "Prueba de fondos, vínculos con su país o motivo de la visita, según exija el destino."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Siempre necesito una visa de turista?",
+        "a1": "No. Muchos destinos permiten entrada sin visa o con visa a la llegada para algunas nacionalidades. Verifique su pasaporte y destino antes de asumirlo.",
+        "q2": "¿Con cuánta anticipación debo solicitarla?",
+        "a2": "Solicítela tan pronto como lo permita su destino. Los plazos varían y cambian según la temporada, así que conviene dejar tiempo extra.",
+        "q3": "¿Pueden garantizar la aprobación?",
+        "a3": "No. La aprobación siempre la decide la autoridad del destino. Le ayudamos a presentar una solicitud completa y precisa.",
+        "q4": "¿Pagan ustedes la tasa oficial?",
+        "a4": "No. Las tasas oficiales se pagan a la autoridad competente y son independientes de cualquier honorario de servicio. Le explicamos qué esperar.",
+        "q5": "¿Qué pasa si rechazan mi solicitud?",
+        "a5": "Podemos revisar lo ocurrido y ayudarle a entender las opciones, pero no podemos apelar en su nombre ni garantizar un resultado distinto."
+      },
+      "cta": {
+        "title": "¿Planeando un viaje?",
+        "body": "Hable con nuestro equipo y detallaremos los documentos que espera su destino.",
+        "button": "Contáctenos"
+      }
+    },
+    "business": {
+      "meta": {
+        "title": "Asistencia para Visa de Negocios — Visa Expeditor",
+        "description": "Prepare una visa de negocios para reuniones, conferencias y negociaciones con los documentos de empresa organizados."
+      },
+      "hero": {
+        "eyebrow": "Viaje Corporativo",
+        "heading": "Asistencia para Visa de Negocios",
+        "subhead": "Prepare una solicitud profesional de viaje de negocios para reuniones, conferencias y negociaciones."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "Una visa de negocios cubre visitas profesionales cortas como reuniones, conferencias, negociaciones o formación. Normalmente no permite empleo local remunerado.",
+        "p2": "Le ayudamos a presentar un motivo de negocio claro y los documentos de invitación o de empresa que pueda solicitar el consulado."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Profesionales que viajan por reuniones, conferencias o negociaciones.",
+        "i2": "Empleados que asisten a formación o eventos corporativos en el extranjero.",
+        "i3": "Empresarios que visitan socios, proveedores o clientes en el extranjero."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Confirme la ruta",
+          "description": "Comprobamos si su visita califica como viaje de negocios o necesita otra categoría de visa."
+        },
+        "s2": {
+          "title": "Reúna los documentos de empresa",
+          "description": "Le ayudamos a reunir cartas de invitación, confirmaciones del empleador y registro del evento."
+        },
+        "s3": {
+          "title": "Complete la solicitud",
+          "description": "Revisamos los formularios y documentos para que sean coherentes con el motivo declarado."
+        },
+        "s4": {
+          "title": "Presente y dé seguimiento",
+          "description": "Usted presenta por el canal oficial y le explicamos qué ocurre después."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Pasaporte",
+          "value": "Un pasaporte válido que cumpla las reglas de vigencia del destino."
+        },
+        "r2": {
+          "label": "Invitación",
+          "value": "Una carta de la empresa anfitriona o del organizador del evento, cuando se exija."
+        },
+        "r3": {
+          "label": "Documentos de empresa",
+          "value": "Una carta del empleador que confirme su cargo, motivo y fechas de viaje."
+        },
+        "r4": {
+          "label": "Prueba de fondos",
+          "value": "Prueba de que puede cubrir su estadía, si el destino lo exige."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Necesito visa de negocios para una conferencia?",
+        "a1": "A menudo sí, aunque algunos destinos permiten actividades de negocio con una visa de visitante. Verifique las reglas de su destino y nacionalidad.",
+        "q2": "¿Puedo trabajar de forma remota con una visa de negocios?",
+        "a2": "Una visa de negocios normalmente es para reuniones y negociaciones, no para empleo local. Las reglas sobre trabajo remoto varían y deben confirmarse.",
+        "q3": "¿Qué es una carta de invitación?",
+        "a3": "Es una carta de la empresa u organización que lo recibe que indica el motivo y las fechas de su visita.",
+        "q4": "¿Puede mi empleador patrocinar la solicitud?",
+        "a4": "Su empleador puede aportar documentos de respaldo, pero la solicitud normalmente la presenta usted como viajero.",
+        "q5": "¿En qué se diferencia de una visa de trabajo?",
+        "a5": "La visa de negocios es para visitas profesionales cortas. La visa de trabajo es para asumir un empleo y normalmente requiere patrocinio."
+      },
+      "cta": {
+        "title": "¿Viaja por negocios?",
+        "body": "Cuéntenos sobre su viaje y prepararemos los documentos que espera su destino.",
+        "button": "Contáctenos"
+      }
+    },
+    "student": {
+      "meta": {
+        "title": "Asistencia para Visa de Estudiante — Visa Expeditor",
+        "description": "Organice una visa de estudiante con matrícula, financiación y documentos académicos preparados correctamente."
+      },
+      "hero": {
+        "eyebrow": "Estudiar en el Extranjero",
+        "heading": "Asistencia para Visa de Estudiante",
+        "subhead": "Organícese para su programa de estudios con orientación clara sobre documentos y solicitud."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "Una visa de estudiante le permite vivir y estudiar en otro país por un curso aprobado. Normalmente exige prueba de matrícula y prueba de que puede mantenerse.",
+        "p2": "Le ayudamos a reunir los documentos académicos, financieros y de identidad que suele requerir una solicitud de visa de estudiante."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Estudiantes que inician un grado, intercambio o programa de idiomas en el extranjero.",
+        "i2": "Solicitantes que deben demostrar fondos y matrícula.",
+        "i3": "Familias que preparan la mudanza de un dependiente por estudios."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Confirme los requisitos",
+          "description": "Revisamos su curso, destino y nacionalidad para identificar la ruta de estudiante correcta."
+        },
+        "s2": {
+          "title": "Reúna sus registros",
+          "description": "Le ayudamos a reunir documentos de matrícula, académicos y financieros en el formato requerido."
+        },
+        "s3": {
+          "title": "Complete los formularios",
+          "description": "Revisamos la solicitud para que sea coherente con su curso y su financiación."
+        },
+        "s4": {
+          "title": "Presente y prepárese",
+          "description": "Usted presenta por el canal oficial, con orientación sobre entrevistas y próximos pasos."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Pasaporte",
+          "value": "Un pasaporte válido con la vigencia que exija su destino."
+        },
+        "r2": {
+          "label": "Matrícula",
+          "value": "Una carta de admisión o matrícula de una institución reconocida."
+        },
+        "r3": {
+          "label": "Prueba de fondos",
+          "value": "Prueba de que puede cubrir matrícula y costos de vida, según se exija."
+        },
+        "r4": {
+          "label": "Registros académicos",
+          "value": "Certificados, títulos y resultados de exámenes de idioma cuando se requieran."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Cuándo debo solicitar la visa de estudiante?",
+        "a1": "Cuando tenga sus documentos de matrícula, solicítela tan pronto como lo permita el destino, ya que el trámite puede tardar.",
+        "q2": "¿Qué cuenta como prueba de fondos?",
+        "a2": "Normalmente extractos bancarios, cartas de patrocinio o becas que demuestren que puede cubrir sus costos. Los requisitos varían según el destino.",
+        "q3": "¿Puedo trabajar mientras estudio?",
+        "a3": "Algunos destinos permiten trabajo limitado con visa de estudiante. Las reglas dependen del país y del curso, así que confirme antes de depender de ello.",
+        "q4": "¿Puede venir mi familia conmigo?",
+        "a4": "Algunos destinos permiten dependientes con visa de estudiante y otros no. Podemos ayudarle a verificar las reglas para su caso.",
+        "q5": "¿Qué pasa si mi curso empieza antes de recibir la visa?",
+        "a5": "Contacte a su institución lo antes posible. Muchas permiten un inicio tardío, pero la decisión es suya, no nuestra."
+      },
+      "cta": {
+        "title": "¿Se va a estudiar al extranjero?",
+        "body": "Comparta los detalles de su programa y crearemos su lista de documentos.",
+        "button": "Contáctenos"
+      }
+    },
+    "work": {
+      "meta": {
+        "title": "Asistencia para Visa de Trabajo — Visa Expeditor",
+        "description": "Organice una visa por empleo con los documentos del empleador y del empleado en orden."
+      },
+      "hero": {
+        "eyebrow": "Empleo en el Extranjero",
+        "heading": "Asistencia para Visa de Trabajo",
+        "subhead": "Organice una solicitud de visa por empleo con los documentos del empleador y del empleado en orden."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "Una visa de trabajo le permite asumir un empleo en otro país, normalmente vinculada a un empleador o cargo específico. Los requisitos dependen de las normas laborales del destino.",
+        "p2": "Le ayudamos a coordinar los documentos que necesitan el empleador y el empleado para que la solicitud sea coherente y completa."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Profesionales con una oferta de trabajo o traslado al extranjero.",
+        "i2": "Empleadores que trasladan personal o contratan internacionalmente.",
+        "i3": "Trabajadores cualificados que solicitan por una ruta patrocinada por un empleador."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Confirme la ruta",
+          "description": "Revisamos las categorías de visa de trabajo del destino y cuál corresponde a su cargo."
+        },
+        "s2": {
+          "title": "Coordine los documentos",
+          "description": "Ayudamos al empleador y al empleado a preparar documentos de patrocinio y cualificaciones."
+        },
+        "s3": {
+          "title": "Complete la solicitud",
+          "description": "Revisamos los formularios frente al cargo, el empleador y los requisitos del destino."
+        },
+        "s4": {
+          "title": "Presente y planifique la llegada",
+          "description": "Usted presenta por el canal oficial y explicamos qué preparar para su llegada."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Pasaporte",
+          "value": "Un pasaporte válido que cumpla las reglas de vigencia del destino."
+        },
+        "r2": {
+          "label": "Oferta de trabajo",
+          "value": "Un contrato o carta de oferta del empleador."
+        },
+        "r3": {
+          "label": "Patrocinio",
+          "value": "Patrocinio del empleador o autorización laboral, cuando el destino lo exija."
+        },
+        "r4": {
+          "label": "Cualificaciones",
+          "value": "Certificados o referencias que demuestren que cumple los requisitos del cargo."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Necesito primero una oferta de trabajo?",
+        "a1": "La mayoría de las visas de trabajo requieren una oferta o patrocinio confirmados antes de solicitar. Algunos destinos tienen rutas para trabajadores cualificados sin ello.",
+        "q2": "¿Quién solicita, yo o mi empleador?",
+        "a2": "Varía. A menudo el empleador inicia el patrocinio y usted completa la solicitud de visa. Ayudamos a coordinar ambas partes.",
+        "q3": "¿Puede venir mi familia conmigo?",
+        "a3": "Muchas visas de trabajo permiten dependientes, pero las reglas difieren según el destino y el cargo. Podemos ayudarle a verificarlo.",
+        "q4": "¿Cuánto dura una visa de trabajo?",
+        "a4": "Depende del destino y del cargo, y puede ser renovable. Verifique la ruta específica para su caso.",
+        "q5": "¿Puedo cambiar de empleador después?",
+        "a5": "Algunas visas lo vinculan a un solo empleador y otras son más flexibles. Confirme las condiciones antes de cambiar de trabajo."
+      },
+      "cta": {
+        "title": "¿Se muda al extranjero por trabajo?",
+        "body": "Cuéntenos sobre el cargo y el destino y detallaremos los documentos necesarios.",
+        "button": "Contáctenos"
+      }
+    }
+  }
+}

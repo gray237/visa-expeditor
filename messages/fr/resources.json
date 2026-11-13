@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Ressources — Visa Expeditor",
+    "description": "FAQ, guides et notes sur les délais de traitement pour vous aider à préparer vos demandes de passeport et de visa en toute confiance."
+  },
+  "hero": {
+    "eyebrow": "Base de Connaissances",
+    "heading": "Ressources pour Votre Demande",
+    "subhead": "Des réponses claires et des guides pratiques, rédigés pour vous aider à éviter les blocages courants."
+  },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "resources": "Ressources"
+  },
+  "grid": {
+    "heading": "Parcourir les Ressources",
+    "subhead": "Commencez par la FAQ pour des réponses rapides, ou explorez les guides pour un accompagnement plus détaillé."
+  },
+  "items": {
+    "faqs": {
+      "label": "FAQ",
+      "description": "Des réponses rapides aux questions que l'on nous pose le plus souvent."
+    },
+    "guides": {
+      "label": "Guides",
+      "description": "Des démarches pas à pas pour les demandes courantes."
+    },
+    "processingTimes": {
+      "label": "Délais de Traitement",
+      "description": "Notes générales sur les facteurs qui influencent la durée d'une demande."
+    },
+    "insights": {
+      "label": "Analyses",
+      "description": "Explications des évolutions et des tendances des règles de voyage."
+    }
+  },
+  "faqs": {
+    "heading": "Foire Aux Questions",
+    "q1": "Que fait Visa Expeditor ?",
+    "a1": "Nous vous aidons à préparer vos demandes de passeport et de visa : confirmation des exigences, organisation des documents et vérification des formulaires avant leur dépôt.",
+    "q2": "Êtes-vous un organisme gouvernemental ?",
+    "a2": "Non. Visa Expeditor est un service indépendant et n'est affilié à aucun organisme gouvernemental.",
+    "q3": "Fournissez-vous des conseils juridiques ?",
+    "a3": "Non. Nous ne sommes pas un cabinet juridique et ne fournissons pas de conseils juridiques. Nous vous aidons pour la préparation des documents et l'orientation dans la démarche.",
+    "q4": "Pouvez-vous garantir une acceptation ?",
+    "a4": "Non. Les décisions sont prises par les autorités compétentes. Nous vous aidons à déposer une demande complète et cohérente.",
+    "q5": "Comment commencer ?",
+    "a5": "Indiquez-nous votre nationalité, votre destination et le motif de votre voyage via le formulaire de contact, et nous vous expliquerons les prochaines étapes."
+  },
+  "cta": {
+    "title": "Vous avez encore une question ?",
+    "body": "Envoyez-nous les détails et nous vous orienterons dans la bonne direction.",
+    "button": "Nous Contacter"
+  },
+  "faqsPage": {
+    "meta": {
+      "title": "Foire Aux Questions — Visa Expeditor",
+      "description": "Réponses aux questions courantes sur les passeports, les visas, les délais de traitement, les frais et la collaboration avec Visa Expeditor."
+    },
+    "hero": {
+      "eyebrow": "Réponses",
+      "heading": "Foire Aux Questions",
+      "subhead": "Les questions que l'on nous pose le plus souvent, avec des réponses claires. Si la vôtre n'y figure pas, contactez-nous."
+    },
+    "breadcrumbs": {
+      "faqs": "FAQ"
+    },
+    "faqs": {
+      "heading": "Questions Courantes",
+      "q1": "Que fait Visa Expeditor ?",
+      "a1": "Nous vous aidons à préparer vos demandes de passeport et de visa. Cela comprend la confirmation des exigences, l'organisation des documents et la vérification des formulaires avant leur dépôt.",
+      "q2": "Êtes-vous un organisme gouvernemental ?",
+      "a2": "Non. Visa Expeditor est un service indépendant. Nous ne sommes affiliés à aucun organisme gouvernemental, consulat ou ambassade.",
+      "q3": "Fournissez-vous des conseils juridiques ?",
+      "a3": "Non. Nous ne sommes pas un cabinet juridique et nous ne fournissons pas de conseils juridiques. Pour toute question juridique, veuillez consulter un professionnel qualifié.",
+      "q4": "Pouvez-vous garantir une acceptation ?",
+      "a4": "Non. Les décisions d'entrée et de visa sont prises uniquement par les autorités compétentes. Nous vous aidons à déposer une demande complète et exacte.",
+      "q5": "Combien coûtent vos services ?",
+      "a5": "Le tarif dépend du service et de la destination. Les frais administratifs officiels sont distincts et versés à l'autorité compétente. Contactez-nous pour un détail clair.",
+      "q6": "Combien de temps prend une demande ?",
+      "a6": "Les délais de traitement varient selon la destination, la saison et le type de demande, et évoluent avec le temps. Déposez votre demande le plus tôt que la destination le permet.",
+      "q7": "Gérez-vous les frais administratifs officiels ?",
+      "a7": "Non. Les frais administratifs officiels sont versés directement à l'autorité compétente. Tout frais de service que nous facturons est distinct et clairement indiqué.",
+      "q8": "De quels documents aurai-je besoin ?",
+      "a8": "Cela dépend de la demande. Les éléments courants comprennent un passeport valide, une photo conforme, une preuve de fonds et des documents justificatifs. Nous fournissons une liste personnalisée.",
+      "q9": "Puis-je déposer une demande si j'ai déjà été refusé ?",
+      "a9": "Oui, vous pouvez déposer une nouvelle demande. Nous pouvons vous aider à examiner ce qui s'est passé et à préparer une demande plus solide, mais nous ne pouvons pas garantir un résultat différent.",
+      "q10": "Comment vous contacter ?",
+      "a10": "Utilisez le formulaire de contact de ce site. Indiquez-nous votre nationalité, votre destination et le motif de votre voyage, et nous vous répondrons avec les prochaines étapes."
+    },
+    "cta": {
+      "title": "Une question sans réponse ?",
+      "body": "Envoyez-nous vos informations et nous vous répondrons clairement.",
+      "button": "Nous Contacter"
+    }
+  }
+}

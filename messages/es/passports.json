@@ -51,5 +51,319 @@
     "title": "¿Listo para tramitar su pasaporte?",
     "body": "Comience su registro en minutos. Verificaremos sus antecedentes y le orientaremos en cada etapa.",
     "button": "Comenzar Solicitud de Pasaporte"
+  },
+  "detail": {
+    "new": {
+      "meta": {
+        "title": "Asistencia para Pasaporte Nuevo — Visa Expeditor",
+        "description": "Ayuda para solicitar un pasaporte por primera vez: documentos de identidad, formularios, fotografías y pasos de presentación."
+      },
+      "hero": {
+        "eyebrow": "Solicitantes Primerizos",
+        "heading": "Asistencia para Pasaporte Nuevo",
+        "subhead": "Prepare una solicitud de pasaporte por primera vez con los documentos de identidad correctos y un formulario revisado."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "Un primer pasaporte prueba su identidad y ciudadanía, normalmente para un adulto o un niño que solicita por primera vez. Los documentos exactos dependen de su país y de sus circunstancias.",
+        "p2": "Le ayudamos a confirmar qué debe presentar, preparar las pruebas de respaldo y revisar el formulario antes de la presentación."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Adultos que solicitan su primer pasaporte.",
+        "i2": "Padres o tutores que solicitan para un niño.",
+        "i3": "Solicitantes que no están seguros de qué documentos de identidad se aceptan."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Confirme los requisitos",
+          "description": "Verificamos qué exige su país a los solicitantes primerizos, incluido el caso de los menores."
+        },
+        "s2": {
+          "title": "Reúna los documentos de identidad",
+          "description": "Le ayudamos a reunir pruebas de identidad, ciudadanía y cualquier consentimiento parental."
+        },
+        "s3": {
+          "title": "Complete la solicitud",
+          "description": "Revisamos el formulario y la fotografía frente a los requisitos oficiales."
+        },
+        "s4": {
+          "title": "Presente y espere",
+          "description": "Usted presenta por el canal oficial y le explicamos las etapas previstas."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Fotografías",
+          "value": "Fotografías de pasaporte que cumplan los requisitos para cada solicitante."
+        },
+        "r2": {
+          "label": "Prueba de identidad",
+          "value": "Un documento de identidad con fotografía reconocido."
+        },
+        "r3": {
+          "label": "Prueba de ciudadanía",
+          "value": "Un certificado de nacimiento o equivalente, según lo exija su país."
+        },
+        "r4": {
+          "label": "Formulario de solicitud",
+          "value": "El formulario oficial completado y firmado según se requiera."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Qué documentos prueban la ciudadanía?",
+        "a1": "Por lo general, un certificado de nacimiento o un registro equivalente. Las pruebas aceptadas dependen de su país y su situación.",
+        "q2": "¿Puedo solicitar para mi hijo?",
+        "a2": "Sí. Los menores normalmente necesitan consentimiento adicional y pruebas de la identidad del padre, la madre o el tutor.",
+        "q3": "¿Cuánto tiempo es válido un primer pasaporte?",
+        "a3": "Los períodos de vigencia varían según el país y la edad del solicitante. Consulte la regla que se aplica a usted.",
+        "q4": "¿Qué pasa si no tengo certificado de nacimiento?",
+        "a4": "Es posible que se acepten pruebas alternativas. Cuéntenos su situación y le ayudaremos a identificar qué presentar.",
+        "q5": "¿Debo solicitar en persona?",
+        "a5": "Algunos países exigen una cita presencial para los primeros pasaportes. Le explicamos qué exige su destino."
+      },
+      "cta": {
+        "title": "¿Solicita por primera vez?",
+        "body": "Cuéntenos su caso y prepararemos los documentos involucrados.",
+        "button": "Contáctenos"
+      }
+    },
+    "renewal": {
+      "meta": {
+        "title": "Asistencia para Renovación de Pasaporte — Visa Expeditor",
+        "description": "Renueve un pasaporte por vencer o recién vencido con una solicitud revisada y documentos de respaldo organizados."
+      },
+      "hero": {
+        "eyebrow": "Manténgalo Vigente",
+        "heading": "Asistencia para Renovación de Pasaporte",
+        "subhead": "Renueve un pasaporte por vencer o recién vencido con una solicitud revisada."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "Renovar mantiene su pasaporte vigente y evita problemas de última hora en el aeropuerto. La mayoría de los países permiten renovar antes del vencimiento y algunos permiten un breve período de gracia después.",
+        "p2": "Le ayudamos a confirmar que califica para la renovación, preparar los elementos requeridos y revisar el formulario antes de que lo presente."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Titulares de un pasaporte próximo a vencer.",
+        "i2": "Viajeros con un pasaporte vencido recientemente.",
+        "i3": "Cualquier persona cuyo destino exija más vigencia de la que tiene su pasaporte."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Verifique la elegibilidad",
+          "description": "Confirmamos si su pasaporte califica para renovación o necesita un proceso diferente."
+        },
+        "s2": {
+          "title": "Prepare documentos y fotografía",
+          "description": "Le ayudamos a reunir el pasaporte actual, la fotografía y cualquier prueba de respaldo."
+        },
+        "s3": {
+          "title": "Complete el formulario de renovación",
+          "description": "Revisamos el formulario para verificar su exactitud y coherencia con sus datos."
+        },
+        "s4": {
+          "title": "Presente y dé seguimiento",
+          "description": "Usted presenta por el canal oficial y le explicamos qué ocurre después."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Pasaporte actual",
+          "value": "Su pasaporte existente, que normalmente se entrega durante la renovación."
+        },
+        "r2": {
+          "label": "Fotografía",
+          "value": "Una fotografía reciente que cumpla las especificaciones vigentes."
+        },
+        "r3": {
+          "label": "Formulario de solicitud",
+          "value": "El formulario de renovación completado para su país."
+        },
+        "r4": {
+          "label": "Prueba de cambio de nombre",
+          "value": "Documentos de respaldo si su nombre o sus datos han cambiado."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Cuándo debo renovar?",
+        "a1": "Renueve antes de que su pasaporte incumpla la regla de vigencia de un destino. Muchos viajeros renuevan dentro del año previo al vencimiento.",
+        "q2": "¿Puedo renovar un pasaporte vencido recientemente?",
+        "a2": "Muchos países permiten renovar después del vencimiento dentro de un período limitado. Consulte la regla que se aplica a su pasaporte.",
+        "q3": "¿Puedo viajar mientras se renueva?",
+        "a3": "Por lo general, no, porque su pasaporte actual se entrega o se invalida durante el proceso.",
+        "q4": "¿Necesito una fotografía nueva?",
+        "a4": "Sí, en la mayoría de los casos. Las fotografías deben cumplir los requisitos vigentes y no pueden reutilizarse de un pasaporte anterior.",
+        "q5": "¿Qué pasa si mis datos han cambiado?",
+        "a5": "Un cambio de nombre o de datos puede requerir pruebas de respaldo o una solicitud diferente. Cuéntenos y le orientaremos."
+      },
+      "cta": {
+        "title": "¿Su pasaporte necesita renovación?",
+        "body": "Hable con nosotros y prepararemos una solicitud de renovación impecable.",
+        "button": "Contáctenos"
+      }
+    },
+    "nameChange": {
+      "meta": {
+        "title": "Asistencia para Cambio de Nombre en el Pasaporte — Visa Expeditor",
+        "description": "Actualice su pasaporte tras matrimonio, divorcio o un cambio legal de nombre con las pruebas de respaldo correctas."
+      },
+      "hero": {
+        "eyebrow": "Nombre y Datos",
+        "heading": "Asistencia para Cambio de Nombre en el Pasaporte",
+        "subhead": "Actualice su pasaporte tras matrimonio, divorcio o un cambio legal de nombre con pruebas verificadas."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "Un cambio de nombre actualiza su pasaporte para que coincida con un cambio legal de nombre, como matrimonio, divorcio u orden judicial. Las pruebas aceptadas dependen de su país.",
+        "p2": "Le ayudamos a identificar los documentos que respaldan el cambio y a preparar una solicitud coherente."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Personas que cambiaron su nombre mediante matrimonio o divorcio.",
+        "i2": "Solicitantes con un cambio de nombre ordenado por un tribunal.",
+        "i3": "Viajeros cuyos datos del pasaporte ya no coinciden con otros documentos."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Confirme las pruebas",
+          "description": "Identificamos qué documento respalda su cambio de nombre."
+        },
+        "s2": {
+          "title": "Prepare los documentos",
+          "description": "Le ayudamos a reunir el certificado, la orden o el registro requerido."
+        },
+        "s3": {
+          "title": "Complete la solicitud",
+          "description": "Revisamos el formulario para que el nuevo nombre coincida exactamente con sus pruebas."
+        },
+        "s4": {
+          "title": "Presente y dé seguimiento",
+          "description": "Usted presenta por el canal oficial y le explicamos los siguientes pasos."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Pasaporte actual",
+          "value": "Su pasaporte existente, cuando el cambio sea una enmienda o una renovación."
+        },
+        "r2": {
+          "label": "Registro de matrimonio o divorcio",
+          "value": "El certificado que muestra el cambio, cuando corresponda."
+        },
+        "r3": {
+          "label": "Orden judicial",
+          "value": "Una orden legal de cambio de nombre, cuando corresponda."
+        },
+        "r4": {
+          "label": "Fotografía",
+          "value": "Una fotografía reciente que cumpla las especificaciones vigentes."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Qué documento prueba un cambio de nombre?",
+        "a1": "Un certificado de matrimonio, un decreto de divorcio o una orden judicial, según el cambio. El documento aceptado varía según el país.",
+        "q2": "¿Necesito un pasaporte nuevo o una enmienda?",
+        "a2": "Depende de su país y de cuánto tiempo le quede a su pasaporte. Podemos ayudarle a determinar cuál corresponde.",
+        "q3": "¿Puedo conservar mi pasaporte anterior?",
+        "a3": "A menudo el pasaporte anterior se cancela o se devuelve con una perforación. La regla depende de su país.",
+        "q4": "¿Cuánto tarda?",
+        "a4": "Los tiempos de procesamiento varían según el país y la temporada, y cambian con el tiempo, así que solicítelo lo antes posible.",
+        "q5": "¿Qué pasa si mis boletos están a nombre anterior?",
+        "a5": "Los documentos de viaje deben coincidir con el nombre de su pasaporte. Contacte a su aerolínea para actualizar la reserva antes de viajar."
+      },
+      "cta": {
+        "title": "¿Cambió su nombre?",
+        "body": "Envíenos los detalles y prepararemos las pruebas y los formularios.",
+        "button": "Contáctenos"
+      }
+    },
+    "lostStolen": {
+      "meta": {
+        "title": "Asistencia para Pasaporte Perdido o Robado — Visa Expeditor",
+        "description": "Reporte y reemplace un pasaporte perdido, robado o dañado con pasos claros y documentos organizados."
+      },
+      "hero": {
+        "eyebrow": "Reemplazo Urgente",
+        "heading": "Pasaporte Perdido, Robado o Dañado",
+        "subhead": "Reporte y reemplace un pasaporte perdido, robado o dañado con pasos claros y organizados."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "Si su pasaporte se pierde, es robado o se daña, repórtelo lo antes posible para que no pueda ser mal utilizado y luego solicite un reemplazo. Los pasos varían según si se encuentra en su país o en el extranjero.",
+        "p2": "Le ayudamos a entender el proceso de reporte y reemplazo y a preparar los documentos de respaldo que requiere."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Viajeros que perdieron un pasaporte o fueron víctimas de robo.",
+        "i2": "Titulares de un pasaporte dañado que ya no es válido.",
+        "i3": "Personas que necesitan un reemplazo con rapidez."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Reporte la pérdida",
+          "description": "Le explicamos cómo reportar el pasaporte para que nadie más pueda usarlo."
+        },
+        "s2": {
+          "title": "Reúna los documentos de respaldo",
+          "description": "Le ayudamos a reunir documentos de identidad, ciudadanía y, si corresponde, documentos policiales."
+        },
+        "s3": {
+          "title": "Complete la solicitud de reemplazo",
+          "description": "Revisamos el formulario y las pruebas antes de que los presente."
+        },
+        "s4": {
+          "title": "Presente y dé seguimiento",
+          "description": "Usted presenta por el canal oficial y le explicamos los plazos y las opciones."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Reporte policial",
+          "value": "Un reporte, cuando el pasaporte fue robado o el país lo exige."
+        },
+        "r2": {
+          "label": "Prueba de identidad",
+          "value": "Un documento de identidad reconocido o una copia del pasaporte perdido."
+        },
+        "r3": {
+          "label": "Prueba de ciudadanía",
+          "value": "Un certificado de nacimiento o equivalente, según se requiera."
+        },
+        "r4": {
+          "label": "Fotografía",
+          "value": "Una fotografía reciente que cumpla las especificaciones vigentes."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Qué debo hacer primero?",
+        "a1": "Reporte el pasaporte como perdido o robado a la autoridad correspondiente lo antes posible y luego inicie el proceso de reemplazo.",
+        "q2": "¿Necesito un reporte policial?",
+        "a2": "Para un pasaporte robado, por lo general sí. Para un pasaporte perdido, los requisitos varían según el país.",
+        "q3": "¿Puedo viajar con un pasaporte dañado?",
+        "a3": "Un pasaporte dañado puede ser rechazado en la frontera. Si está dañado, trátelo como inválido y solicite un reemplazo.",
+        "q4": "¿Cuánto tarda un reemplazo?",
+        "a4": "Los plazos varían según el país y la urgencia, y cambian con el tiempo. Indíquenos su fecha de viaje y le ayudaremos a planificar.",
+        "q5": "¿Puedo obtener un pasaporte de emergencia?",
+        "a5": "Algunos países emiten documentos de viaje de emergencia para casos urgentes. La disponibilidad y la elegibilidad dependen de su país."
+      },
+      "cta": {
+        "title": "¿Perdió o dañó su pasaporte?",
+        "body": "Contáctenos y le ayudaremos a planificar el reemplazo.",
+        "button": "Contáctenos"
+      }
+    }
   }
 }

@@ -51,5 +51,319 @@
     "title": "Prêt à finaliser votre passeport ?",
     "body": "Démarrez votre formulaire en quelques minutes. Nous contrôlons l'ensemble de vos pièces justificatives.",
     "button": "Commencer ma Demande de Passeport"
+  },
+  "detail": {
+    "new": {
+      "meta": {
+        "title": "Assistance Première Demande de Passeport — Visa Expeditor",
+        "description": "Aide pour une première demande de passeport : documents d'identité, formulaires, photos et étapes de dépôt."
+      },
+      "hero": {
+        "eyebrow": "Premiers Demandeurs",
+        "heading": "Assistance Première Demande de Passeport",
+        "subhead": "Préparez une première demande de passeport avec les bons documents d'identité et un formulaire vérifié."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Un premier passeport prouve votre identité et votre nationalité, généralement pour un adulte ou un enfant qui en fait la demande pour la première fois. Les documents exacts dépendent de votre pays et de votre situation.",
+        "p2": "Nous vous aidons à confirmer les pièces à fournir, à préparer les justificatifs et à vérifier le formulaire avant le dépôt."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les adultes qui demandent leur premier passeport.",
+        "i2": "Les parents ou tuteurs qui font une demande pour un enfant.",
+        "i3": "Les demandeurs qui ne savent pas quels documents d'identité sont acceptés."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Confirmez les exigences",
+          "description": "Nous vérifions ce que votre pays demande aux premiers demandeurs, y compris pour les mineurs."
+        },
+        "s2": {
+          "title": "Rassemblez les documents d'identité",
+          "description": "Nous vous aidons à réunir la preuve d'identité, la preuve de nationalité et tout consentement parental."
+        },
+        "s3": {
+          "title": "Complétez la demande",
+          "description": "Nous vérifions le formulaire et la photo au regard des exigences officielles."
+        },
+        "s4": {
+          "title": "Déposez et attendez",
+          "description": "Vous déposez par la voie officielle et nous vous expliquons les étapes attendues."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Photos",
+          "value": "Des photographies de passeport conformes pour chaque demandeur."
+        },
+        "r2": {
+          "label": "Preuve d'identité",
+          "value": "Un document d'identité avec photo reconnu."
+        },
+        "r3": {
+          "label": "Preuve de nationalité",
+          "value": "Un acte de naissance ou un document équivalent, selon les exigences de votre pays."
+        },
+        "r4": {
+          "label": "Formulaire de demande",
+          "value": "Le formulaire officiel dûment complété et signé selon les exigences."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Quels documents prouvent la nationalité ?",
+        "a1": "Généralement un acte de naissance ou un document équivalent. Les justificatifs acceptés dépendent de votre pays et de votre situation.",
+        "q2": "Puis-je faire une demande pour mon enfant ?",
+        "a2": "Oui. Les mineurs ont généralement besoin d'un consentement supplémentaire et d'une preuve d'identité du parent ou du tuteur.",
+        "q3": "Quelle est la durée de validité d'un premier passeport ?",
+        "a3": "Les durées de validité varient selon le pays et l'âge du demandeur. Vérifiez la règle qui s'applique à vous.",
+        "q4": "Et si je n'ai pas d'acte de naissance ?",
+        "a4": "D'autres justificatifs peuvent être acceptés. Décrivez-nous votre situation et nous vous aiderons à déterminer les pièces à fournir.",
+        "q5": "Dois-je déposer ma demande en personne ?",
+        "a5": "Certains pays exigent un rendez-vous en personne pour les premiers passeports. Nous vous expliquons ce qu'exige votre destination."
+      },
+      "cta": {
+        "title": "Vous faites votre première demande ?",
+        "body": "Parlez-nous de votre dossier et nous préparerons les documents concernés.",
+        "button": "Nous Contacter"
+      }
+    },
+    "renewal": {
+      "meta": {
+        "title": "Assistance Renouvellement de Passeport — Visa Expeditor",
+        "description": "Renouvelez un passeport expirant ou récemment expiré avec une demande vérifiée et des documents justificatifs organisés."
+      },
+      "hero": {
+        "eyebrow": "Rester à Jour",
+        "heading": "Assistance Renouvellement de Passeport",
+        "subhead": "Renouvelez un passeport expirant ou récemment expiré avec une demande vérifiée."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Le renouvellement maintient votre passeport à jour et évite les problèmes de dernière minute à l'aéroport. La plupart des pays autorisent le renouvellement avant l'expiration, et certains accordent un court délai de grâce après.",
+        "p2": "Nous vous aidons à confirmer que vous êtes éligible au renouvellement, à préparer les pièces requises et à vérifier le formulaire avant le dépôt."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les titulaires d'un passeport proche de l'expiration.",
+        "i2": "Les voyageurs dont le passeport a récemment expiré.",
+        "i3": "Toute personne dont la destination exige une validité supérieure à celle de son passeport."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Vérifiez l'éligibilité",
+          "description": "Nous confirmons si votre passeport est éligible au renouvellement ou nécessite une procédure différente."
+        },
+        "s2": {
+          "title": "Préparez les documents et la photo",
+          "description": "Nous vous aidons à réunir le passeport actuel, la photo et tout justificatif nécessaire."
+        },
+        "s3": {
+          "title": "Complétez le formulaire de renouvellement",
+          "description": "Nous vérifions le formulaire pour son exactitude et sa cohérence avec vos informations."
+        },
+        "s4": {
+          "title": "Déposez et suivez",
+          "description": "Vous déposez par la voie officielle et nous vous expliquons la suite."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Passeport actuel",
+          "value": "Votre passeport existant, qui est généralement retenu pendant le renouvellement."
+        },
+        "r2": {
+          "label": "Photo",
+          "value": "Une photographie récente conforme aux spécifications en vigueur."
+        },
+        "r3": {
+          "label": "Formulaire de demande",
+          "value": "Le formulaire de renouvellement dûment complété pour votre pays."
+        },
+        "r4": {
+          "label": "Preuve de changement de nom",
+          "value": "Des documents justificatifs si votre nom ou vos informations ont changé."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Quand dois-je renouveler ?",
+        "a1": "Renouvelez avant que votre passeport ne respecte plus la règle de validité d'une destination. De nombreux voyageurs renouvellent dans l'année précédant l'expiration.",
+        "q2": "Puis-je renouveler un passeport récemment expiré ?",
+        "a2": "De nombreux pays autorisent le renouvellement après expiration dans un délai limité. Vérifiez la règle applicable à votre passeport.",
+        "q3": "Puis-je voyager pendant le renouvellement ?",
+        "a3": "Généralement non, car votre passeport actuel est retenu ou invalidé pendant la procédure.",
+        "q4": "Ai-je besoin d'une nouvelle photo ?",
+        "a4": "Oui, dans la plupart des cas. Les photos doivent respecter les exigences en vigueur et ne peuvent pas être réutilisées d'un ancien passeport.",
+        "q5": "Et si mes informations ont changé ?",
+        "a5": "Un changement de nom ou d'informations peut nécessiter des justificatifs ou une demande différente. Dites-le-nous et nous vous conseillerons."
+      },
+      "cta": {
+        "title": "Votre passeport est à renouveler ?",
+        "body": "Parlez-nous de votre dossier et nous préparerons une demande de renouvellement claire.",
+        "button": "Nous Contacter"
+      }
+    },
+    "nameChange": {
+      "meta": {
+        "title": "Assistance Changement de Nom sur Passeport — Visa Expeditor",
+        "description": "Mettez à jour votre passeport après un mariage, un divorce ou un changement de nom légal avec les justificatifs appropriés."
+      },
+      "hero": {
+        "eyebrow": "Nom et Informations",
+        "heading": "Assistance Changement de Nom sur Passeport",
+        "subhead": "Mettez à jour votre passeport après un mariage, un divorce ou un changement de nom légal avec des justificatifs vérifiés."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Un changement de nom met à jour votre passeport pour correspondre à un changement de nom légal, tel qu'un mariage, un divorce ou une décision de justice. Les justificatifs acceptés dépendent de votre pays.",
+        "p2": "Nous vous aidons à identifier les documents qui appuient le changement et à préparer une demande cohérente."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les personnes qui ont changé de nom à la suite d'un mariage ou d'un divorce.",
+        "i2": "Les demandeurs dont le changement de nom a été ordonné par un tribunal.",
+        "i3": "Les voyageurs dont les informations de passeport ne correspondent plus à leurs autres documents."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Confirmez les justificatifs",
+          "description": "Nous identifions le document qui appuie votre changement de nom."
+        },
+        "s2": {
+          "title": "Préparez les documents",
+          "description": "Nous vous aidons à réunir l'acte, la décision ou le registre requis."
+        },
+        "s3": {
+          "title": "Complétez la demande",
+          "description": "Nous vérifions le formulaire afin que le nouveau nom corresponde exactement à vos justificatifs."
+        },
+        "s4": {
+          "title": "Déposez et suivez",
+          "description": "Vous déposez par la voie officielle et nous vous expliquons les prochaines étapes."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Passeport actuel",
+          "value": "Votre passeport existant, lorsque le changement prend la forme d'une modification ou d'un renouvellement."
+        },
+        "r2": {
+          "label": "Acte de mariage ou de divorce",
+          "value": "Le certificat qui atteste le changement, le cas échéant."
+        },
+        "r3": {
+          "label": "Décision de justice",
+          "value": "Une décision judiciaire de changement de nom, le cas échéant."
+        },
+        "r4": {
+          "label": "Photo",
+          "value": "Une photographie récente conforme aux spécifications en vigueur."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Quel document prouve un changement de nom ?",
+        "a1": "Un acte de mariage, un jugement de divorce ou une décision de justice, selon le changement. Le document accepté varie selon le pays.",
+        "q2": "Ai-je besoin d'un nouveau passeport ou d'une modification ?",
+        "a2": "Cela dépend de votre pays et de la durée de validité restante de votre passeport. Nous pouvons vous aider à déterminer ce qui s'applique.",
+        "q3": "Puis-je conserver mon ancien passeport ?",
+        "a3": "Souvent, l'ancien passeport est annulé ou restitué perforé. La règle dépend de votre pays.",
+        "q4": "Combien de temps cela prend-il ?",
+        "a4": "Les délais de traitement varient selon le pays et la saison et évoluent avec le temps ; déposez votre demande le plus tôt possible.",
+        "q5": "Et si mes billets sont à l'ancien nom ?",
+        "a5": "Les documents de voyage doivent correspondre au nom figurant sur votre passeport. Contactez votre compagnie aérienne pour mettre à jour la réservation avant de voyager."
+      },
+      "cta": {
+        "title": "Vous avez changé de nom ?",
+        "body": "Envoyez-nous les détails et nous préparerons les justificatifs et les formulaires.",
+        "button": "Nous Contacter"
+      }
+    },
+    "lostStolen": {
+      "meta": {
+        "title": "Assistance Passeport Perdu ou Volé — Visa Expeditor",
+        "description": "Déclarez et remplacez un passeport perdu, volé ou endommagé avec des étapes claires et des documents organisés."
+      },
+      "hero": {
+        "eyebrow": "Remplacement Urgent",
+        "heading": "Passeport Perdu, Volé ou Endommagé",
+        "subhead": "Déclarez et remplacez un passeport perdu, volé ou endommagé avec des étapes claires et organisées."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Si votre passeport est perdu, volé ou endommagé, déclarez-le dès que possible afin qu'il ne puisse pas être utilisé frauduleusement, puis demandez un remplacement. Les étapes diffèrent selon que vous êtes dans votre pays ou à l'étranger.",
+        "p2": "Nous vous aidons à comprendre la procédure de déclaration et de remplacement et à préparer les documents justificatifs qu'elle exige."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les voyageurs qui ont perdu leur passeport ou se l'ont fait voler.",
+        "i2": "Les titulaires d'un passeport endommagé qui n'est plus valide.",
+        "i3": "Les personnes qui ont besoin d'un remplacement rapidement."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Déclarez la perte",
+          "description": "Nous vous expliquons comment déclarer le passeport afin que personne d'autre ne puisse l'utiliser."
+        },
+        "s2": {
+          "title": "Rassemblez les documents justificatifs",
+          "description": "Nous vous aidons à réunir les documents d'identité, de nationalité et, le cas échéant, les documents de police."
+        },
+        "s3": {
+          "title": "Complétez la demande de remplacement",
+          "description": "Nous vérifions le formulaire et les justificatifs avant votre dépôt."
+        },
+        "s4": {
+          "title": "Déposez et suivez",
+          "description": "Vous déposez par la voie officielle et nous vous expliquons les délais et les options."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Rapport de police",
+          "value": "Un rapport, lorsque le passeport a été volé ou que le pays l'exige."
+        },
+        "r2": {
+          "label": "Preuve d'identité",
+          "value": "Un document d'identité reconnu ou une copie du passeport perdu."
+        },
+        "r3": {
+          "label": "Preuve de nationalité",
+          "value": "Un acte de naissance ou un document équivalent, selon les exigences."
+        },
+        "r4": {
+          "label": "Photo",
+          "value": "Une photographie récente conforme aux spécifications en vigueur."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Que dois-je faire en premier ?",
+        "a1": "Déclarez le passeport comme perdu ou volé auprès de l'autorité compétente dès que possible, puis engagez la procédure de remplacement.",
+        "q2": "Ai-je besoin d'un rapport de police ?",
+        "a2": "Pour un passeport volé, généralement oui. Pour un passeport perdu, les exigences varient selon le pays.",
+        "q3": "Puis-je voyager avec un passeport endommagé ?",
+        "a3": "Un passeport endommagé peut être refusé à la frontière. S'il est endommagé, considérez-le comme invalide et demandez un remplacement.",
+        "q4": "Combien de temps prend un remplacement ?",
+        "a4": "Les délais varient selon le pays et l'urgence et évoluent avec le temps. Indiquez-nous votre date de voyage et nous vous aiderons à planifier.",
+        "q5": "Puis-je obtenir un passeport d'urgence ?",
+        "a5": "Certains pays délivrent des titres de voyage d'urgence pour les cas pressants. La disponibilité et l'éligibilité dépendent de votre pays."
+      },
+      "cta": {
+        "title": "Vous avez perdu ou endommagé votre passeport ?",
+        "body": "Contactez-nous et nous vous aiderons à planifier le remplacement.",
+        "button": "Nous Contacter"
+      }
+    }
   }
 }

@@ -21,6 +21,11 @@ import enMeta from "../../messages/en/meta.json";
 import enPassports from "../../messages/en/passports.json";
 import enAbout from "../../messages/en/about.json";
 import enContact from "../../messages/en/contact.json";
+import enVisas from "../../messages/en/visas.json";
+import enImmigration from "../../messages/en/immigration.json";
+import enTools from "../../messages/en/tools.json";
+import enResources from "../../messages/en/resources.json";
+import enComingSoon from "../../messages/en/comingSoon.json";
 
 import esNav from "../../messages/es/nav.json";
 import esAuth from "../../messages/es/auth.json";
@@ -41,6 +46,11 @@ import esMeta from "../../messages/es/meta.json";
 import esPassports from "../../messages/es/passports.json";
 import esAbout from "../../messages/es/about.json";
 import esContact from "../../messages/es/contact.json";
+import esVisas from "../../messages/es/visas.json";
+import esImmigration from "../../messages/es/immigration.json";
+import esTools from "../../messages/es/tools.json";
+import esResources from "../../messages/es/resources.json";
+import esComingSoon from "../../messages/es/comingSoon.json";
 
 import frNav from "../../messages/fr/nav.json";
 import frAuth from "../../messages/fr/auth.json";
@@ -61,6 +71,11 @@ import frMeta from "../../messages/fr/meta.json";
 import frPassports from "../../messages/fr/passports.json";
 import frAbout from "../../messages/fr/about.json";
 import frContact from "../../messages/fr/contact.json";
+import frVisas from "../../messages/fr/visas.json";
+import frImmigration from "../../messages/fr/immigration.json";
+import frTools from "../../messages/fr/tools.json";
+import frResources from "../../messages/fr/resources.json";
+import frComingSoon from "../../messages/fr/comingSoon.json";
 
 const messagesByLocale = {
   en: {
@@ -83,6 +98,11 @@ const messagesByLocale = {
     passports: enPassports,
     about: enAbout,
     contact: enContact,
+    visas: enVisas,
+    immigration: enImmigration,
+    tools: enTools,
+    resources: enResources,
+    comingSoon: enComingSoon,
   },
   es: {
     nav: esNav,
@@ -104,6 +124,11 @@ const messagesByLocale = {
     passports: esPassports,
     about: esAbout,
     contact: esContact,
+    visas: esVisas,
+    immigration: esImmigration,
+    tools: esTools,
+    resources: esResources,
+    comingSoon: esComingSoon,
   },
   fr: {
     nav: frNav,
@@ -125,6 +150,11 @@ const messagesByLocale = {
     passports: frPassports,
     about: frAbout,
     contact: frContact,
+    visas: frVisas,
+    immigration: frImmigration,
+    tools: frTools,
+    resources: frResources,
+    comingSoon: frComingSoon,
   },
 } as const;
 

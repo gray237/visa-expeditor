@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Travel Tools — Visa Expeditor",
+    "description": "Free tools to check visa requirements, passport validity and the documents you need before you travel."
+  },
+  "hero": {
+    "eyebrow": "Plan Ahead",
+    "heading": "Tools for Smoother Travel",
+    "subhead": "Check the details that cause most delays before you book, so nothing catches you out."
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "tools": "Tools"
+  },
+  "grid": {
+    "heading": "Choose a Tool",
+    "subhead": "Each tool focuses on one decision and points you to the right next step."
+  },
+  "items": {
+    "visaChecker": {
+      "label": "Visa Checker",
+      "description": "See whether your passport needs a visa for a destination, based on our sample dataset."
+    },
+    "passportValidity": {
+      "label": "Passport Validity Checker",
+      "description": "Check whether your passport's expiry meets your destination's entry rules."
+    },
+    "checklist": {
+      "label": "Document Checklist",
+      "description": "Build a checklist of the documents your entry type usually needs."
+    },
+    "passportPower": {
+      "label": "Passport Power",
+      "description": "See where your passport can take you, computed from our own dataset."
+    }
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "q1": "Are these tools free?",
+    "a1": "Yes. The tools are free to use. If you later want help with an application, that is a separate service.",
+    "q2": "Is the information official?",
+    "a2": "No. Our tools use sample data for demonstration and are not official sources. Always confirm with the destination's authorities.",
+    "q3": "Do the tools store my data?",
+    "a3": "The passport validity checker runs in your browser. Other tools may save your passport choice in a cookie so the site remembers it.",
+    "q4": "Can a tool tell me if I will be approved?",
+    "a4": "No. Entry and visa decisions are made by authorities. Our tools only help you prepare and check details.",
+    "q5": "What if a tool shows no data?",
+    "a5": "Our dataset is still growing. Where we have no row, we say so rather than guess. Contact us and we will help directly."
+  },
+  "cta": {
+    "title": "Need help after checking?",
+    "body": "If a tool raises a question, our team can explain what your destination expects.",
+    "button": "Contact Us"
+  },
+  "detail": {
+    "passportValidity": {
+      "meta": {
+        "title": "Passport Validity Checker — Visa Expeditor",
+        "description": "Check whether your passport's expiry date meets your destination's entry rules before you travel."
+      },
+      "hero": {
+        "eyebrow": "Pre-Travel Check",
+        "heading": "Passport Validity Checker",
+        "subhead": "Check whether your passport's expiry date meets your destination's entry rules."
+      },
+      "overview": {
+        "heading": "What this tool does",
+        "p1": "Many countries require your passport to remain valid for a set period beyond your planned departure, often six months. A passport that is still in date can still be refused if it does not meet that rule.",
+        "p2": "This tool compares your passport expiry with your travel dates and the validity rule you select, so you can renew in time if needed."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Travelers checking a passport before booking flights.",
+        "i2": "Anyone whose passport expires within a year.",
+        "i3": "Families coordinating several passports at once."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Enter your expiry date",
+          "description": "Use the date printed on your passport's expiry field."
+        },
+        "s2": {
+          "title": "Enter your travel dates",
+          "description": "Add your planned departure and return dates."
+        },
+        "s3": {
+          "title": "Choose the validity rule",
+          "description": "Select the rule your destination applies, or the common six-month rule if you are unsure."
+        },
+        "s4": {
+          "title": "Read the result",
+          "description": "The tool tells you whether your passport appears to meet the rule, and what to do next."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll need",
+        "r1": {
+          "label": "Expiry date",
+          "value": "The expiry date printed in your passport."
+        },
+        "r2": {
+          "label": "Travel dates",
+          "value": "Your planned departure and return dates."
+        },
+        "r3": {
+          "label": "Destination rule",
+          "value": "The minimum validity your destination requires, if you know it."
+        },
+        "r4": {
+          "label": "A note of the result",
+          "value": "If your passport falls short, contact us about renewal options."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "What is the six-month rule?",
+        "a1": "It is a common requirement that a passport stay valid for six months beyond your planned departure. Not every country applies it.",
+        "q2": "Does the rule apply everywhere?",
+        "a2": "No. Some countries require three months, some six, and some only require validity through your stay. Confirm the rule for your destination.",
+        "q3": "What if my passport expires during my trip?",
+        "a3": "That is usually a problem. Renew before you travel if you can, and contact us to plan the timing.",
+        "q4": "How long does renewal take?",
+        "a4": "Processing times vary by country and season and change over time, so apply as early as you can.",
+        "q5": "Is this tool official?",
+        "a5": "No. It is a helpful estimate. Always confirm requirements with the destination's official authorities before you travel."
+      },
+      "cta": {
+        "title": "Passport expiring soon?",
+        "body": "If your passport does not meet the rule, talk to us about renewal options.",
+        "button": "Contact Us"
+      }
+    }
+  }
+}

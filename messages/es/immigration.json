@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "title": "Servicios de Inmigración — Visa Expeditor",
+    "description": "Orientación para tarjetas verdes, ciudadanía, patrocinio familiar y visas de inversionista, con los documentos que requiere cada ruta."
+  },
+  "hero": {
+    "eyebrow": "Reubicación a Largo Plazo",
+    "heading": "Inmigración, Explicada",
+    "subhead": "Explore las vías de residencia y ciudadanía con pasos claros y documentación organizada."
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "immigration": "Inmigración"
+  },
+  "grid": {
+    "heading": "Seleccione un Servicio de Inmigración",
+    "subhead": "Cada vía tiene sus propias reglas de elegibilidad y pruebas. Comience por la que corresponda a su objetivo."
+  },
+  "items": {
+    "greenCards": {
+      "label": "Tarjetas Verdes",
+      "description": "Vías de residencia permanente por familia, empleo u otras categorías que califiquen."
+    },
+    "citizenship": {
+      "label": "Ciudadanía",
+      "description": "Orientación para la naturalización, desde la elegibilidad hasta los documentos y exámenes involucrados."
+    },
+    "family": {
+      "label": "Patrocinio Familiar",
+      "description": "Petición para familiares elegibles con pruebas de relación y del patrocinador bien organizadas."
+    },
+    "investorVisas": {
+      "label": "Visas de Inversionista",
+      "description": "Vías de residencia basadas en inversión y los documentos financieros que exigen."
+    }
+  },
+  "faqs": {
+    "heading": "Preguntas Frecuentes",
+    "q1": "¿Qué ruta de inmigración es la adecuada para mí?",
+    "a1": "Depende de sus vínculos familiares, empleo, inversión y objetivos. Cuéntenos su situación y le explicaremos las opciones.",
+    "q2": "¿Ofrecen asesoría legal?",
+    "a2": "No. Visa Expeditor no es un bufete de abogados y no brinda asesoría legal. Le ayudamos a organizar y preparar documentos.",
+    "q3": "¿Pueden garantizar una aprobación?",
+    "a3": "No. Las decisiones corresponden a las autoridades competentes. Le ayudamos a presentar una solicitud completa y coherente.",
+    "q4": "¿Cuánto tardan los procesos de inmigración?",
+    "a4": "Los plazos varían mucho según la ruta y la autoridad, y cambian con el tiempo, por lo que evitamos citar cifras que puedan estar desactualizadas.",
+    "q5": "¿Necesito un abogado?",
+    "a5": "Algunos casos se benefician de asesoría legal, especialmente cuando la elegibilidad es compleja. En cualquier caso, podemos ayudarle a preparar los documentos."
+  },
+  "cta": {
+    "title": "¿Planea una mudanza a largo plazo?",
+    "body": "Cuéntenos su objetivo y describiremos los documentos que implica la ruta adecuada.",
+    "button": "Contáctenos"
+  },
+  "detail": {
+    "greenCards": {
+      "meta": {
+        "title": "Asistencia para Tarjeta Verde — Visa Expeditor",
+        "description": "Comprenda las vías de residencia permanente y prepare los documentos que requiere un caso de tarjeta verde."
+      },
+      "hero": {
+        "eyebrow": "Residencia Permanente",
+        "heading": "Asistencia para Tarjeta Verde",
+        "subhead": "Comprenda las vías de residencia permanente y prepare los documentos que requiere su caso."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "Una tarjeta verde otorga residencia permanente legal en los Estados Unidos y le permite vivir y trabajar allí de forma indefinida. La elegibilidad suele depender de la familia, el empleo u otra categoría que califique.",
+        "p2": "Le ayudamos a organizar las pruebas y los formularios que normalmente implica una solicitud de residencia permanente, y le explicamos qué significa cada etapa."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Familiares de ciudadanos estadounidenses o residentes permanentes.",
+        "i2": "Empleados patrocinados por un empleador de los Estados Unidos.",
+        "i3": "Personas que exploran una categoría de residencia permanente que califique."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Identifique su categoría",
+          "description": "Revisamos su situación para determinar qué categoría de residencia permanente podría aplicar."
+        },
+        "s2": {
+          "title": "Reúna las pruebas de respaldo",
+          "description": "Le ayudamos a reunir documentos civiles, financieros y de relación para el caso."
+        },
+        "s3": {
+          "title": "Prepare los formularios",
+          "description": "Revisamos cada formulario para que sea coherente con sus pruebas y su categoría."
+        },
+        "s4": {
+          "title": "Presente y dé seguimiento",
+          "description": "Usted presenta por el canal oficial y le explicamos qué esperar en cada etapa."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Pasaporte",
+          "value": "Un pasaporte válido u otro documento de identidad."
+        },
+        "r2": {
+          "label": "Pruebas de elegibilidad",
+          "value": "Documentos que demuestren la relación familiar o laboral que califica."
+        },
+        "r3": {
+          "label": "Documentos del patrocinador",
+          "value": "Petición y documentos de apoyo financiero del patrocinador, cuando corresponda."
+        },
+        "r4": {
+          "label": "Documentos civiles",
+          "value": "Registros de nacimiento, matrimonio y otros registros civiles, según se requiera."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Qué es una tarjeta verde?",
+        "a1": "Es la prueba de residencia permanente legal en los Estados Unidos y le permite vivir y trabajar allí de forma indefinida, conforme a la ley.",
+        "q2": "¿Quién puede patrocinarme?",
+        "a2": "Familiares o empleadores elegibles pueden patrocinar ciertas categorías. Las opciones dependen de su relación y sus circunstancias.",
+        "q3": "¿Cuánto tarda el proceso?",
+        "a3": "Los plazos varían mucho según la categoría y la autoridad, y cambian con el tiempo. Evitamos citar cifras que puedan estar desactualizadas.",
+        "q4": "¿Puedo trabajar mientras espero?",
+        "a4": "Algunos solicitantes pueden pedir autorización de trabajo mientras el caso está pendiente. La elegibilidad depende de su categoría y su estatus.",
+        "q5": "¿Necesito un abogado?",
+        "a5": "Algunos casos se benefician de asesoría legal. No somos un bufete de abogados; le ayudamos a organizar y preparar documentos."
+      },
+      "cta": {
+        "title": "¿Explora la residencia permanente?",
+        "body": "Cuéntenos su situación y le explicaremos los documentos involucrados.",
+        "button": "Contáctenos"
+      }
+    },
+    "citizenship": {
+      "meta": {
+        "title": "Asistencia para Ciudadanía — Visa Expeditor",
+        "description": "Prepare una solicitud de naturalización con orientación clara sobre la elegibilidad y los documentos requeridos."
+      },
+      "hero": {
+        "eyebrow": "Naturalización",
+        "heading": "Asistencia para Ciudadanía",
+        "subhead": "Prepare una solicitud de naturalización con orientación clara sobre la elegibilidad y los documentos."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "La ciudadanía, a menudo mediante la naturalización, es el paso final para los residentes permanentes elegibles. Los requisitos suelen incluir un período de residencia, buena conducta moral y conocimientos de idioma o educación cívica.",
+        "p2": "Le ayudamos a reunir los registros que normalmente necesita una solicitud de naturalización y a entender qué esperar en cada etapa."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Residentes permanentes que cumplen los requisitos de residencia.",
+        "i2": "Solicitantes que se preparan para un requisito de educación cívica o de idioma.",
+        "i3": "Familias que solicitan juntas o para un hijo."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Verifique la elegibilidad",
+          "description": "Revisamos su historial de residencia y su estatus para ver qué requisitos aplican."
+        },
+        "s2": {
+          "title": "Prepare los registros",
+          "description": "Le ayudamos a reunir documentos de identidad, residencia y antecedentes."
+        },
+        "s3": {
+          "title": "Complete la solicitud",
+          "description": "Revisamos el formulario para verificar su exactitud y coherencia con sus registros."
+        },
+        "s4": {
+          "title": "Prepárese para la entrevista",
+          "description": "Le explicamos los requisitos de educación cívica e idioma y en qué consiste la entrevista."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Pasaporte",
+          "value": "Un pasaporte válido o documento de viaje."
+        },
+        "r2": {
+          "label": "Prueba de residencia",
+          "value": "Pruebas de su residencia permanente y del tiempo que ha pasado en el país."
+        },
+        "r3": {
+          "label": "Historial de residencia",
+          "value": "Historial de direcciones y viajes durante el período que califica."
+        },
+        "r4": {
+          "label": "Documentos de antecedentes",
+          "value": "Registros relacionados con la conducta y la elegibilidad, según se requiera."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Cuánto tiempo debo ser residente?",
+        "a1": "Los requisitos de residencia varían y dependen de su categoría y sus circunstancias. Consulte las reglas vigentes para su caso.",
+        "q2": "¿Qué es el examen de educación cívica?",
+        "a2": "Es una prueba de conocimientos sobre la historia y el gobierno del país, que a menudo se acompaña de un requisito de inglés.",
+        "q3": "¿Puedo conservar mi nacionalidad original?",
+        "a3": "Depende de las reglas de ambos países. Algunos permiten la doble ciudadanía y otros no, así que confirme ambas partes.",
+        "q4": "¿Qué pasa si tengo antecedentes penales?",
+        "a4": "Puede afectar la elegibilidad. Como esto implica un juicio legal, recomendamos asesoría legal para cualquier asunto que vaya más allá de una falta menor.",
+        "q5": "¿Cuánto tarda?",
+        "a5": "Los plazos varían según la autoridad y la carga de casos, y cambian con el tiempo, por lo que evitamos citar cifras que puedan estar desactualizadas."
+      },
+      "cta": {
+        "title": "¿Listo para el siguiente paso?",
+        "body": "Hable con nosotros y trazaremos los documentos para su caso de naturalización.",
+        "button": "Contáctenos"
+      }
+    },
+    "family": {
+      "meta": {
+        "title": "Asistencia para Patrocinio Familiar — Visa Expeditor",
+        "description": "Reúna a familiares elegibles con documentos de patrocinio y de relación bien organizados."
+      },
+      "hero": {
+        "eyebrow": "Reunificación Familiar",
+        "heading": "Asistencia para Patrocinio Familiar",
+        "subhead": "Reúna a familiares elegibles con documentos de patrocinio bien organizados."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "El patrocinio familiar permite que un ciudadano o residente permanente solicite a ciertos familiares que se reúnan con él. La elegibilidad depende de la relación y del estatus del patrocinador.",
+        "p2": "Le ayudamos a los patrocinadores y solicitantes a organizar las pruebas de relación y los formularios que normalmente requiere un caso familiar."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Ciudadanos o residentes que patrocinan a un cónyuge o hijo.",
+        "i2": "Padres que solicitan a un hijo, o hijos que solicitan a un padre.",
+        "i3": "Familias que preparan pruebas de relación."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Confirme la elegibilidad",
+          "description": "Revisamos la relación y el estatus del patrocinador para ver qué categoría aplica."
+        },
+        "s2": {
+          "title": "Construya las pruebas de relación",
+          "description": "Le ayudamos a organizar documentos que demuestren una relación genuina y que califique."
+        },
+        "s3": {
+          "title": "Prepare los formularios",
+          "description": "Revisamos la petición y los formularios de respaldo para verificar su coherencia."
+        },
+        "s4": {
+          "title": "Presente y dé seguimiento",
+          "description": "Usted presenta por el canal oficial y le explicamos las etapas que siguen."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Pasaporte",
+          "value": "Documentos de identidad del patrocinador y del familiar."
+        },
+        "r2": {
+          "label": "Pruebas de relación",
+          "value": "Registros que demuestren la relación familiar que califica."
+        },
+        "r3": {
+          "label": "Estatus del patrocinador",
+          "value": "Prueba de la ciudadanía o residencia permanente del patrocinador."
+        },
+        "r4": {
+          "label": "Documentos financieros",
+          "value": "Pruebas de ingresos o de apoyo cuando la ruta lo exija."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿A qué familiares puedo patrocinar?",
+        "a1": "Depende del país y del estatus del patrocinador. Las categorías comunes incluyen cónyuges, hijos y padres.",
+        "q2": "¿Qué demuestra una relación genuina?",
+        "a2": "Una combinación de registros civiles, finanzas compartidas, correspondencia y fotografías. Los requisitos varían según el caso.",
+        "q3": "¿Cuánto tarda el patrocinio familiar?",
+        "a3": "Los plazos varían según la categoría y la autoridad, y cambian con el tiempo, por lo que evitamos citar cifras que puedan estar desactualizadas.",
+        "q4": "¿Puede trabajar mi familiar mientras espera?",
+        "a4": "Depende del país y de la etapa del caso. Muchas rutas no permiten trabajar hasta que se conceda la residencia.",
+        "q5": "¿Qué pasa si mis ingresos son bajos?",
+        "a5": "Algunas rutas exigen un ingreso mínimo o un patrocinador conjunto. Podemos explicarle qué pruebas se suelen esperar."
+      },
+      "cta": {
+        "title": "¿Reuniendo a su familia?",
+        "body": "Cuéntenos sobre su relación y le explicaremos los documentos involucrados.",
+        "button": "Contáctenos"
+      }
+    },
+    "investorVisas": {
+      "meta": {
+        "title": "Asistencia para Visa de Inversionista — Visa Expeditor",
+        "description": "Explore vías de residencia basadas en inversión y prepare los documentos financieros y de identidad que exigen."
+      },
+      "hero": {
+        "eyebrow": "Vías de Inversión",
+        "heading": "Asistencia para Visa de Inversionista",
+        "subhead": "Explore vías de residencia basadas en inversión y prepare los documentos que exigen."
+      },
+      "overview": {
+        "heading": "Qué cubre este servicio",
+        "p1": "Las visas de inversionista permiten que personas elegibles obtengan residencia, y a veces ciudadanía, a cambio de una inversión sustancial. Los programas varían mucho según el país y cambian con frecuencia.",
+        "p2": "Le ayudamos a entender la estructura general de una vía de inversión y a organizar los documentos financieros y de identidad que un programa pueda solicitar. No brindamos asesoría de inversión."
+      },
+      "whoFor": {
+        "heading": "Para quién es",
+        "i1": "Personas que exploran programas de residencia por inversión.",
+        "i2": "Empresarios que trasladan un negocio o capital.",
+        "i3": "Familias que planean una residencia internacional a largo plazo."
+      },
+      "steps": {
+        "heading": "Cómo funciona",
+        "s1": {
+          "title": "Compare las vías",
+          "description": "Le explicamos las características generales de los programas que está considerando, sin recomendar uno."
+        },
+        "s2": {
+          "title": "Organice sus documentos",
+          "description": "Le ayudamos a preparar documentos de identidad, de origen de fondos y de inversión."
+        },
+        "s3": {
+          "title": "Prepare la solicitud",
+          "description": "Revisamos los formularios y las pruebas de respaldo para verificar que estén completos."
+        },
+        "s4": {
+          "title": "Presente por el canal oficial",
+          "description": "Usted presenta ante la autoridad correspondiente, con nuestra orientación sobre el proceso."
+        }
+      },
+      "requirements": {
+        "heading": "Lo que normalmente necesitará",
+        "r1": {
+          "label": "Pasaporte",
+          "value": "Un pasaporte válido para usted y sus dependientes."
+        },
+        "r2": {
+          "label": "Prueba de fondos",
+          "value": "Pruebas de que los fondos de inversión están disponibles y se obtuvieron legalmente."
+        },
+        "r3": {
+          "label": "Origen de los fondos",
+          "value": "Documentos que expliquen de dónde provienen los fondos."
+        },
+        "r4": {
+          "label": "Plan de inversión",
+          "value": "Detalles de la inversión que califica, según lo exija el programa."
+        }
+      },
+      "faqs": {
+        "heading": "Preguntas Frecuentes",
+        "q1": "¿Qué es una visa de inversionista?",
+        "a1": "Es una vía de residencia que exige una inversión que califique. El monto, las condiciones y los beneficios varían según el país.",
+        "q2": "¿Qué países las ofrecen?",
+        "a2": "Varios países gestionan estos programas y cambian con frecuencia. Podemos explicar la estructura general, pero no recomendar uno.",
+        "q3": "¿Cuánto debo invertir?",
+        "a3": "Los montos varían según el programa y cambian con el tiempo. Evitamos citar cifras que puedan estar desactualizadas; consulte la fuente oficial.",
+        "q4": "¿Conduce a la ciudadanía?",
+        "a4": "Algunos programas ofrecen una vía a la ciudadanía y otros solo residencia. Depende del país y de sus reglas.",
+        "q5": "¿Ofrecen asesoría de inversión?",
+        "a5": "No. No somos asesores financieros ni legales. Las decisiones de inversión son suyas; nosotros ayudamos con el trámite migratorio."
+      },
+      "cta": {
+        "title": "¿Considera una vía de inversión?",
+        "body": "Hable con nosotros sobre los documentos involucrados; las decisiones de inversión son suyas.",
+        "button": "Contáctenos"
+      }
+    }
+  }
+}

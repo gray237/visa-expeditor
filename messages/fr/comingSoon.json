@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Bientôt Disponible — Visa Expeditor",
+    "description": "Cette page est en cours de création. Contactez notre équipe en attendant."
+  },
+  "eyebrow": "Bientôt Disponible",
+  "bodyHeading": "Cette section arrive prochainement",
+  "body": "Nous sommes encore en train de construire cette page. En attendant, notre équipe peut répondre directement à vos questions.",
+  "cta": "Nous Contacter",
+  "backHome": "Retour à l'Accueil",
+  "breadcrumbs": {
+    "home": "Accueil"
+  },
+  "items": {
+    "start": {
+      "title": "Commencer",
+      "description": "Le formulaire guidé de demande est en cours de préparation."
+    },
+    "toolsIdp": {
+      "title": "Permis de Conduire International",
+      "description": "Conseils pour demander un permis de conduire international."
+    },
+    "toolsChecklist": {
+      "title": "Liste de Documents",
+      "description": "Une liste personnalisée des documents exigés selon votre type d'entrée."
+    },
+    "toolsPassportPower": {
+      "title": "Puissance du Passeport",
+      "description": "Découvrez où votre passeport peut vous emmener, calculé à partir de notre jeu de données."
+    },
+    "resourcesGuides": {
+      "title": "Guides",
+      "description": "Des démarches pas à pas pour les demandes courantes."
+    },
+    "resourcesProcessingTimes": {
+      "title": "Délais de Traitement",
+      "description": "Notes sur les facteurs qui influencent la durée d'une demande."
+    },
+    "insights": {
+      "title": "Analyses",
+      "description": "Explications des évolutions et des tendances des règles de voyage."
+    },
+    "immigrationUnitedStates": {
+      "title": "Immigration aux États-Unis",
+      "description": "Un aperçu des voies d'immigration américaines est en cours de préparation."
+    },
+    "immigrationCanada": {
+      "title": "Immigration au Canada",
+      "description": "Un aperçu des voies d'immigration canadiennes est en cours de préparation."
+    },
+    "immigrationUnitedKingdom": {
+      "title": "Immigration au Royaume-Uni",
+      "description": "Un aperçu des voies d'immigration britanniques est en cours de préparation."
+    },
+    "immigrationAustralia": {
+      "title": "Immigration en Australie",
+      "description": "Un aperçu des voies d'immigration australiennes est en cours de préparation."
+    },
+    "immigrationPortugal": {
+      "title": "Immigration au Portugal",
+      "description": "Un aperçu des voies d'immigration portugaises est en cours de préparation."
+    },
+    "immigrationNewZealand": {
+      "title": "Immigration en Nouvelle-Zélande",
+      "description": "Un aperçu des voies d'immigration néo-zélandaises est en cours de préparation."
+    },
+    "immigrationGreenCardLottery": {
+      "title": "Loterie de la Carte Verte",
+      "description": "Informations sur le programme officiel de loterie des visas de diversité."
+    },
+    "immigrationSkilledWorker": {
+      "title": "Travailleur Qualifié",
+      "description": "Conseils sur les voies de travailleur qualifié parrainées par un employeur."
+    },
+    "immigrationDigitalNomad": {
+      "title": "Nomade Numérique",
+      "description": "Conseils sur les visas de travail à distance et de nomade numérique."
+    }
+  }
+}

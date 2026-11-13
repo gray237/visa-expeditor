@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "title": "Visa Services — Visa Expeditor",
+    "description": "Guided visa assistance for tourist, business, student and work travel. Clear requirements, document review and submission support."
+  },
+  "hero": {
+    "eyebrow": "Travel Authorization",
+    "heading": "Visa Services, Made Clear",
+    "subhead": "Choose your purpose of travel and get a straightforward path from requirements to submission."
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "visas": "Visas"
+  },
+  "grid": {
+    "heading": "Select a Visa Service",
+    "subhead": "Each route comes with a tailored checklist, document review and step-by-step guidance."
+  },
+  "items": {
+    "tourist": {
+      "label": "Tourist Visa",
+      "description": "Visitor and holiday travel, with a complete document checklist and application review."
+    },
+    "business": {
+      "label": "Business Visa",
+      "description": "Meetings, conferences and negotiations, with the company and invitation documents organized."
+    },
+    "student": {
+      "label": "Student Visa",
+      "description": "Study programmes, with enrolment, funding and academic documents prepared correctly."
+    },
+    "work": {
+      "label": "Work Visa",
+      "description": "Employment-based travel, coordinating employer and employee documents."
+    }
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "q1": "How do I know which visa I need?",
+    "a1": "It depends on your nationality, destination and purpose of travel. Tell us your trip details and we will point you to the right route.",
+    "q2": "Can you guarantee my visa will be approved?",
+    "a2": "No. Approval is decided by the destination's authorities. We help you submit a complete, accurate application.",
+    "q3": "Are government fees included?",
+    "a3": "No. Government fees are paid to the official authority and are separate from any service fee.",
+    "q4": "How long does a visa take?",
+    "a4": "Processing times vary by destination and season and can change, so apply as early as your destination allows.",
+    "q5": "What if I have already been refused?",
+    "a5": "We can help you review what happened and prepare a stronger application, but we cannot guarantee a different outcome."
+  },
+  "cta": {
+    "title": "Not sure which visa fits?",
+    "body": "Tell us where you are going and why, and we will map out the documents involved.",
+    "button": "Contact Us"
+  },
+  "detail": {
+    "tourist": {
+      "meta": {
+        "title": "Tourist Visa Assistance — Visa Expeditor",
+        "description": "Guided help preparing a tourist visa application: requirements, forms, supporting documents and submission steps."
+      },
+      "hero": {
+        "eyebrow": "Visitor Travel",
+        "heading": "Tourist Visa Assistance",
+        "subhead": "Prepare a complete, accurate visitor visa application with step-by-step guidance."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "A tourist visa lets you visit a country for leisure, sightseeing or family visits, usually for a limited stay. Requirements vary by destination, nationality and purpose.",
+        "p2": "We help you confirm what applies to your trip, assemble the right documents and submit a clean application that reflects your travel plans."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Travelers visiting a country for tourism, holidays or family visits.",
+        "i2": "First-time applicants who want their paperwork checked before submission.",
+        "i3": "Travelers who need a clearer picture of the documents their destination expects."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Confirm your requirements",
+          "description": "Tell us your nationality, destination and travel dates so we can identify the visa route that applies."
+        },
+        "s2": {
+          "title": "Prepare your documents",
+          "description": "We give you a personalized checklist and review each item for completeness and consistency."
+        },
+        "s3": {
+          "title": "Complete the forms",
+          "description": "We help you fill in the application accurately and flag anything that could cause a delay."
+        },
+        "s4": {
+          "title": "Submit with confidence",
+          "description": "You submit through the official channel, with our guidance on fees, appointments and next steps."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Passport",
+          "value": "A valid passport with sufficient remaining validity for your destination."
+        },
+        "r2": {
+          "label": "Photo",
+          "value": "A recent passport-style photograph that meets the destination's specifications."
+        },
+        "r3": {
+          "label": "Itinerary",
+          "value": "Travel dates and, where required, proof of accommodation or onward travel."
+        },
+        "r4": {
+          "label": "Supporting documents",
+          "value": "Evidence of funds, ties to home or purpose of visit, as required by the destination."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "Do I always need a tourist visa?",
+        "a1": "No. Many destinations allow visa-free or visa-on-arrival entry for some nationalities. Check your specific passport and destination before assuming you need one.",
+        "q2": "How far in advance should I apply?",
+        "a2": "Apply as early as your destination allows. Processing times vary and can change seasonally, so leaving extra time is wise.",
+        "q3": "Can you guarantee approval?",
+        "a3": "No. Approval is always decided by the destination's authorities. We help you submit a complete, accurate application.",
+        "q4": "Do you pay the government fee for me?",
+        "a4": "No. Government fees are paid to the official authority and are separate from any service fee. We tell you what to expect.",
+        "q5": "What if my application is refused?",
+        "a5": "We can review what happened and help you understand the options, but we cannot appeal on your behalf or guarantee a different outcome."
+      },
+      "cta": {
+        "title": "Planning a trip?",
+        "body": "Talk to our team and we will map out the documents your destination expects.",
+        "button": "Contact Us"
+      }
+    },
+    "business": {
+      "meta": {
+        "title": "Business Visa Assistance — Visa Expeditor",
+        "description": "Prepare a business visa application for meetings, conferences and negotiations with organized company documents."
+      },
+      "hero": {
+        "eyebrow": "Corporate Travel",
+        "heading": "Business Visa Assistance",
+        "subhead": "Prepare a professional business travel application for meetings, conferences and negotiations."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "A business visa covers short professional visits such as meetings, conferences, negotiations or training. It usually does not permit paid local employment.",
+        "p2": "We help you present a clear business purpose and the supporting invitation or company documents a consulate may request."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Professionals travelling for meetings, conferences or negotiations.",
+        "i2": "Employees attending training or corporate events abroad.",
+        "i3": "Business owners visiting partners, suppliers or clients overseas."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Confirm the route",
+          "description": "We check whether your visit qualifies as business travel or needs a different visa category."
+        },
+        "s2": {
+          "title": "Gather company documents",
+          "description": "We help you collect invitation letters, employer confirmations and any event registration."
+        },
+        "s3": {
+          "title": "Complete the application",
+          "description": "We review the forms and supporting documents for consistency with your stated purpose."
+        },
+        "s4": {
+          "title": "Submit and track",
+          "description": "You submit through the official channel and we explain what happens next."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Passport",
+          "value": "A valid passport that meets the destination's validity rules."
+        },
+        "r2": {
+          "label": "Invitation",
+          "value": "A letter from the host company or an event organizer, where required."
+        },
+        "r3": {
+          "label": "Company documents",
+          "value": "An employer letter confirming your role, purpose and dates of travel."
+        },
+        "r4": {
+          "label": "Proof of funds",
+          "value": "Evidence that you can cover your stay, if the destination requires it."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "Do I need a business visa for a conference?",
+        "a1": "Often yes, though some destinations allow business activities on a visitor visa. Check the rules for your destination and nationality.",
+        "q2": "Can I work remotely on a business visa?",
+        "a2": "A business visa is normally for meetings and negotiations, not local employment. Remote work rules vary and should be confirmed.",
+        "q3": "What is an invitation letter?",
+        "a3": "It is a letter from the company or organization hosting you that states the purpose and dates of your visit.",
+        "q4": "Can my employer sponsor the application?",
+        "a4": "Your employer can provide supporting documents, but the application is usually submitted by you as the traveller.",
+        "q5": "How is a business visa different from a work visa?",
+        "a5": "A business visa is for short professional visits. A work visa is for taking up employment and usually requires sponsorship."
+      },
+      "cta": {
+        "title": "Travelling for business?",
+        "body": "Tell us about your trip and we will prepare the documents your destination expects.",
+        "button": "Contact Us"
+      }
+    },
+    "student": {
+      "meta": {
+        "title": "Student Visa Assistance — Visa Expeditor",
+        "description": "Organize a student visa application with enrolment, funding and academic documents prepared correctly."
+      },
+      "hero": {
+        "eyebrow": "Study Abroad",
+        "heading": "Student Visa Assistance",
+        "subhead": "Get organized for your study programme with clear document and application guidance."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "A student visa allows you to live and study in another country for an approved course. It usually requires proof of enrolment and proof you can support yourself.",
+        "p2": "We help you assemble the academic, financial and identity documents a student visa application typically requires."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Students starting a degree, exchange or language programme abroad.",
+        "i2": "Applicants who need to show proof of funds and enrolment.",
+        "i3": "Families preparing a dependant's study move."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Confirm the requirements",
+          "description": "We review your course, destination and nationality to identify the correct student route."
+        },
+        "s2": {
+          "title": "Assemble your records",
+          "description": "We help you gather enrolment, academic and financial documents in the format required."
+        },
+        "s3": {
+          "title": "Complete the forms",
+          "description": "We check the application for consistency with your course and funding."
+        },
+        "s4": {
+          "title": "Submit and prepare",
+          "description": "You submit through the official channel, with guidance on interviews and next steps."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Passport",
+          "value": "A valid passport with the validity your destination requires."
+        },
+        "r2": {
+          "label": "Enrolment",
+          "value": "An offer or enrolment letter from a recognized institution."
+        },
+        "r3": {
+          "label": "Proof of funds",
+          "value": "Evidence you can cover tuition and living costs, as required."
+        },
+        "r4": {
+          "label": "Academic records",
+          "value": "Transcripts, certificates and language test results where required."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "When should I apply for a student visa?",
+        "a1": "Once you have your enrolment documents, apply as early as the destination allows, since processing can take time.",
+        "q2": "What counts as proof of funds?",
+        "a2": "Typically bank statements, sponsorship letters or scholarships showing you can cover your costs. Requirements vary by destination.",
+        "q3": "Can I work while studying?",
+        "a3": "Some destinations allow limited work on a student visa. The rules depend on the country and your course, so confirm before relying on it.",
+        "q4": "Can my family come with me?",
+        "a4": "Some destinations allow dependants on a student visa and others do not. We can help you check the rules for your case.",
+        "q5": "What if my course starts before the visa arrives?",
+        "a5": "Contact your institution as soon as you can. Many allow a late start, but the decision is theirs, not ours."
+      },
+      "cta": {
+        "title": "Heading abroad to study?",
+        "body": "Share your programme details and we will build your document checklist.",
+        "button": "Contact Us"
+      }
+    },
+    "work": {
+      "meta": {
+        "title": "Work Visa Assistance — Visa Expeditor",
+        "description": "Organize an employment-based visa application with employer and employee documents in order."
+      },
+      "hero": {
+        "eyebrow": "Employment Abroad",
+        "heading": "Work Visa Assistance",
+        "subhead": "Organize an employment-based visa application with employer and employee documents in order."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "A work visa lets you take up employment in another country, usually tied to a specific employer or role. Requirements depend on the destination's labour rules.",
+        "p2": "We help coordinate the documents an employer and employee each need so the application is consistent and complete."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Professionals with a job offer or transfer abroad.",
+        "i2": "Employers relocating staff or hiring internationally.",
+        "i3": "Skilled workers applying through an employer-sponsored route."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Confirm the route",
+          "description": "We check the destination's work visa categories and which one matches your role."
+        },
+        "s2": {
+          "title": "Coordinate documents",
+          "description": "We help the employer and employee prepare sponsorship and qualification documents."
+        },
+        "s3": {
+          "title": "Complete the application",
+          "description": "We review the forms against the role, employer and destination requirements."
+        },
+        "s4": {
+          "title": "Submit and plan arrival",
+          "description": "You submit through the official channel and we explain what to prepare for arrival."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Passport",
+          "value": "A valid passport meeting the destination's validity rules."
+        },
+        "r2": {
+          "label": "Job offer",
+          "value": "A contract or offer letter from the employer."
+        },
+        "r3": {
+          "label": "Sponsorship",
+          "value": "Employer sponsorship or a labour authorization, where the destination requires it."
+        },
+        "r4": {
+          "label": "Qualifications",
+          "value": "Certificates or references proving you meet the role's requirements."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "Do I need a job offer first?",
+        "a1": "Most work visas require a confirmed offer or sponsorship before you apply. Some destinations have routes for skilled workers without one.",
+        "q2": "Who applies, me or my employer?",
+        "a2": "It varies. Often the employer starts the sponsorship and you complete the visa application. We help coordinate both sides.",
+        "q3": "Can my family join me?",
+        "a3": "Many work visas allow dependants, but the rules differ by destination and role. We can help you check.",
+        "q4": "How long does a work visa last?",
+        "a4": "It depends on the destination and the role, and may be renewable. Check the specific route for your case.",
+        "q5": "Can I change employers later?",
+        "a5": "Some visas tie you to one employer and others are more flexible. Confirm the conditions before you change jobs."
+      },
+      "cta": {
+        "title": "Moving abroad for work?",
+        "body": "Tell us about the role and destination and we will outline the documents involved.",
+        "button": "Contact Us"
+      }
+    }
+  }
+}

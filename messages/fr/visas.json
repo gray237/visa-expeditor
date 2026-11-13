@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "title": "Services de Visa — Visa Expeditor",
+    "description": "Assistance guidée pour les visas touristiques, d'affaires, d'études et de travail. Exigences claires, vérification des documents et accompagnement au dépôt."
+  },
+  "hero": {
+    "eyebrow": "Autorisation de Voyage",
+    "heading": "Des Services de Visa, en Toute Clarté",
+    "subhead": "Choisissez votre motif de voyage et suivez un parcours simple, des exigences jusqu'au dépôt."
+  },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "visas": "Visas"
+  },
+  "grid": {
+    "heading": "Sélectionnez un Service de Visa",
+    "subhead": "Chaque parcours s'accompagne d'une liste personnalisée, d'une vérification des documents et de conseils étape par étape."
+  },
+  "items": {
+    "tourist": {
+      "label": "Visa Touristique",
+      "description": "Voyages de visite et de vacances, avec une liste complète de documents et une vérification de la demande."
+    },
+    "business": {
+      "label": "Visa d'Affaires",
+      "description": "Réunions, conférences et négociations, avec les documents de l'entreprise et d'invitation organisés."
+    },
+    "student": {
+      "label": "Visa Étudiant",
+      "description": "Programmes d'études, avec les documents d'inscription, de financement et universitaires préparés correctement."
+    },
+    "work": {
+      "label": "Visa de Travail",
+      "description": "Voyages liés à l'emploi, avec coordination des documents de l'employeur et de l'employé."
+    }
+  },
+  "faqs": {
+    "heading": "Foire Aux Questions",
+    "q1": "Comment savoir de quel visa j'ai besoin ?",
+    "a1": "Cela dépend de votre nationalité, de votre destination et du motif de votre voyage. Indiquez-nous les détails de votre voyage et nous vous orienterons vers la bonne voie.",
+    "q2": "Pouvez-vous garantir que mon visa sera accepté ?",
+    "a2": "Non. L'acceptation est décidée par les autorités de la destination. Nous vous aidons à déposer une demande complète et exacte.",
+    "q3": "Les frais administratifs officiels sont-ils inclus ?",
+    "a3": "Non. Les frais administratifs officiels sont versés à l'autorité compétente et sont distincts de tout frais de service.",
+    "q4": "Combien de temps prend un visa ?",
+    "a4": "Les délais de traitement varient selon la destination et la saison et peuvent changer ; déposez votre demande le plus tôt que votre destination le permet.",
+    "q5": "Et si j'ai déjà été refusé ?",
+    "a5": "Nous pouvons vous aider à examiner ce qui s'est passé et à préparer une demande plus solide, mais nous ne pouvons pas garantir un résultat différent."
+  },
+  "cta": {
+    "title": "Vous ne savez pas quel visa choisir ?",
+    "body": "Dites-nous où vous allez et pourquoi, et nous établirons la liste des documents concernés.",
+    "button": "Nous Contacter"
+  },
+  "detail": {
+    "tourist": {
+      "meta": {
+        "title": "Assistance Visa Touristique — Visa Expeditor",
+        "description": "Aide guidée pour préparer une demande de visa touristique : exigences, formulaires, documents justificatifs et étapes de dépôt."
+      },
+      "hero": {
+        "eyebrow": "Voyage de Visite",
+        "heading": "Assistance Visa Touristique",
+        "subhead": "Préparez une demande de visa de visite complète et exacte grâce à des conseils étape par étape."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Un visa touristique vous permet de visiter un pays pour les loisirs, le tourisme ou les visites familiales, généralement pour un séjour limité. Les exigences varient selon la destination, la nationalité et le motif.",
+        "p2": "Nous vous aidons à confirmer ce qui s'applique à votre voyage, à réunir les bons documents et à déposer une demande claire qui reflète vos projets de voyage."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les voyageurs qui visitent un pays pour le tourisme, les vacances ou les visites familiales.",
+        "i2": "Les demandeurs qui déposent pour la première fois et souhaitent faire vérifier leur dossier avant le dépôt.",
+        "i3": "Les voyageurs qui ont besoin d'une vision plus claire des documents attendus par leur destination."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Confirmez vos exigences",
+          "description": "Indiquez-nous votre nationalité, votre destination et vos dates de voyage afin que nous puissions identifier la voie de visa applicable."
+        },
+        "s2": {
+          "title": "Préparez vos documents",
+          "description": "Nous vous fournissons une liste personnalisée et vérifions chaque élément pour son exhaustivité et sa cohérence."
+        },
+        "s3": {
+          "title": "Remplissez les formulaires",
+          "description": "Nous vous aidons à remplir la demande correctement et signalons tout élément susceptible de causer un retard."
+        },
+        "s4": {
+          "title": "Déposez en toute confiance",
+          "description": "Vous déposez par la voie officielle, avec nos conseils sur les frais, les rendez-vous et les prochaines étapes."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Passeport",
+          "value": "Un passeport valide avec une validité restante suffisante pour votre destination."
+        },
+        "r2": {
+          "label": "Photo",
+          "value": "Une photographie récente de type passeport conforme aux spécifications de la destination."
+        },
+        "r3": {
+          "label": "Itinéraire",
+          "value": "Les dates de voyage et, lorsque requis, une preuve d'hébergement ou de voyage de continuation."
+        },
+        "r4": {
+          "label": "Documents justificatifs",
+          "value": "Une preuve de fonds, de liens avec votre pays d'origine ou du motif de la visite, selon les exigences de la destination."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Ai-je toujours besoin d'un visa touristique ?",
+        "a1": "Non. De nombreuses destinations autorisent l'entrée sans visa ou avec un visa délivré à l'arrivée pour certaines nationalités. Vérifiez votre passeport et votre destination avant de supposer que vous en avez besoin.",
+        "q2": "Combien de temps à l'avance dois-je déposer ma demande ?",
+        "a2": "Déposez votre demande le plus tôt que votre destination le permet. Les délais de traitement varient et peuvent évoluer selon la saison ; il est donc prudent de prévoir un délai supplémentaire.",
+        "q3": "Pouvez-vous garantir l'acceptation ?",
+        "a3": "Non. L'acceptation est toujours décidée par les autorités de la destination. Nous vous aidons à déposer une demande complète et exacte.",
+        "q4": "Payez-vous les frais administratifs officiels à ma place ?",
+        "a4": "Non. Les frais administratifs officiels sont versés à l'autorité compétente et sont distincts de tout frais de service. Nous vous indiquons à quoi vous attendre.",
+        "q5": "Et si ma demande est refusée ?",
+        "a5": "Nous pouvons examiner ce qui s'est passé et vous aider à comprendre les options, mais nous ne pouvons pas faire appel en votre nom ni garantir un résultat différent."
+      },
+      "cta": {
+        "title": "Vous planifiez un voyage ?",
+        "body": "Parlez à notre équipe et nous établirons la liste des documents attendus par votre destination.",
+        "button": "Nous Contacter"
+      }
+    },
+    "business": {
+      "meta": {
+        "title": "Assistance Visa d'Affaires — Visa Expeditor",
+        "description": "Préparez une demande de visa d'affaires pour des réunions, conférences et négociations avec des documents d'entreprise organisés."
+      },
+      "hero": {
+        "eyebrow": "Voyage d'Affaires",
+        "heading": "Assistance Visa d'Affaires",
+        "subhead": "Préparez une demande de voyage d'affaires professionnelle pour des réunions, conférences et négociations."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Un visa d'affaires couvre les visites professionnelles de courte durée telles que les réunions, conférences, négociations ou formations. Il n'autorise généralement pas l'emploi salarié local.",
+        "p2": "Nous vous aidons à présenter un motif d'affaires clair et les documents d'invitation ou d'entreprise qu'un consulat peut demander."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les professionnels qui voyagent pour des réunions, conférences ou négociations.",
+        "i2": "Les employés qui participent à des formations ou à des événements d'entreprise à l'étranger.",
+        "i3": "Les chefs d'entreprise qui rendent visite à des partenaires, fournisseurs ou clients à l'étranger."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Confirmez la voie",
+          "description": "Nous vérifions si votre visite relève d'un voyage d'affaires ou nécessite une autre catégorie de visa."
+        },
+        "s2": {
+          "title": "Rassemblez les documents d'entreprise",
+          "description": "Nous vous aidons à collecter les lettres d'invitation, les confirmations de l'employeur et toute inscription à un événement."
+        },
+        "s3": {
+          "title": "Complétez la demande",
+          "description": "Nous vérifions les formulaires et les documents justificatifs pour leur cohérence avec le motif déclaré."
+        },
+        "s4": {
+          "title": "Déposez et suivez",
+          "description": "Vous déposez par la voie officielle et nous vous expliquons la suite."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Passeport",
+          "value": "Un passeport valide qui respecte les règles de validité de la destination."
+        },
+        "r2": {
+          "label": "Invitation",
+          "value": "Une lettre de l'entreprise hôte ou d'un organisateur d'événement, lorsque requis."
+        },
+        "r3": {
+          "label": "Documents d'entreprise",
+          "value": "Une lettre de l'employeur confirmant votre fonction, le motif et les dates de voyage."
+        },
+        "r4": {
+          "label": "Preuve de fonds",
+          "value": "Une preuve que vous pouvez couvrir votre séjour, si la destination l'exige."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Ai-je besoin d'un visa d'affaires pour une conférence ?",
+        "a1": "Souvent oui, bien que certaines destinations autorisent des activités d'affaires avec un visa de visite. Vérifiez les règles applicables à votre destination et à votre nationalité.",
+        "q2": "Puis-je travailler à distance avec un visa d'affaires ?",
+        "a2": "Un visa d'affaires est normalement destiné aux réunions et négociations, et non à l'emploi local. Les règles du travail à distance varient et doivent être confirmées.",
+        "q3": "Qu'est-ce qu'une lettre d'invitation ?",
+        "a3": "C'est une lettre de l'entreprise ou de l'organisation qui vous accueille, indiquant le motif et les dates de votre visite.",
+        "q4": "Mon employeur peut-il parrainer la demande ?",
+        "a4": "Votre employeur peut fournir des documents justificatifs, mais la demande est généralement déposée par vous en tant que voyageur.",
+        "q5": "En quoi un visa d'affaires diffère-t-il d'un visa de travail ?",
+        "a5": "Un visa d'affaires concerne les visites professionnelles de courte durée. Un visa de travail concerne la prise d'un emploi et nécessite généralement un parrainage."
+      },
+      "cta": {
+        "title": "Vous voyagez pour affaires ?",
+        "body": "Parlez-nous de votre voyage et nous préparerons les documents attendus par votre destination.",
+        "button": "Nous Contacter"
+      }
+    },
+    "student": {
+      "meta": {
+        "title": "Assistance Visa Étudiant — Visa Expeditor",
+        "description": "Organisez une demande de visa étudiant avec les documents d'inscription, de financement et universitaires préparés correctement."
+      },
+      "hero": {
+        "eyebrow": "Études à l'Étranger",
+        "heading": "Assistance Visa Étudiant",
+        "subhead": "Organisez votre programme d'études grâce à des conseils clairs sur les documents et la demande."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Un visa étudiant vous permet de vivre et d'étudier dans un autre pays pour un cursus approuvé. Il exige généralement une preuve d'inscription et la preuve que vous pouvez subvenir à vos besoins.",
+        "p2": "Nous vous aidons à réunir les documents universitaires, financiers et d'identité qu'exige généralement une demande de visa étudiant."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les étudiants qui commencent un diplôme, un échange ou un programme linguistique à l'étranger.",
+        "i2": "Les demandeurs qui doivent fournir une preuve de fonds et d'inscription.",
+        "i3": "Les familles qui préparent le départ d'une personne à charge pour ses études."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Confirmez les exigences",
+          "description": "Nous examinons votre cursus, votre destination et votre nationalité pour identifier la bonne voie étudiante."
+        },
+        "s2": {
+          "title": "Rassemblez vos documents",
+          "description": "Nous vous aidons à réunir les documents d'inscription, universitaires et financiers dans le format requis."
+        },
+        "s3": {
+          "title": "Remplissez les formulaires",
+          "description": "Nous vérifions la demande pour sa cohérence avec votre cursus et votre financement."
+        },
+        "s4": {
+          "title": "Déposez et préparez-vous",
+          "description": "Vous déposez par la voie officielle, avec des conseils sur les entretiens et les prochaines étapes."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Passeport",
+          "value": "Un passeport valide avec la durée de validité exigée par votre destination."
+        },
+        "r2": {
+          "label": "Inscription",
+          "value": "Une offre ou une lettre d'inscription d'un établissement reconnu."
+        },
+        "r3": {
+          "label": "Preuve de fonds",
+          "value": "Une preuve que vous pouvez couvrir les frais de scolarité et de subsistance, selon les exigences."
+        },
+        "r4": {
+          "label": "Relevés universitaires",
+          "value": "Relevés de notes, certificats et résultats de tests linguistiques lorsque requis."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Quand dois-je demander un visa étudiant ?",
+        "a1": "Dès que vous disposez de vos documents d'inscription, déposez votre demande le plus tôt que la destination le permet, car le traitement peut prendre du temps.",
+        "q2": "Qu'est-ce qui constitue une preuve de fonds ?",
+        "a2": "Généralement des relevés bancaires, des lettres de parrainage ou des bourses démontrant que vous pouvez couvrir vos frais. Les exigences varient selon la destination.",
+        "q3": "Puis-je travailler pendant mes études ?",
+        "a3": "Certaines destinations autorisent un travail limité avec un visa étudiant. Les règles dépendent du pays et de votre cursus ; confirmez avant de vous y fier.",
+        "q4": "Ma famille peut-elle m'accompagner ?",
+        "a4": "Certaines destinations autorisent les personnes à charge avec un visa étudiant, d'autres non. Nous pouvons vous aider à vérifier les règles applicables à votre cas.",
+        "q5": "Et si mon cursus commence avant l'arrivée du visa ?",
+        "a5": "Contactez votre établissement dès que possible. Beaucoup autorisent un début tardif, mais la décision leur appartient, pas à nous."
+      },
+      "cta": {
+        "title": "Vous partez étudier à l'étranger ?",
+        "body": "Partagez les détails de votre programme et nous établirons votre liste de documents.",
+        "button": "Nous Contacter"
+      }
+    },
+    "work": {
+      "meta": {
+        "title": "Assistance Visa de Travail — Visa Expeditor",
+        "description": "Organisez une demande de visa lié à l'emploi avec les documents de l'employeur et de l'employé en ordre."
+      },
+      "hero": {
+        "eyebrow": "Emploi à l'Étranger",
+        "heading": "Assistance Visa de Travail",
+        "subhead": "Organisez une demande de visa lié à l'emploi avec les documents de l'employeur et de l'employé en ordre."
+      },
+      "overview": {
+        "heading": "Ce que couvre ce service",
+        "p1": "Un visa de travail vous permet de prendre un emploi dans un autre pays, généralement lié à un employeur ou à un poste précis. Les exigences dépendent des règles du travail de la destination.",
+        "p2": "Nous vous aidons à coordonner les documents dont l'employeur et l'employé ont chacun besoin afin que la demande soit cohérente et complète."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse ce service",
+        "i1": "Les professionnels qui disposent d'une offre d'emploi ou d'une mutation à l'étranger.",
+        "i2": "Les employeurs qui délocalisent du personnel ou recrutent à l'international.",
+        "i3": "Les travailleurs qualifiés qui déposent une demande par une voie parrainée par un employeur."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Confirmez la voie",
+          "description": "Nous vérifions les catégories de visa de travail de la destination et celle qui correspond à votre poste."
+        },
+        "s2": {
+          "title": "Coordonnez les documents",
+          "description": "Nous aidons l'employeur et l'employé à préparer les documents de parrainage et de qualification."
+        },
+        "s3": {
+          "title": "Complétez la demande",
+          "description": "Nous vérifions les formulaires au regard du poste, de l'employeur et des exigences de la destination."
+        },
+        "s4": {
+          "title": "Déposez et planifiez l'arrivée",
+          "description": "Vous déposez par la voie officielle et nous vous expliquons ce qu'il faut préparer pour l'arrivée."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez généralement besoin",
+        "r1": {
+          "label": "Passeport",
+          "value": "Un passeport valide respectant les règles de validité de la destination."
+        },
+        "r2": {
+          "label": "Offre d'emploi",
+          "value": "Un contrat ou une lettre d'offre de l'employeur."
+        },
+        "r3": {
+          "label": "Parrainage",
+          "value": "Un parrainage de l'employeur ou une autorisation de travail, lorsque la destination l'exige."
+        },
+        "r4": {
+          "label": "Qualifications",
+          "value": "Des certificats ou des références prouvant que vous remplissez les conditions du poste."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Ai-je besoin d'une offre d'emploi au préalable ?",
+        "a1": "La plupart des visas de travail exigent une offre confirmée ou un parrainage avant de déposer votre demande. Certaines destinations proposent des voies pour les travailleurs qualifiés sans offre.",
+        "q2": "Qui dépose la demande, moi ou mon employeur ?",
+        "a2": "Cela varie. Souvent, l'employeur lance le parrainage et vous complétez la demande de visa. Nous vous aidons à coordonner les deux parties.",
+        "q3": "Ma famille peut-elle me rejoindre ?",
+        "a3": "De nombreux visas de travail autorisent les personnes à charge, mais les règles diffèrent selon la destination et le poste. Nous pouvons vous aider à vérifier.",
+        "q4": "Combien de temps dure un visa de travail ?",
+        "a4": "Cela dépend de la destination et du poste, et il peut être renouvelable. Vérifiez la voie spécifique à votre cas.",
+        "q5": "Puis-je changer d'employeur plus tard ?",
+        "a5": "Certains visas vous lient à un seul employeur, d'autres sont plus souples. Confirmez les conditions avant de changer d'emploi."
+      },
+      "cta": {
+        "title": "Vous partez travailler à l'étranger ?",
+        "body": "Parlez-nous du poste et de la destination et nous présenterons les documents concernés.",
+        "button": "Nous Contacter"
+      }
+    }
+  }
+}

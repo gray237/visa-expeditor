@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Recursos — Visa Expeditor",
+    "description": "Preguntas frecuentes, guías y notas sobre tiempos de procesamiento para ayudarle a preparar solicitudes de pasaporte y visa con confianza."
+  },
+  "hero": {
+    "eyebrow": "Base de Conocimientos",
+    "heading": "Recursos para su Solicitud",
+    "subhead": "Respuestas directas y guías prácticas, escritas para ayudarle a evitar las demoras más comunes."
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "resources": "Recursos"
+  },
+  "grid": {
+    "heading": "Explore los Recursos",
+    "subhead": "Comience con las preguntas frecuentes para respuestas rápidas, o explore las guías para un recorrido más detallado."
+  },
+  "items": {
+    "faqs": {
+      "label": "Preguntas Frecuentes",
+      "description": "Respuestas rápidas a las preguntas que escuchamos con más frecuencia."
+    },
+    "guides": {
+      "label": "Guías",
+      "description": "Recorridos paso a paso para solicitudes comunes."
+    },
+    "processingTimes": {
+      "label": "Tiempos de Procesamiento",
+      "description": "Notas generales sobre lo que influye en la duración de una solicitud."
+    },
+    "insights": {
+      "label": "Análisis",
+      "description": "Explicaciones de cambios y tendencias en las reglas de viaje."
+    }
+  },
+  "faqs": {
+    "heading": "Preguntas Frecuentes",
+    "q1": "¿Qué hace Visa Expeditor?",
+    "a1": "Le ayudamos a preparar solicitudes de pasaporte y visa: confirmamos requisitos, organizamos documentos y revisamos los formularios antes de que los presente.",
+    "q2": "¿Son una agencia gubernamental?",
+    "a2": "No. Visa Expeditor es un servicio independiente y no está afiliado a ninguna agencia gubernamental.",
+    "q3": "¿Ofrecen asesoría legal?",
+    "a3": "No. No somos un bufete de abogados y no brindamos asesoría legal. Ayudamos con la preparación de documentos y la orientación del proceso.",
+    "q4": "¿Pueden garantizar una aprobación?",
+    "a4": "No. Las decisiones las toman las autoridades competentes. Le ayudamos a presentar una solicitud completa y coherente.",
+    "q5": "¿Cómo empiezo?",
+    "a5": "Indíquenos su nacionalidad, destino y motivo de viaje mediante el formulario de contacto y le explicaremos los siguientes pasos."
+  },
+  "cta": {
+    "title": "¿Aún tiene una pregunta?",
+    "body": "Envíenos los detalles y le indicaremos la dirección correcta.",
+    "button": "Contáctenos"
+  },
+  "faqsPage": {
+    "meta": {
+      "title": "Preguntas Frecuentes — Visa Expeditor",
+      "description": "Respuestas a preguntas comunes sobre pasaportes, visas, procesamiento, tarifas y el trabajo con Visa Expeditor."
+    },
+    "hero": {
+      "eyebrow": "Respuestas",
+      "heading": "Preguntas Frecuentes",
+      "subhead": "Las preguntas que escuchamos con más frecuencia, respondidas con claridad. Si la suya no está aquí, contáctenos."
+    },
+    "breadcrumbs": {
+      "faqs": "Preguntas Frecuentes"
+    },
+    "faqs": {
+      "heading": "Preguntas Comunes",
+      "q1": "¿Qué hace Visa Expeditor?",
+      "a1": "Le ayudamos a preparar solicitudes de pasaporte y visa. Eso incluye confirmar requisitos, organizar documentos y revisar los formularios antes de que los presente.",
+      "q2": "¿Son una agencia gubernamental?",
+      "a2": "No. Visa Expeditor es un servicio independiente. No estamos afiliados a ninguna agencia gubernamental, consulado ni embajada.",
+      "q3": "¿Ofrecen asesoría legal?",
+      "a3": "No. No somos un bufete de abogados y no brindamos asesoría legal. Para preguntas legales, consulte a un profesional calificado.",
+      "q4": "¿Pueden garantizar una aprobación?",
+      "a4": "No. Las decisiones de entrada y visa las toman únicamente las autoridades competentes. Le ayudamos a presentar una solicitud completa y precisa.",
+      "q5": "¿Cuánto cuestan sus servicios?",
+      "a5": "El precio depende del servicio y del destino. Las tarifas gubernamentales son aparte y se pagan a la autoridad oficial. Contáctenos para obtener un desglose claro.",
+      "q6": "¿Cuánto tarda una solicitud?",
+      "a6": "Los tiempos de procesamiento varían según el destino, la temporada y el tipo de solicitud, y cambian con el tiempo. Solicite lo antes que el destino lo permita.",
+      "q7": "¿Se encargan de las tarifas gubernamentales?",
+      "a7": "No. Las tarifas gubernamentales se pagan directamente a la autoridad oficial. Cualquier tarifa de servicio que cobremos es aparte y se muestra con claridad.",
+      "q8": "¿Qué documentos necesitaré?",
+      "a8": "Depende de la solicitud. Los elementos comunes incluyen un pasaporte válido, una fotografía que cumpla los requisitos, prueba de fondos y documentos de respaldo. Proporcionamos una lista personalizada.",
+      "q9": "¿Puedo solicitar si me rechazaron antes?",
+      "a9": "Sí, puede volver a solicitar. Podemos ayudarle a revisar lo ocurrido y preparar una solicitud más sólida, pero no podemos garantizar un resultado diferente.",
+      "q10": "¿Cómo me contacto con ustedes?",
+      "a10": "Use el formulario de contacto de este sitio. Indíquenos su nacionalidad, destino y motivo de viaje, y le responderemos con los siguientes pasos."
+    },
+    "cta": {
+      "title": "¿No respondimos su pregunta?",
+      "body": "Envíenos sus datos y le responderemos con una respuesta clara.",
+      "button": "Contáctenos"
+    }
+  }
+}

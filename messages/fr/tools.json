@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Outils de Voyage — Visa Expeditor",
+    "description": "Des outils gratuits pour vérifier les exigences de visa, la validité de votre passeport et les documents nécessaires avant de voyager."
+  },
+  "hero": {
+    "eyebrow": "Anticiper",
+    "heading": "Des Outils pour Voyager Plus Sereinement",
+    "subhead": "Vérifiez avant de réserver les détails qui causent le plus de retards, pour éviter toute mauvaise surprise."
+  },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "tools": "Outils"
+  },
+  "grid": {
+    "heading": "Choisissez un Outil",
+    "subhead": "Chaque outil se concentre sur une décision et vous indique la prochaine étape utile."
+  },
+  "items": {
+    "visaChecker": {
+      "label": "Vérificateur de Visa",
+      "description": "Découvrez si votre passeport nécessite un visa pour une destination, d'après notre jeu de données d'exemple."
+    },
+    "passportValidity": {
+      "label": "Vérificateur de Validité du Passeport",
+      "description": "Vérifiez si la date d'expiration de votre passeport respecte les règles d'entrée de votre destination."
+    },
+    "checklist": {
+      "label": "Liste de Documents",
+      "description": "Créez une liste des documents généralement exigés selon votre type d'entrée."
+    },
+    "passportPower": {
+      "label": "Puissance du Passeport",
+      "description": "Découvrez où votre passeport peut vous emmener, calculé à partir de notre propre jeu de données."
+    }
+  },
+  "faqs": {
+    "heading": "Foire Aux Questions",
+    "q1": "Ces outils sont-ils gratuits ?",
+    "a1": "Oui. Les outils sont gratuits. Si vous souhaitez ensuite de l'aide pour une demande, il s'agit d'un service distinct.",
+    "q2": "Les informations sont-elles officielles ?",
+    "a2": "Non. Nos outils utilisent des données d'exemple à des fins de démonstration et ne sont pas des sources officielles. Vérifiez toujours auprès des autorités de la destination.",
+    "q3": "Les outils conservent-ils mes données ?",
+    "a3": "Le vérificateur de validité du passeport s'exécute dans votre navigateur. D'autres outils peuvent enregistrer votre choix de passeport dans un cookie afin que le site s'en souvienne.",
+    "q4": "Un outil peut-il m'indiquer si ma demande sera acceptée ?",
+    "a4": "Non. Les décisions d'entrée et de visa sont prises par les autorités. Nos outils vous aident seulement à préparer et à vérifier les détails.",
+    "q5": "Que se passe-t-il si un outil n'affiche aucune donnée ?",
+    "a5": "Notre jeu de données est encore en cours d'enrichissement. Lorsque nous n'avons pas de donnée, nous le signalons plutôt que de deviner. Contactez-nous et nous vous aiderons directement."
+  },
+  "cta": {
+    "title": "Besoin d'aide après vos vérifications ?",
+    "body": "Si un outil soulève une question, notre équipe peut vous expliquer ce qu'attend votre destination.",
+    "button": "Nous Contacter"
+  },
+  "detail": {
+    "passportValidity": {
+      "meta": {
+        "title": "Vérificateur de Validité du Passeport — Visa Expeditor",
+        "description": "Vérifiez si la date d'expiration de votre passeport respecte les règles d'entrée de votre destination avant de voyager."
+      },
+      "hero": {
+        "eyebrow": "Vérification Avant Voyage",
+        "heading": "Vérificateur de Validité du Passeport",
+        "subhead": "Vérifiez si la date d'expiration de votre passeport respecte les règles d'entrée de votre destination."
+      },
+      "overview": {
+        "heading": "Ce que fait cet outil",
+        "p1": "De nombreux pays exigent que votre passeport reste valide pendant une période définie après votre départ prévu, souvent six mois. Un passeport encore en cours de validité peut malgré tout être refusé s'il ne respecte pas cette règle.",
+        "p2": "Cet outil compare la date d'expiration de votre passeport avec vos dates de voyage et la règle de validité que vous sélectionnez, afin que vous puissiez le renouveler à temps si nécessaire."
+      },
+      "whoFor": {
+        "heading": "À qui s'adresse cet outil",
+        "i1": "Les voyageurs qui vérifient leur passeport avant de réserver des vols.",
+        "i2": "Toute personne dont le passeport expire dans l'année.",
+        "i3": "Les familles qui coordonnent plusieurs passeports à la fois."
+      },
+      "steps": {
+        "heading": "Comment ça marche",
+        "s1": {
+          "title": "Saisissez votre date d'expiration",
+          "description": "Utilisez la date imprimée dans le champ d'expiration de votre passeport."
+        },
+        "s2": {
+          "title": "Saisissez vos dates de voyage",
+          "description": "Ajoutez vos dates de départ et de retour prévues."
+        },
+        "s3": {
+          "title": "Choisissez la règle de validité",
+          "description": "Sélectionnez la règle appliquée par votre destination, ou la règle courante des six mois si vous n'êtes pas sûr."
+        },
+        "s4": {
+          "title": "Lisez le résultat",
+          "description": "L'outil vous indique si votre passeport semble respecter la règle et ce qu'il convient de faire ensuite."
+        }
+      },
+      "requirements": {
+        "heading": "Ce dont vous aurez besoin",
+        "r1": {
+          "label": "Date d'expiration",
+          "value": "La date d'expiration imprimée dans votre passeport."
+        },
+        "r2": {
+          "label": "Dates de voyage",
+          "value": "Vos dates de départ et de retour prévues."
+        },
+        "r3": {
+          "label": "Règle de la destination",
+          "value": "La validité minimale exigée par votre destination, si vous la connaissez."
+        },
+        "r4": {
+          "label": "Une note du résultat",
+          "value": "Si votre passeport ne remplit pas la condition, contactez-nous au sujet des options de renouvellement."
+        }
+      },
+      "faqs": {
+        "heading": "Foire Aux Questions",
+        "q1": "Qu'est-ce que la règle des six mois ?",
+        "a1": "Il s'agit d'une exigence courante selon laquelle un passeport doit rester valide six mois après votre départ prévu. Tous les pays ne l'appliquent pas.",
+        "q2": "La règle s'applique-t-elle partout ?",
+        "a2": "Non. Certains pays exigent trois mois, d'autres six, et certains exigent seulement une validité pendant la durée de votre séjour. Confirmez la règle applicable à votre destination.",
+        "q3": "Que se passe-t-il si mon passeport expire pendant mon voyage ?",
+        "a3": "C'est généralement un problème. Renouvelez-le avant de voyager si possible et contactez-nous pour planifier le calendrier.",
+        "q4": "Combien de temps prend un renouvellement ?",
+        "a4": "Les délais de traitement varient selon le pays et la saison et évoluent avec le temps ; déposez votre demande le plus tôt possible.",
+        "q5": "Cet outil est-il officiel ?",
+        "a5": "Non. Il s'agit d'une estimation utile. Vérifiez toujours les exigences auprès des autorités officielles de la destination avant de voyager."
+      },
+      "cta": {
+        "title": "Votre passeport expire bientôt ?",
+        "body": "Si votre passeport ne respecte pas la règle, parlez-nous des options de renouvellement.",
+        "button": "Nous Contacter"
+      }
+    }
+  }
+}

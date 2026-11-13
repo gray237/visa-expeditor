@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Próximamente — Visa Expeditor",
+    "description": "Esta página está en construcción. Mientras tanto, contacte a nuestro equipo."
+  },
+  "eyebrow": "Próximamente",
+  "bodyHeading": "Esta sección está en camino",
+  "body": "Todavía estamos construyendo esta página. Mientras tanto, nuestro equipo puede responder sus preguntas directamente.",
+  "cta": "Contáctenos",
+  "backHome": "Volver al Inicio",
+  "breadcrumbs": {
+    "home": "Inicio"
+  },
+  "items": {
+    "start": {
+      "title": "Comenzar",
+      "description": "El registro guiado de solicitudes está en preparación."
+    },
+    "toolsIdp": {
+      "title": "Permiso Internacional de Conducir",
+      "description": "Orientación para solicitar un Permiso Internacional de Conducir."
+    },
+    "toolsChecklist": {
+      "title": "Lista de Documentos",
+      "description": "Una lista personalizada de los documentos que necesita su tipo de entrada."
+    },
+    "toolsPassportPower": {
+      "title": "Poder del Pasaporte",
+      "description": "Vea adónde puede llevarlo su pasaporte, calculado a partir de nuestro conjunto de datos."
+    },
+    "resourcesGuides": {
+      "title": "Guías",
+      "description": "Recorridos paso a paso para solicitudes comunes."
+    },
+    "resourcesProcessingTimes": {
+      "title": "Tiempos de Procesamiento",
+      "description": "Notas sobre lo que influye en la duración de una solicitud."
+    },
+    "insights": {
+      "title": "Análisis",
+      "description": "Explicaciones de cambios y tendencias en las reglas de viaje."
+    },
+    "immigrationUnitedStates": {
+      "title": "Inmigración a los Estados Unidos",
+      "description": "Se está preparando una descripción general de las vías de inmigración a los Estados Unidos."
+    },
+    "immigrationCanada": {
+      "title": "Inmigración a Canadá",
+      "description": "Se está preparando una descripción general de las vías de inmigración a Canadá."
+    },
+    "immigrationUnitedKingdom": {
+      "title": "Inmigración al Reino Unido",
+      "description": "Se está preparando una descripción general de las vías de inmigración al Reino Unido."
+    },
+    "immigrationAustralia": {
+      "title": "Inmigración a Australia",
+      "description": "Se está preparando una descripción general de las vías de inmigración a Australia."
+    },
+    "immigrationPortugal": {
+      "title": "Inmigración a Portugal",
+      "description": "Se está preparando una descripción general de las vías de inmigración a Portugal."
+    },
+    "immigrationNewZealand": {
+      "title": "Inmigración a Nueva Zelanda",
+      "description": "Se está preparando una descripción general de las vías de inmigración a Nueva Zelanda."
+    },
+    "immigrationGreenCardLottery": {
+      "title": "Lotería de Tarjeta Verde",
+      "description": "Información sobre el programa oficial de Visas de Diversidad."
+    },
+    "immigrationSkilledWorker": {
+      "title": "Trabajador Cualificado",
+      "description": "Orientación sobre las vías para trabajadores cualificados patrocinadas por un empleador."
+    },
+    "immigrationDigitalNomad": {
+      "title": "Nómada Digital",
+      "description": "Orientación sobre visas para trabajo remoto y nómadas digitales."
+    }
+  }
+}

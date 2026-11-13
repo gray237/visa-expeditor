@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Coming Soon — Visa Expeditor",
+    "description": "This page is being built. Contact our team in the meantime."
+  },
+  "eyebrow": "Coming Soon",
+  "bodyHeading": "This section is on the way",
+  "body": "We are still building this page. In the meantime, our team can answer your questions directly.",
+  "cta": "Contact Us",
+  "backHome": "Back to Home",
+  "breadcrumbs": {
+    "home": "Home"
+  },
+  "items": {
+    "start": {
+      "title": "Get Started",
+      "description": "The guided application intake is being prepared."
+    },
+    "toolsIdp": {
+      "title": "International Driving Permit",
+      "description": "Guidance on applying for an International Driving Permit."
+    },
+    "toolsChecklist": {
+      "title": "Document Checklist",
+      "description": "A tailored checklist of the documents your entry type needs."
+    },
+    "toolsPassportPower": {
+      "title": "Passport Power",
+      "description": "See where your passport can take you, computed from our dataset."
+    },
+    "resourcesGuides": {
+      "title": "Guides",
+      "description": "Step-by-step walkthroughs for common applications."
+    },
+    "resourcesProcessingTimes": {
+      "title": "Processing Times",
+      "description": "Notes on what affects how long an application takes."
+    },
+    "insights": {
+      "title": "Insights",
+      "description": "Explanations of changes and trends in travel rules."
+    },
+    "immigrationUnitedStates": {
+      "title": "United States Immigration",
+      "description": "An overview of U.S. immigration pathways is being prepared."
+    },
+    "immigrationCanada": {
+      "title": "Canada Immigration",
+      "description": "An overview of Canadian immigration pathways is being prepared."
+    },
+    "immigrationUnitedKingdom": {
+      "title": "United Kingdom Immigration",
+      "description": "An overview of UK immigration pathways is being prepared."
+    },
+    "immigrationAustralia": {
+      "title": "Australia Immigration",
+      "description": "An overview of Australian immigration pathways is being prepared."
+    },
+    "immigrationPortugal": {
+      "title": "Portugal Immigration",
+      "description": "An overview of Portuguese immigration pathways is being prepared."
+    },
+    "immigrationNewZealand": {
+      "title": "New Zealand Immigration",
+      "description": "An overview of New Zealand immigration pathways is being prepared."
+    },
+    "immigrationGreenCardLottery": {
+      "title": "Green Card Lottery",
+      "description": "Information about the official Diversity Visa programme."
+    },
+    "immigrationSkilledWorker": {
+      "title": "Skilled Worker",
+      "description": "Guidance on employer-sponsored skilled worker routes."
+    },
+    "immigrationDigitalNomad": {
+      "title": "Digital Nomad",
+      "description": "Guidance on remote-work and digital nomad visas."
+    }
+  }
+}

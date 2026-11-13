@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "title": "Immigration Services — Visa Expeditor",
+    "description": "Guidance for green cards, citizenship, family sponsorship and investor visas, with the documents each route requires."
+  },
+  "hero": {
+    "eyebrow": "Long-Term Relocation",
+    "heading": "Immigration, Explained",
+    "subhead": "Explore residence and citizenship pathways with clear steps and organized documentation."
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "immigration": "Immigration"
+  },
+  "grid": {
+    "heading": "Select an Immigration Service",
+    "subhead": "Each pathway has its own eligibility rules and evidence. Start with the one that matches your goal."
+  },
+  "items": {
+    "greenCards": {
+      "label": "Green Cards",
+      "description": "Permanent residence pathways through family, employment or other qualifying categories."
+    },
+    "citizenship": {
+      "label": "Citizenship",
+      "description": "Naturalization guidance, from eligibility to the documents and tests involved."
+    },
+    "family": {
+      "label": "Family Sponsorship",
+      "description": "Petition for eligible relatives with organized relationship and sponsor evidence."
+    },
+    "investorVisas": {
+      "label": "Investor Visas",
+      "description": "Investment-based residence routes and the financial documents they require."
+    }
+  },
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "q1": "Which immigration route is right for me?",
+    "a1": "It depends on your family ties, employment, investment and goals. Tell us your situation and we will explain the options.",
+    "q2": "Do you provide legal advice?",
+    "a2": "No. Visa Expeditor is not a law firm and does not provide legal advice. We help you organize and prepare documents.",
+    "q3": "Can you guarantee an approval?",
+    "a3": "No. Decisions rest with the relevant authorities. We help you present a complete and consistent application.",
+    "q4": "How long do immigration processes take?",
+    "a4": "Timelines vary widely by route and authority and change over time, so we avoid quoting figures that may be out of date.",
+    "q5": "Do I need a lawyer?",
+    "a5": "Some cases benefit from legal advice, especially where eligibility is complex. We can help you prepare documents either way."
+  },
+  "cta": {
+    "title": "Planning a long-term move?",
+    "body": "Tell us your goal and we will outline the documents involved for the route that fits.",
+    "button": "Contact Us"
+  },
+  "detail": {
+    "greenCards": {
+      "meta": {
+        "title": "Green Card Assistance — Visa Expeditor",
+        "description": "Understand permanent residence pathways and prepare the documents a green card case requires."
+      },
+      "hero": {
+        "eyebrow": "Permanent Residence",
+        "heading": "Green Card Assistance",
+        "subhead": "Understand permanent residence pathways and prepare the documents your case requires."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "A green card grants lawful permanent residence in the United States, allowing you to live and work there indefinitely. Eligibility usually depends on family, employment or another qualifying category.",
+        "p2": "We help you organize the evidence and forms a permanent residence application typically involves, and explain what each stage means."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Family members of U.S. citizens or permanent residents.",
+        "i2": "Employees sponsored by a U.S. employer.",
+        "i3": "Individuals exploring a qualifying permanent residence category."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Identify your category",
+          "description": "We review your situation to determine which permanent residence category may apply."
+        },
+        "s2": {
+          "title": "Gather supporting evidence",
+          "description": "We help you collect civil, financial and relationship documents for the case."
+        },
+        "s3": {
+          "title": "Prepare the forms",
+          "description": "We review each form for consistency with your evidence and category."
+        },
+        "s4": {
+          "title": "Submit and monitor",
+          "description": "You submit through the official channel and we explain what to expect at each stage."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Passport",
+          "value": "A valid passport or other identity document."
+        },
+        "r2": {
+          "label": "Eligibility evidence",
+          "value": "Documents showing the qualifying family or employment relationship."
+        },
+        "r3": {
+          "label": "Sponsor documents",
+          "value": "Petition and financial support documents from the sponsor, where applicable."
+        },
+        "r4": {
+          "label": "Civil documents",
+          "value": "Birth, marriage and other civil records, as required."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "What is a green card?",
+        "a1": "It is proof of lawful permanent residence in the United States, allowing you to live and work there indefinitely, subject to the law.",
+        "q2": "Who can sponsor me?",
+        "a2": "Eligible family members or employers can sponsor certain categories. The options depend on your relationship and circumstances.",
+        "q3": "How long does the process take?",
+        "a3": "Timelines vary widely by category and authority and change over time. We avoid quoting figures that may be out of date.",
+        "q4": "Can I work while I wait?",
+        "a4": "Some applicants can request work authorization while a case is pending. Eligibility depends on your category and status.",
+        "q5": "Do I need a lawyer?",
+        "a5": "Some cases benefit from legal advice. We are not a law firm; we help you organize and prepare documents."
+      },
+      "cta": {
+        "title": "Exploring permanent residence?",
+        "body": "Tell us about your situation and we will explain the documents involved.",
+        "button": "Contact Us"
+      }
+    },
+    "citizenship": {
+      "meta": {
+        "title": "Citizenship Assistance — Visa Expeditor",
+        "description": "Prepare a naturalization application with clear guidance on eligibility and the documents required."
+      },
+      "hero": {
+        "eyebrow": "Naturalization",
+        "heading": "Citizenship Assistance",
+        "subhead": "Prepare a naturalization application with clear guidance on eligibility and documents."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "Citizenship, often through naturalization, is the final step for eligible permanent residents. Requirements usually include a period of residence, good moral character and language or civics knowledge.",
+        "p2": "We help you gather the records a naturalization application typically needs and understand what to expect at each stage."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Permanent residents who meet the residence requirements.",
+        "i2": "Applicants preparing for a civics or language requirement.",
+        "i3": "Families applying together or for a child."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Check eligibility",
+          "description": "We review your residence history and status to see which requirements apply."
+        },
+        "s2": {
+          "title": "Prepare records",
+          "description": "We help you gather identity, residence and background documents."
+        },
+        "s3": {
+          "title": "Complete the application",
+          "description": "We review the form for accuracy and consistency with your records."
+        },
+        "s4": {
+          "title": "Prepare for the interview",
+          "description": "We explain the civics and language requirements and what the interview involves."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Passport",
+          "value": "A valid passport or travel document."
+        },
+        "r2": {
+          "label": "Residence proof",
+          "value": "Evidence of your permanent residence and time spent in the country."
+        },
+        "r3": {
+          "label": "Residence history",
+          "value": "Address and travel history for the qualifying period."
+        },
+        "r4": {
+          "label": "Background documents",
+          "value": "Records relevant to character and eligibility, as required."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "How long must I be a resident?",
+        "a1": "Residence requirements vary and depend on your category and circumstances. Check the current rules for your case.",
+        "q2": "What is the civics test?",
+        "a2": "It is a test of knowledge about the country's history and government, often paired with an English requirement.",
+        "q3": "Can I keep my original nationality?",
+        "a3": "It depends on the rules of both countries. Some allow dual citizenship and others do not, so confirm both sides.",
+        "q4": "What if I have a criminal record?",
+        "a4": "It may affect eligibility. Because this involves legal judgement, we recommend legal advice for anything beyond a minor matter.",
+        "q5": "How long does it take?",
+        "a5": "Timelines vary by authority and caseload and change over time, so we avoid quoting figures that may be out of date."
+      },
+      "cta": {
+        "title": "Ready for the next step?",
+        "body": "Talk to us and we will map out the documents for your naturalization case.",
+        "button": "Contact Us"
+      }
+    },
+    "family": {
+      "meta": {
+        "title": "Family Sponsorship Assistance — Visa Expeditor",
+        "description": "Bring eligible family members together with organized sponsorship and relationship documents."
+      },
+      "hero": {
+        "eyebrow": "Family Reunification",
+        "heading": "Family Sponsorship Assistance",
+        "subhead": "Bring eligible family members together with organized sponsorship documents."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "Family sponsorship lets a citizen or permanent resident petition for certain relatives to join them. Eligibility depends on the relationship and the sponsor's status.",
+        "p2": "We help sponsors and applicants organize the relationship evidence and forms a family-based case usually requires."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Citizens or residents sponsoring a spouse or child.",
+        "i2": "Parents petitioning for a child, or children for a parent.",
+        "i3": "Families preparing relationship evidence."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Confirm eligibility",
+          "description": "We review the relationship and the sponsor's status to see which category applies."
+        },
+        "s2": {
+          "title": "Build the relationship evidence",
+          "description": "We help you organize documents that show a genuine, qualifying relationship."
+        },
+        "s3": {
+          "title": "Prepare the forms",
+          "description": "We review the petition and supporting forms for consistency."
+        },
+        "s4": {
+          "title": "Submit and follow up",
+          "description": "You submit through the official channel and we explain the stages that follow."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Passport",
+          "value": "Identity documents for the sponsor and the relative."
+        },
+        "r2": {
+          "label": "Relationship evidence",
+          "value": "Records showing the qualifying family relationship."
+        },
+        "r3": {
+          "label": "Sponsor status",
+          "value": "Proof of the sponsor's citizenship or permanent residence."
+        },
+        "r4": {
+          "label": "Financial documents",
+          "value": "Evidence of income or support where the route requires it."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "Which relatives can I sponsor?",
+        "a1": "It depends on the country and the sponsor's status. Common categories include spouses, children and parents.",
+        "q2": "What proves a genuine relationship?",
+        "a2": "A combination of civil records, shared finances, correspondence and photographs. Requirements differ by case.",
+        "q3": "How long does family sponsorship take?",
+        "a3": "Timelines vary by category and authority and change over time, so we avoid quoting figures that may be out of date.",
+        "q4": "Can my relative work while waiting?",
+        "a4": "It depends on the country and the stage of the case. Many routes do not allow work until residence is granted.",
+        "q5": "What if my income is low?",
+        "a5": "Some routes require a minimum income or a joint sponsor. We can explain what evidence is typically expected."
+      },
+      "cta": {
+        "title": "Bringing family together?",
+        "body": "Tell us about your relationship and we will explain the documents involved.",
+        "button": "Contact Us"
+      }
+    },
+    "investorVisas": {
+      "meta": {
+        "title": "Investor Visa Assistance — Visa Expeditor",
+        "description": "Explore investment-based residence routes and prepare the financial and identity documents they require."
+      },
+      "hero": {
+        "eyebrow": "Investment Pathways",
+        "heading": "Investor Visa Assistance",
+        "subhead": "Explore investment-based residence routes and prepare the documents they require."
+      },
+      "overview": {
+        "heading": "What this service covers",
+        "p1": "Investor visas allow qualifying individuals to obtain residence, and sometimes citizenship, in exchange for a substantial investment. Programmes differ widely by country and change often.",
+        "p2": "We help you understand the general structure of an investment route and organize the financial and identity documents a programme may request. We do not provide investment advice."
+      },
+      "whoFor": {
+        "heading": "Who this is for",
+        "i1": "Individuals exploring residence-by-investment programmes.",
+        "i2": "Entrepreneurs relocating a business or capital.",
+        "i3": "Families planning long-term international residence."
+      },
+      "steps": {
+        "heading": "How it works",
+        "s1": {
+          "title": "Compare the routes",
+          "description": "We explain the general features of the programmes you are considering, without recommending one."
+        },
+        "s2": {
+          "title": "Organize your documents",
+          "description": "We help you prepare identity, source-of-funds and investment documents."
+        },
+        "s3": {
+          "title": "Prepare the application",
+          "description": "We review the forms and supporting evidence for completeness."
+        },
+        "s4": {
+          "title": "Submit through the official channel",
+          "description": "You submit to the relevant authority, with our guidance on the process."
+        }
+      },
+      "requirements": {
+        "heading": "What you'll typically need",
+        "r1": {
+          "label": "Passport",
+          "value": "A valid passport for you and any dependants."
+        },
+        "r2": {
+          "label": "Proof of funds",
+          "value": "Evidence that the investment funds are available and lawfully obtained."
+        },
+        "r3": {
+          "label": "Source of funds",
+          "value": "Documents explaining where the funds came from."
+        },
+        "r4": {
+          "label": "Investment plan",
+          "value": "Details of the qualifying investment, as the programme requires."
+        }
+      },
+      "faqs": {
+        "heading": "Frequently Asked Questions",
+        "q1": "What is an investor visa?",
+        "a1": "It is a residence route that requires a qualifying investment. The amount, conditions and benefits vary by country.",
+        "q2": "Which countries offer them?",
+        "a2": "Several countries run such programmes, and they change frequently. We can explain the general structure but not recommend one.",
+        "q3": "How much do I need to invest?",
+        "a3": "Amounts differ by programme and change over time. We avoid quoting figures that may be out of date; check the official source.",
+        "q4": "Does it lead to citizenship?",
+        "a4": "Some programmes offer a path to citizenship and others only residence. It depends on the country and its rules.",
+        "q5": "Do you give investment advice?",
+        "a5": "No. We are not financial or legal advisors. Investment decisions are yours; we help with the immigration paperwork."
+      },
+      "cta": {
+        "title": "Considering an investment route?",
+        "body": "Talk to us about the documents involved; investment decisions are yours.",
+        "button": "Contact Us"
+      }
+    }
+  }
+}
