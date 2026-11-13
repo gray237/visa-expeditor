@@ -1,19 +1,19 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { SignInButton, UserButton, useUser } from "@clerk/nextjs";
-import { LayoutDashboard } from "lucide-react";
+import { LogOut } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { authClient } from "@/lib/auth/client";
 
 export function AuthButton({ fullWidth = false }: { fullWidth?: boolean }) {
-  const { isSignedIn, isLoaded } = useUser();
   const t = useTranslations("auth");
+  const { data: session, isPending } = authClient.useSession();
 
   const buttonClass = `flex h-9 items-center justify-center rounded-full bg-[#0F2444] px-6 font-body text-[13px] font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90 ${
     fullWidth ? "w-full" : ""
   }`;
 
-  if (!isLoaded) {
+  if (isPending) {
     return (
       <div
         className={`h-9 animate-pulse rounded-full bg-[#0F2444]/10 ${fullWidth ? "w-full" : "w-37.5"}`}
@@ -21,42 +21,44 @@ export function AuthButton({ fullWidth = false }: { fullWidth?: boolean }) {
     );
   }
 
-  if (!isSignedIn) {
+  if (!session?.user) {
     return (
-      <SignInButton mode="modal">
-        <button type="button" className={buttonClass}>
-          {t("signIn")}
-        </button>
-      </SignInButton>
+      <Link href="/sign-in" className={buttonClass}>
+        {t("signIn")}
+      </Link>
     );
   }
 
-  return (
-    <div className={`flex items-center gap-3 ${fullWidth ? "w-full" : ""}`}>
-      <UserButton
-        appearance={{
-          variables: {
-            colorPrimary: "#0F2444",
-            fontFamily: "var(--font-body)",
-            borderRadius: "0.75rem",
-          },
-          elements: {
-            avatarBox: "!h-9 !w-9",
-          },
-        }}
-      >
-        <UserButton.MenuItems>
-          <UserButton.Link
-            label={t("dashboard")}
-            href="/dashboard"
-            labelIcon={<LayoutDashboard className="h-4 w-4" />}
-          />
-        </UserButton.MenuItems>
-      </UserButton>
+  const name = session.user.name || session.user.email;
+  const initial = name.slice(0, 1).toUpperCase();
 
-      <Link href="/start" className={`${buttonClass} flex-1`}>
-        {t("getStarted")}
+  async function handleSignOut() {
+    await authClient.signOut();
+    window.location.reload();
+  }
+
+  return (
+    <div className={`flex items-center gap-2 ${fullWidth ? "w-full" : ""}`}>
+      <Link
+        href="/dashboard"
+        aria-label={t("dashboard")}
+        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#B8925A] font-body text-[13px] font-bold text-[#0F2444]"
+      >
+        {initial}
       </Link>
+
+      <Link href="/dashboard" className={`${buttonClass} flex-1`}>
+        {t("dashboard")}
+      </Link>
+
+      <button
+        type="button"
+        onClick={handleSignOut}
+        aria-label={t("signOut")}
+        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#0F2444]/15 text-[#0F2444] transition-colors hover:bg-[#0F2444]/5"
+      >
+        <LogOut className="h-4 w-4" />
+      </button>
     </div>
   );
 }

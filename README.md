@@ -1,8 +1,8 @@
 # Visa Expeditor
 
 Trilingual (EN / ES / FR) passport, visa and immigration help site built with
-Next.js 16 (App Router, Turbopack), TypeScript, Tailwind CSS v4, Clerk and
-next-intl.
+Next.js 16 (App Router, Turbopack), TypeScript, Tailwind CSS v4, Neon Auth
+(Managed Better Auth), Resend and next-intl.
 
 ## Requirements
 
@@ -42,7 +42,7 @@ src/components/                      UI components
 src/content/                         Typed page content configs
 src/i18n/                            next-intl routing, navigation, messages
 src/lib/                             Data, helpers, image slots
-src/proxy.ts                         Clerk + next-intl proxy (Next 16)
+src/proxy.ts                         next-intl proxy (Next 16)
 scripts/                             i18n, image and launch checks
 public/images/                       Placeholders + final images
 ```

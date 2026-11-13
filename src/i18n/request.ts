@@ -20,6 +20,7 @@ import enCommon from "../../messages/en/common.json";
 import enMeta from "../../messages/en/meta.json";
 import enPassports from "../../messages/en/passports.json";
 import enAbout from "../../messages/en/about.json";
+import enContact from "../../messages/en/contact.json";
 
 import esNav from "../../messages/es/nav.json";
 import esAuth from "../../messages/es/auth.json";
@@ -39,6 +40,7 @@ import esCommon from "../../messages/es/common.json";
 import esMeta from "../../messages/es/meta.json";
 import esPassports from "../../messages/es/passports.json";
 import esAbout from "../../messages/es/about.json";
+import esContact from "../../messages/es/contact.json";
 
 import frNav from "../../messages/fr/nav.json";
 import frAuth from "../../messages/fr/auth.json";
@@ -58,6 +60,7 @@ import frCommon from "../../messages/fr/common.json";
 import frMeta from "../../messages/fr/meta.json";
 import frPassports from "../../messages/fr/passports.json";
 import frAbout from "../../messages/fr/about.json";
+import frContact from "../../messages/fr/contact.json";
 
 const messagesByLocale = {
   en: {
@@ -79,6 +82,7 @@ const messagesByLocale = {
     meta: enMeta,
     passports: enPassports,
     about: enAbout,
+    contact: enContact,
   },
   es: {
     nav: esNav,
@@ -99,6 +103,7 @@ const messagesByLocale = {
     meta: esMeta,
     passports: esPassports,
     about: esAbout,
+    contact: esContact,
   },
   fr: {
     nav: frNav,
@@ -119,6 +124,7 @@ const messagesByLocale = {
     meta: frMeta,
     passports: frPassports,
     about: frAbout,
+    contact: frContact,
   },
 } as const;
 

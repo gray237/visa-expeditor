@@ -1,0 +1,44 @@
+{
+  "metaTitle": "Contactez un spécialiste",
+  "metaDescription": "Dites-nous ce dont vous avez besoin et un spécialiste des visas et passeports vous répondra.",
+  "eyebrow": "Contact",
+  "title": "Parlez à un vrai spécialiste",
+  "subhead": "Parlez-nous un peu de votre voyage ou de votre question documentaire. Un spécialiste vous répondra avec les prochaines étapes, sans chatbot ni suppositions.",
+  "nameLabel": "Nom complet",
+  "namePlaceholder": "Marie Dupont",
+  "emailLabel": "Adresse e-mail",
+  "emailPlaceholder": "vous@exemple.com",
+  "topicLabel": "Comment pouvons-nous vous aider ?",
+  "topics": {
+    "general": "Question générale",
+    "passport": "Passeport",
+    "visa": "Visa",
+    "immigration": "Immigration",
+    "other": "Autre sujet"
+  },
+  "messageLabel": "Comment pouvons-nous vous aider ?",
+  "messagePlaceholder": "Indiquez votre destination, vos dates de voyage et les échéances éventuelles.",
+  "submit": "Envoyer le message",
+  "sending": "Envoi…",
+  "successTitle": "Message envoyé",
+  "successBody": "Merci — un spécialiste vous répondra par e-mail, généralement sous un jour ouvré.",
+  "directTitle": "Vous préférez nous contacter directement ?",
+  "directBody": "Utilisez les coordonnées ci-dessous si vous préférez ne pas utiliser le formulaire.",
+  "whatsappLabel": "Écrivez-nous sur WhatsApp",
+  "responseTitle": "Et ensuite ?",
+  "responseBody": "Nous examinons votre message, confirmons les documents nécessaires et vous répondons avec un plan clair. Si nous ne sommes pas la bonne solution, nous vous le dirons.",
+  "errors": {
+    "missingFields": "Indiquez votre nom, votre e-mail et votre message.",
+    "invalidEmail": "Veuillez saisir une adresse e-mail valide.",
+    "messageTooLong": "Votre message est trop long. Limitez-le à 5 000 caractères.",
+    "turnstile": "Veuillez compléter la vérification et réessayer.",
+    "emailNotConfigured": "L'e-mail n'est pas encore configuré. Ajoutez RESEND_API_KEY, RESEND_FROM_EMAIL et TEAM_EMAIL.",
+    "sendFailed": "Nous n'avons pas pu envoyer votre message. Réessayez ou écrivez-nous directement.",
+    "newsletterNotConfigured": "L'inscription à la newsletter n'est pas encore configurée."
+  },
+  "email": {
+    "heading": "Nouvelle demande de contact",
+    "subject": "Nouvelle demande de contact de {name}",
+    "messageLabel": "Message"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "metaTitle": "Habla con un especialista",
+  "metaDescription": "Cuéntanos qué necesitas y un especialista en visados y pasaportes te responderá.",
+  "eyebrow": "Contacto",
+  "title": "Habla con un especialista real",
+  "subhead": "Cuéntanos un poco sobre tu viaje o tu consulta de documentos. Un especialista te responderá con los siguientes pasos, sin chatbots ni suposiciones.",
+  "nameLabel": "Nombre completo",
+  "namePlaceholder": "Juana Pérez",
+  "emailLabel": "Correo electrónico",
+  "emailPlaceholder": "tu@ejemplo.com",
+  "topicLabel": "¿En qué podemos ayudarte?",
+  "topics": {
+    "general": "Consulta general",
+    "passport": "Pasaporte",
+    "visa": "Visa",
+    "immigration": "Inmigración",
+    "other": "Otro tema"
+  },
+  "messageLabel": "¿Cómo podemos ayudarte?",
+  "messagePlaceholder": "Comparte tu destino, fechas de viaje y cualquier plazo que tengas.",
+  "submit": "Enviar mensaje",
+  "sending": "Enviando…",
+  "successTitle": "Mensaje enviado",
+  "successBody": "Gracias. Un especialista te responderá por correo, normalmente en un día hábil.",
+  "directTitle": "¿Prefieres contactarnos directamente?",
+  "directBody": "Usa los datos de abajo si prefieres no usar el formulario.",
+  "whatsappLabel": "Escríbenos por WhatsApp",
+  "responseTitle": "Qué pasa después",
+  "responseBody": "Revisamos tu mensaje, confirmamos qué documentos necesitas y te respondemos con un plan claro. Si no somos la opción adecuada, te lo diremos.",
+  "errors": {
+    "missingFields": "Indica tu nombre, correo y mensaje.",
+    "invalidEmail": "Introduce un correo electrónico válido.",
+    "messageTooLong": "Tu mensaje es demasiado largo. Mantenlo por debajo de 5.000 caracteres.",
+    "turnstile": "Completa la verificación e inténtalo de nuevo.",
+    "emailNotConfigured": "El correo aún no está configurado. Añade RESEND_API_KEY, RESEND_FROM_EMAIL y TEAM_EMAIL.",
+    "sendFailed": "No pudimos enviar tu mensaje. Inténtalo de nuevo o escríbenos directamente.",
+    "newsletterNotConfigured": "El boletín aún no está configurado."
+  },
+  "email": {
+    "heading": "Nueva solicitud de contacto",
+    "subject": "Nueva solicitud de contacto de {name}",
+    "messageLabel": "Mensaje"
+  }
+}

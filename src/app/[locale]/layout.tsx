@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Fraunces, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
-import { ClerkProvider } from "@clerk/nextjs";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -60,20 +59,18 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <ClerkProvider>
-      <html lang={locale}>
-        <body
-          className={`${fraunces.variable} ${plexSans.variable} ${plexMono.variable} font-body antialiased`}
-        >
-          <NextIntlClientProvider>
-            <PassportProvider>
-              <SiteHeader />
-              <main>{children}</main>
-              <SiteFooter />
-            </PassportProvider>
-          </NextIntlClientProvider>
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang={locale}>
+      <body
+        className={`${fraunces.variable} ${plexSans.variable} ${plexMono.variable} font-body antialiased`}
+      >
+        <NextIntlClientProvider>
+          <PassportProvider>
+            <SiteHeader />
+            <main>{children}</main>
+            <SiteFooter />
+          </PassportProvider>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }

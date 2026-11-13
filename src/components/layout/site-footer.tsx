@@ -12,7 +12,7 @@ export function SiteFooter() {
     ],
     [t("company")]: [
       { label: t("about"), href: "/about" },
-      { label: t("support"), href: "/support" },
+      { label: t("support"), href: "/contact" },
     ],
     [t("legal")]: [
       { label: t("terms"), href: "/terms" },

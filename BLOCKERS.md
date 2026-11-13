@@ -5,10 +5,10 @@ value; replace the stub when the owner supplies the real thing.
 
 | ID | Blocker | Current stub | Owner action |
 | --- | --- | --- | --- |
-| B-1 | Clerk production keys | Dev keys from `.env.local` | Supply production keys |
+| B-1 | Neon Auth production config | Dev credentials in `.env.local` | Enable Neon Auth, supply production env vars |
 | B-2 | Vercel project, env vars, DNS | Local only | Connect repo and click through |
-| B-3 | Database (Supabase suggested) | Local in-memory/file stub | Supply `DATABASE_URL` |
-| B-4 | Email (Resend, verified sender) | Console/log stub | Supply key + verified domain |
+| B-3 | Database + auth (Neon) | Neon Auth env vars in `.env.local` | Confirm Neon project + production env vars |
+| B-4 | Email (Resend, verified sender) | Auth + contact sends wired; webhook logs only | Verify domain, add key + webhook secret |
 | B-5 | Payment provider | None at launch | Decide entity + provider |
 | B-6 | Passport Power reference screenshot | Route scaffold only | Supply screenshot |
 | B-7 | Licensed / verified visa dataset | Labelled sample data | Supply feed or verification |
