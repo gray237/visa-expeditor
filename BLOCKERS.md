@@ -6,7 +6,7 @@ value; replace the stub when the owner supplies the real thing.
 | ID | Blocker | Current stub | Owner action |
 | --- | --- | --- | --- |
 | B-1 | Neon Auth production config | Dev credentials in `.env.local` | Enable Neon Auth, supply production env vars |
-| B-2 | Vercel project, env vars, DNS | Local only | Connect repo and click through |
+| B-2 | Vercel project, env vars, DNS | Vercel CLI installed but unauthenticated; no `.vercel` link | Run `vercel login` (or set `VERCEL_TOKEN`), link the project, add env vars, deploy |
 | B-3 | Database + auth (Neon) | Neon Auth env vars in `.env.local` | Confirm Neon project + production env vars |
 | B-4 | Email (Resend, verified sender) | Auth + contact sends wired; webhook logs only | Verify domain, add key + webhook secret |
 | B-5 | Payment provider | None at launch | Decide entity + provider |
@@ -18,3 +18,8 @@ value; replace the stub when the owner supplies the real thing.
 | B-11 | WhatsApp, phone, support email, entity name/address | Env vars, hidden when unset | Supply values |
 | B-12 | Pricing | Empty config, UI hidden | Supply pricing |
 | B-13 | Hero/marquee photography | Generated placeholders | Supply licensed images |
+
+Note: the roadmap assumes Clerk, but the app now uses Neon Auth (Managed Better
+Auth); Clerk was removed. Vercel preview/production must set the Neon Auth and
+Resend vars documented in `.env.example`, not Clerk keys. Dev Clerk keys are no
+longer available or needed.
