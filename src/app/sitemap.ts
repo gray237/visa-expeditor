@@ -20,6 +20,8 @@ const INDEXABLE_PATHS = [
   "/resources",
   "/resources/faqs",
   "/tools",
+  "/tools/checklist",
+  "/tools/idp",
   "/tools/passport-validity",
   "/tools/visa-checker",
   "/visas",

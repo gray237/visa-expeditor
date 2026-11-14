@@ -33,12 +33,13 @@ export const toolsHubConfig: HubRouteConfig = {
   namespace: "tools",
   breadcrumbKey: "tools",
   slot: "page.tools.hero",
-  ctaHref: "/tools/visa-checker",
+  ctaHref: "/contact",
   items: [
     { key: "visaChecker", href: "/tools/visa-checker" },
     { key: "passportValidity", href: "/tools/passport-validity" },
     { key: "checklist", href: "/tools/checklist" },
-    { key: "passportPower", href: "/tools/passport-power" },
+    { key: "passportPower", href: "/tools/passport-power", soon: true },
+    { key: "idp", href: "/tools/idp" },
   ],
 };
 
@@ -47,7 +48,7 @@ export const resourcesHubConfig: HubRouteConfig = {
   namespace: "resources",
   breadcrumbKey: "resources",
   slot: "page.resources.hero",
-  ctaHref: "/resources/faqs",
+  ctaHref: "/contact",
   items: [
     { key: "faqs", href: "/resources/faqs" },
     { key: "guides", href: "/resources/guides" },

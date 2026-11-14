@@ -6,10 +6,14 @@
   "passports": "Pasaportes",
   "visas": "Visas",
   "immigration": "Inmigración",
+  "tools": "Herramientas",
   "about": "Acerca de",
   "support": "Contacto",
+  "resources": "Recursos",
   "terms": "Términos",
   "privacy": "Privacidad",
+  "cookies": "Cookies",
+  "accessibility": "Accesibilidad",
   "disclaimer": "Aviso Legal",
   "copyright": "© {year} Visa Expeditor. No afiliado con ninguna agencia gubernamental."
 }

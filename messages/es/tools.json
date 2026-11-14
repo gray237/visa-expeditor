@@ -32,7 +32,81 @@
     "passportPower": {
       "label": "Poder del Pasaporte",
       "description": "Vea adónde puede llevarlo su pasaporte, calculado a partir de nuestro propio conjunto de datos."
+    },
+    "idp": {
+      "label": "Permiso Internacional de Conducir",
+      "description": "Entiende qué es un IDP y quién puede emitirlo."
     }
+  },
+  "calculator": {
+    "heading": "Verificar vigencia del pasaporte",
+    "description": "Introduce la fecha de vencimiento de tu pasaporte y las fechas del viaje. No se envía nada a un servidor ni se almacena.",
+    "expiryLabel": "Fecha de vencimiento del pasaporte",
+    "departureLabel": "Fecha de salida",
+    "returnLabel": "Fecha de regreso",
+    "ruleLabel": "Regla del destino",
+    "rules": {
+      "threeMonths": "Válido 3 meses después de la salida",
+      "sixMonths": "Válido 6 meses después de la salida",
+      "stay": "Válido durante toda la estancia"
+    },
+    "result": {
+      "heading": "Resultado",
+      "meets": "Tu pasaporte cumple esta regla.",
+      "doesNotMeet": "Tu pasaporte no cumple esta regla.",
+      "requiredUntil": "Tu pasaporte debe ser válido hasta al menos {date}.",
+      "invalidDates": "Introduce una fecha de vencimiento, salida y regreso válidas.",
+      "returnBeforeDeparture": "La fecha de regreso no puede ser anterior a la de salida.",
+      "disclaimer": "Esta es una comprobación general, no una decisión oficial. Confirma la regla con las autoridades de tu destino antes de viajar."
+    }
+  },
+  "checklistPage": {
+    "meta": {
+      "title": "Lista de Documentos — Visa Expeditor",
+      "description": "Elige tu pasaporte y destino para ver los documentos que suele exigir ese tipo de entrada."
+    },
+    "hero": {
+      "eyebrow": "Planifica con antelación",
+      "heading": "Lista de Documentos",
+      "subhead": "Elige tu pasaporte y destino para ver los documentos que suele exigir ese tipo de entrada."
+    },
+    "form": {
+      "heading": "Elige tu viaje",
+      "description": "Esta lista de muestra se basa en un viaje turístico típico y utiliza los mismos tipos de entrada que nuestro verificador de visas."
+    },
+    "result": {
+      "heading": "Documentos habituales",
+      "description": "Orientación de muestra basada en el tipo de entrada, no una lista oficial.",
+      "empty": "Elige un pasaporte y un destino para ver una lista típica de documentos.",
+      "noData": "Aún no tenemos una lista de documentos para esta combinación. Consulta el verificador de visas o contacta con nuestro equipo.",
+      "paper": "Esta combinación puede requerir una solicitud de visa previa. Aún no publicamos una lista de documentos. Consulta el verificador de visas o contacta con nuestro equipo.",
+      "print": "Imprimir lista",
+      "printHint": "Imprime esta página para llevar la lista contigo."
+    }
+  },
+  "idp": {
+    "meta": {
+      "title": "Permiso Internacional de Conducir — Visa Expeditor",
+      "description": "Qué es un Permiso Internacional de Conducir, quién lo emite en EE. UU. y cómo podemos ayudarte con tu solicitud."
+    },
+    "hero": {
+      "eyebrow": "Conducir en el extranjero",
+      "heading": "Permiso Internacional de Conducir",
+      "subhead": "Un IDP traduce tu permiso de conducir para las autoridades del extranjero. No es un permiso de conducir por sí solo."
+    },
+    "body": {
+      "p1": "Un Permiso Internacional de Conducir (IDP) es un folleto que traduce tu permiso de conducir válido a varios idiomas. Muchos países piden a los visitantes que lo lleven junto con su permiso, y las empresas de alquiler de coches pueden solicitarlo.",
+      "p2": "Un IDP no sustituye tu permiso de conducir. Debes seguir llevando el permiso con el que se emitió, y solo es válido mientras ese permiso siga vigente.",
+      "p3": "Los IDP los emiten organizaciones autorizadas, no agencias de viajes ni servicios de visados. Verifica el emisor y las reglas vigentes para tu país de residencia antes de solicitarlo."
+    },
+    "issuerHeading": "¿Quién emite un IDP?",
+    "issuerBody": "En EE. UU., el Departamento de Estado autoriza a dos organizaciones para emitir IDP. Solicítalo directamente con una de ellas:",
+    "issuerAaa": "American Automobile Association (AAA)",
+    "issuerAata": "American Automobile Touring Alliance (AATA)",
+    "helpHeading": "Cómo podemos ayudar",
+    "helpBody": "Visa Expeditor no emite IDP. Podemos ayudarte a preparar y revisar la información de tu solicitud, pero el permiso debe proceder de una organización autorizada.",
+    "verifyNote": "Las reglas y requisitos de los emisores varían según el país. Confirma el proceso vigente antes de solicitarlo.",
+    "cta": "Pregúntanos por tu solicitud"
   },
   "faqs": {
     "heading": "Preguntas Frecuentes",

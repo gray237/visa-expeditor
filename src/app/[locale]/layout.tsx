@@ -9,7 +9,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { PassportProvider } from "@/components/providers/passport-provider";
 import { SiteStructuredData } from "@/components/structured-data";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_IS_PREVIEW, SITE_URL } from "@/lib/seo";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -34,11 +34,15 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Visa Expeditor — Passport & Visa Help, Done Right",
+  title: {
+    default: "Visa Expeditor — Passport & Visa Help, Done Right",
+    template: "%s — Visa Expeditor",
+  },
   description: "Passport and visa information to help you prepare for your next trip.",
   icons: {
     icon: "/favicon.svg",
   },
+  ...(SITE_IS_PREVIEW ? { robots: { index: false, follow: false } } : {}),
 };
 
 export function generateStaticParams() {

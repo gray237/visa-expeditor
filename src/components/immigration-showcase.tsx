@@ -23,6 +23,7 @@ const DRAG_CLICK_THRESHOLD = 6;
 
 export function ImmigrationShowcase() {
   const t = useTranslations("immigrationShowcase");
+  const tCommon = useTranslations("common");
   const viewportRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const offsetRef = useRef(0);
@@ -157,11 +158,14 @@ export function ImmigrationShowcase() {
         >
           {LOOP_ITEMS.map((service, i) => {
             const image = getImage(`immigration.${service.key}`);
+            const isDuplicate = i >= IMMIGRATION_SERVICES.length;
             return (
               <Link
                 key={`${service.key}-${i}`}
                 href={service.href}
                 draggable={false}
+                aria-hidden={isDuplicate || undefined}
+                tabIndex={isDuplicate ? -1 : undefined}
                 className="group/card relative flex h-115 w-70 shrink-0 flex-col overflow-hidden border-r border-white/10 sm:h-130 sm:w-85 lg:w-100"
               >
                 <div className="absolute inset-0">
@@ -193,6 +197,11 @@ export function ImmigrationShowcase() {
                 </div>
 
                 <div className="relative z-20 mt-auto p-5 sm:p-6">
+                  {service.soon && (
+                    <span className="mb-2 inline-flex rounded-full bg-[#B8925A]/20 px-2.5 py-1 font-body text-[11px] font-semibold text-[#F5E6CB] ring-1 ring-[#B8925A]/40">
+                      {tCommon("comingSoon")}
+                    </span>
+                  )}
                   <p className="font-body text-[13px] leading-relaxed text-[#F5F6F4]/85 sm:text-sm">
                     {t(`items.${service.key}.description`)}
                   </p>

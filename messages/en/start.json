@@ -53,6 +53,7 @@
     "invalidInput": "Check the required fields and travel dates, then try again.",
     "turnstile": "Complete the security check and try again.",
     "turnstileNotConfigured": "This form is unavailable until Turnstile is configured.",
+    "turnstileNotConfiguredWithEmail": "This form is unavailable until Turnstile is configured. You can email us at {email}.",
     "rateLimited": "Too many requests were sent from this connection. Try again later.",
     "rateLimitUnavailable": "This form is temporarily unavailable. Please try again later.",
     "databaseNotConfigured": "Application storage is not configured. Contact support.",

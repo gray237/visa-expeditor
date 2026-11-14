@@ -1,18 +1,18 @@
 {
   "mexico": {
     "overview": [
-      "México atrae a más visitantes internacionales que casi cualquier otro lugar de América, y la variedad es parte del atractivo — ciudades coloniales con siglos de historia superpuesta, costas del Caribe y el Pacífico, desierto y selva, todo a pocas horas de distancia.",
-      "Para la mayoría de los titulares de pasaportes occidentales, la entrada es sencilla: sin solicitud de visa previa, solo un pasaporte válido y el papeleo turístico estándar emitido a la llegada. Esa simplicidad es exactamente por qué sigue siendo uno de los países más visitados del mundo año tras año."
+      "México está entre los destinos más visitados de América, y la variedad es parte del atractivo — ciudades coloniales con siglos de historia superpuesta, costas del Caribe y el Pacífico, desierto y selva, todo a pocas horas de distancia.",
+      "Los requisitos de entrada dependen de tu pasaporte, el motivo del viaje y la forma de llegada, así que consulta las reglas vigentes para tu nacionalidad antes de reservar. Confírmalas con las autoridades oficiales de México antes de viajar."
     ],
     "attractionsHeading": "Principales Atracciones",
     "attractions": [
       {
         "name": "Chichén Itzá",
-        "description": "Una de las Nuevas Siete Maravillas del Mundo, y el sitio arqueológico más visitado de México."
+        "description": "Una de las Nuevas Siete Maravillas del Mundo y uno de los sitios arqueológicos más visitados de México."
       },
       {
         "name": "Tulum",
-        "description": "Ruinas mayas asomadas directamente sobre playas caribeñas, algo único en la región."
+        "description": "Ruinas mayas asomadas directamente sobre playas caribeñas, un entorno que destaca en la región."
       },
       {
         "name": "Zócalo y Templo Mayor, Ciudad de México",
@@ -30,18 +30,18 @@
   },
   "france": {
     "overview": [
-      "Francia es constantemente el país más visitado del mundo por llegadas internacionales, y París por sí solo representa solo una parte del atractivo — la Riviera Francesa, los castillos del Valle del Loira y las regiones vinícolas de Burdeos y Borgoña atraen su propio flujo constante de viajeros.",
-      "Como parte del Espacio Schengen, las reglas de entrada de Francia se comparten con otros 26 países europeos — una sola exención de visa cubre estadías cortas en toda la zona, no solo en Francia, algo importante a saber si un viaje abarca varios países."
+      "Francia está entre los países más visitados del mundo por llegadas internacionales, y París es solo parte del atractivo — la Riviera Francesa, los castillos del Valle del Loira y las regiones vinícolas de Burdeos y Borgoña atraen su propio flujo constante de viajeros.",
+      "Como parte del Espacio Schengen, las reglas de entrada de corta estancia de Francia se coordinan con otros países europeos, por lo que un viaje que abarque varios países puede estar sujeto a las mismas condiciones. Confirma las reglas de tu pasaporte antes de viajar."
     ],
     "attractionsHeading": "Principales Atracciones",
     "attractions": [
       {
         "name": "Torre Eiffel",
-        "description": "El monumento de pago más visitado del mundo, y el símbolo definitorio de París."
+        "description": "Uno de los monumentos de pago más visitados del mundo, y el símbolo definitorio de París."
       },
       {
         "name": "Museo del Louvre",
-        "description": "El museo más visitado del mundo, y hogar de la Mona Lisa."
+        "description": "Uno de los museos más visitados del mundo, y hogar de la Mona Lisa."
       },
       {
         "name": "Palacio de Versalles",
@@ -49,7 +49,7 @@
       },
       {
         "name": "Catedral de Notre-Dame",
-        "description": "Una obra maestra de la arquitectura gótica francesa, aún uno de los sitios más icónicos del Sena."
+        "description": "Una obra maestra de la arquitectura gótica francesa, y uno de los sitios más icónicos del Sena."
       },
       {
         "name": "Riviera Francesa",

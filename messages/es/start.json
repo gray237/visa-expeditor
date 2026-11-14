@@ -53,6 +53,7 @@
     "invalidInput": "Revisa los campos obligatorios y las fechas del viaje e inténtalo de nuevo.",
     "turnstile": "Completa la verificación de seguridad e inténtalo de nuevo.",
     "turnstileNotConfigured": "Este formulario no está disponible hasta que se configure Turnstile.",
+    "turnstileNotConfiguredWithEmail": "Este formulario no está disponible hasta que se configure Turnstile. Puedes escribirnos a {email}.",
     "rateLimited": "Se enviaron demasiadas solicitudes desde esta conexión. Inténtalo más tarde.",
     "rateLimitUnavailable": "El formulario no está disponible temporalmente. Inténtalo más tarde.",
     "databaseNotConfigured": "No está configurado el almacenamiento de solicitudes. Contacta con soporte.",

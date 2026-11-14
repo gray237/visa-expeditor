@@ -42,6 +42,7 @@
     "messageTooLong": "Your message is too long. Please keep it under 5,000 characters.",
     "turnstile": "Please complete the verification challenge and try again.",
     "turnstileNotConfigured": "The contact form is unavailable until Turnstile is configured.",
+    "turnstileNotConfiguredWithEmail": "The contact form is unavailable until Turnstile is configured. You can email us at {email}.",
     "rateLimited": "Too many messages were sent from this connection. Try again later.",
     "rateLimitUnavailable": "The contact form is temporarily unavailable. Please try again later.",
     "spam": "The message could not be accepted.",

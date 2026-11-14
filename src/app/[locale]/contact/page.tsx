@@ -90,15 +90,15 @@ export default async function ContactPage({
           </div>
 
           <aside className="space-y-4">
-            <div className="rounded-2xl border border-[#0F2444]/10 bg-white p-6">
-              <h2 className="font-display text-lg font-semibold text-[#161B22]">
-                {t("directTitle")}
-              </h2>
-              <p className="mt-2 font-body text-sm leading-relaxed text-[#161B22]/65">
-                {t("directBody")}
-              </p>
+            {details.length > 0 && (
+              <div className="rounded-2xl border border-[#0F2444]/10 bg-white p-6">
+                <h2 className="font-display text-lg font-semibold text-[#161B22]">
+                  {t("directTitle")}
+                </h2>
+                <p className="mt-2 font-body text-sm leading-relaxed text-[#161B22]/65">
+                  {t("directBody")}
+                </p>
 
-              {details.length > 0 && (
                 <ul className="mt-4 space-y-3">
                   {details.map((detail) => {
                     const Icon = detail.icon;
@@ -117,8 +117,8 @@ export default async function ContactPage({
                     );
                   })}
                 </ul>
-              )}
-            </div>
+              </div>
+            )}
 
             <div className="rounded-2xl border border-[#B8925A]/25 bg-[#B8925A]/6 p-6">
               <h2 className="font-display text-lg font-semibold text-[#161B22]">

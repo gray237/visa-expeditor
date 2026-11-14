@@ -20,7 +20,7 @@ export function SiteHeader() {
   const tc = useTranslations("common");
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#0F2444]/10 bg-[#F5F6F4]/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-[#0F2444]/10 bg-[#F5F6F4]/95 backdrop-blur print:hidden">
       <div className="mx-auto flex h-20 max-w-350 items-center justify-between px-6">
         <Logo />
 

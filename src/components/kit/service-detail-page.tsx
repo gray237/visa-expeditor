@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
 import type { ImageSlot } from "@/lib/image-slots";
 import { localePath, SITE_URL } from "@/lib/seo";
@@ -17,6 +18,7 @@ export async function ServiceDetailPage({
   parentHref,
   parentKey,
   ctaHref = "/contact",
+  beforeContent,
 }: {
   locale: string;
   namespace: string;
@@ -26,6 +28,7 @@ export async function ServiceDetailPage({
   parentHref: string;
   parentKey: string;
   ctaHref?: string;
+  beforeContent?: ReactNode;
 }) {
   const t = await getTranslations({ locale, namespace });
   const base = `detail.${detailKey}`;
@@ -81,6 +84,10 @@ export async function ServiceDetailPage({
       <div className="pt-6">
         <Breadcrumbs items={breadcrumbs} />
       </div>
+
+      {beforeContent && (
+        <div className="mx-auto max-w-350 px-6 pt-8 sm:pt-10">{beforeContent}</div>
+      )}
 
       <section className="py-14 sm:py-20 max-w-350 mx-auto px-6">
         <h2 className="font-display text-3xl font-semibold text-[#161B22] sm:text-4xl">

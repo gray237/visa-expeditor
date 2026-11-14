@@ -3,6 +3,7 @@ import type { ImageSlot } from "@/lib/image-slots";
 export interface HubItemConfig {
   key: string;
   href: string;
+  soon?: boolean;
 }
 
 export interface HubPageConfig {

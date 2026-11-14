@@ -6,9 +6,5 @@
       </linearGradient>
     </defs>
     <rect width="2400" height="900" fill="url(#g)" />
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="24" fill="#ffffffaa" letter-spacing="0.06em">
-      PLACEHOLDER &middot; page.about.hero &middot; 2400&#215;900
-    </text>
+    
   </svg>

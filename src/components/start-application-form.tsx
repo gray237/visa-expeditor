@@ -41,6 +41,7 @@ export function StartApplicationForm({
 }) {
   const locale = useLocale();
   const t = useTranslations("start");
+  const supportEmail = process.env.NEXT_PUBLIC_SUPPORT_EMAIL?.trim();
   const [state, formAction, isPending] = useActionState<ApplicationState, FormData>(
     submitApplication,
     undefined,
@@ -344,7 +345,11 @@ export function StartApplicationForm({
           <AuthError>{t(`errors.${state.error}`)}</AuthError>
         )}
         {process.env.NODE_ENV === "production" && !turnstileConfigured && (
-          <AuthError>{t("errors.turnstileNotConfigured")}</AuthError>
+          <AuthError>
+            {supportEmail
+              ? t("errors.turnstileNotConfiguredWithEmail", { email: supportEmail })
+              : t("errors.turnstileNotConfigured")}
+          </AuthError>
         )}
         {process.env.NODE_ENV === "production" &&
           turnstileConfigured &&

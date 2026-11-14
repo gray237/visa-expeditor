@@ -6,6 +6,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { after } from "next/server";
 import { auth } from "@/lib/auth/server";
 import { escapeHtml, sendEmail } from "@/lib/resend";
+import { SITE_URL } from "@/lib/seo";
 import { verifyTurnstile } from "@/lib/turnstile";
 
 export type AuthActionState = { error?: string } | undefined;
@@ -69,7 +70,7 @@ async function sendWelcomeEmail({
       <h1 style="font-size:24px;line-height:1.25;margin:0 0 16px;color:#0f2444">${t("heading", { name: safeName })}</h1>
       <p style="font-size:15px;line-height:1.6;margin:0 0 16px">${t("body")}</p>
       <p style="font-size:15px;line-height:1.6;margin:0 0 24px">${t("next")}</p>
-      <a href="${process.env.NEXT_PUBLIC_SITE_URL ?? "https://visaexpeditor.com"}/dashboard" style="display:inline-block;background:#0f2444;color:#f5f6f4;text-decoration:none;padding:12px 20px;border-radius:12px;font-size:14px;font-weight:600">${t("cta")}</a>
+      <a href="${SITE_URL}/dashboard" style="display:inline-block;background:#0f2444;color:#f5f6f4;text-decoration:none;padding:12px 20px;border-radius:12px;font-size:14px;font-weight:600">${t("cta")}</a>
       <p style="font-size:12px;line-height:1.6;color:#667085;margin:28px 0 0">${t("footer")}</p>
     </div>
   `;

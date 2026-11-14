@@ -22,6 +22,7 @@ export function ContactForm({ turnstileConfigured }: { turnstileConfigured: bool
   );
   const protectionRequired = process.env.NODE_ENV === "production";
   const protectionReady = !protectionRequired || turnstileConfigured;
+  const supportEmail = process.env.NEXT_PUBLIC_SUPPORT_EMAIL?.trim();
 
   if (state?.status === "success") {
     return (
@@ -106,7 +107,11 @@ export function ContactForm({ turnstileConfigured }: { turnstileConfigured: bool
 
       {state?.status === "error" && <AuthError>{t(`errors.${state.error}`)}</AuthError>}
       {protectionRequired && !turnstileConfigured && (
-        <AuthError>{t("errors.turnstileNotConfigured")}</AuthError>
+        <AuthError>
+          {supportEmail
+            ? t("errors.turnstileNotConfiguredWithEmail", { email: supportEmail })
+            : t("errors.turnstileNotConfigured")}
+        </AuthError>
       )}
 
       <Turnstile action="contact" />

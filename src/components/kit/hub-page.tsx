@@ -14,6 +14,7 @@ export async function HubPage({
   config: HubRouteConfig;
 }) {
   const t = await getTranslations({ locale, namespace: config.namespace });
+  const tCommon = await getTranslations({ locale, namespace: "common" });
 
   const breadcrumbs = [
     { label: t("breadcrumbs.home"), href: "/" },
@@ -24,6 +25,7 @@ export async function HubPage({
     href: item.href,
     label: t(`items.${item.key}.label`),
     description: t(`items.${item.key}.description`),
+    soon: item.soon,
   }));
 
   const faqs = [1, 2, 3, 4, 5].map((n) => ({
@@ -45,6 +47,7 @@ export async function HubPage({
       <HubGrid
         heading={t("grid.heading")}
         subhead={t("grid.subhead")}
+        soonLabel={tCommon("comingSoon")}
         items={gridItems}
       />
       <FaqSection heading={t("faqs.heading")} faqs={faqs} />

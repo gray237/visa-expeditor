@@ -33,8 +33,15 @@ const slots = [
   ...["01", "02", "03", "04", "05", "06"].map((n) => ({ id: `team.member.${n}`, width: 800, height: 1000 })),
 ];
 
-function svgPlaceholder(slot, width, height) {
+function svgPlaceholder(slot, width, height, decorative = false) {
   const fontSize = Math.min(24, width / 12);
+  const label = decorative
+    ? ""
+    : `<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="${fontSize}" fill="#ffffffaa" letter-spacing="0.06em">
+      PLACEHOLDER &middot; ${slot} &middot; ${width}&#215;${height}
+    </text>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
     <defs>
       <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -43,19 +50,16 @@ function svgPlaceholder(slot, width, height) {
       </linearGradient>
     </defs>
     <rect width="${width}" height="${height}" fill="url(#g)" />
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="${fontSize}" fill="#ffffffaa" letter-spacing="0.06em">
-      PLACEHOLDER &middot; ${slot} &middot; ${width}&#215;${height}
-    </text>
+    ${label}
   </svg>`;
 }
 
 let generated = 0;
 for (const slot of slots) {
   const file = join(OUT_DIR, `${slot.id}.svg`);
-  if (!existsSync(file)) {
-    writeFileSync(file, svgPlaceholder(slot.id, slot.width, slot.height));
+  const decorative = slot.id.startsWith("page.") && slot.id.endsWith(".hero");
+  if (decorative || !existsSync(file)) {
+    writeFileSync(file, svgPlaceholder(slot.id, slot.width, slot.height, decorative));
     generated += 1;
   }
 }

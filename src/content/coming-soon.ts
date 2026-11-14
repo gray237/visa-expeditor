@@ -15,8 +15,6 @@ export interface ComingSoonRoute {
  */
 export const COMING_SOON_ROUTES: ComingSoonRoute[] = [
   { path: "/start", key: "start", slot: "page.about.hero" },
-  { path: "/tools/idp", key: "toolsIdp", slot: "page.tools.hero" },
-  { path: "/tools/checklist", key: "toolsChecklist", slot: "page.tools.hero" },
   { path: "/tools/passport-power", key: "toolsPassportPower", slot: "page.tools.hero" },
   { path: "/resources/guides", key: "resourcesGuides", slot: "page.resources.hero" },
   { path: "/resources/processing-times", key: "resourcesProcessingTimes", slot: "page.resources.hero" },

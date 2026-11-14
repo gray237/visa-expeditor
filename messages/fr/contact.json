@@ -42,6 +42,7 @@
     "messageTooLong": "Votre message est trop long. Limitez-le à 5 000 caractères.",
     "turnstile": "Veuillez compléter la vérification et réessayer.",
     "turnstileNotConfigured": "Le formulaire n’est pas disponible tant que Turnstile n’est pas configuré.",
+    "turnstileNotConfiguredWithEmail": "Le formulaire n’est pas disponible tant que Turnstile n’est pas configuré. Vous pouvez nous écrire à {email}.",
     "rateLimited": "Trop de messages ont été envoyés depuis cette connexion. Réessayez plus tard.",
     "rateLimitUnavailable": "Le formulaire est temporairement indisponible. Réessayez plus tard.",
     "spam": "Le message n’a pas pu être accepté.",

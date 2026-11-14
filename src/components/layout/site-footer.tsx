@@ -9,20 +9,24 @@ export function SiteFooter() {
       { label: t("passports"), href: "/passports" },
       { label: t("visas"), href: "/visas" },
       { label: t("immigration"), href: "/immigration" },
+      { label: t("tools"), href: "/tools" },
     ],
     [t("company")]: [
       { label: t("about"), href: "/about" },
       { label: t("support"), href: "/contact" },
+      { label: t("resources"), href: "/resources" },
     ],
     [t("legal")]: [
       { label: t("terms"), href: "/terms" },
       { label: t("privacy"), href: "/privacy" },
+      { label: t("cookies"), href: "/cookies" },
+      { label: t("accessibility"), href: "/accessibility" },
       { label: t("disclaimer"), href: "/disclaimer" },
     ],
   };
 
   return (
-    <footer className="border-t border-[#0F2444]/10 bg-[#F5F6F4]">
+    <footer className="border-t border-[#0F2444]/10 bg-[#F5F6F4] print:hidden">
       <div className="mx-auto max-w-350 px-6 py-16">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-5">
           <div className="col-span-2">

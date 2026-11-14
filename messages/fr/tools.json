@@ -32,7 +32,81 @@
     "passportPower": {
       "label": "Puissance du Passeport",
       "description": "Découvrez où votre passeport peut vous emmener, calculé à partir de notre propre jeu de données."
+    },
+    "idp": {
+      "label": "Permis International de Conduire",
+      "description": "Comprenez ce qu’est un IDP et qui peut le délivrer."
     }
+  },
+  "calculator": {
+    "heading": "Vérifier la validité du passeport",
+    "description": "Saisissez la date d’expiration de votre passeport et les dates du voyage. Rien n’est envoyé à un serveur ni conservé.",
+    "expiryLabel": "Date d’expiration du passeport",
+    "departureLabel": "Date de départ",
+    "returnLabel": "Date de retour",
+    "ruleLabel": "Règle de la destination",
+    "rules": {
+      "threeMonths": "Valide 3 mois après le départ",
+      "sixMonths": "Valide 6 mois après le départ",
+      "stay": "Valide pendant tout le séjour"
+    },
+    "result": {
+      "heading": "Résultat",
+      "meets": "Votre passeport respecte cette règle.",
+      "doesNotMeet": "Votre passeport ne respecte pas cette règle.",
+      "requiredUntil": "Votre passeport doit être valide au moins jusqu’au {date}.",
+      "invalidDates": "Saisissez une date d’expiration, de départ et de retour valides.",
+      "returnBeforeDeparture": "La date de retour ne peut pas précéder la date de départ.",
+      "disclaimer": "Il s’agit d’une vérification générale, pas d’une décision officielle. Confirmez la règle auprès des autorités de votre destination avant de partir."
+    }
+  },
+  "checklistPage": {
+    "meta": {
+      "title": "Liste de Documents — Visa Expeditor",
+      "description": "Choisissez votre passeport et votre destination pour voir les documents généralement exigés par ce type d’entrée."
+    },
+    "hero": {
+      "eyebrow": "Anticiper",
+      "heading": "Liste de Documents",
+      "subhead": "Choisissez votre passeport et votre destination pour voir les documents généralement exigés par ce type d’entrée."
+    },
+    "form": {
+      "heading": "Choisissez votre voyage",
+      "description": "Cette liste d’exemple repose sur un voyage touristique typique et utilise les mêmes types d’entrée que notre vérificateur de visa."
+    },
+    "result": {
+      "heading": "Documents habituels",
+      "description": "Conseils indicatifs fondés sur le type d’entrée, et non une liste officielle.",
+      "empty": "Choisissez un passeport et une destination pour voir une liste type de documents.",
+      "noData": "Nous n’avons pas encore de liste de documents pour cette combinaison. Consultez le vérificateur de visa ou contactez notre équipe.",
+      "paper": "Cette combinaison peut nécessiter une demande de visa préalable. Nous ne publions pas encore de liste de documents. Consultez le vérificateur de visa ou contactez notre équipe.",
+      "print": "Imprimer la liste",
+      "printHint": "Imprimez cette page pour emporter la liste avec vous."
+    }
+  },
+  "idp": {
+    "meta": {
+      "title": "Permis International de Conduire — Visa Expeditor",
+      "description": "Ce qu’est un Permis International de Conduire, qui le délivre aux États-Unis et comment nous pouvons vous aider."
+    },
+    "hero": {
+      "eyebrow": "Conduire à l’étranger",
+      "heading": "Permis International de Conduire",
+      "subhead": "Un IDP traduit votre permis de conduire pour les autorités étrangères. Ce n’est pas un permis de conduire à lui seul."
+    },
+    "body": {
+      "p1": "Un Permis International de Conduire (IDP) est un livret qui traduit votre permis de conduire valide en plusieurs langues. De nombreux pays demandent aux visiteurs de le porter avec leur permis, et les agences de location de voitures peuvent l’exiger.",
+      "p2": "Un IDP ne remplace pas votre permis de conduire. Vous devez toujours porter le permis avec lequel il a été délivré, et il n’est valable que tant que ce permis le reste.",
+      "p3": "Les IDP sont délivrés par des organisations autorisées, pas par des agences de voyage ou des services de visa. Vérifiez l’émetteur et les règles en vigueur pour votre pays de résidence avant de faire votre demande."
+    },
+    "issuerHeading": "Qui délivre un IDP ?",
+    "issuerBody": "Aux États-Unis, le Département d’État autorise deux organisations à délivrer des IDP. Adressez-vous directement à l’une d’elles :",
+    "issuerAaa": "American Automobile Association (AAA)",
+    "issuerAata": "American Automobile Touring Alliance (AATA)",
+    "helpHeading": "Comment nous pouvons aider",
+    "helpBody": "Visa Expeditor n’est pas un émetteur d’IDP. Nous pouvons vous aider à préparer et vérifier les informations de votre demande, mais le permis doit être délivré par une organisation autorisée.",
+    "verifyNote": "Les règles et exigences des émetteurs varient selon les pays. Confirmez le processus en vigueur avant de faire votre demande.",
+    "cta": "Posez-nous vos questions"
   },
   "faqs": {
     "heading": "Foire Aux Questions",

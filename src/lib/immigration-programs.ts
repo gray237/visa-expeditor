@@ -7,19 +7,20 @@ export type ImmigrationService = {
   countryCode?: string;
   icon?: LucideIcon;
   accent: string;
+  soon?: boolean;
 };
 
 export const IMMIGRATION_SERVICES: ImmigrationService[] = [
-  { key: "unitedStates", href: "/immigration/united-states", countryCode: "US", accent: "#2F5A8C" },
-  { key: "canada", href: "/immigration/canada", countryCode: "CA", accent: "#C8384C" },
-  { key: "unitedKingdom", href: "/immigration/united-kingdom", countryCode: "GB", accent: "#4A4E7A" },
-  { key: "australia", href: "/immigration/australia", countryCode: "AU", accent: "#2F7A6E" },
-  { key: "portugal", href: "/immigration/portugal", countryCode: "PT", accent: "#2E7D4F" },
-  { key: "newZealand", href: "/immigration/new-zealand", countryCode: "NZ", accent: "#1A3A5C" },
-  { key: "greenCardLottery", href: "/immigration/united-states/green-card-lottery", icon: Ticket, accent: "#B8925A" },
+  { key: "unitedStates", href: "/immigration/united-states", countryCode: "US", accent: "#2F5A8C", soon: true },
+  { key: "canada", href: "/immigration/canada", countryCode: "CA", accent: "#C8384C", soon: true },
+  { key: "unitedKingdom", href: "/immigration/united-kingdom", countryCode: "GB", accent: "#4A4E7A", soon: true },
+  { key: "australia", href: "/immigration/australia", countryCode: "AU", accent: "#2F7A6E", soon: true },
+  { key: "portugal", href: "/immigration/portugal", countryCode: "PT", accent: "#2E7D4F", soon: true },
+  { key: "newZealand", href: "/immigration/new-zealand", countryCode: "NZ", accent: "#1A3A5C", soon: true },
+  { key: "greenCardLottery", href: "/immigration/united-states/green-card-lottery", icon: Ticket, accent: "#B8925A", soon: true },
   { key: "investorVisas", href: "/immigration/investor-visas", icon: TrendingUp, accent: "#A88232" },
   { key: "familySponsorship", href: "/immigration/family", icon: Users, accent: "#8A6D3F" },
   { key: "citizenship", href: "/immigration/citizenship", icon: Landmark, accent: "#6B5B95" },
-  { key: "skilledWorker", href: "/immigration/skilled-worker", icon: Award, accent: "#4C6B8C" },
-  { key: "digitalNomad", href: "/immigration/digital-nomad", icon: Laptop, accent: "#3D8C7A" },
+  { key: "skilledWorker", href: "/immigration/skilled-worker", icon: Award, accent: "#4C6B8C", soon: true },
+  { key: "digitalNomad", href: "/immigration/digital-nomad", icon: Laptop, accent: "#3D8C7A", soon: true },
 ];

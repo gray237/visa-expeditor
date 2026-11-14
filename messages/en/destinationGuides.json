@@ -1,18 +1,18 @@
 {
   "mexico": {
     "overview": [
-      "Mexico draws more international visitors than almost anywhere else in the Americas, and the range is part of the appeal — colonial cities with centuries of layered history, Caribbean and Pacific coastlines, desert and jungle, all within a few hours of each other.",
-      "For most Western passport holders, entry is refreshingly simple: no advance visa application, just a valid passport and the standard tourist paperwork issued on arrival. That simplicity is exactly why it remains one of the most-visited countries in the world year after year."
+      "Mexico is among the most visited destinations in the Americas, and the range is part of the appeal — colonial cities with centuries of layered history, Caribbean and Pacific coastlines, desert and jungle, all within a few hours of each other.",
+      "Entry requirements depend on your passport, your purpose of travel and how you arrive, so check the current rules for your nationality before booking. Confirm them with Mexico's official authorities before you travel."
     ],
     "attractionsHeading": "Top Attractions",
     "attractions": [
       {
         "name": "Chichén Itzá",
-        "description": "One of the New Seven Wonders of the World, and the most visited archaeological site in Mexico."
+        "description": "One of the New Seven Wonders of the World and one of the most visited archaeological sites in Mexico."
       },
       {
         "name": "Tulum",
-        "description": "Maya ruins perched directly above Caribbean beaches, unlike anywhere else in the region."
+        "description": "Maya ruins perched directly above Caribbean beaches, a setting that stands out in the region."
       },
       {
         "name": "Mexico City Zócalo & Templo Mayor",
@@ -30,18 +30,18 @@
   },
   "france": {
     "overview": [
-      "France is consistently the most-visited country on Earth by international arrivals, and Paris alone accounts for only part of the draw — the French Riviera, the châteaux of the Loire Valley, and the wine regions of Bordeaux and Burgundy all pull their own steady stream of travelers.",
-      "As part of the Schengen Area, France's entry rules are shared with 26 other European countries — a single visa-free allowance covers short stays across the whole zone, not just France, which is worth knowing if a trip spans multiple countries."
+      "France is among the most visited countries in the world by international arrivals, and Paris is only part of the draw — the French Riviera, the châteaux of the Loire Valley, and the wine regions of Bordeaux and Burgundy all attract their own steady stream of travelers.",
+      "As part of the Schengen Area, France's short-stay entry rules are coordinated with other European countries, so a trip that spans several countries may be subject to the same conditions. Confirm the rules for your passport before you travel."
     ],
     "attractionsHeading": "Top Attractions",
     "attractions": [
       {
         "name": "Eiffel Tower",
-        "description": "The most-visited paid monument in the world, and the defining symbol of Paris."
+        "description": "One of the most-visited paid monuments in the world, and the defining symbol of Paris."
       },
       {
         "name": "Louvre Museum",
-        "description": "The world's most-visited museum, and home to the Mona Lisa."
+        "description": "One of the world's most-visited museums, and home to the Mona Lisa."
       },
       {
         "name": "Palace of Versailles",
@@ -49,7 +49,7 @@
       },
       {
         "name": "Notre-Dame Cathedral",
-        "description": "A masterpiece of French Gothic architecture, still one of the most iconic sights on the Seine."
+        "description": "A masterpiece of French Gothic architecture, and one of the most iconic sights on the Seine."
       },
       {
         "name": "French Riviera",

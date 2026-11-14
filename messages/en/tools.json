@@ -32,7 +32,81 @@
     "passportPower": {
       "label": "Passport Power",
       "description": "See where your passport can take you, computed from our own dataset."
+    },
+    "idp": {
+      "label": "International Driving Permit",
+      "description": "Understand what an IDP is and who can issue one."
     }
+  },
+  "calculator": {
+    "heading": "Check passport validity",
+    "description": "Enter your passport expiry and travel dates. Nothing is sent to a server or stored.",
+    "expiryLabel": "Passport expiry date",
+    "departureLabel": "Departure date",
+    "returnLabel": "Return date",
+    "ruleLabel": "Destination rule",
+    "rules": {
+      "threeMonths": "Valid for 3 months beyond departure",
+      "sixMonths": "Valid for 6 months beyond departure",
+      "stay": "Valid for the whole stay"
+    },
+    "result": {
+      "heading": "Result",
+      "meets": "Your passport meets this rule.",
+      "doesNotMeet": "Your passport does not meet this rule.",
+      "requiredUntil": "Your passport must be valid until at least {date}.",
+      "invalidDates": "Enter a valid expiry, departure and return date.",
+      "returnBeforeDeparture": "Your return date cannot be before your departure date.",
+      "disclaimer": "This is a general check, not an official decision. Confirm the rule with your destination's authorities before you travel."
+    }
+  },
+  "checklistPage": {
+    "meta": {
+      "title": "Document Checklist — Visa Expeditor",
+      "description": "Choose your passport and destination to see the documents that entry type usually requires."
+    },
+    "hero": {
+      "eyebrow": "Plan Ahead",
+      "heading": "Document Checklist",
+      "subhead": "Choose your passport and destination to see the documents that entry type usually requires."
+    },
+    "form": {
+      "heading": "Choose your trip",
+      "description": "This sample list is based on a typical tourist trip and uses the same entry types as our visa checker."
+    },
+    "result": {
+      "heading": "Typical documents",
+      "description": "Sample guidance based on the entry type, not an official checklist.",
+      "empty": "Choose a passport and destination to see a typical document list.",
+      "noData": "We do not have a curated document list for this combination yet. Check the visa checker or contact our team.",
+      "paper": "This combination may require an advance visa application. We do not publish a document list for it yet. Check the visa checker or contact our team.",
+      "print": "Print checklist",
+      "printHint": "Print this page to take the list with you."
+    }
+  },
+  "idp": {
+    "meta": {
+      "title": "International Driving Permit — Visa Expeditor",
+      "description": "What an International Driving Permit is, who issues one in the U.S., and how we can help with your application."
+    },
+    "hero": {
+      "eyebrow": "Driving Abroad",
+      "heading": "International Driving Permit",
+      "subhead": "An IDP translates your driving licence for authorities abroad. It is not a driving licence on its own."
+    },
+    "body": {
+      "p1": "An International Driving Permit (IDP) is a booklet that translates your valid driver's licence into several languages. Many countries ask visitors to carry one alongside their licence, and car rental companies may request it.",
+      "p2": "An IDP does not replace your driver's licence. You still need to carry the licence it was issued against, and it is only valid while that licence remains valid.",
+      "p3": "IDPs are issued by authorized organizations, not by travel agencies or visa services. Verify the current issuer and rules for your country of residence before you apply."
+    },
+    "issuerHeading": "Who issues an IDP?",
+    "issuerBody": "In the U.S., the Department of State authorizes two organizations to issue IDPs. Apply directly with one of them:",
+    "issuerAaa": "American Automobile Association (AAA)",
+    "issuerAata": "American Automobile Touring Alliance (AATA)",
+    "helpHeading": "How we can help",
+    "helpBody": "Visa Expeditor is not an IDP issuer. We can help you prepare and check the information in your application, but the permit itself must come from an authorized organization.",
+    "verifyNote": "Issuer rules and requirements vary by country. Confirm the current process before you apply.",
+    "cta": "Ask us about your application"
   },
   "faqs": {
     "heading": "Frequently Asked Questions",

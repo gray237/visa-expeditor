@@ -4,7 +4,13 @@ import { neon } from "@neondatabase/serverless";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
-import { escapeHtml, resend, sendEmail, TEAM_EMAIL } from "@/lib/resend";
+import {
+  escapeHtml,
+  isSenderDomainVerified,
+  resend,
+  sendEmail,
+  TEAM_EMAIL,
+} from "@/lib/resend";
 import { isSubmissionRateLimited } from "@/lib/rate-limit";
 import { isTurnstileConfigured, verifyTurnstile } from "@/lib/turnstile";
 import { applicationSchema } from "@/lib/start/schema";
@@ -127,26 +133,34 @@ export async function submitApplication(
     </div>
   `;
 
-  const [teamResult, applicantResult] = await Promise.all([
-    sendEmail({
-      to: TEAM_EMAIL,
-      subject: t("email.teamSubject"),
-      html: teamHtml,
-      text: `${t("email.teamHeading")}\n${details}`,
-      replyTo: application.email,
-    }),
-    sendEmail({
+  const teamResult = await sendEmail({
+    to: TEAM_EMAIL,
+    subject: t("email.teamSubject"),
+    html: teamHtml,
+    text: `${t("email.teamHeading")}\n${details}`,
+    replyTo: application.email,
+  });
+
+  if (teamResult.error) {
+    console.error("[start] Team notification email failed.");
+  }
+
+  if (await isSenderDomainVerified()) {
+    const applicantResult = await sendEmail({
       to: application.email,
       subject: t("email.applicantSubject"),
       html: `<p>${t("email.applicantBody")}</p>`,
       text: t("email.applicantBody"),
       replyTo: TEAM_EMAIL,
-    }),
-  ]);
+    });
 
-  if (teamResult.error || applicantResult.error) {
-    console.error("[start] Application email notification failed.");
-    return { status: "error", error: "storedEmailFailed" };
+    if (applicantResult.error) {
+      console.error("[start] Applicant confirmation email failed.");
+    }
+  } else {
+    console.warn(
+      "[start] Sender domain is not verified; skipping applicant confirmation.",
+    );
   }
 
   redirect(`/${locale}/start/confirmation`);
