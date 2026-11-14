@@ -1,0 +1,70 @@
+{
+  "source": {
+    "name": "TravelRequirements.info — Entry Requirements Dataset",
+    "publisher": "AXG Sp. z o.o.",
+    "repository": "https://github.com/travel-requirements/entry-requirements",
+    "commit": "a566cc4c396f5da50c9235ba48cac860f2fff525",
+    "version": "1.3.0",
+    "license": "CC-BY-4.0",
+    "attribution": "TravelRequirements.info — Entry Requirements Dataset, AXG Sp. z o.o., https://travelrequirements.info/data/ (CC BY 4.0)",
+    "importedAt": "2026-11-14"
+  },
+  "expected": {
+    "passports": 199,
+    "destinations": 17,
+    "records": 3383,
+    "launchPassports": 4,
+    "launchCorridors": 68
+  },
+  "actual": {
+    "passportFiles": 199,
+    "passports": 199,
+    "destinations": 17,
+    "records": 3383
+  },
+  "counts": {
+    "statuses": {
+      "visa_on_arrival": 57,
+      "eta": 320,
+      "visa_free": 858,
+      "evisa": 533,
+      "freedom_of_movement": 229,
+      "visa_required": 1383,
+      "not_admitted": 1,
+      "unknown": 2
+    },
+    "confidence": {
+      "imported": 3383
+    },
+    "sourceLevels": {
+      "row": 1573,
+      "policy": 1810
+    },
+    "sourceTypes": {
+      "government": 2127,
+      "igo": 1256
+    }
+  },
+  "stale": {
+    "asOf": "2026-11-14",
+    "thresholdDays": 180,
+    "count": 0,
+    "rows": []
+  },
+  "launch": {
+    "total": 68,
+    "verified": 0,
+    "pending": 68
+  },
+  "missing": {
+    "sourceUrl": [],
+    "sourceName": [],
+    "lastVerified": [],
+    "datasetVersion": [],
+    "importedAt": []
+  },
+  "errors": [],
+  "warnings": [
+    "68 launch corridors still need independent verification."
+  ]
+}

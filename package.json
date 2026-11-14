@@ -12,7 +12,9 @@
     "typecheck": "tsc --noEmit",
     "i18n:check": "node scripts/check-i18n.mjs",
     "visa:validate": "node scripts/validate-visa-data.mjs",
-    "visa:import": "node scripts/import-visa-csv.mjs"
+    "visa:coverage": "node scripts/visa-coverage.mjs",
+    "visa:import": "node scripts/import-visa-csv.mjs",
+    "visa:import:travelrequirements": "node scripts/import-travelrequirements.mjs"
   },
   "dependencies": {
     "@marsidev/react-turnstile": "^1.6.3",

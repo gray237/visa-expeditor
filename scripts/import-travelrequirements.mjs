@@ -270,9 +270,12 @@ function recordFor(destination, passport, importDate) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const passports = splitList(args.passports, DEFAULT_PASSPORTS).map((code) =>
-    code.toUpperCase(),
-  );
+  const importAllPassports = args.passports === "all";
+  const requestedPassports = importAllPassports
+    ? []
+    : splitList(args.passports, DEFAULT_PASSPORTS).map((code) =>
+        code.toUpperCase(),
+      );
   const destinationCodes = splitList(
     args.destinations,
     Object.keys(DESTINATIONS),
@@ -286,7 +289,7 @@ async function main() {
       ? args["import-date"]
       : new Date().toISOString().slice(0, 10);
 
-  for (const code of passports) {
+  for (const code of requestedPassports) {
     if (!/^[A-Z]{2}$/.test(code)) {
       throw new Error(`Invalid passport code: ${code}`);
     }
@@ -316,6 +319,22 @@ async function main() {
       );
     }
     destinations.push(destination);
+  }
+
+  const passports = importAllPassports
+    ? [
+        ...new Set(
+          destinations.flatMap((destination) =>
+            Object.keys(destination.visaPolicy?.byPassport ?? {}),
+          ),
+        ),
+      ].sort()
+    : requestedPassports;
+
+  for (const code of passports) {
+    if (!/^[A-Z]{2}$/.test(code)) {
+      throw new Error(`Invalid passport code: ${code}`);
+    }
   }
 
   const grouped = new Map(passports.map((code) => [code, []]));
