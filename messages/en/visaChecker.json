@@ -23,18 +23,18 @@
   },
   "stats": {
     "heading": "Dataset summary",
-    "coverage": "{covered} of {total} destinations covered in this sample dataset",
+    "coverage": "{covered} of {total} destinations covered in this dataset",
     "visaFree": "No visa required",
-    "visaFreeDescription": "Sample rows with a visa-free status.",
+    "visaFreeDescription": "Rows where no visa is required.",
     "electronic": "Electronic permission",
-    "electronicDescription": "Sample eVisa, ETA and visa-on-arrival rows.",
+    "electronicDescription": "eVisa, ETA and visa-on-arrival rows.",
     "paper": "Paper visa",
-    "paperDescription": "Sample rows marked as requiring a paper visa."
+    "paperDescription": "Rows marked as requiring a visa before travel."
   },
   "list": {
-    "heading": "Destinations in this sample",
-    "description": "Choose a destination to view its sample entry details.",
-    "noEntries": "There are no sample records for this passport."
+    "heading": "Destinations in this dataset",
+    "description": "Choose a destination to view its entry details.",
+    "noEntries": "There are no records for this passport."
   },
   "buckets": {
     "visaFree": "No visa required",
@@ -49,26 +49,29 @@
     "visa_on_arrival": "Visa on arrival",
     "visa_required": "Visa required",
     "not_admitted": "Entry not permitted",
-    "unknown": "Unknown"
+    "unknown": "Unknown",
+    "freedom_of_movement": "Freedom of movement",
+    "travel_permit": "Travel permit"
   },
   "sampleBadge": "Sample data",
   "verifiedBadge": "Verified {date}",
   "sampleNotice": "Sample data only. Entries have not been independently verified and may not reflect current rules. Confirm with the destination's official government source before making travel plans.",
   "disclaimer": "General reference only; not legal or immigration advice. Entry decisions are made by government authorities.",
-  "maximumStay": "Sample maximum stay: {days} days",
-  "emptyHeading": "Choose a destination to view a sample result",
-  "emptyBody": "Browse the sample entries below or choose a destination above. Confirm all requirements with official sources before travel.",
+  "maximumStay": "Maximum stay: {days} days",
+  "emptyHeading": "Choose a destination to view entry requirements",
+  "emptyBody": "Browse the destinations below or choose one above. Confirm all requirements with official sources before travel.",
   "notFoundHeading": "Destination not recognized",
-  "notFoundBody": "Choose a destination from the list to check whether a sample record is available.",
-  "noDataHeading": "No sample entry for {country}",
+  "notFoundBody": "Choose a destination from the list to check whether a record is available.",
+  "noDataHeading": "No entry record for {country}",
   "noDataBody": "There is no matching dataset row for this passport, destination and travel purpose. We do not infer missing requirements. Contact us if you would like to ask about assistance.",
   "resultHeading": "{purpose} entry information for {passport} passport holders traveling to {destination}",
   "result": {
-    "statusLabel": "Sample status",
+    "statusLabel": "Status",
     "maximumStayLabel": "Maximum stay",
-    "lastVerifiedLabel": "Last verified",
+    "lastVerifiedLabel": "Last checked at source",
     "sourceLabel": "Source",
-    "officialSource": "Open official source"
+    "officialSource": "Open official source",
+    "feeLabel": "Government fee"
   },
   "checklist": {
     "heading": "Before you travel",
@@ -78,5 +81,12 @@
   },
   "travelGuideHeading": "Travel guide for {passport} passport holders",
   "startApplication": "Ask about assistance",
-  "talkToSpecialist": "Contact us"
+  "talkToSpecialist": "Contact us",
+  "importedBadge": "Source-verified {date}",
+  "datasetBadge": "Official-source dataset",
+  "importedNotice": "Compiled from official sources by TravelRequirements.info and mapped by Visa Expeditor. Imported rows were checked against the linked source by the dataset provider, but Visa Expeditor has not independently verified every row. The official source is the authority.",
+  "verifiedNotice": "Independently verified by Visa Expeditor against the linked official source.",
+  "attribution": "Imported data: TravelRequirements.info Entry Requirements Dataset, AXG Sp. z o.o. — CC BY 4.0. Modified for Visa Expeditor; not endorsed by the publisher.",
+  "importedBadgeShort": "Source-verified",
+  "verifiedBadgeShort": "Independently verified"
 }

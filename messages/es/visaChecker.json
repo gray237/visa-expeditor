@@ -23,18 +23,18 @@
   },
   "stats": {
     "heading": "Resumen del conjunto de datos",
-    "coverage": "{covered} de {total} destinos incluidos en este conjunto de muestra",
+    "coverage": "{covered} de {total} destinos incluidos en este conjunto de datos",
     "visaFree": "No se requiere visa",
-    "visaFreeDescription": "Registros de muestra con estado sin visa.",
+    "visaFreeDescription": "Registros en los que no se requiere visa.",
     "electronic": "Autorización electrónica",
-    "electronicDescription": "Registros de muestra de eVisa, ETA y visa a la llegada.",
+    "electronicDescription": "Registros de eVisa, ETA y visa a la llegada.",
     "paper": "Visa en papel",
-    "paperDescription": "Registros de muestra que indican que se requiere una visa en papel."
+    "paperDescription": "Registros que indican que se requiere visa antes de viajar."
   },
   "list": {
-    "heading": "Destinos de esta muestra",
-    "description": "Elige un destino para consultar los datos de entrada de muestra.",
-    "noEntries": "No hay registros de muestra para este pasaporte."
+    "heading": "Destinos de este conjunto de datos",
+    "description": "Elige un destino para consultar sus datos de entrada.",
+    "noEntries": "No hay registros para este pasaporte."
   },
   "buckets": {
     "visaFree": "No se requiere visa",
@@ -49,26 +49,29 @@
     "visa_on_arrival": "Visa a la llegada",
     "visa_required": "Se requiere visa",
     "not_admitted": "Entrada no permitida",
-    "unknown": "Desconocido"
+    "unknown": "Desconocido",
+    "freedom_of_movement": "Libre circulación",
+    "travel_permit": "Permiso de viaje"
   },
   "sampleBadge": "Datos de muestra",
   "verifiedBadge": "Verificado el {date}",
   "sampleNotice": "Solo son datos de muestra. Los registros no se han verificado de forma independiente y podrían no reflejar las normas actuales. Confirma los requisitos con la fuente oficial del gobierno de destino antes de viajar.",
   "disclaimer": "Referencia general; no constituye asesoramiento legal ni migratorio. Las autoridades gubernamentales deciden sobre la entrada.",
-  "maximumStay": "Estancia máxima indicada en la muestra: {days} días",
-  "emptyHeading": "Elige un destino para ver un resultado de muestra",
-  "emptyBody": "Consulta los registros de muestra o elige un destino arriba. Confirma todos los requisitos con fuentes oficiales antes de viajar.",
+  "maximumStay": "Estancia máxima: {days} días",
+  "emptyHeading": "Elige un destino para ver los requisitos de entrada",
+  "emptyBody": "Consulta los destinos de abajo o elige uno arriba. Confirma todos los requisitos con fuentes oficiales antes de viajar.",
   "notFoundHeading": "No se reconoce el destino",
-  "notFoundBody": "Elige un destino de la lista para comprobar si hay un registro de muestra.",
-  "noDataHeading": "No hay datos de muestra para {country}",
+  "notFoundBody": "Elige un destino de la lista para comprobar si hay un registro disponible.",
+  "noDataHeading": "No hay registro de entrada para {country}",
   "noDataBody": "No hay un registro coincidente para este pasaporte, destino y motivo de viaje. No suponemos los requisitos que faltan. Contáctanos si quieres consultar sobre asistencia.",
   "resultHeading": "Información de entrada por {purpose} para titulares de pasaporte de {passport} que viajan a {destination}",
   "result": {
-    "statusLabel": "Estado de muestra",
+    "statusLabel": "Estado",
     "maximumStayLabel": "Estancia máxima",
-    "lastVerifiedLabel": "Última verificación",
+    "lastVerifiedLabel": "Última comprobación en la fuente",
     "sourceLabel": "Fuente",
-    "officialSource": "Abrir fuente oficial"
+    "officialSource": "Abrir fuente oficial",
+    "feeLabel": "Tasa oficial"
   },
   "checklist": {
     "heading": "Antes de viajar",
@@ -78,5 +81,12 @@
   },
   "travelGuideHeading": "Guía de viaje para titulares de pasaporte de {passport}",
   "startApplication": "Consultar asistencia",
-  "talkToSpecialist": "Contáctanos"
+  "talkToSpecialist": "Contáctanos",
+  "importedBadge": "Verificado por la fuente el {date}",
+  "datasetBadge": "Conjunto de datos con fuentes oficiales",
+  "importedNotice": "Recopilado de fuentes oficiales por TravelRequirements.info y adaptado por Visa Expeditor. El proveedor del conjunto de datos comprobó los registros importados con la fuente enlazada, pero Visa Expeditor no ha verificado de forma independiente cada registro. La fuente oficial es la autoridad.",
+  "verifiedNotice": "Verificado de forma independiente por Visa Expeditor con la fuente oficial enlazada.",
+  "attribution": "Datos importados: TravelRequirements.info Entry Requirements Dataset, AXG Sp. z o.o. — CC BY 4.0. Adaptado para Visa Expeditor; no cuenta con el respaldo del editor.",
+  "importedBadgeShort": "Verificado por la fuente",
+  "verifiedBadgeShort": "Verificado de forma independiente"
 }

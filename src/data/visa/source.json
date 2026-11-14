@@ -1,0 +1,37 @@
+{
+  "name": "TravelRequirements.info — Entry Requirements Dataset",
+  "publisher": "AXG Sp. z o.o.",
+  "repository": "https://github.com/travel-requirements/entry-requirements",
+  "commit": "a566cc4c396f5da50c9235ba48cac860f2fff525",
+  "version": "1.3.0",
+  "license": "CC-BY-4.0",
+  "attribution": "TravelRequirements.info — Entry Requirements Dataset, AXG Sp. z o.o., https://travelrequirements.info/data/ (CC BY 4.0)",
+  "importedAt": "2026-11-14",
+  "passports": [
+    "US",
+    "GB",
+    "CA",
+    "AU"
+  ],
+  "destinations": [
+    "AU",
+    "CA",
+    "CH",
+    "DE",
+    "ES",
+    "FR",
+    "GB",
+    "IE",
+    "IT",
+    "JP",
+    "KR",
+    "MX",
+    "NL",
+    "NZ",
+    "SG",
+    "TH",
+    "AE"
+  ],
+  "records": 68,
+  "caveat": "Imported rows are source-verified by the dataset provider, not independently verified by Visa Expeditor. Some rows rest on the destination policy-level source. The official source is the authority."
+}

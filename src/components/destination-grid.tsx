@@ -72,11 +72,13 @@ export function DestinationGrid() {
                       <p className="font-body text-sm font-semibold text-white">
                         {tv(`statuses.${requirement.status}`)}
                       </p>
-                      {requirement.confidence === "sample" && (
-                        <span className="rounded-full bg-white/15 px-2 py-1 font-body text-xs text-white">
-                          {tv("sampleBadge")}
-                        </span>
-                      )}
+                      <span className="rounded-full bg-white/15 px-2 py-1 font-body text-xs text-white">
+                        {requirement.confidence === "verified"
+                          ? tv("verifiedBadgeShort")
+                          : requirement.confidence === "imported"
+                            ? tv("importedBadgeShort")
+                            : tv("sampleBadge")}
+                      </span>
                     </div>
                   ) : (
                     <span className="flex items-center gap-1 font-body text-[13px] font-semibold text-white">

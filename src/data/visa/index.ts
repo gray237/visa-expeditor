@@ -2,8 +2,11 @@ import australia from "./AU.json";
 import canada from "./CA.json";
 import unitedKingdom from "./GB.json";
 import unitedStates from "./US.json";
+import sourceMetadata from "./source.json";
 import { VisaDatasetSchema, type VisaRecord } from "./schema.mjs";
 import { DESTINATIONS } from "@/lib/destinations";
+
+export const VISA_DATA_SOURCE = sourceMetadata;
 
 export const VISA_DATASETS: Record<string, VisaRecord[]> = {
   US: VisaDatasetSchema.parse(unitedStates),
@@ -37,11 +40,15 @@ export function getVisaStats(passport: string) {
   return {
     covered,
     total: VISA_DESTINATIONS_COUNT,
-    visaFree: records.filter((record) => record.status === "visa_free").length,
+    visaFree: records.filter((record) =>
+      ["visa_free", "freedom_of_movement"].includes(record.status),
+    ).length,
     electronic: records.filter((record) =>
       ["evisa", "eta", "visa_on_arrival"].includes(record.status),
     ).length,
-    paper: records.filter((record) => record.status === "visa_required").length,
+    paper: records.filter((record) =>
+      ["visa_required", "travel_permit"].includes(record.status),
+    ).length,
   };
 }
 

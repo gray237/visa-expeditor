@@ -68,10 +68,23 @@ function ResultFlag({ code }: { code: string }) {
 }
 
 function statusBucket(status: VisaStatus) {
-  if (status === "visa_free") return "visaFree";
+  if (status === "visa_free" || status === "freedom_of_movement") return "visaFree";
   if (ELECTRONIC_STATUSES.includes(status)) return "electronic";
-  if (status === "visa_required") return "paper";
+  if (status === "visa_required" || status === "travel_permit") return "paper";
   return "other";
+}
+
+function confidenceBadge(
+  record: { confidence: string; lastVerified: string | null },
+  t: (key: string, values?: Record<string, string>) => string,
+) {
+  if (record.confidence === "verified" && record.lastVerified) {
+    return t("verifiedBadge", { date: record.lastVerified });
+  }
+  if (record.confidence === "imported" && record.lastVerified) {
+    return t("importedBadge", { date: record.lastVerified });
+  }
+  return t("sampleBadge");
 }
 
 export default async function VisaCheckerPage({
@@ -123,6 +136,16 @@ export default async function VisaCheckerPage({
         ),
     }))
     .filter((group) => group.records.length > 0);
+  const hasSample = records.some((record) => record.confidence === "sample");
+  const hasImported = records.some((record) => record.confidence === "imported");
+  const hasVerified = records.some((record) => record.confidence === "verified");
+  const dataNotice = hasSample
+    ? t("sampleNotice")
+    : hasImported
+      ? t("importedNotice")
+      : hasVerified
+        ? t("verifiedNotice")
+        : t("sampleNotice");
 
   const phone = process.env.NEXT_PUBLIC_PHONE_NUMBER?.trim();
   const email = process.env.NEXT_PUBLIC_SUPPORT_EMAIL?.trim();
@@ -242,7 +265,7 @@ export default async function VisaCheckerPage({
               </p>
             </div>
             <span className="rounded-full bg-[#B8925A]/10 px-3 py-1 text-xs font-semibold text-[#72572F] dark:text-[#E2C58F]">
-              {t("sampleBadge")}
+              {t("datasetBadge")}
             </span>
           </div>
 
@@ -277,9 +300,7 @@ export default async function VisaCheckerPage({
                             </p>
                           )}
                           <span className="mt-3 inline-block rounded-full bg-[#B8925A]/10 px-2.5 py-1 text-[11px] font-semibold text-[#72572F] dark:text-[#E2C58F]">
-                            {item.confidence === "verified" && item.lastVerified
-                              ? t("verifiedBadge", { date: item.lastVerified })
-                              : t("sampleBadge")}
+                            {confidenceBadge(item, t)}
                           </span>
                         </Link>
                       </li>
@@ -298,11 +319,24 @@ export default async function VisaCheckerPage({
         <div className="mt-8 rounded-2xl border border-[#B8925A]/25 bg-[#B8925A]/5 p-5 dark:bg-[#B8925A]/10">
           <Info className="h-5 w-5 text-[#8A6D3F]" strokeWidth={1.75} />
           <p className="mt-2 text-sm leading-relaxed text-[#161B22]/75 dark:text-[#F5F6F4]/75">
-            {t("sampleNotice")}
+            {dataNotice}
           </p>
           <p className="mt-2 text-xs leading-relaxed text-[#161B22]/60 dark:text-[#F5F6F4]/60">
             {t("disclaimer")}
           </p>
+          {hasImported && (
+            <p className="mt-2 text-xs leading-relaxed text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+              {t("attribution")}{" "}
+              <a
+                href="https://travelrequirements.info/data/"
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-2"
+              >
+                travelrequirements.info/data
+              </a>
+            </p>
+          )}
         </div>
 
         {hasPassportOverview && (
@@ -389,9 +423,7 @@ export default async function VisaCheckerPage({
                       })}
                     </h2>
                     <span className="mt-3 inline-block rounded-full bg-[#B8925A]/10 px-3 py-1 text-xs font-semibold text-[#72572F] dark:text-[#E2C58F]">
-                      {record.confidence === "verified" && record.lastVerified
-                        ? t("verifiedBadge", { date: record.lastVerified })
-                        : t("sampleBadge")}
+                      {confidenceBadge(record, t)}
                     </span>
                   </div>
                 </div>
@@ -415,6 +447,20 @@ export default async function VisaCheckerPage({
                       </dd>
                     </div>
                   )}
+                  {record.govFee && (
+                    <div>
+                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/50 dark:text-[#F5F6F4]/50">
+                        {t("result.feeLabel")}
+                      </dt>
+                      <dd className="mt-1 font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                        {new Intl.NumberFormat(locale, {
+                          style: "currency",
+                          currency: record.govFee.currency,
+                          maximumFractionDigits: 2,
+                        }).format(record.govFee.amount)}
+                      </dd>
+                    </div>
+                  )}
                   {record.lastVerified && (
                     <div>
                       <dt className="text-xs uppercase tracking-wider text-[#161B22]/50 dark:text-[#F5F6F4]/50">
@@ -431,6 +477,11 @@ export default async function VisaCheckerPage({
                         {t("result.sourceLabel")}
                       </dt>
                       <dd className="mt-1">
+                        {record.sourceName && (
+                          <p className="mb-1 text-xs leading-relaxed text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+                            {record.sourceName}
+                          </p>
+                        )}
                         <a
                           href={record.sourceUrl}
                           target="_blank"

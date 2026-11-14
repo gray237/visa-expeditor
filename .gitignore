@@ -20,6 +20,9 @@
 # production
 /build
 
+# local dataset cache
+/.cache/
+
 # misc
 .DS_Store
 *.pem

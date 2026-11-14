@@ -10,7 +10,7 @@ import { findVisaRecord } from "@/data/visa";
 import type { VisaStatus } from "@/data/visa/schema.mjs";
 
 function entryTypeForStatus(status: VisaStatus): "visaFree" | "etaRequired" | null {
-  if (status === "visa_free") return "visaFree";
+  if (status === "visa_free" || status === "freedom_of_movement") return "visaFree";
   if (status === "eta") return "etaRequired";
   return null;
 }
@@ -18,7 +18,7 @@ function entryTypeForStatus(status: VisaStatus): "visaFree" | "etaRequired" | nu
 export function DocumentChecklist() {
   const t = useTranslations("tools.checklistPage");
   const tEntry = useTranslations("entryTypeInfo");
-  const tCommon = useTranslations("common");
+  const tv = useTranslations("visaChecker");
   const { passport, setPassport } = usePassport();
   const [destination, setDestination] = useState("");
 
@@ -29,6 +29,13 @@ export function DocumentChecklist() {
   const documents = entryType
     ? (tEntry.raw(`${entryType}.documents`) as string[])
     : [];
+  const dataBadge = record
+    ? record.confidence === "verified" && record.lastVerified
+      ? tv("verifiedBadge", { date: record.lastVerified })
+      : record.confidence === "imported" && record.lastVerified
+        ? tv("importedBadge", { date: record.lastVerified })
+        : tv("sampleBadge")
+    : null;
 
   const showEmpty = !destination;
   const showPaper = Boolean(record && record.status === "visa_required");
@@ -85,9 +92,11 @@ export function DocumentChecklist() {
               {t("result.description")}
             </p>
           </div>
-          <span className="rounded-full bg-[#B8925A]/10 px-3 py-1 font-body text-[11px] font-semibold text-[#72572F]">
-            {tCommon("sampleData")}
-          </span>
+          {dataBadge && (
+            <span className="rounded-full bg-[#B8925A]/10 px-3 py-1 font-body text-[11px] font-semibold text-[#72572F]">
+              {dataBadge}
+            </span>
+          )}
         </div>
 
         {showEmpty && (
@@ -118,9 +127,6 @@ export function DocumentChecklist() {
                 >
                   <span className="font-body text-sm leading-relaxed text-[#161B22]/80">
                     {document}
-                  </span>
-                  <span className="shrink-0 rounded-full bg-[#B8925A]/10 px-2.5 py-1 font-body text-[10px] font-semibold text-[#72572F]">
-                    {tCommon("sampleData")}
                   </span>
                 </li>
               ))}
