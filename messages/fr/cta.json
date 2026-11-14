@@ -6,12 +6,12 @@
       "description": "Votre demande commence par un simple formulaire."
     },
     "reviewed": {
-      "word": "VÉRIFIÉ",
-      "description": "Vérifié par d'anciens agents de visa avant d'être soumis."
+      "word": "PRÉPARÉ",
+      "description": "Des conseils pour préparer votre demande avant de l’envoyer."
     },
     "delivered": {
-      "word": "LIVRÉ",
-      "description": "Suivi à chaque étape, de votre bureau à votre porte."
+      "word": "MISES À JOUR",
+      "description": "Mises à jour de statut par e-mail après l’envoi."
     }
   }
 }

@@ -1,5 +1,6 @@
 {
   "skipToContent": "Aller au contenu",
+  "breadcrumbLabel": "Fil d’Ariane",
   "search": "Rechercher",
   "popular": "Populaire",
   "noMatches": "Aucun résultat",
@@ -29,7 +30,7 @@
   "sampleData": "Données d'exemple",
   "verifiedOn": "Vérifié le {date}",
   "sampleDataNotice": "Ces informations sont des données d'exemple à des fins de démonstration et n'ont pas été vérifiées auprès d'une source officielle. Confirmez les exigences auprès des autorités officielles de la destination avant de voyager.",
-  "talkToSpecialist": "Parler à un spécialiste",
+  "talkToSpecialist": "Contacter notre équipe",
   "startApplication": "Commencer votre demande",
   "learnMore": "En savoir plus",
   "backHome": "Retour à l'accueil",

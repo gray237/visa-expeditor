@@ -4,7 +4,7 @@ export async function POST(request: Request) {
   const secret = process.env.RESEND_WEBHOOK_SECRET?.trim();
 
   if (!resend || !secret) {
-    return Response.json({ error: "Resend webhook is not configured." }, { status: 503 });
+    return Response.json({ error: "Resend webhook is not configured." }, { status: 500 });
   }
 
   const payload = await request.text();
@@ -28,7 +28,7 @@ export async function POST(request: Request) {
       webhookSecret: secret,
     });
   } catch {
-    return Response.json({ error: "Invalid webhook signature." }, { status: 400 });
+    return Response.json({ error: "Invalid webhook signature." }, { status: 401 });
   }
 
   switch (event.type) {

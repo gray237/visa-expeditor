@@ -2,8 +2,9 @@
 
 import { headers } from "next/headers";
 import { getLocale, getTranslations } from "next-intl/server";
-import { escapeHtml, resend, sendEmail, TEAM_EMAIL } from "@/lib/resend";
-import { verifyTurnstile } from "@/lib/turnstile";
+import { escapeHtml, sendEmail, TEAM_EMAIL } from "@/lib/resend";
+import { isSubmissionRateLimited } from "@/lib/rate-limit";
+import { isTurnstileConfigured, verifyTurnstile } from "@/lib/turnstile";
 
 export type ContactState =
   | { status: "success" }
@@ -34,12 +35,26 @@ export async function submitContact(
   const website = String(formData.get("website") ?? "").trim();
   const turnstileToken = String(formData.get("cf-turnstile-response") ?? "");
 
-  if (website) return { status: "success" };
+  if (website) return { status: "error", error: "spam" };
   if (!name || !email || !message) return { status: "error", error: "missingFields" };
   if (!EMAIL_PATTERN.test(email)) return { status: "error", error: "invalidEmail" };
   if (message.length > 5000) return { status: "error", error: "messageTooLong" };
 
-  if (!(await verifyTurnstile(turnstileToken, await clientIp()))) {
+  const ip = await clientIp();
+  try {
+    if (await isSubmissionRateLimited(ip, "contact")) {
+      return { status: "error", error: "rateLimited" };
+    }
+  } catch {
+    console.error("[contact] Rate limiting is unavailable.");
+    return { status: "error", error: "rateLimitUnavailable" };
+  }
+
+  if (process.env.NODE_ENV === "production" && !isTurnstileConfigured()) {
+    return { status: "error", error: "turnstileNotConfigured" };
+  }
+
+  if (!(await verifyTurnstile(turnstileToken, ip, "contact"))) {
     return { status: "error", error: "turnstile" };
   }
 
@@ -87,36 +102,7 @@ export async function submitContact(
   });
 
   if (error) {
-    console.error("[contact] Failed to send lead:", error.message);
-    return { status: "error", error: "sendFailed" };
-  }
-
-  return { status: "success" };
-}
-
-export async function subscribeToNewsletter(
-  _previousState: ContactState,
-  formData: FormData,
-): Promise<ContactState> {
-  const email = String(formData.get("email") ?? "").trim();
-  const turnstileToken = String(formData.get("cf-turnstile-response") ?? "");
-
-  if (!EMAIL_PATTERN.test(email)) return { status: "error", error: "invalidEmail" };
-
-  if (!(await verifyTurnstile(turnstileToken, await clientIp()))) {
-    return { status: "error", error: "turnstile" };
-  }
-
-  const audienceId = process.env.RESEND_AUDIENCE_ID?.trim();
-  if (!resend || !audienceId) {
-    console.warn("[newsletter] Resend audience is not configured.");
-    return { status: "error", error: "newsletterNotConfigured" };
-  }
-
-  const { error } = await resend.contacts.create({ audienceId, email });
-
-  if (error) {
-    console.error("[newsletter] Failed to add contact:", error.message);
+    console.error("[contact] Failed to send lead.");
     return { status: "error", error: "sendFailed" };
   }
 

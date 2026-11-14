@@ -89,7 +89,7 @@
           "description": "Revisamos cada formulario para que sea coherente con sus pruebas y su categoría."
         },
         "s4": {
-          "title": "Presente y dé seguimiento",
+          "title": "Presente y reciba actualizaciones de estado por correo",
           "description": "Usted presenta por el canal oficial y le explicamos qué esperar en cada etapa."
         }
       },
@@ -245,7 +245,7 @@
           "description": "Revisamos la petición y los formularios de respaldo para verificar su coherencia."
         },
         "s4": {
-          "title": "Presente y dé seguimiento",
+          "title": "Presente y reciba actualizaciones de estado por correo",
           "description": "Usted presenta por el canal oficial y le explicamos las etapas que siguen."
         }
       },

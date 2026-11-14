@@ -1,10 +1,10 @@
 {
   "siteName": "Visa Expeditor",
   "defaultTitle": "Visa Expeditor — Passport & Visa Help, Done Right",
-  "defaultDescription": "Passport renewals, visa applications, and travel document help — reviewed by real people, not a chatbot.",
+  "defaultDescription": "Passport renewals, visa application preparation, and travel document support in English, Spanish and French.",
   "home": {
     "title": "Visa Expeditor — Passport & Visa Help, Done Right",
-    "description": "Check visa requirements for your passport and destination, then get help from real specialists for passports, visas and immigration.",
+    "description": "Review sample visa entries for selected passport and destination pairs, then contact us about document-preparation assistance.",
     "ogAlt": "Visa Expeditor — passport and visa help"
   }
 }

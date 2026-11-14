@@ -5,61 +5,51 @@
   "cta": "Comienza Tu Solicitud",
   "us": {
     "title": "Con Visa Expeditor",
-    "tagline": "Bien Hecho Desde el Principio"
+    "tagline": "Orientación para tu solicitud"
   },
   "diy": {
     "title": "Haciéndolo Tú Mismo",
-    "tagline": "Sin Guía, Sin Revisión"
+    "tagline": "Prepara la solicitud por tu cuenta"
   },
   "points": {
     "guidance": {
       "us": {
         "title": "Guía en lenguaje sencillo",
-        "description": "Cada formulario explicado paso a paso — sin jerga gubernamental que descifrar."
+        "description": "Nuestro equipo puede aclarar los campos del formulario y la información de respaldo."
       },
       "diy": {
-        "title": "Formularios oficiales densos",
-        "description": "Navega terminología y formatos gubernamentales que varían por país."
+        "title": "Instrucciones oficiales",
+        "description": "Consulta los formularios y las instrucciones de la autoridad correspondiente."
       }
     },
     "review": {
       "us": {
-        "title": "Revisado por antiguos oficiales de visa",
-        "description": "Una segunda revisión experta de tu solicitud antes de enviarla."
+        "title": "Orientación para preparar solicitudes",
+        "description": "Recibe ayuda para entender los campos y la información de respaldo que se solicitan."
       },
       "diy": {
-        "title": "Sin segunda opinión",
-        "description": "Envías y esperas — los errores suelen detectarse solo tras un rechazo."
-      }
-    },
-    "pricing": {
-      "us": {
-        "title": "Precios claros y desglosados",
-        "description": "Ve el costo total — tarifas gubernamentales y de servicio — antes de comprometerte."
-      },
-      "diy": {
-        "title": "Tarifas que descubres en el camino",
-        "description": "Notarización, mensajería y trámites suelen aparecer uno por uno."
+        "title": "Preparación por cuenta propia",
+        "description": "Completa y revisa por tu cuenta los formularios y la información de respaldo."
       }
     },
     "tracking": {
       "us": {
-        "title": "Seguimiento en tiempo real",
-        "description": "Sabe exactamente en qué etapa está tu solicitud, del envío a la entrega."
+        "title": "Actualizaciones de estado por correo",
+        "description": "Enviamos actualizaciones de estado por correo electrónico."
       },
       "diy": {
-        "title": "Silencio mientras esperas",
-        "description": "Una vez enviada, hay poca visibilidad sobre su estado."
+        "title": "Consulta a la autoridad correspondiente",
+        "description": "Utiliza los canales de consulta y contacto que ofrezca la autoridad."
       }
     },
     "language": {
       "us": {
-        "title": "Ayuda en tu idioma",
-        "description": "Recibe orientación y soporte en el idioma con el que te sientas más cómodo."
+        "title": "Atención en inglés, español y francés",
+        "description": "La orientación y la atención están disponibles en inglés, español y francés."
       },
       "diy": {
-        "title": "Requisitos en un solo idioma",
-        "description": "Las instrucciones suelen publicarse solo en el idioma oficial del país destino."
+        "title": "Los idiomas disponibles varían",
+        "description": "Confirma qué idiomas ofrece la autoridad para sus formularios e instrucciones."
       }
     }
   }

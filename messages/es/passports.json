@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "Servicios de Pasaporte — Visa Expeditor",
-    "description": "Asistencia rápida y guiada para pasaportes nuevos, renovaciones, cambios de nombre y documentos extraviados o robados."
+    "description": "Orientación para pasaportes nuevos, renovaciones, cambios de nombre y documentos extraviados o robados."
   },
   "hero": {
     "eyebrow": "Servicios de Documentos Gubernamentales",
     "heading": "Gestión de Pasaportes, Simplificada",
-    "subhead": "Orientación paso a paso, revisión previa a la entrega y asistencia experta para sus trámites de pasaporte."
+    "subhead": "Orientación paso a paso, revisión previa a la entrega y asistencia para sus trámites de pasaporte."
   },
   "breadcrumbs": {
     "home": "Inicio",
@@ -23,7 +23,7 @@
     },
     "renewal": {
       "label": "Renovación de Pasaporte",
-      "description": "Revisión ágil del paquete de renovación para pasaportes por vencer o vencidos con opciones de tramitación acelerada."
+      "description": "Orientación para preparar los documentos de renovación de un pasaporte por vencer o vencido."
     },
     "nameChange": {
       "label": "Cambio de Nombre y Correcciones",
@@ -31,13 +31,13 @@
     },
     "lostStolen": {
       "label": "Extraviado, Robado o Dañado",
-      "description": "Guía inmediata para el reporte, protección contra invalidación y tramitación de la solicitud de reemplazo."
+      "description": "Orientación para reportar un pasaporte perdido o robado y preparar una solicitud de reemplazo."
     }
   },
   "faqs": {
     "heading": "Preguntas Frecuentes",
     "q1": "¿Con qué rapidez puedo renovar mi pasaporte?",
-    "a1": "El procesamiento oficial ordinario suele demorar varias semanas, pero la opción acelerada puede acortar considerablemente los plazos según la jurisdicción.",
+    "a1": "Los plazos y las opciones de tramitación acelerada dependen de la autoridad emisora y pueden cambiar. Consulte sus instrucciones vigentes antes de presentar la solicitud.",
     "q2": "¿Qué documentos requiero para renovar mi pasaporte?",
     "a2": "Por lo general, requerirá su libreta de pasaporte más reciente, una fotografía con los requisitos oficiales, el formulario correspondiente y las tasas consulares.",
     "q3": "¿Puedo viajar mientras renuevan mi pasaporte?",
@@ -167,7 +167,7 @@
           "description": "Revisamos el formulario para verificar su exactitud y coherencia con sus datos."
         },
         "s4": {
-          "title": "Presente y dé seguimiento",
+          "title": "Presente y reciba actualizaciones de estado por correo",
           "description": "Usted presenta por el canal oficial y le explicamos qué ocurre después."
         }
       },
@@ -245,7 +245,7 @@
           "description": "Revisamos el formulario para que el nuevo nombre coincida exactamente con sus pruebas."
         },
         "s4": {
-          "title": "Presente y dé seguimiento",
+          "title": "Presente y reciba actualizaciones de estado por correo",
           "description": "Usted presenta por el canal oficial y le explicamos los siguientes pasos."
         }
       },
@@ -293,7 +293,7 @@
         "description": "Reporte y reemplace un pasaporte perdido, robado o dañado con pasos claros y documentos organizados."
       },
       "hero": {
-        "eyebrow": "Reemplazo Urgente",
+        "eyebrow": "Reemplazo de pasaporte",
         "heading": "Pasaporte Perdido, Robado o Dañado",
         "subhead": "Reporte y reemplace un pasaporte perdido, robado o dañado con pasos claros y organizados."
       },
@@ -306,7 +306,7 @@
         "heading": "Para quién es",
         "i1": "Viajeros que perdieron un pasaporte o fueron víctimas de robo.",
         "i2": "Titulares de un pasaporte dañado que ya no es válido.",
-        "i3": "Personas que necesitan un reemplazo con rapidez."
+        "i3": "Personas que planean reemplazar el pasaporte antes de un próximo viaje."
       },
       "steps": {
         "heading": "Cómo funciona",
@@ -323,7 +323,7 @@
           "description": "Revisamos el formulario y las pruebas antes de que los presente."
         },
         "s4": {
-          "title": "Presente y dé seguimiento",
+          "title": "Presente y reciba actualizaciones de estado por correo",
           "description": "Usted presenta por el canal oficial y le explicamos los plazos y las opciones."
         }
       },

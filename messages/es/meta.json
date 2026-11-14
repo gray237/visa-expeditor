@@ -1,10 +1,10 @@
 {
   "siteName": "Visa Expeditor",
   "defaultTitle": "Visa Expeditor — Ayuda con pasaportes y visas, bien hecha",
-  "defaultDescription": "Renovaciones de pasaporte, solicitudes de visa y ayuda con documentos de viaje — revisadas por personas reales, no por un chatbot.",
+  "defaultDescription": "Orientación para preparar solicitudes de pasaporte, visa y documentos de viaje en inglés, español y francés.",
   "home": {
     "title": "Visa Expeditor — Ayuda con pasaportes y visas, bien hecha",
-    "description": "Consulta los requisitos de visa según tu pasaporte y destino, y recibe ayuda de especialistas reales para pasaportes, visas e inmigración.",
+    "description": "Consulta las entradas de muestra de visa para los pares de pasaporte y destino disponibles y contáctanos sobre asistencia para preparar documentos.",
     "ogAlt": "Visa Expeditor — ayuda con pasaportes y visas"
   }
 }

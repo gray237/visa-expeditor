@@ -2,24 +2,24 @@
   "US": {
     "eyebrow": "Guide de Voyage pour les Titulaires d'un Passeport Américain",
     "heading": "Ce Que les Titulaires d'un Passeport Américain Doivent Savoir Avant de Voyager",
-    "statsCovered": "Destinations Couvertes",
-    "statsCoveredLabel": "Et en croissance chaque mois",
-    "statsVisaFree": "Destinations Sans Visa",
-    "statsVisaFreeLabel": "Aucune demande préalable requise",
-    "statsEta": "Destinations avec AVE Rapide",
-    "statsEtaLabel": "Approuvée en ligne, généralement en quelques minutes",
+    "statsCovered": "Destinations de l’échantillon",
+    "statsCoveredLabel": "Données d’exemple, non vérifiées",
+    "statsVisaFree": "Exemples sans visa",
+    "statsVisaFreeLabel": "Confirmez auprès d’une source officielle",
+    "statsEta": "Autorisations électroniques d’exemple",
+    "statsEtaLabel": "Confirmez auprès d’une source officielle",
     "sections": {
       "howItVaries": {
         "title": "Comment les Exigences Varient Selon la Destination",
-        "body": "Toutes les destinations ne traitent pas un passeport américain de la même façon. Certains pays permettent d'arriver sans aucune formalité au-delà du passeport. D'autres demandent une courte autorisation électronique complétée en ligne avant le départ — toujours sans passer par un consulat, juste un formulaire rapide. Un nombre plus restreint exige une demande de visa complète soumise à l'avance. Recherchez n'importe quelle destination ci-dessus pour voir exactement dans quelle catégorie elle se situe."
+        "body": "Les règles d’entrée varient selon la destination et peuvent changer. Cet échantillon classe les entrées disponibles selon leur statut indiqué, mais il peut être incomplet ou obsolète. Confirmez les exigences en vigueur auprès de la source officielle du gouvernement de destination."
       },
       "whatYouNeed": {
         "title": "Ce Dont Vous Aurez Généralement Besoin",
-        "body": "Quelle que soit la destination, certains éléments restent constants : un passeport valide bien au-delà de votre date de retour prévue, une preuve de voyage de continuation ou de retour, et la preuve que vous pouvez subvenir à vos besoins durant le voyage. Les destinations nécessitant une AVE ou un visa demanderont un peu plus — nous vous montrerons exactement quoi dès que vous effectuerez une recherche."
+        "body": "Les règles de validité du passeport, les pièces justificatives et les démarches varient selon la destination et le motif du voyage. Consultez les instructions officielles correspondant à votre itinéraire avant de faire une demande ou de voyager."
       },
       "howWeHelp": {
         "title": "Faire Votre Demande via Visa Expeditor",
-        "body": "Une fois que vous savez ce qui est requis, nous nous occupons des parties qui prennent habituellement tout un après-midi — des formulaires remplis correctement du premier coup, vérifiés par d'anciens agents des visas avant tout dépôt, avec un suivi en temps réel du dépôt jusqu'à la livraison."
+        "body": "Nous vous aidons à comprendre les formulaires de demande et communiquons les mises à jour de statut par e-mail. Les autorités gouvernementales prennent toutes les décisions relatives aux visas et à l’entrée."
       }
     }
   }

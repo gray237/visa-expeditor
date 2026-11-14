@@ -13,14 +13,14 @@
     "about": "About"
   },
   "content": {
-    "p1": "Navigating international travel requirements shouldn't feel like deciphering legal code. Consular regulations shift rapidly, paperwork guidelines are unforgiving, and a single mistake on an application can delay a journey or cancel an overseas commitment.",
-    "p2": "Visa Expeditor was built to deliver clarity and precision to international travel preparation. We combine real-time regulation intelligence with meticulous pre-submission reviews to help applications align with the requirements of consular authorities.",
-    "p3": "We are an independent document preparation and concierge service. While we are not a government agency and not a law firm, we work closely alongside official guidelines to help travelers prepare correct, complete, and timely applications.",
-    "p4": "Whether you are renewing a passport for vacation, securing a business visa on tight turnaround, or planning a long-term relocation, our team provides transparent steps, direct status updates, and human support at each juncture."
+    "p1": "International travel requirements can be difficult to navigate, and they may change. Always check the current instructions from the relevant government authority.",
+    "p2": "Visa Expeditor provides practical guidance for preparing travel documents. The sample visa information on this site is not verified and should not replace official sources.",
+    "p3": "We are an independent document-preparation service, not a government agency or law firm. We help travelers understand application forms and preparation steps; government authorities make all visa and entry decisions.",
+    "p4": "For passport, visa and relocation questions, contact us about available assistance. Status updates for requests are shared by email."
   },
   "cta": {
     "title": "Have upcoming international travel?",
-    "body": "Check entry requirements instantly or talk with our team about your specific destination.",
+    "body": "Review the sample visa dataset or contact us with questions about your destination.",
     "button": "Check Visa Requirements"
   }
 }

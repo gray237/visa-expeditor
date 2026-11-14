@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/seo";
 import { isAuthConfigured } from "@/lib/auth/server";
 import { AuthCard } from "@/components/auth/auth-card";
 import { SignUpForm } from "@/components/auth/sign-up-form";
@@ -18,7 +19,13 @@ export async function generateMetadata({
   if (!hasLocale(routing.locales, locale)) return {};
 
   const t = await getTranslations({ locale, namespace: "auth" });
-  return { title: t("signUpTitle"), description: t("signUpSubtitle") };
+  return buildMetadata({
+    locale,
+    path: "/sign-up",
+    title: t("signUpTitle"),
+    description: t("signUpSubtitle"),
+    noindex: true,
+  });
 }
 
 export default async function SignUpPage({
@@ -33,7 +40,7 @@ export default async function SignUpPage({
   const t = await getTranslations("auth");
 
   return (
-    <main className="bg-[#F5F6F4] py-16 sm:py-24">
+    <div className="bg-[#F5F6F4] py-16 sm:py-24">
       <div className="mx-auto max-w-md px-6">
         <AuthCard
           eyebrow={t("signUpEyebrow")}
@@ -49,6 +56,6 @@ export default async function SignUpPage({
           )}
         </AuthCard>
       </div>
-    </main>
+    </div>
   );
 }

@@ -2,24 +2,24 @@
   "US": {
     "eyebrow": "Travel Guide for United States Passport Holders",
     "heading": "What US Passport Holders Should Know Before Traveling",
-    "statsCovered": "Destinations Covered",
-    "statsCoveredLabel": "And growing every month",
-    "statsVisaFree": "Visa-Free Destinations",
-    "statsVisaFreeLabel": "No advance application needed",
-    "statsEta": "Fast ETA Destinations",
-    "statsEtaLabel": "Approved online, usually in minutes",
+    "statsCovered": "Destinations in sample",
+    "statsCoveredLabel": "Sample entries; not verified",
+    "statsVisaFree": "Sample visa-free entries",
+    "statsVisaFreeLabel": "Confirm with an official source",
+    "statsEta": "Sample electronic permissions",
+    "statsEtaLabel": "Confirm with an official source",
     "sections": {
       "howItVaries": {
         "title": "How Requirements Vary by Destination",
-        "body": "Not every destination treats a US passport the same way. Some countries let you arrive with no paperwork at all beyond your passport. Others ask for a short electronic authorization completed online before you fly — still no consulate visit, just a quick form. A smaller number require a full visa application submitted in advance. Search any destination above to see exactly which category it falls into."
+        "body": "Entry rules differ by destination and can change. This sample groups listed entries by their recorded status; it may be incomplete or out of date. Confirm the current requirements with the destination's official government source."
       },
       "whatYouNeed": {
         "title": "What You'll Typically Need",
-        "body": "Regardless of destination, a few things stay constant: a passport valid well beyond your planned return date, proof of onward or return travel, and evidence you can support yourself during the trip. Destinations requiring an ETA or visa will ask for a bit more — we'll show you exactly what once you search."
+        "body": "Passport-validity rules, supporting documents and application steps vary by destination and trip purpose. Check the official instructions for your itinerary before applying or traveling."
       },
       "howWeHelp": {
         "title": "Applying Through Visa Expeditor",
-        "body": "Once you know what's required, we handle the parts that usually eat up an afternoon — forms filled out correctly the first time, reviewed by former visa officers before anything is submitted, with real-time tracking from submission to delivery."
+        "body": "We help explain application forms and share status updates by email. Government authorities make all visa and entry decisions."
       }
     }
   }

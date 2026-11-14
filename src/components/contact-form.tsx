@@ -14,12 +14,14 @@ const labelClass = "mb-1.5 block font-body text-sm font-semibold text-[#0F2444]"
 
 const TOPICS = ["general", "passport", "visa", "immigration", "other"] as const;
 
-export function ContactForm() {
+export function ContactForm({ turnstileConfigured }: { turnstileConfigured: boolean }) {
   const t = useTranslations("contact");
   const [state, formAction, isPending] = useActionState<ContactState, FormData>(
     submitContact,
     undefined,
   );
+  const protectionRequired = process.env.NODE_ENV === "production";
+  const protectionReady = !protectionRequired || turnstileConfigured;
 
   if (state?.status === "success") {
     return (
@@ -98,17 +100,20 @@ export function ContactForm() {
       </div>
 
       <div className="hidden" aria-hidden="true">
-        <label htmlFor="website">Website</label>
+        <label htmlFor="website">{t("honeypotLabel")}</label>
         <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
       </div>
 
       {state?.status === "error" && <AuthError>{t(`errors.${state.error}`)}</AuthError>}
+      {protectionRequired && !turnstileConfigured && (
+        <AuthError>{t("errors.turnstileNotConfigured")}</AuthError>
+      )}
 
       <Turnstile action="contact" />
 
       <button
         type="submit"
-        disabled={isPending}
+        disabled={isPending || !protectionReady}
         className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#0F2444] px-6 py-3.5 font-body text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
       >
         <Send className="h-4 w-4" />

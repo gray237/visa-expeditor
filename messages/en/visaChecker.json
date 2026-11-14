@@ -1,13 +1,82 @@
 {
   "eyebrow": "Visa Checker",
-  "title": "Visa Requirement Checker",
-  "emptyHeading": "Where are you headed?",
-  "emptyBody": "Enter your destination above and we'll show you exactly what's required.",
-  "notFoundHeading": "We don't have that destination yet",
-  "notFoundBody": "We're still building out our destination database. A specialist can still give you an exact answer today.",
-  "noDataHeading": "We don't have this pre-loaded for {country} passport holders yet",
-  "noDataBody": "Visa rules vary a lot by nationality, and we'd rather tell you nothing than guess wrong. A specialist can give you an exact answer today.",
-  "resultHeading": "What {passport} passport holders need for {destination}",
-  "startApplication": "Start Your Application",
-  "talkToSpecialist": "Talk to a Specialist"
+  "title": "Check visa requirements",
+  "breadcrumbs": {
+    "label": "Breadcrumbs",
+    "tools": "Tools",
+    "checker": "Visa checker"
+  },
+  "filters": {
+    "purpose": "Travel purpose"
+  },
+  "purposes": {
+    "tourism": "Tourism",
+    "business": "Business",
+    "transit": "Transit",
+    "study": "Study",
+    "work": "Work"
+  },
+  "support": {
+    "email": "Email support",
+    "phone": "Call support",
+    "whatsapp": "Message on WhatsApp"
+  },
+  "stats": {
+    "heading": "Dataset summary",
+    "coverage": "{covered} of {total} destinations covered in this sample dataset",
+    "visaFree": "No visa required",
+    "visaFreeDescription": "Sample rows with a visa-free status.",
+    "electronic": "Electronic permission",
+    "electronicDescription": "Sample eVisa, ETA and visa-on-arrival rows.",
+    "paper": "Paper visa",
+    "paperDescription": "Sample rows marked as requiring a paper visa."
+  },
+  "list": {
+    "heading": "Destinations in this sample",
+    "description": "Choose a destination to view its sample entry details.",
+    "noEntries": "There are no sample records for this passport."
+  },
+  "buckets": {
+    "visaFree": "No visa required",
+    "electronic": "Electronic permission",
+    "paper": "Paper visa",
+    "other": "Other or unclear status"
+  },
+  "statuses": {
+    "visa_free": "Visa-free",
+    "evisa": "eVisa",
+    "eta": "Electronic travel authorization",
+    "visa_on_arrival": "Visa on arrival",
+    "visa_required": "Visa required",
+    "not_admitted": "Entry not permitted",
+    "unknown": "Unknown"
+  },
+  "sampleBadge": "Sample data",
+  "verifiedBadge": "Verified {date}",
+  "sampleNotice": "Sample data only. Entries have not been independently verified and may not reflect current rules. Confirm with the destination's official government source before making travel plans.",
+  "disclaimer": "General reference only; not legal or immigration advice. Entry decisions are made by government authorities.",
+  "maximumStay": "Sample maximum stay: {days} days",
+  "emptyHeading": "Choose a destination to view a sample result",
+  "emptyBody": "Browse the sample entries below or choose a destination above. Confirm all requirements with official sources before travel.",
+  "notFoundHeading": "Destination not recognized",
+  "notFoundBody": "Choose a destination from the list to check whether a sample record is available.",
+  "noDataHeading": "No sample entry for {country}",
+  "noDataBody": "There is no matching dataset row for this passport, destination and travel purpose. We do not infer missing requirements. Contact us if you would like to ask about assistance.",
+  "resultHeading": "{purpose} entry information for {passport} passport holders traveling to {destination}",
+  "result": {
+    "statusLabel": "Sample status",
+    "maximumStayLabel": "Maximum stay",
+    "lastVerifiedLabel": "Last verified",
+    "sourceLabel": "Source",
+    "officialSource": "Open official source"
+  },
+  "checklist": {
+    "heading": "Before you travel",
+    "passport": "Check your passport's validity against official requirements.",
+    "purpose": "Confirm the purpose of travel matches the application category.",
+    "officialSource": "Review the latest instructions on the destination government's website."
+  },
+  "travelGuideHeading": "Travel guide for {passport} passport holders",
+  "startApplication": "Ask about assistance",
+  "talkToSpecialist": "Contact us"
 }

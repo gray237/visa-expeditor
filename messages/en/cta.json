@@ -6,12 +6,12 @@
       "description": "Your application starts with one simple form."
     },
     "reviewed": {
-      "word": "REVIEWED",
-      "description": "Checked by former visa officers before it's ever submitted."
+      "word": "PREPARED",
+      "description": "Guidance for preparing your application before submission."
     },
     "delivered": {
-      "word": "DELIVERED",
-      "description": "Tracked every step, from your desk to your door."
+      "word": "UPDATES",
+      "description": "Status updates by email after submission."
     }
   }
 }

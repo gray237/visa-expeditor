@@ -9,7 +9,10 @@ import type { NavItem } from "@/lib/nav";
 export function MegaMenuTrigger({ item }: { item: NavItem }) {
   const [open, setOpen] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const t = useTranslations(`nav.${item.key}`);
+  const menuId = `mega-menu-${item.key}`;
 
   function handleEnter() {
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -17,21 +20,55 @@ export function MegaMenuTrigger({ item }: { item: NavItem }) {
   }
 
   function handleLeave() {
-    closeTimer.current = setTimeout(() => setOpen(false), 150);
+    closeTimer.current = setTimeout(() => {
+      if (!rootRef.current?.contains(document.activeElement)) setOpen(false);
+    }, 150);
+  }
+
+  function handleKeyDown(event: React.KeyboardEvent<HTMLDivElement>) {
+    if (event.key === "Escape" && open) {
+      event.preventDefault();
+      setOpen(false);
+      buttonRef.current?.focus();
+    }
   }
 
   return (
-    <div className="relative" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+    <div
+      ref={rootRef}
+      className="relative flex items-center"
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+      onKeyDown={handleKeyDown}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
+      }}
+    >
       <Link
         href={item.href}
-        className="flex items-center gap-1 font-body text-[15px] text-[#161B22]/80 transition-colors hover:text-[#0F2444]"
+        onFocus={() => setOpen(true)}
+        className="flex items-center gap-1 rounded-sm font-body text-[15px] text-[#161B22]/80 transition-colors hover:text-[#0F2444]"
       >
         {t("label")}
-        <ChevronDown className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
       </Link>
+      <button
+        ref={buttonRef}
+        type="button"
+        aria-label={t("label")}
+        aria-expanded={open}
+        aria-controls={menuId}
+        onFocus={() => setOpen(true)}
+        onClick={() => setOpen((value) => !value)}
+        className="flex h-9 w-9 items-center justify-center rounded-full text-[#161B22]/70 hover:bg-[#0F2444]/5"
+      >
+        <ChevronDown className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
+      </button>
 
       {open && (
         <div
+          id={menuId}
+          aria-label={t("label")}
+          role="region"
           className={`absolute top-full z-50 mt-3 w-160 rounded-2xl border border-[#0F2444]/10 bg-white p-3 shadow-xl ${
             item.align === "end" ? "right-0" : "left-1/2 -translate-x-1/2"
           }`}

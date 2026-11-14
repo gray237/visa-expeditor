@@ -26,6 +26,9 @@ import enImmigration from "../../messages/en/immigration.json";
 import enTools from "../../messages/en/tools.json";
 import enResources from "../../messages/en/resources.json";
 import enComingSoon from "../../messages/en/comingSoon.json";
+import enStart from "../../messages/en/start.json";
+import enLegal from "../../messages/en/legal.json";
+import enConsent from "../../messages/en/consent.json";
 
 import esNav from "../../messages/es/nav.json";
 import esAuth from "../../messages/es/auth.json";
@@ -51,6 +54,9 @@ import esImmigration from "../../messages/es/immigration.json";
 import esTools from "../../messages/es/tools.json";
 import esResources from "../../messages/es/resources.json";
 import esComingSoon from "../../messages/es/comingSoon.json";
+import esStart from "../../messages/es/start.json";
+import esLegal from "../../messages/es/legal.json";
+import esConsent from "../../messages/es/consent.json";
 
 import frNav from "../../messages/fr/nav.json";
 import frAuth from "../../messages/fr/auth.json";
@@ -76,6 +82,9 @@ import frImmigration from "../../messages/fr/immigration.json";
 import frTools from "../../messages/fr/tools.json";
 import frResources from "../../messages/fr/resources.json";
 import frComingSoon from "../../messages/fr/comingSoon.json";
+import frStart from "../../messages/fr/start.json";
+import frLegal from "../../messages/fr/legal.json";
+import frConsent from "../../messages/fr/consent.json";
 
 const messagesByLocale = {
   en: {
@@ -103,6 +112,9 @@ const messagesByLocale = {
     tools: enTools,
     resources: enResources,
     comingSoon: enComingSoon,
+    start: enStart,
+    legal: enLegal,
+    consent: enConsent,
   },
   es: {
     nav: esNav,
@@ -129,6 +141,9 @@ const messagesByLocale = {
     tools: esTools,
     resources: esResources,
     comingSoon: esComingSoon,
+    start: esStart,
+    legal: esLegal,
+    consent: esConsent,
   },
   fr: {
     nav: frNav,
@@ -155,6 +170,9 @@ const messagesByLocale = {
     tools: frTools,
     resources: frResources,
     comingSoon: frComingSoon,
+    start: frStart,
+    legal: frLegal,
+    consent: frConsent,
   },
 } as const;
 

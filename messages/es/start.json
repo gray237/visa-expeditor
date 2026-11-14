@@ -1,0 +1,86 @@
+{
+  "eyebrow": "Solicitud de asistencia",
+  "title": "Cuéntanos qué necesitas",
+  "description": "Comparte los datos necesarios para responder a tu consulta sobre documentos de viaje. No incluyas números de pasaporte ni adjuntes documentos de identidad.",
+  "steps": {
+    "navigation": "Pasos de la solicitud",
+    "service": "Servicio",
+    "traveler": "Viajero",
+    "contact": "Contacto",
+    "review": "Revisión"
+  },
+  "stepTitles": {
+    "service": "Servicio y destino",
+    "traveler": "Datos del viajero",
+    "contact": "Contacto y viaje",
+    "review": "Revisa tu solicitud"
+  },
+  "services": {
+    "passport": "Asistencia con pasaportes",
+    "visa": "Asistencia con visas",
+    "immigration": "Asistencia con documentos migratorios"
+  },
+  "purposes": {
+    "tourism": "Turismo",
+    "business": "Negocios",
+    "transit": "Tránsito",
+    "study": "Estudios",
+    "work": "Trabajo"
+  },
+  "fields": {
+    "service": "Servicio",
+    "purpose": "Motivo del viaje",
+    "passport": "País del pasaporte",
+    "destination": "País de destino",
+    "chooseDestination": "Elige un destino",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "phone": "Teléfono (opcional)",
+    "travelStart": "Fecha de salida (opcional)",
+    "travelEnd": "Fecha de regreso (opcional)",
+    "message": "Detalles adicionales (opcional)",
+    "travelDates": "Fechas del viaje"
+  },
+  "privacyAcknowledgement": "He leído el aviso de privacidad y acepto que se utilice mi información para responder a esta solicitud.",
+  "privacyLink": "Aviso de privacidad",
+  "honeypotLabel": "Sitio web",
+  "notProvided": "No indicado",
+  "back": "Atrás",
+  "continue": "Continuar",
+  "sending": "Enviando…",
+  "submit": "Enviar solicitud",
+  "errors": {
+    "invalidInput": "Revisa los campos obligatorios y las fechas del viaje e inténtalo de nuevo.",
+    "turnstile": "Completa la verificación de seguridad e inténtalo de nuevo.",
+    "turnstileNotConfigured": "Este formulario no está disponible hasta que se configure Turnstile.",
+    "rateLimited": "Se enviaron demasiadas solicitudes desde esta conexión. Inténtalo más tarde.",
+    "rateLimitUnavailable": "El formulario no está disponible temporalmente. Inténtalo más tarde.",
+    "databaseNotConfigured": "No está configurado el almacenamiento de solicitudes. Contacta con soporte.",
+    "databaseUnavailable": "No pudimos guardar la solicitud. Inténtalo más tarde.",
+    "emailNotConfigured": "No está configurado el correo para solicitudes. Contacta con soporte.",
+    "storedEmailFailed": "Guardamos tu solicitud, pero no se pudo enviar uno o más correos. No la envíes de nuevo; contacta con soporte.",
+    "configurationRequired": "Este formulario no está disponible hasta que se configuren los servicios necesarios.",
+    "spam": "No se pudo aceptar la solicitud."
+  },
+  "confirmation": {
+    "title": "Solicitud recibida",
+    "body": "Guardamos tu solicitud y enviamos correos de confirmación a ti y a nuestro equipo.",
+    "return": "Volver al verificador de visas"
+  },
+  "email": {
+    "teamHeading": "Nueva solicitud de asistencia",
+    "teamSubject": "Nueva solicitud de asistencia",
+    "applicantSubject": "Recibimos tu solicitud",
+    "applicantBody": "Recibimos tu solicitud de asistencia. Nuestro equipo también recibió los datos que enviaste.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "service": "Servicio",
+    "purpose": "Motivo del viaje",
+    "passport": "País del pasaporte",
+    "destination": "Destino",
+    "travelDates": "Fechas del viaje",
+    "message": "Detalles adicionales",
+    "notProvided": "No indicado"
+  }
+}

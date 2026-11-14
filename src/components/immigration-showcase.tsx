@@ -6,15 +6,7 @@ import { useTranslations } from "next-intl";
 import * as Flags from "country-flag-icons/react/3x2";
 import { Link } from "@/i18n/navigation";
 import { IMMIGRATION_SERVICES } from "@/lib/immigration-programs";
-
-const COUNTRY_IMAGES: Partial<Record<string, string>> = {
-  unitedStates: "https://images.unsplash.com/photo-1777106800033-60faaaf4f2a3?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  canada: "https://images.unsplash.com/photo-1507992781348-310259076fe0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG9yb250b3xlbnwwfHwwfHx8MA%3D%3D",
-  unitedKingdom: "https://images.unsplash.com/photo-1765924848202-754408284baa?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  australia: "https://plus.unsplash.com/premium_photo-1697730224601-a3c867ac1886?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  portugal: "https://images.unsplash.com/photo-1748279944004-f1d733dc711b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  newZealand: "https://cdn.sanity.io/images/nxpteyfv/goguides/bc37e6f28942611e13fc79996648ff9056aed9ef-1600x1066.jpg",
-};
+import { getImage } from "@/lib/image-slots";
 
 function PanelFlag({ code }: { code: string }) {
   const Flag = Flags[code as keyof typeof Flags];
@@ -31,8 +23,11 @@ const DRAG_CLICK_THRESHOLD = 6;
 
 export function ImmigrationShowcase() {
   const t = useTranslations("immigrationShowcase");
+  const viewportRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const offsetRef = useRef(0);
+  const setWidthRef = useRef(0);
+  const inViewportRef = useRef(false);
   const pausedRef = useRef(false);
   const draggingRef = useRef(false);
   const draggedRef = useRef(false);
@@ -41,7 +36,28 @@ export function ImmigrationShowcase() {
   const reducedMotionRef = useRef(false);
 
   useEffect(() => {
-    reducedMotionRef.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const track = trackRef.current;
+    const viewport = viewportRef.current;
+    if (!track || !viewport) return;
+
+    const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const updateMotionPreference = () => {
+      reducedMotionRef.current = motionPreference.matches;
+    };
+    updateMotionPreference();
+    motionPreference.addEventListener("change", updateMotionPreference);
+
+    const updateWidth = () => {
+      setWidthRef.current = track.scrollWidth / 2;
+    };
+    updateWidth();
+
+    const resizeObserver = new ResizeObserver(updateWidth);
+    resizeObserver.observe(track);
+    const intersectionObserver = new IntersectionObserver(([entry]) => {
+      inViewportRef.current = entry.isIntersecting;
+    });
+    intersectionObserver.observe(viewport);
 
     let rafId: number;
     let lastTime = performance.now();
@@ -49,28 +65,34 @@ export function ImmigrationShowcase() {
     function tick(now: number) {
       const dt = now - lastTime;
       lastTime = now;
-      const track = trackRef.current;
 
-      if (track) {
-        const setWidth = track.scrollWidth / 2;
-
-        if (!draggingRef.current && !pausedRef.current && !reducedMotionRef.current && setWidth > 0) {
+      const setWidth = setWidthRef.current;
+      const currentTrack = trackRef.current;
+      if (setWidth > 0 && currentTrack) {
+        if (
+          inViewportRef.current &&
+          !draggingRef.current &&
+          !pausedRef.current &&
+          !reducedMotionRef.current
+        ) {
           offsetRef.current -= (setWidth / PASS_DURATION_MS) * dt;
         }
 
-        if (setWidth > 0) {
-          if (offsetRef.current <= -setWidth) offsetRef.current += setWidth;
-          if (offsetRef.current > 0) offsetRef.current -= setWidth;
-        }
-
-        track.style.transform = `translateX(${offsetRef.current}px)`;
+        if (offsetRef.current <= -setWidth) offsetRef.current += setWidth;
+        if (offsetRef.current > 0) offsetRef.current -= setWidth;
+        currentTrack.style.transform = `translateX(${offsetRef.current}px)`;
       }
 
       rafId = requestAnimationFrame(tick);
     }
 
     rafId = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(rafId);
+    return () => {
+      cancelAnimationFrame(rafId);
+      resizeObserver.disconnect();
+      intersectionObserver.disconnect();
+      motionPreference.removeEventListener("change", updateMotionPreference);
+    };
   }, []);
 
   function handlePointerDown(e: React.PointerEvent) {
@@ -115,6 +137,7 @@ export function ImmigrationShowcase() {
       </div>
 
       <div
+        ref={viewportRef}
         className="relative mt-10 touch-pan-y select-none overflow-hidden"
         onMouseEnter={() => {
           pausedRef.current = true;
@@ -133,7 +156,7 @@ export function ImmigrationShowcase() {
           className="flex w-max cursor-grab [&_img]:pointer-events-none active:cursor-grabbing"
         >
           {LOOP_ITEMS.map((service, i) => {
-            const image = service.countryCode ? COUNTRY_IMAGES[service.key] : undefined;
+            const image = getImage(`immigration.${service.key}`);
             return (
               <Link
                 key={`${service.key}-${i}`}
@@ -142,20 +165,13 @@ export function ImmigrationShowcase() {
                 className="group/card relative flex h-115 w-70 shrink-0 flex-col overflow-hidden border-r border-white/10 sm:h-130 sm:w-85 lg:w-100"
               >
                 <div className="absolute inset-0">
-                  {image ? (
-                    <Image
-                      src={image}
-                      alt=""
-                      fill
-                      sizes="(max-width: 640px) 280px, (max-width: 1024px) 340px, 400px"
-                      className="object-cover brightness-40 transition-all duration-700 ease-out group-hover/card:scale-110 group-hover/card:brightness-90"
-                    />
-                  ) : (
-                    <div
-                      className="h-full w-full transition-transform duration-700 ease-out group-hover/card:scale-110"
-                      style={{ background: `linear-gradient(165deg, ${service.accent} 0%, #0F2444 80%)` }}
-                    />
-                  )}
+                  <Image
+                    src={image.src}
+                    alt=""
+                    fill
+                    sizes="(max-width: 640px) 280px, (max-width: 1024px) 340px, 400px"
+                    className="object-cover brightness-40 transition-all duration-700 ease-out group-hover/card:scale-110 group-hover/card:brightness-90"
+                  />
                 </div>
 
                 <div className="absolute inset-x-0 bottom-0 z-10 h-2/5 bg-linear-to-t from-black/75 to-transparent" />

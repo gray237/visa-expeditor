@@ -3,13 +3,12 @@ import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/seo";
 import { aboutPageConfig } from "@/content/about";
 import { PageHero } from "@/components/kit/page-hero";
 import { Breadcrumbs } from "@/components/kit/breadcrumbs";
 import { ArticleLayout } from "@/components/kit/article-layout";
 import { CtaBand } from "@/components/kit/cta-band";
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://visaexpeditor.com";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -23,29 +22,12 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: "about" });
-  const path = locale === "en" ? "/about" : `/${locale}/about`;
-  const url = `${SITE_URL}${path}`;
-
-  return {
+  return buildMetadata({
+    locale,
+    path: "/about",
     title: t("meta.title"),
     description: t("meta.description"),
-    alternates: {
-      canonical: url,
-      languages: {
-        en: `${SITE_URL}/about`,
-        es: `${SITE_URL}/es/about`,
-        fr: `${SITE_URL}/fr/about`,
-      },
-    },
-    openGraph: {
-      title: t("meta.title"),
-      description: t("meta.description"),
-      url,
-      siteName: "Visa Expeditor",
-      locale,
-      type: "website",
-    },
-  };
+  });
 }
 
 export default async function AboutPage({

@@ -8,7 +8,7 @@
       "Detalles de tu alojamiento"
     ],
     "explainerTitle": "Qué Significa \"Sin Visa\"",
-    "explainerBody": "Sin solicitud, sin papeleo, sin espera. Simplemente presentas tu pasaporte en la frontera y un oficial de inmigración lo revisa y te sella el ingreso."
+    "explainerBody": "Una clasificación sin visa significa que quizá no se requiera visa para el tipo de visita indicado. Pueden aplicarse otras condiciones de entrada y las autoridades del destino toman la decisión de admisión."
   },
   "etaRequired": {
     "documentsHeading": "Lo Que Generalmente Necesitarás",
@@ -19,6 +19,6 @@
       "Comprobante de viaje de continuación o regreso"
     ],
     "explainerTitle": "Qué Significa \"ETA Requerida\"",
-    "explainerBody": "Una ETA no es una visa completa — es un formulario en línea breve que completas antes de volar, usualmente aprobado en minutos y vinculado electrónicamente a tu pasaporte. Igual debes solicitarla antes de viajar, solo que no en un consulado."
+    "explainerBody": "Se requiere una autorización electrónica de viaje para algunas combinaciones de pasaporte y destino. Consulta las instrucciones de la autoridad del destino sobre los pasos, plazos y tarifas vigentes."
   }
 }

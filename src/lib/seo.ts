@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { LEGAL_DRAFT_BANNER, LEGAL_PAGES } from "@/content/legal";
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://visaexpeditor.com";
+export const SITE_URL =
+  (process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://visaexpeditor.com").replace(/\/+$/, "");
 
 /**
  * Path without a leading locale prefix for the default locale, with one for
@@ -17,6 +19,7 @@ export function localeAlternates(path: string): Record<string, string> {
     en: `${SITE_URL}${clean}`,
     es: `${SITE_URL}/es${clean}`,
     fr: `${SITE_URL}/fr${clean}`,
+    "x-default": `${SITE_URL}${clean}`,
   };
 }
 
@@ -34,6 +37,8 @@ export function buildMetadata({
   noindex?: boolean;
 }): Metadata {
   const url = `${SITE_URL}${localePath(locale, path)}`;
+  const isDraftLegalPage =
+    LEGAL_DRAFT_BANNER && LEGAL_PAGES.some((page) => page.path === path);
   return {
     title,
     description,
@@ -48,7 +53,17 @@ export function buildMetadata({
       siteName: "Visa Expeditor",
       locale,
       type: "website",
+      images: [
+        {
+          url: `${SITE_URL}/og/${locale}`,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
-    ...(noindex ? { robots: { index: false, follow: false } } : {}),
+    ...(noindex || isDraftLegalPage
+      ? { robots: { index: false, follow: false } }
+      : {}),
   };
 }

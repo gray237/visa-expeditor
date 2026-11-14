@@ -10,18 +10,26 @@ import { DestinationSelector } from "@/components/destination-selector";
 export function VisaCheckerSearch({
   initialPassport,
   initialDestination,
+  initialPurpose,
 }: {
   initialPassport: string;
   initialDestination: string;
+  initialPurpose: string;
 }) {
   const t = useTranslations("hero");
+  const checker = useTranslations("visaChecker");
   const router = useRouter();
   const [passportCode, setPassportCode] = useState(initialPassport);
   const [destinationCode, setDestinationCode] = useState(initialDestination);
+  const [purpose, setPurpose] = useState(initialPurpose);
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    const params = new URLSearchParams({ passport: passportCode, to: destinationCode });
+    const params = new URLSearchParams({
+      passport: passportCode,
+      to: destinationCode,
+      purpose,
+    });
     router.push(`/tools/visa-checker?${params.toString()}`);
   }
 
@@ -40,6 +48,23 @@ export function VisaCheckerSearch({
       <div className="flex-1">
         <DestinationSelector value={destinationCode} onChange={setDestinationCode} />
       </div>
+
+      <label className="flex min-w-36 flex-col gap-1 px-2 py-1.5">
+        <span className="font-mono text-[10px] uppercase tracking-wider text-[#161B22]/40">
+          {checker("filters.purpose")}
+        </span>
+        <select
+          value={purpose}
+          onChange={(event) => setPurpose(event.target.value)}
+          className="w-full bg-transparent text-sm text-[#161B22] outline-none dark:text-[#F5F6F4]"
+        >
+          {(["tourism", "business", "transit", "study", "work"] as const).map((value) => (
+            <option key={value} value={value}>
+              {checker(`purposes.${value}`)}
+            </option>
+          ))}
+        </select>
+      </label>
 
       <button
         type="submit"

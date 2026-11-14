@@ -8,7 +8,7 @@
       "Les détails de votre hébergement"
     ],
     "explainerTitle": "Ce Que Signifie \"Sans Visa\"",
-    "explainerBody": "Aucune demande, aucune paperasse, aucune attente. Vous présentez simplement votre passeport à la frontière, et un agent d'immigration l'examine et tamponne votre entrée."
+    "explainerBody": "Une classification sans visa signifie qu’un visa peut ne pas être requis pour le type de séjour indiqué. D’autres conditions d’entrée peuvent s’appliquer et les autorités du pays décident de l’admission."
   },
   "etaRequired": {
     "documentsHeading": "Ce Dont Vous Aurez Généralement Besoin",
@@ -19,6 +19,6 @@
       "Preuve de voyage de continuation ou de retour"
     ],
     "explainerTitle": "Ce Que Signifie \"AVE Requise\"",
-    "explainerBody": "Une AVE n'est pas un visa complet — c'est un court formulaire en ligne que vous remplissez avant de partir, généralement approuvé en quelques minutes et lié électroniquement à votre passeport. Vous devez tout de même la demander avant de voyager, simplement pas auprès d'un consulat."
+    "explainerBody": "Une autorisation électronique de voyage est requise pour certaines combinaisons de passeport et de destination. Consultez les instructions de l’autorité compétente pour connaître les étapes, délais et frais à jour."
   }
 }

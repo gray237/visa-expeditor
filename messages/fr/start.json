@@ -1,0 +1,86 @@
+{
+  "eyebrow": "Demande d’assistance",
+  "title": "Indiquez-nous vos besoins",
+  "description": "Fournissez les renseignements nécessaires pour répondre à votre demande concernant des documents de voyage. N’indiquez aucun numéro de passeport et ne joignez aucun document d’identité.",
+  "steps": {
+    "navigation": "Étapes de la demande",
+    "service": "Service",
+    "traveler": "Voyageur",
+    "contact": "Contact",
+    "review": "Vérification"
+  },
+  "stepTitles": {
+    "service": "Service et destination",
+    "traveler": "Renseignements sur le voyageur",
+    "contact": "Coordonnées et voyage",
+    "review": "Vérifier votre demande"
+  },
+  "services": {
+    "passport": "Assistance pour passeport",
+    "visa": "Assistance pour visa",
+    "immigration": "Assistance pour documents d’immigration"
+  },
+  "purposes": {
+    "tourism": "Tourisme",
+    "business": "Affaires",
+    "transit": "Transit",
+    "study": "Études",
+    "work": "Travail"
+  },
+  "fields": {
+    "service": "Service",
+    "purpose": "Motif du voyage",
+    "passport": "Pays du passeport",
+    "destination": "Pays de destination",
+    "chooseDestination": "Choisir une destination",
+    "name": "Nom complet",
+    "email": "Adresse e-mail",
+    "phone": "Téléphone (facultatif)",
+    "travelStart": "Date de départ (facultatif)",
+    "travelEnd": "Date de retour (facultatif)",
+    "message": "Renseignements supplémentaires (facultatif)",
+    "travelDates": "Dates du voyage"
+  },
+  "privacyAcknowledgement": "J’ai lu l’avis de confidentialité et j’accepte que mes renseignements soient utilisés pour répondre à cette demande.",
+  "privacyLink": "Avis de confidentialité",
+  "honeypotLabel": "Site web",
+  "notProvided": "Non renseigné",
+  "back": "Retour",
+  "continue": "Continuer",
+  "sending": "Envoi…",
+  "submit": "Envoyer la demande",
+  "errors": {
+    "invalidInput": "Vérifiez les champs obligatoires et les dates du voyage, puis réessayez.",
+    "turnstile": "Complétez la vérification de sécurité et réessayez.",
+    "turnstileNotConfigured": "Ce formulaire n’est pas disponible tant que Turnstile n’est pas configuré.",
+    "rateLimited": "Trop de demandes ont été envoyées depuis cette connexion. Réessayez plus tard.",
+    "rateLimitUnavailable": "Le formulaire est temporairement indisponible. Réessayez plus tard.",
+    "databaseNotConfigured": "Le stockage des demandes n’est pas configuré. Contactez l’assistance.",
+    "databaseUnavailable": "Nous n’avons pas pu enregistrer la demande. Réessayez plus tard.",
+    "emailNotConfigured": "L’envoi des e-mails de demande n’est pas configuré. Contactez l’assistance.",
+    "storedEmailFailed": "Votre demande a été enregistrée, mais au moins un e-mail n’a pas pu être envoyé. Ne la soumettez pas à nouveau; contactez l’assistance.",
+    "configurationRequired": "Ce formulaire n’est pas disponible tant que les services requis ne sont pas configurés.",
+    "spam": "La demande n’a pas pu être acceptée."
+  },
+  "confirmation": {
+    "title": "Demande reçue",
+    "body": "Votre demande a été enregistrée et des e-mails de confirmation vous ont été envoyés, ainsi qu’à notre équipe.",
+    "return": "Retour au vérificateur de visa"
+  },
+  "email": {
+    "teamHeading": "Nouvelle demande d’assistance",
+    "teamSubject": "Nouvelle demande d’assistance",
+    "applicantSubject": "Nous avons reçu votre demande",
+    "applicantBody": "Nous avons reçu votre demande d’assistance. Notre équipe a également reçu les renseignements transmis.",
+    "name": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "service": "Service",
+    "purpose": "Motif du voyage",
+    "passport": "Pays du passeport",
+    "destination": "Destination",
+    "travelDates": "Dates du voyage",
+    "message": "Renseignements supplémentaires",
+    "notProvided": "Non renseigné"
+  }
+}

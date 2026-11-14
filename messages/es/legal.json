@@ -1,0 +1,160 @@
+{
+  "eyebrow": "Legal & Trust",
+  "draftBanner": "Draft — pending legal review",
+  "footerNote": "This page is a draft and will be updated after legal review. It is general information, not legal advice.",
+  "breadcrumbs": {
+    "home": "Home"
+  },
+  "pages": {
+    "terms": {
+      "title": "Terms of Service",
+      "description": "The terms that apply when you use Visa Expeditor.",
+      "sections": {
+        "s1": {
+          "heading": "Agreement to these terms",
+          "body": "By using this website you agree to these terms. If you do not agree, please do not use the site. These terms are a draft and are pending review by qualified counsel."
+        },
+        "s2": {
+          "heading": "What we do",
+          "body": "Visa Expeditor provides document preparation and application assistance for passports, visas and immigration paperwork. We are not a government agency and we are not a law firm."
+        },
+        "s3": {
+          "heading": "No legal advice",
+          "body": "We do not provide legal advice. Information on this site is general and is not a substitute for advice from a qualified professional."
+        },
+        "s4": {
+          "heading": "Your responsibilities",
+          "body": "You agree to provide accurate information and genuine documents, and to meet the requirements set by the relevant authorities."
+        },
+        "s5": {
+          "heading": "Fees and payments",
+          "body": "Government fees are paid to the official authority and are separate from any service fee. Any service fee will be shown to you before you commit."
+        },
+        "s6": {
+          "heading": "Limitation of liability",
+          "body": "We help you prepare applications but we do not control the decisions of authorities. To the extent permitted by law, we are not liable for outcomes decided by others."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Privacy Notice",
+      "description": "How we handle the information you share with us.",
+      "sections": {
+        "s1": {
+          "heading": "What we collect",
+          "body": "We collect the information you give us through our forms, such as your name, email, optional phone number, passport country, destination, travel dates and message."
+        },
+        "s2": {
+          "heading": "How we use it",
+          "body": "We use your information to respond to your enquiry and to provide the services you ask for."
+        },
+        "s3": {
+          "heading": "Legal basis",
+          "body": "Where required, we process personal data on the basis of your consent, our contract with you, or our legitimate interests. This section is a draft pending review."
+        },
+        "s4": {
+          "heading": "Sharing",
+          "body": "We share information only with service providers who help us operate the site and respond to you, or where the law requires it."
+        },
+        "s5": {
+          "heading": "Retention and your rights",
+          "body": "We keep information only as long as we need it, and you can ask us to access, correct or delete it. Your rights vary by jurisdiction."
+        },
+        "s6": {
+          "heading": "Contact",
+          "body": "Use the contact form to reach us about privacy, and we will respond as soon as we can."
+        }
+      }
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "description": "Important limits on the information we provide.",
+      "sections": {
+        "s1": {
+          "heading": "General information only",
+          "body": "Content on this site is general information, not advice for your specific situation."
+        },
+        "s2": {
+          "heading": "Not a government agency",
+          "body": "We are not affiliated with any government agency, consulate or embassy."
+        },
+        "s3": {
+          "heading": "Not a law firm",
+          "body": "We are not a law firm and we do not provide legal advice."
+        },
+        "s4": {
+          "heading": "Accuracy",
+          "body": "Rules change often. Always confirm requirements with official sources before you travel or apply."
+        },
+        "s5": {
+          "heading": "No guarantees",
+          "body": "We do not guarantee approval of any application, visa or entry."
+        },
+        "s6": {
+          "heading": "Third-party links",
+          "body": "Links to third-party sites are provided for convenience, and we are not responsible for their content."
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookie Notice",
+      "description": "How and why we use cookies on this site.",
+      "sections": {
+        "s1": {
+          "heading": "What cookies are",
+          "body": "Cookies are small files stored on your device that help websites work and remember your choices."
+        },
+        "s2": {
+          "heading": "Essential cookies",
+          "body": "Some cookies are necessary for the site to work, such as remembering your language and passport selection."
+        },
+        "s3": {
+          "heading": "Analytics cookies",
+          "body": "With your consent, we may use analytics cookies to understand how the site is used. We do not load them before you consent."
+        },
+        "s4": {
+          "heading": "Managing cookies",
+          "body": "You can change or withdraw your consent at any time using the cookie banner or your browser settings."
+        },
+        "s5": {
+          "heading": "Third parties",
+          "body": "Where we use third-party tools, they may set their own cookies, subject to their own policies."
+        },
+        "s6": {
+          "heading": "Updates",
+          "body": "This notice is a draft and may change after legal review."
+        }
+      }
+    },
+    "accessibility": {
+      "title": "Accessibility Statement",
+      "description": "Our approach to making this site usable for everyone.",
+      "sections": {
+        "s1": {
+          "heading": "Our commitment",
+          "body": "We want this site to be usable by as many people as possible, including people who use assistive technology."
+        },
+        "s2": {
+          "heading": "Standards we aim for",
+          "body": "We aim to follow widely recognized accessibility guidelines, including keyboard navigation and sufficient color contrast."
+        },
+        "s3": {
+          "heading": "Known limitations",
+          "body": "Some older content may not yet fully meet our target. We are working through it."
+        },
+        "s4": {
+          "heading": "Feedback",
+          "body": "If you meet a barrier, contact us and tell us what happened so we can improve."
+        },
+        "s5": {
+          "heading": "Assistive technology",
+          "body": "We test with common screen readers and keyboard-only navigation, and we continue to refine the site."
+        },
+        "s6": {
+          "heading": "Contact",
+          "body": "Use the contact form to reach us about accessibility."
+        }
+      }
+    }
+  }
+}

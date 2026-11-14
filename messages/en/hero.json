@@ -1,7 +1,7 @@
 {
-  "badge": "{country} visas prepared and submitted",
-  "headline": "Travel Visa Requirements. The gateway for any destination.",
-  "subhead": "Check what you need for any destination, then let a real specialist take it from there.",
+  "badge": "For {country} passport holders",
+  "headline": "Travel Visa Requirements. Start with sample data.",
+  "subhead": "Explore sample visa entries for available passport and destination pairs, then find guidance for preparing your documents.",
   "destinationLabel": "My destination",
   "destinationPlaceholder": "Where are you going?",
   "cta": "Check Requirements"

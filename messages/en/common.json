@@ -1,5 +1,6 @@
 {
   "skipToContent": "Skip to content",
+  "breadcrumbLabel": "Breadcrumb",
   "search": "Search",
   "popular": "Popular",
   "noMatches": "No matches found",
@@ -29,7 +30,7 @@
   "sampleData": "Sample data",
   "verifiedOn": "Verified {date}",
   "sampleDataNotice": "This information is sample data for demonstration and has not been verified against an official source. Confirm requirements with the destination's official authorities before you travel.",
-  "talkToSpecialist": "Talk to a specialist",
+  "talkToSpecialist": "Contact our team",
   "startApplication": "Start your application",
   "learnMore": "Learn more",
   "backHome": "Back to home",

@@ -1,27 +1,27 @@
 {
   "eyebrow": "Services",
-  "heading": "Chaque démarche. Une équipe experte.",
-  "subheading": "De votre premier passeport à votre prochain visa — pris en charge par de vrais spécialistes.",
+  "heading": "Chaque démarche. Un point de départ clair.",
+  "subheading": "Des demandes de passeport aux visas, trouvez des conseils pour préparer vos documents.",
   "items": {
     "passports": {
       "tag": "Tous les Types",
       "title": "Passeports",
-      "description": "Nouvelles demandes, renouvellements, changements de nom et traitement accéléré."
+      "description": "Nouvelles demandes, renouvellements, changements de nom et aide à la préparation des documents."
     },
     "visas": {
-      "tag": "190+ Pays",
+      "tag": "La plupart des destinations",
       "title": "Visas",
-      "description": "Visas touristiques, d'affaires, étudiantes et de travail, où que vous alliez."
+      "description": "Conseils pour préparer les documents des demandes de visa touristique, d'affaires, d'études et de travail."
     },
     "immigration": {
       "tag": "Toutes les Voies",
       "title": "Immigration",
-      "description": "Cartes vertes, citoyenneté et programmes d'investisseurs, accompagnés de bout en bout."
+      "description": "Informations sur les cartes vertes, la citoyenneté et les programmes d'investissement."
     },
     "idp": {
-      "tag": "150+ Pays",
+      "tag": "La plupart des destinations",
       "title": "Permis de Conduire International",
-      "description": "Conduisez légalement à l'étranger avec un permis reconnu presque partout où vous irez."
+      "description": "Consultez les informations sur les exigences du permis de conduire international pour votre voyage."
     }
   }
 }

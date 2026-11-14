@@ -2,24 +2,24 @@
   "US": {
     "eyebrow": "Guía de Viaje para Titulares de Pasaporte de Estados Unidos",
     "heading": "Lo Que Deben Saber los Titulares de Pasaporte de EE. UU. Antes de Viajar",
-    "statsCovered": "Destinos Cubiertos",
-    "statsCoveredLabel": "Y creciendo cada mes",
-    "statsVisaFree": "Destinos Sin Visa",
-    "statsVisaFreeLabel": "Sin solicitud previa necesaria",
-    "statsEta": "Destinos con ETA Rápida",
-    "statsEtaLabel": "Aprobada en línea, usualmente en minutos",
+    "statsCovered": "Destinos en la muestra",
+    "statsCoveredLabel": "Datos de muestra; no verificados",
+    "statsVisaFree": "Registros de muestra sin visa",
+    "statsVisaFreeLabel": "Confirma con una fuente oficial",
+    "statsEta": "Autorizaciones electrónicas de muestra",
+    "statsEtaLabel": "Confirma con una fuente oficial",
     "sections": {
       "howItVaries": {
         "title": "Cómo Varían los Requisitos Según el Destino",
-        "body": "No todos los destinos tratan un pasaporte de EE. UU. de la misma manera. Algunos países permiten llegar sin ningún trámite más allá del pasaporte. Otros piden una breve autorización electrónica completada en línea antes de volar — sin visitar un consulado, solo un formulario rápido. Un número menor requiere una solicitud de visa completa presentada con anticipación. Busca cualquier destino arriba para ver exactamente en qué categoría cae."
+        "body": "Las reglas de entrada varían según el destino y pueden cambiar. Esta muestra agrupa los registros disponibles según su estado, pero puede estar incompleta o desactualizada. Confirma los requisitos vigentes con la fuente oficial del gobierno de destino."
       },
       "whatYouNeed": {
         "title": "Lo Que Generalmente Necesitarás",
-        "body": "Sin importar el destino, algunas cosas se mantienen constantes: un pasaporte válido bastante después de tu fecha de regreso planeada, comprobante de viaje de continuación o regreso, y evidencia de que puedes mantenerte durante el viaje. Los destinos que requieren ETA o visa pedirán un poco más — te mostraremos exactamente qué una vez que busques."
+        "body": "Las reglas sobre la validez del pasaporte, los documentos de respaldo y los pasos de solicitud varían según el destino y el motivo del viaje. Consulta las instrucciones oficiales de tu itinerario antes de solicitar o viajar."
       },
       "howWeHelp": {
         "title": "Solicitando a Través de Visa Expeditor",
-        "body": "Una vez que sepas qué se requiere, nosotros nos encargamos de las partes que normalmente consumen una tarde entera — formularios completados correctamente desde la primera vez, revisados por antiguos oficiales de visa antes de enviarlos, con seguimiento en tiempo real desde el envío hasta la entrega."
+        "body": "Te ayudamos a entender los formularios de solicitud y compartimos actualizaciones de estado por correo electrónico. Las autoridades gubernamentales toman todas las decisiones de visa y entrada."
       }
     }
   }

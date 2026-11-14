@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import type { ImageSlot } from "@/lib/image-slots";
+import { localePath, SITE_URL } from "@/lib/seo";
 import { PageHero } from "./page-hero";
 import { Breadcrumbs } from "./breadcrumbs";
 import { StepList } from "./step-list";
@@ -29,6 +30,15 @@ export async function ServiceDetailPage({
   const t = await getTranslations({ locale, namespace });
   const base = `detail.${detailKey}`;
   const heading = t(`${base}.hero.heading`);
+  const serviceStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: heading,
+    description: t(`${base}.hero.subhead`),
+    provider: { "@id": `${SITE_URL}/#organization` },
+    url: `${SITE_URL}${localePath(locale, path)}`,
+    inLanguage: locale,
+  };
 
   const breadcrumbs = [
     { label: t("breadcrumbs.home"), href: "/" },
@@ -56,6 +66,12 @@ export async function ServiceDetailPage({
 
   return (
     <div className="bg-[#F5F6F4]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceStructuredData).replaceAll("<", "\\u003c"),
+        }}
+      />
       <PageHero
         slot={slot}
         eyebrow={t(`${base}.hero.eyebrow`)}

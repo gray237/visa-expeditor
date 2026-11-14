@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Passport Services — Visa Expeditor",
-    "description": "Fast, guided passport assistance for new passports, renewals, legal name changes, and lost or stolen documents."
+    "description": "Guided assistance for new passports, renewals, legal name changes, and lost or stolen documents."
   },
   "hero": {
     "eyebrow": "Government Document Services",
@@ -23,7 +23,7 @@
     },
     "renewal": {
       "label": "Passport Renewal",
-      "description": "Streamlined renewal package check for expiring or recently expired passports with expedited processing options."
+      "description": "Guidance for preparing renewal documents for an expiring or recently expired passport."
     },
     "nameChange": {
       "label": "Name Change & Corrections",
@@ -31,13 +31,13 @@
     },
     "lostStolen": {
       "label": "Lost, Stolen, or Damaged",
-      "description": "Immediate reporting guidance, invalidation protection, and replacement application processing."
+      "description": "Guidance on reporting a lost or stolen passport and preparing a replacement application."
     }
   },
   "faqs": {
     "heading": "Frequently Asked Questions",
     "q1": "How quickly can I renew my passport?",
-    "a1": "Standard government processing typically takes several weeks, but expedited processing can significantly reduce turnaround time depending on jurisdiction and availability.",
+    "a1": "Processing times and any expedited options depend on the issuing authority and can change. Check its current instructions before applying.",
     "q2": "What documents do I need to renew my passport?",
     "a2": "You will generally need your most recent passport book, a compliant passport photo, the appropriate government application form, and required government fees.",
     "q3": "Can I travel while my passport is being renewed?",
@@ -167,7 +167,7 @@
           "description": "We review the form for accuracy and consistency with your details."
         },
         "s4": {
-          "title": "Submit and track",
+          "title": "Submit and get status updates by email",
           "description": "You submit through the official channel and we explain what happens next."
         }
       },
@@ -245,7 +245,7 @@
           "description": "We review the form so the new name matches your evidence exactly."
         },
         "s4": {
-          "title": "Submit and track",
+          "title": "Submit and get status updates by email",
           "description": "You submit through the official channel and we explain the next steps."
         }
       },
@@ -293,7 +293,7 @@
         "description": "Report and replace a lost, stolen or damaged passport with clear steps and organized documents."
       },
       "hero": {
-        "eyebrow": "Urgent Replacement",
+        "eyebrow": "Passport replacement",
         "heading": "Lost, Stolen or Damaged Passport",
         "subhead": "Report and replace a lost, stolen or damaged passport with clear, organized steps."
       },
@@ -306,7 +306,7 @@
         "heading": "Who this is for",
         "i1": "Travelers who have lost or had a passport stolen.",
         "i2": "Holders of a damaged passport that is no longer valid.",
-        "i3": "People who need a replacement on an expedited timeline."
+        "i3": "People planning a replacement before upcoming travel."
       },
       "steps": {
         "heading": "How it works",
@@ -323,7 +323,7 @@
           "description": "We review the form and evidence before you submit."
         },
         "s4": {
-          "title": "Submit and follow up",
+          "title": "Submit and get status updates by email",
           "description": "You submit through the official channel and we explain the timeline and options."
         }
       },

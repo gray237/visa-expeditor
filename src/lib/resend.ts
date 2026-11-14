@@ -10,8 +10,6 @@ export const FROM_EMAIL =
 
 export const TEAM_EMAIL = process.env.TEAM_EMAIL?.trim() ?? "";
 
-export const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID?.trim() ?? "";
-
 export function escapeHtml(value: string) {
   return value
     .replaceAll("&", "&amp;")

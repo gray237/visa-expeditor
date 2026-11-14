@@ -1,23 +1,23 @@
 {
   "eyebrow": "Comment Ça Marche",
   "heading": "De la recherche à la livraison, en quatre étapes.",
-  "subheading": "Aucune supposition, aucune impasse — juste un chemin clair jusqu'à vos documents.",
+  "subheading": "Des étapes claires pour préparer votre demande.",
   "steps": {
     "search": {
       "title": "Indiquez votre destination",
-      "description": "Recherchez votre destination et passeport — nous vous montrons ce qui est requis."
+      "description": "Consultez les entrées disponibles dans l’échantillon et confirmez les exigences auprès de sources officielles."
     },
     "prepare": {
-      "title": "Nous préparons tout",
-      "description": "Votre dossier, rempli et vérifié avant même de quitter nos mains."
+      "title": "Préparer votre demande",
+      "description": "Recevez des conseils sur les formulaires et les renseignements demandés."
     },
     "review": {
-      "title": "Vérifié par des spécialistes",
-      "description": "D'anciens agents des visas l'examinent avant tout dépôt."
+      "title": "Vérifier avant l’envoi",
+      "description": "Vérifiez les renseignements saisis avant d’envoyer votre demande."
     },
     "deliver": {
-      "title": "Suivi jusqu'à la livraison",
-      "description": "Mises à jour en temps réel, du dépôt jusqu'à la réception de vos documents."
+      "title": "Mises à jour de statut par e-mail",
+      "description": "Les mises à jour sont communiquées par e-mail après l’envoi."
     }
   }
 }

@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import { routing } from "@/i18n/routing";
 import { ContactForm } from "@/components/contact-form";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -15,7 +16,12 @@ export async function generateMetadata({
   if (!hasLocale(routing.locales, locale)) return {};
 
   const t = await getTranslations({ locale, namespace: "contact" });
-  return { title: t("metaTitle"), description: t("metaDescription") };
+  return buildMetadata({
+    locale,
+    path: "/contact",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  });
 }
 
 export default async function ContactPage({
@@ -31,6 +37,10 @@ export default async function ContactPage({
   const supportEmail = process.env.NEXT_PUBLIC_SUPPORT_EMAIL;
   const phone = process.env.NEXT_PUBLIC_PHONE_NUMBER;
   const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+  const turnstileConfigured = Boolean(
+    process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim() &&
+      process.env.TURNSTILE_SECRET_KEY?.trim(),
+  );
 
   const details = [
     supportEmail
@@ -60,7 +70,7 @@ export default async function ContactPage({
   ].filter((detail) => detail !== null);
 
   return (
-    <main className="bg-[#F5F6F4] py-16 sm:py-24">
+    <div className="bg-[#F5F6F4] py-16 sm:py-24">
       <div className="mx-auto max-w-5xl px-6">
         <div className="max-w-2xl">
           <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#B8925A]">
@@ -76,7 +86,7 @@ export default async function ContactPage({
 
         <div className="mt-10 grid gap-8 lg:grid-cols-[1.5fr_1fr]">
           <div className="rounded-3xl border border-[#0F2444]/10 bg-white p-7 sm:p-8">
-            <ContactForm />
+            <ContactForm turnstileConfigured={turnstileConfigured} />
           </div>
 
           <aside className="space-y-4">
@@ -121,6 +131,6 @@ export default async function ContactPage({
           </aside>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

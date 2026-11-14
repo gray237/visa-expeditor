@@ -1,23 +1,23 @@
 {
   "eyebrow": "Cómo Funciona",
   "heading": "De la búsqueda a la entrega, en cuatro pasos.",
-  "subheading": "Sin conjeturas, sin callejones sin salida — solo un camino claro hasta tus documentos.",
+  "subheading": "Una serie clara de pasos para preparar tu solicitud.",
   "steps": {
     "search": {
       "title": "Cuéntanos tu destino",
-      "description": "Busca tu destino y pasaporte — te mostramos exactamente qué se requiere."
+      "description": "Consulta los registros disponibles en la muestra y confirma los requisitos con fuentes oficiales."
     },
     "prepare": {
-      "title": "Nosotros preparamos todo",
-      "description": "Tu solicitud, completada y verificada antes de salir de nuestras manos."
+      "title": "Prepara tu solicitud",
+      "description": "Recibe orientación sobre los formularios y la información que se solicita."
     },
     "review": {
-      "title": "Revisado por especialistas",
-      "description": "Antiguos oficiales de visa la revisan antes de enviarla."
+      "title": "Revisa antes de enviar",
+      "description": "Comprueba la información que ingresaste antes de enviar la solicitud."
     },
     "deliver": {
-      "title": "Seguimiento hasta la entrega",
-      "description": "Actualizaciones en tiempo real desde el envío hasta que tengas tus documentos."
+      "title": "Actualizaciones de estado por correo",
+      "description": "Compartimos actualizaciones por correo después del envío."
     }
   }
 }

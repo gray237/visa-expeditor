@@ -1,13 +1,82 @@
 {
-  "eyebrow": "Vérificateur de Visa",
-  "title": "Vérificateur d'Exigences de Visa",
-  "emptyHeading": "Où allez-vous ?",
-  "emptyBody": "Indiquez votre destination ci-dessus et nous vous montrerons exactement ce qui est requis.",
-  "notFoundHeading": "Nous n'avons pas encore cette destination",
-  "notFoundBody": "Nous continuons d'élargir notre base de destinations. Un spécialiste peut vous donner une réponse exacte dès aujourd'hui.",
-  "noDataHeading": "Nous n'avons pas encore cette information pour les titulaires d'un passeport {country}",
-  "noDataBody": "Les exigences de visa varient beaucoup selon la nationalité, et nous préférons ne rien affirmer plutôt que de mal deviner. Un spécialiste peut vous donner une réponse exacte dès aujourd'hui.",
-  "resultHeading": "Ce dont les titulaires d'un passeport {passport} ont besoin pour {destination}",
-  "startApplication": "Commencer Votre Demande",
-  "talkToSpecialist": "Parler à un Spécialiste"
+  "eyebrow": "Vérificateur de visa",
+  "title": "Consulter les exigences de visa",
+  "breadcrumbs": {
+    "label": "Fil d’Ariane",
+    "tools": "Outils",
+    "checker": "Vérificateur de visa"
+  },
+  "filters": {
+    "purpose": "Motif du voyage"
+  },
+  "purposes": {
+    "tourism": "Tourisme",
+    "business": "Affaires",
+    "transit": "Transit",
+    "study": "Études",
+    "work": "Travail"
+  },
+  "support": {
+    "email": "Écrire au service d’assistance",
+    "phone": "Appeler le service d’assistance",
+    "whatsapp": "Écrire sur WhatsApp"
+  },
+  "stats": {
+    "heading": "Résumé du jeu de données",
+    "coverage": "{covered} destinations sur {total} figurent dans ce jeu de données d’exemple",
+    "visaFree": "Aucun visa requis",
+    "visaFreeDescription": "Exemples indiquant une entrée sans visa.",
+    "electronic": "Autorisation électronique",
+    "electronicDescription": "Exemples d’eVisa, d’AVE et de visa à l’arrivée.",
+    "paper": "Visa sur papier",
+    "paperDescription": "Exemples indiquant qu’un visa sur papier est requis."
+  },
+  "list": {
+    "heading": "Destinations de cet exemple",
+    "description": "Choisissez une destination pour consulter les données d’entrée d’exemple.",
+    "noEntries": "Aucun enregistrement d’exemple pour ce passeport."
+  },
+  "buckets": {
+    "visaFree": "Aucun visa requis",
+    "electronic": "Autorisation électronique",
+    "paper": "Visa sur papier",
+    "other": "Autre statut ou statut incertain"
+  },
+  "statuses": {
+    "visa_free": "Sans visa",
+    "evisa": "eVisa",
+    "eta": "Autorisation de voyage électronique",
+    "visa_on_arrival": "Visa à l’arrivée",
+    "visa_required": "Visa requis",
+    "not_admitted": "Entrée non autorisée",
+    "unknown": "Inconnu"
+  },
+  "sampleBadge": "Données d’exemple",
+  "verifiedBadge": "Vérifié le {date}",
+  "sampleNotice": "Données d’exemple uniquement. Les entrées n’ont pas été vérifiées de manière indépendante et peuvent ne pas refléter les règles en vigueur. Confirmez les exigences auprès de la source officielle du gouvernement de destination avant votre voyage.",
+  "disclaimer": "Référence générale uniquement ; ne constitue pas un conseil juridique ou en immigration. Les décisions d’entrée relèvent des autorités gouvernementales.",
+  "maximumStay": "Durée maximale indiquée dans l’exemple : {days} jours",
+  "emptyHeading": "Choisissez une destination pour afficher un résultat d’exemple",
+  "emptyBody": "Consultez les entrées d’exemple ci-dessous ou choisissez une destination ci-dessus. Confirmez toutes les exigences auprès de sources officielles avant votre voyage.",
+  "notFoundHeading": "Destination non reconnue",
+  "notFoundBody": "Choisissez une destination dans la liste pour vérifier si un enregistrement d’exemple existe.",
+  "noDataHeading": "Aucune donnée d’exemple pour {country}",
+  "noDataBody": "Aucune ligne correspondante ne couvre ce passeport, cette destination et ce motif de voyage. Nous ne déduisons pas les exigences manquantes. Contactez-nous pour demander de l’aide.",
+  "resultHeading": "Informations d’entrée pour {purpose} des titulaires d’un passeport {passport} voyageant à {destination}",
+  "result": {
+    "statusLabel": "Statut de l’exemple",
+    "maximumStayLabel": "Durée maximale du séjour",
+    "lastVerifiedLabel": "Dernière vérification",
+    "sourceLabel": "Source",
+    "officialSource": "Ouvrir la source officielle"
+  },
+  "checklist": {
+    "heading": "Avant votre voyage",
+    "passport": "Vérifiez la validité de votre passeport selon les exigences officielles.",
+    "purpose": "Vérifiez que le motif du voyage correspond à la catégorie de demande.",
+    "officialSource": "Consultez les dernières instructions sur le site du gouvernement de destination."
+  },
+  "travelGuideHeading": "Guide de voyage pour les titulaires d’un passeport {passport}",
+  "startApplication": "Demander de l’aide",
+  "talkToSpecialist": "Nous contacter"
 }

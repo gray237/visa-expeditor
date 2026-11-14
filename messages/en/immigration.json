@@ -89,7 +89,7 @@
           "description": "We review each form for consistency with your evidence and category."
         },
         "s4": {
-          "title": "Submit and monitor",
+          "title": "Submit and get status updates by email",
           "description": "You submit through the official channel and we explain what to expect at each stage."
         }
       },
@@ -245,7 +245,7 @@
           "description": "We review the petition and supporting forms for consistency."
         },
         "s4": {
-          "title": "Submit and follow up",
+          "title": "Submit and get status updates by email",
           "description": "You submit through the official channel and we explain the stages that follow."
         }
       },

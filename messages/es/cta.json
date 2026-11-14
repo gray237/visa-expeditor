@@ -6,12 +6,12 @@
       "description": "Tu solicitud comienza con un formulario simple."
     },
     "reviewed": {
-      "word": "REVISADO",
-      "description": "Revisado por antiguos oficiales de visa antes de enviarlo."
+      "word": "PREPARADO",
+      "description": "Orientación para preparar tu solicitud antes de enviarla."
     },
     "delivered": {
-      "word": "ENTREGADO",
-      "description": "Con seguimiento en cada paso, de tu escritorio a tu puerta."
+      "word": "ACTUALIZACIONES",
+      "description": "Actualizaciones de estado por correo después del envío."
     }
   }
 }

@@ -13,14 +13,14 @@
     "about": "À Propos"
   },
   "content": {
-    "p1": "Comprendre les exigences internationales de voyage ne devrait pas être une épreuve administrative. Les dispositions consulaires évoluent vite, les consignes sont strictes et la moindre inexactitude peut compromettre un déplacement prévu de longue date.",
-    "p2": "Visa Expeditor a été conçu pour apporter lisibilité et rigueur à la préparation de vos dossiers. Nous allions une veille réglementaire continue à un contrôle rigoureux avant dépôt afin d'aider à la conformité de chaque demande.",
-    "p3": "Nous sommes une entreprise indépendante d'assistance et de préparation administrative. Nous ne sommes ni une agence gouvernementale ni un cabinet juridique, mais un service dédié qui aide les voyageurs à constituer des dossiers recevables et complets.",
-    "p4": "Qu'il s'agisse de renouveler un passeport pour les vacances, d'obtenir un visa professionnel dans des délais courts ou d'envisager une installation à l'étranger, nous vous offrons un suivi limpide et une écoute humaine permanente."
+    "p1": "Les exigences de voyage international peuvent être difficiles à comprendre et évoluer. Consultez toujours les instructions en vigueur de l’autorité gouvernementale concernée.",
+    "p2": "Visa Expeditor fournit des conseils pratiques pour préparer des documents de voyage. Les informations de visa d’exemple sur ce site ne sont pas vérifiées et ne remplacent pas les sources officielles.",
+    "p3": "Nous sommes un service indépendant de préparation de documents, et non une agence gouvernementale ou un cabinet juridique. Nous aidons à comprendre les formulaires et les démarches; les autorités gouvernementales prennent toutes les décisions relatives aux visas et à l’entrée.",
+    "p4": "Pour toute question sur les passeports, les visas ou une installation à l’étranger, contactez-nous afin de connaître l’assistance disponible. Les mises à jour de statut sont communiquées par e-mail."
   },
   "cta": {
     "title": "Un déplacement international en prévision ?",
-    "body": "Vérifiez vos conditions d'entrée dès maintenant ou échangez avec notre équipe pour votre projet de voyage.",
+    "body": "Consultez le jeu de données de visa d’exemple ou contactez-nous pour toute question sur votre destination.",
     "button": "Consulter les Conditions de Visa"
   }
 }

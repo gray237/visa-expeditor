@@ -5,61 +5,51 @@
   "cta": "Commencer Votre Demande",
   "us": {
     "title": "Avec Visa Expeditor",
-    "tagline": "Bien Fait Du Premier Coup"
+    "tagline": "Un accompagnement pour votre demande"
   },
   "diy": {
     "title": "En Le Faisant Vous-Même",
-    "tagline": "Aucun Accompagnement, Aucune Vérification"
+    "tagline": "Préparez la demande vous-même"
   },
   "points": {
     "guidance": {
       "us": {
         "title": "Accompagnement en langage clair",
-        "description": "Chaque formulaire expliqué étape par étape — sans jargon administratif."
+        "description": "Notre équipe peut vous aider à comprendre les champs et les justificatifs demandés."
       },
       "diy": {
-        "title": "Formulaires officiels denses",
-        "description": "Naviguez une terminologie et des formats qui varient selon les pays."
+        "title": "Instructions officielles",
+        "description": "Consultez les formulaires et les instructions de l’autorité compétente."
       }
     },
     "review": {
       "us": {
-        "title": "Vérifié par d'anciens agents des visas",
-        "description": "Un second regard expert sur votre dossier avant son dépôt."
+        "title": "Accompagnement pour préparer votre demande",
+        "description": "Aide pour comprendre les champs et les justificatifs demandés."
       },
       "diy": {
-        "title": "Aucun second avis",
-        "description": "Vous déposez et espérez — les erreurs sont souvent découvertes après un refus."
-      }
-    },
-    "pricing": {
-      "us": {
-        "title": "Tarifs clairs et détaillés",
-        "description": "Voyez le coût total — frais gouvernementaux et de service — avant de vous engager."
-      },
-      "diy": {
-        "title": "Des frais découverts en chemin",
-        "description": "Notarisation, coursier et traitement apparaissent souvent un par un."
+        "title": "Préparation autonome",
+        "description": "Remplissez et vérifiez vous-même les formulaires et les justificatifs."
       }
     },
     "tracking": {
       "us": {
-        "title": "Suivi en temps réel",
-        "description": "Sachez exactement où en est votre dossier, du dépôt à la livraison."
+        "title": "Mises à jour de statut par e-mail",
+        "description": "Les mises à jour de statut sont envoyées par e-mail."
       },
       "diy": {
-        "title": "Silence radio pendant l'attente",
-        "description": "Une fois déposé, vous avez peu de visibilité sur son état d'avancement."
+        "title": "Contacter l’autorité compétente",
+        "description": "Utilisez les canaux de suivi et de contact proposés par l’autorité."
       }
     },
     "language": {
       "us": {
-        "title": "Assistance dans votre langue",
-        "description": "Recevez des conseils et un accompagnement dans la langue de votre choix."
+        "title": "Assistance en anglais, espagnol et français",
+        "description": "L’accompagnement est proposé en anglais, espagnol et français."
       },
       "diy": {
-        "title": "Exigences dans une seule langue",
-        "description": "Les instructions ne sont souvent publiées que dans la langue officielle du pays de destination."
+        "title": "Les langues disponibles varient",
+        "description": "Vérifiez les langues proposées par l’autorité pour ses formulaires et instructions."
       }
     }
   }

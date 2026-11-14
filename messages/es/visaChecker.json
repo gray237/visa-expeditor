@@ -1,13 +1,82 @@
 {
-  "eyebrow": "Verificador de Visa",
-  "title": "Verificador de Requisitos de Visa",
-  "emptyHeading": "¿A dónde te diriges?",
-  "emptyBody": "Ingresa tu destino arriba y te mostraremos exactamente qué se requiere.",
-  "notFoundHeading": "Aún no tenemos ese destino",
-  "notFoundBody": "Seguimos ampliando nuestra base de destinos. Un especialista puede darte una respuesta exacta hoy mismo.",
-  "noDataHeading": "Aún no tenemos esto disponible para titulares de pasaporte {country}",
-  "noDataBody": "Los requisitos de visa varían mucho según la nacionalidad, y preferimos no decirte nada antes que adivinar mal. Un especialista puede darte una respuesta exacta hoy mismo.",
-  "resultHeading": "Lo que necesitan los titulares de pasaporte {passport} para {destination}",
-  "startApplication": "Comienza Tu Solicitud",
-  "talkToSpecialist": "Habla con un Especialista"
+  "eyebrow": "Verificador de visas",
+  "title": "Consulta los requisitos de visa",
+  "breadcrumbs": {
+    "label": "Ruta de navegación",
+    "tools": "Herramientas",
+    "checker": "Verificador de visas"
+  },
+  "filters": {
+    "purpose": "Motivo del viaje"
+  },
+  "purposes": {
+    "tourism": "Turismo",
+    "business": "Negocios",
+    "transit": "Tránsito",
+    "study": "Estudios",
+    "work": "Trabajo"
+  },
+  "support": {
+    "email": "Escribir a soporte",
+    "phone": "Llamar a soporte",
+    "whatsapp": "Escribir por WhatsApp"
+  },
+  "stats": {
+    "heading": "Resumen del conjunto de datos",
+    "coverage": "{covered} de {total} destinos incluidos en este conjunto de muestra",
+    "visaFree": "No se requiere visa",
+    "visaFreeDescription": "Registros de muestra con estado sin visa.",
+    "electronic": "Autorización electrónica",
+    "electronicDescription": "Registros de muestra de eVisa, ETA y visa a la llegada.",
+    "paper": "Visa en papel",
+    "paperDescription": "Registros de muestra que indican que se requiere una visa en papel."
+  },
+  "list": {
+    "heading": "Destinos de esta muestra",
+    "description": "Elige un destino para consultar los datos de entrada de muestra.",
+    "noEntries": "No hay registros de muestra para este pasaporte."
+  },
+  "buckets": {
+    "visaFree": "No se requiere visa",
+    "electronic": "Autorización electrónica",
+    "paper": "Visa en papel",
+    "other": "Otro estado o estado no confirmado"
+  },
+  "statuses": {
+    "visa_free": "Sin visa",
+    "evisa": "eVisa",
+    "eta": "Autorización electrónica de viaje",
+    "visa_on_arrival": "Visa a la llegada",
+    "visa_required": "Se requiere visa",
+    "not_admitted": "Entrada no permitida",
+    "unknown": "Desconocido"
+  },
+  "sampleBadge": "Datos de muestra",
+  "verifiedBadge": "Verificado el {date}",
+  "sampleNotice": "Solo son datos de muestra. Los registros no se han verificado de forma independiente y podrían no reflejar las normas actuales. Confirma los requisitos con la fuente oficial del gobierno de destino antes de viajar.",
+  "disclaimer": "Referencia general; no constituye asesoramiento legal ni migratorio. Las autoridades gubernamentales deciden sobre la entrada.",
+  "maximumStay": "Estancia máxima indicada en la muestra: {days} días",
+  "emptyHeading": "Elige un destino para ver un resultado de muestra",
+  "emptyBody": "Consulta los registros de muestra o elige un destino arriba. Confirma todos los requisitos con fuentes oficiales antes de viajar.",
+  "notFoundHeading": "No se reconoce el destino",
+  "notFoundBody": "Elige un destino de la lista para comprobar si hay un registro de muestra.",
+  "noDataHeading": "No hay datos de muestra para {country}",
+  "noDataBody": "No hay un registro coincidente para este pasaporte, destino y motivo de viaje. No suponemos los requisitos que faltan. Contáctanos si quieres consultar sobre asistencia.",
+  "resultHeading": "Información de entrada por {purpose} para titulares de pasaporte de {passport} que viajan a {destination}",
+  "result": {
+    "statusLabel": "Estado de muestra",
+    "maximumStayLabel": "Estancia máxima",
+    "lastVerifiedLabel": "Última verificación",
+    "sourceLabel": "Fuente",
+    "officialSource": "Abrir fuente oficial"
+  },
+  "checklist": {
+    "heading": "Antes de viajar",
+    "passport": "Comprueba la validez de tu pasaporte según los requisitos oficiales.",
+    "purpose": "Confirma que el motivo del viaje coincida con la categoría de solicitud.",
+    "officialSource": "Consulta las instrucciones más recientes en el sitio web del gobierno de destino."
+  },
+  "travelGuideHeading": "Guía de viaje para titulares de pasaporte de {passport}",
+  "startApplication": "Consultar asistencia",
+  "talkToSpecialist": "Contáctanos"
 }

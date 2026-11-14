@@ -4,6 +4,7 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LogOut } from "lucide-react";
 import { routing } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/seo";
 import { auth, isAuthConfigured } from "@/lib/auth/server";
 import { signOutAction } from "@/lib/auth/actions";
 
@@ -18,7 +19,13 @@ export async function generateMetadata({
   if (!hasLocale(routing.locales, locale)) return {};
 
   const t = await getTranslations({ locale, namespace: "auth" });
-  return { title: t("dashboardTitle") };
+  return buildMetadata({
+    locale,
+    path: "/dashboard",
+    title: t("dashboardTitle"),
+    description: t("dashboardEmptyBody"),
+    noindex: true,
+  });
 }
 
 export default async function DashboardPage({
@@ -34,7 +41,7 @@ export default async function DashboardPage({
 
   if (!isAuthConfigured) {
     return (
-      <main className="bg-[#F5F6F4] py-16 sm:py-24">
+      <div className="bg-[#F5F6F4] py-16 sm:py-24">
         <div className="mx-auto max-w-2xl px-6">
           <div className="rounded-3xl border border-[#B8925A]/30 bg-white p-8">
             <h1 className="font-display text-2xl font-semibold text-[#161B22]">
@@ -45,7 +52,7 @@ export default async function DashboardPage({
             </p>
           </div>
         </div>
-      </main>
+      </div>
     );
   }
 
@@ -56,7 +63,7 @@ export default async function DashboardPage({
   const initial = name.slice(0, 1).toUpperCase();
 
   return (
-    <main className="bg-[#F5F6F4] py-16 sm:py-24">
+    <div className="bg-[#F5F6F4] py-16 sm:py-24">
       <div className="mx-auto max-w-2xl px-6">
         <div className="rounded-3xl border border-[#0F2444]/10 bg-white p-8 shadow-[0_20px_60px_-30px_rgba(15,36,68,0.35)]">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
@@ -98,6 +105,6 @@ export default async function DashboardPage({
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

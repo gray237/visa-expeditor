@@ -56,6 +56,9 @@ export function DestinationSelector({
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-controls="destination-options"
         className="flex w-full items-center gap-2 px-2 py-1.5 text-left"
       >
         <Search className="h-4 w-4 shrink-0 text-[#161B22]/40" />
@@ -75,10 +78,27 @@ export function DestinationSelector({
             <Search className="h-4 w-4 shrink-0 text-[#161B22]/40 dark:text-[#F5F6F4]/40" />
             <input
               autoFocus
+              type="search"
+              role="combobox"
+              aria-label={t("searchDestinations")}
+              aria-autocomplete="list"
+              aria-expanded={open}
+              aria-controls="destination-options"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(event) => {
+                if (event.key === "Escape") {
+                  setOpen(false);
+                  setQuery("");
+                } else if (event.key === "ArrowDown") {
+                  event.preventDefault();
+                  rootRef.current
+                    ?.querySelector<HTMLElement>('[role="option"]')
+                    ?.focus();
+                }
+              }}
               placeholder={t("searchDestinations")}
-              className="w-full bg-transparent text-sm text-[#161B22] outline-none dark:text-[#F5F6F4]"
+              className="w-full bg-transparent text-sm text-[#161B22] outline-none focus-visible:outline-none dark:text-[#F5F6F4]"
             />
           </div>
 
@@ -88,11 +108,18 @@ export function DestinationSelector({
             </p>
           )}
 
-          <div className="mt-1 max-h-64 overflow-y-auto">
+          <div
+            id="destination-options"
+            role="listbox"
+            aria-label={t("searchDestinations")}
+            className="mt-1 max-h-64 overflow-y-auto"
+          >
             {list.map((country) => (
               <button
                 key={country.code}
                 type="button"
+                role="option"
+                aria-selected={country.code === value}
                 onClick={() => handleSelect(country.code)}
                 className="flex w-full items-center gap-3 rounded-xl p-2 text-left transition-colors hover:bg-[#0F2444]/5 dark:hover:bg-white/10"
               >

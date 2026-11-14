@@ -89,7 +89,7 @@
           "description": "Nous vérifions chaque formulaire pour qu'il soit cohérent avec vos justificatifs et votre catégorie."
         },
         "s4": {
-          "title": "Déposez et suivez",
+          "title": "Déposez votre demande et recevez les mises à jour par e-mail",
           "description": "Vous déposez votre demande par la voie officielle et nous vous expliquons à quoi vous attendre à chaque étape."
         }
       },
@@ -245,7 +245,7 @@
           "description": "Nous vérifions la pétition et les formulaires justificatifs pour leur cohérence."
         },
         "s4": {
-          "title": "Déposez et suivez",
+          "title": "Déposez votre demande et recevez les mises à jour par e-mail",
           "description": "Vous déposez votre demande par la voie officielle et nous vous expliquons les étapes suivantes."
         }
       },

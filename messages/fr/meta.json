@@ -1,10 +1,10 @@
 {
   "siteName": "Visa Expeditor",
   "defaultTitle": "Visa Expeditor — Aide pour passeports et visas, bien faite",
-  "defaultDescription": "Renouvellements de passeport, demandes de visa et aide aux documents de voyage — vérifiés par de vraies personnes, pas un chatbot.",
+  "defaultDescription": "Un accompagnement pour préparer les demandes de passeport, de visa et de documents de voyage en anglais, espagnol et français.",
   "home": {
     "title": "Visa Expeditor — Aide pour passeports et visas, bien faite",
-    "description": "Vérifiez les exigences de visa selon votre passeport et votre destination, puis obtenez l'aide de vrais spécialistes pour les passeports, visas et l'immigration.",
+    "description": "Consultez les entrées de visa d’exemple disponibles selon le passeport et la destination, puis contactez-nous au sujet de la préparation de documents.",
     "ogAlt": "Visa Expeditor — aide pour passeports et visas"
   }
 }

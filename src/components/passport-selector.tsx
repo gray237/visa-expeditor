@@ -32,6 +32,8 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
   const [livesElsewhere, setLivesElsewhere] = useState(false);
   const [residenceCode, setResidenceCode] = useState(value);
   const searchRef = useRef<HTMLInputElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
 
   const countries = localizedCountries(locale);
   const selected = countries.find((c) => c.code === value) ?? countries[0];
@@ -44,7 +46,25 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
   useEffect(() => {
     if (!open) return;
     function handleKey(event: KeyboardEvent) {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeModal();
+      }
+      if (event.key === "Tab") {
+        const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), input:not([disabled]), select:not([disabled])',
+        );
+        if (!focusable?.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
     }
     document.addEventListener("keydown", handleKey);
     document.body.style.overflow = "hidden";
@@ -61,19 +81,31 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
     setOpen(true);
   }
 
+  function closeModal() {
+    setOpen(false);
+    requestAnimationFrame(() => triggerRef.current?.focus());
+  }
+
   function confirm() {
     onChange(pendingCode);
-    setOpen(false);
+    closeModal();
   }
 
   const modal = (
     <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
-      <div className="absolute inset-0 bg-[#0B1B33]/70 backdrop-blur-sm" onClick={() => setOpen(false)} />
+      <div className="absolute inset-0 bg-[#0B1B33]/70 backdrop-blur-sm" onClick={closeModal} />
 
-      <div className="relative flex max-h-[85vh] w-full max-w-md flex-col overflow-hidden rounded-3xl bg-[#F5F6F4] shadow-2xl">
+      <div
+        ref={dialogRef}
+        id="passport-selector-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="passport-selector-title"
+        className="relative flex max-h-[85vh] w-full max-w-md flex-col overflow-hidden rounded-3xl bg-[#F5F6F4] shadow-2xl"
+      >
         <div className="flex items-start justify-between px-6 pt-6">
           <div>
-            <h2 className="font-display text-xl font-semibold text-[#0F2444]">
+            <h2 id="passport-selector-title" className="font-display text-xl font-semibold text-[#0F2444]">
               {t("selectPassport")}
             </h2>
             <p className="mt-1 font-body text-sm text-[#161B22]/60">
@@ -82,7 +114,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
           </div>
           <button
             type="button"
-            onClick={() => setOpen(false)}
+            onClick={closeModal}
             aria-label={t("close")}
             className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[#161B22]/50 transition-colors hover:bg-[#0F2444]/5 hover:text-[#0F2444]"
           >
@@ -121,8 +153,21 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
             <input
               ref={searchRef}
               type="text"
+              role="combobox"
+              aria-label={t("searchCountry")}
+              aria-autocomplete="list"
+              aria-expanded={open}
+              aria-controls="passport-country-options"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
+              onKeyDown={(event) => {
+                if (event.key === "ArrowDown") {
+                  event.preventDefault();
+                  dialogRef.current
+                    ?.querySelector<HTMLElement>('[role="option"]')
+                    ?.focus();
+                }
+              }}
               placeholder={t("searchCountry")}
               className="w-full rounded-xl border border-[#0F2444]/15 bg-white py-2.5 pl-10 pr-3.5 font-body text-sm outline-none focus:border-[#B8925A]"
             />
@@ -135,11 +180,17 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
               {t("popular")}
             </p>
           )}
-          <ul>
+          <ul
+            id="passport-country-options"
+            role="listbox"
+            aria-label={t("selectPassport")}
+          >
             {(filtered ?? popular).map((country) => (
               <li key={country.code}>
                 <button
                   type="button"
+                  role="option"
+                  aria-selected={pendingCode === country.code}
                   onClick={() => setPendingCode(country.code)}
                   className={`flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left transition-colors ${
                     pendingCode === country.code ? "bg-[#0F2444]/6" : "hover:bg-[#0F2444]/4"
@@ -234,8 +285,12 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
   return (
     <>
       <button
+        ref={triggerRef}
         type="button"
         onClick={openModal}
+        aria-haspopup="dialog"
+        aria-expanded={open}
+        aria-controls="passport-selector-dialog"
         className={
           variant === "pill"
             ? "flex h-9 items-center gap-2 rounded-full border border-[#0F2444]/15 bg-white px-3.5 text-sm transition-colors hover:bg-[#0F2444]/5"

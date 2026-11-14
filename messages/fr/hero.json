@@ -1,7 +1,7 @@
 {
-  "badge": "Visas {country} préparées et soumises",
-  "headline": "Toutes les frontières. Un chemin clair.",
-  "subhead": "Découvrez ce dont vous avez besoin pour toute destination, puis laissez un vrai spécialiste s'occuper du reste.",
+  "badge": "Pour les titulaires d’un passeport {country}",
+  "headline": "Exigences de visa. Commencez par des données d’exemple.",
+  "subhead": "Consultez les entrées de visa d’exemple pour les paires passeport-destination disponibles et trouvez des conseils pour préparer vos documents.",
   "destinationLabel": "Ma destination",
   "destinationPlaceholder": "Où allez-vous ?",
   "cta": "Voir les Exigences"

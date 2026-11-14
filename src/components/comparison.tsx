@@ -2,7 +2,7 @@ import { Check, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
-const POINTS = ["guidance", "review", "pricing", "tracking", "language"];
+const POINTS = ["guidance", "review", "tracking", "language"];
 
 export function Comparison() {
   const t = useTranslations("comparison");

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Services de Passeport — Visa Expeditor",
-    "description": "Accompagnement rapide et guidé pour les premières demandes, renouvellements, changements de nom et passeports perdus ou volés."
+    "description": "Un accompagnement pour les premières demandes, renouvellements, changements de nom et passeports perdus ou volés."
   },
   "hero": {
     "eyebrow": "Services de Documents Officiels",
@@ -23,7 +23,7 @@
     },
     "renewal": {
       "label": "Renouvellement de Passeport",
-      "description": "Examen minutieux de votre dossier de renouvellement pour passeports expirants avec options de traitement rapide."
+      "description": "Un accompagnement pour préparer le dossier de renouvellement d’un passeport arrivant à expiration ou récemment expiré."
     },
     "nameChange": {
       "label": "Changement de Nom et Rectifications",
@@ -31,13 +31,13 @@
     },
     "lostStolen": {
       "label": "Passeport Perdu, Volé ou Endommagé",
-      "description": "Orientation immédiate pour la déclaration de perte, sécurisation du dossier et procédure de remplacement."
+      "description": "Un accompagnement pour déclarer la perte ou le vol d’un passeport et préparer une demande de remplacement."
     }
   },
   "faqs": {
     "heading": "Foire Aux Questions",
     "q1": "Combien de temps faut-il pour renouveler un passeport ?",
-    "a1": "Les délais administratifs habituels prennent souvent plusieurs semaines, mais des procédures accélérées permettent de raccourcir ces durées selon les autorités émettrices.",
+    "a1": "Les délais et les options de traitement accéléré dépendent de l’autorité émettrice et peuvent changer. Consultez ses instructions à jour avant de déposer votre demande.",
     "q2": "Quels documents dois-je fournir pour le renouvellement ?",
     "a2": "Il vous faudra en général votre passeport actuel, une photo d'identité aux normes réglementaires, le formulaire administratif officiel et les droits de timbre correspondants.",
     "q3": "Puis-je voyager pendant que mon passeport est en cours de renouvellement ?",
@@ -167,7 +167,7 @@
           "description": "Nous vérifions le formulaire pour son exactitude et sa cohérence avec vos informations."
         },
         "s4": {
-          "title": "Déposez et suivez",
+          "title": "Déposez votre demande et recevez les mises à jour par e-mail",
           "description": "Vous déposez par la voie officielle et nous vous expliquons la suite."
         }
       },
@@ -245,7 +245,7 @@
           "description": "Nous vérifions le formulaire afin que le nouveau nom corresponde exactement à vos justificatifs."
         },
         "s4": {
-          "title": "Déposez et suivez",
+          "title": "Déposez votre demande et recevez les mises à jour par e-mail",
           "description": "Vous déposez par la voie officielle et nous vous expliquons les prochaines étapes."
         }
       },
@@ -293,7 +293,7 @@
         "description": "Déclarez et remplacez un passeport perdu, volé ou endommagé avec des étapes claires et des documents organisés."
       },
       "hero": {
-        "eyebrow": "Remplacement Urgent",
+        "eyebrow": "Remplacement de passeport",
         "heading": "Passeport Perdu, Volé ou Endommagé",
         "subhead": "Déclarez et remplacez un passeport perdu, volé ou endommagé avec des étapes claires et organisées."
       },
@@ -306,7 +306,7 @@
         "heading": "À qui s'adresse ce service",
         "i1": "Les voyageurs qui ont perdu leur passeport ou se l'ont fait voler.",
         "i2": "Les titulaires d'un passeport endommagé qui n'est plus valide.",
-        "i3": "Les personnes qui ont besoin d'un remplacement rapidement."
+        "i3": "Les personnes qui prévoient de remplacer leur passeport avant un prochain voyage."
       },
       "steps": {
         "heading": "Comment ça marche",
@@ -323,7 +323,7 @@
           "description": "Nous vérifions le formulaire et les justificatifs avant votre dépôt."
         },
         "s4": {
-          "title": "Déposez et suivez",
+          "title": "Déposez votre demande et recevez les mises à jour par e-mail",
           "description": "Vous déposez par la voie officielle et nous vous expliquons les délais et les options."
         }
       },

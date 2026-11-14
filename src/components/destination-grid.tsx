@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { DESTINATIONS, MOST_VISITED_BY_PASSPORT, DEFAULT_FEATURED } from "@/lib/destinations";
 import { fullCountryName } from "@/lib/countries";
+import { findVisaRecord } from "@/data/visa";
 import { usePassport } from "@/components/providers/passport-provider";
 
 function CardFlag({ code }: { code: string }) {
@@ -20,6 +21,7 @@ function CardFlag({ code }: { code: string }) {
 export function DestinationGrid() {
   const { passport: passportCode } = usePassport();
   const t = useTranslations("destinations");
+  const tv = useTranslations("visaChecker");
   const locale = useLocale();
   const featuredKey = MOST_VISITED_BY_PASSPORT[passportCode] ?? DEFAULT_FEATURED;
 
@@ -39,7 +41,10 @@ export function DestinationGrid() {
 
         <div className="grid grid-flow-row-dense grid-cols-2 auto-rows-32.5 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {DESTINATIONS.map((destination) => {
-            const requirement = destination.requirements[passportCode];
+            const requirement = findVisaRecord(
+              passportCode,
+              destination.countryCode,
+            );
             const isTall = destination.key === featuredKey;
 
             return (
@@ -63,31 +68,15 @@ export function DestinationGrid() {
 
                 <div className="relative mt-3 border-t border-white/15 pt-3">
                   {requirement ? (
-                    <div className="grid grid-cols-3 gap-2">
-                      <div>
-                        <p className="font-mono text-[9px] uppercase tracking-wider text-white/50">
-                          {t("typeLabel")}
-                        </p>
-                        <p className="font-body text-[12px] font-semibold leading-tight text-white">
-                          {t(`type.${requirement.type}`)}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="font-mono text-[9px] uppercase tracking-wider text-white/50">
-                          {t("validLabel")}
-                        </p>
-                        <p className="font-body text-[12px] font-semibold leading-tight text-white">
-                          {t("validDays", { days: requirement.validityDays })}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="font-mono text-[9px] uppercase tracking-wider text-white/50">
-                          {t("processingLabel")}
-                        </p>
-                        <p className="font-body text-[12px] font-semibold leading-tight text-white">
-                          {t(`processing.${requirement.processing}`)}
-                        </p>
-                      </div>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <p className="font-body text-sm font-semibold text-white">
+                        {tv(`statuses.${requirement.status}`)}
+                      </p>
+                      {requirement.confidence === "sample" && (
+                        <span className="rounded-full bg-white/15 px-2 py-1 font-body text-xs text-white">
+                          {tv("sampleBadge")}
+                        </span>
+                      )}
                     </div>
                   ) : (
                     <span className="flex items-center gap-1 font-body text-[13px] font-semibold text-white">

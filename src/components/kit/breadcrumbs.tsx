@@ -1,4 +1,6 @@
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { localePath, SITE_URL } from "@/lib/seo";
 
 export type BreadcrumbItem = { label: string; href: string };
 
@@ -6,9 +8,11 @@ export type BreadcrumbsProps = {
   items: BreadcrumbItem[];
 };
 
-export function Breadcrumbs({ items }: BreadcrumbsProps) {
+export async function Breadcrumbs({ items }: BreadcrumbsProps) {
+  const locale = await getLocale();
+  const t = await getTranslations({ locale, namespace: "common" });
   return (
-    <nav className="mb-6 max-w-350 mx-auto px-6" aria-label="Breadcrumb">
+    <nav className="mb-6 max-w-350 mx-auto px-6" aria-label={t("breadcrumbLabel")}>
       <ol className="flex flex-wrap gap-2 font-mono text-[11px] uppercase tracking-wider text-[#161B22]/40 sm:text-sm">
         {items.map((item, index) => {
           const isLast = index === items.length - 1;
@@ -51,9 +55,11 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
               "@type": "ListItem",
               position: index + 1,
               name: item.label,
-              item: item.href.startsWith("http") ? item.href : `https://visaexpeditor.com${item.href}`,
+              item: item.href.startsWith("http")
+                ? item.href
+                : `${SITE_URL}${localePath(locale, item.href)}`,
             })),
-          }),
+          }).replaceAll("<", "\\u003c"),
         }}
       />
     </nav>

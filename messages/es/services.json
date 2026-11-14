@@ -1,27 +1,27 @@
 {
   "eyebrow": "Servicios",
-  "heading": "Cada trámite. Un equipo experto.",
-  "subheading": "Desde tu primer pasaporte hasta tu próxima visa — a cargo de especialistas con experiencia real.",
+  "heading": "Cada trámite. Un punto de partida claro.",
+  "subheading": "Desde las solicitudes de pasaporte hasta las visas, encuentra orientación para preparar tus documentos.",
   "items": {
     "passports": {
       "tag": "Todos los Tipos",
       "title": "Pasaportes",
-      "description": "Solicitudes nuevas, renovaciones, cambios de nombre y trámite expedito."
+      "description": "Solicitudes nuevas, renovaciones, cambios de nombre y ayuda para preparar documentos."
     },
     "visas": {
-      "tag": "190+ Países",
+      "tag": "La mayoría de los destinos",
       "title": "Visas",
-      "description": "Visas de turista, negocios, estudiante y trabajo, para donde sea que vayas."
+      "description": "Orientación para preparar documentos de visas de turismo, negocios, estudios y trabajo."
     },
     "immigration": {
       "tag": "Todas las Vías",
       "title": "Inmigración",
-      "description": "Tarjetas verdes, ciudadanía y programas de inversionistas, guiados de principio a fin."
+      "description": "Información sobre tarjetas verdes, ciudadanía y programas para inversionistas."
     },
     "idp": {
-      "tag": "150+ Países",
+      "tag": "La mayoría de los destinos",
       "title": "Permiso Internacional de Conducir",
-      "description": "Conduce legalmente en el extranjero con un permiso reconocido casi donde viajes."
+      "description": "Consulta información sobre los requisitos del permiso internacional de conducir para tu viaje."
     }
   }
 }

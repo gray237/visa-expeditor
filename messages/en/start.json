@@ -1,0 +1,86 @@
+{
+  "eyebrow": "Application intake",
+  "title": "Tell us what you need",
+  "description": "Share the details needed to respond to your travel-document request. Do not include passport numbers or upload identity documents.",
+  "steps": {
+    "navigation": "Application steps",
+    "service": "Service",
+    "traveler": "Traveler",
+    "contact": "Contact",
+    "review": "Review"
+  },
+  "stepTitles": {
+    "service": "Service and destination",
+    "traveler": "Traveler details",
+    "contact": "Contact and travel details",
+    "review": "Review your request"
+  },
+  "services": {
+    "passport": "Passport assistance",
+    "visa": "Visa assistance",
+    "immigration": "Immigration document assistance"
+  },
+  "purposes": {
+    "tourism": "Tourism",
+    "business": "Business",
+    "transit": "Transit",
+    "study": "Study",
+    "work": "Work"
+  },
+  "fields": {
+    "service": "Service",
+    "purpose": "Purpose of travel",
+    "passport": "Passport country",
+    "destination": "Destination country",
+    "chooseDestination": "Choose a destination",
+    "name": "Full name",
+    "email": "Email address",
+    "phone": "Phone number (optional)",
+    "travelStart": "Departure date (optional)",
+    "travelEnd": "Return date (optional)",
+    "message": "Additional details (optional)",
+    "travelDates": "Travel dates"
+  },
+  "privacyAcknowledgement": "I have read the privacy notice and agree that my information may be used to respond to this request.",
+  "privacyLink": "Privacy notice",
+  "honeypotLabel": "Website",
+  "notProvided": "Not provided",
+  "back": "Back",
+  "continue": "Continue",
+  "sending": "Submitting…",
+  "submit": "Submit request",
+  "errors": {
+    "invalidInput": "Check the required fields and travel dates, then try again.",
+    "turnstile": "Complete the security check and try again.",
+    "turnstileNotConfigured": "This form is unavailable until Turnstile is configured.",
+    "rateLimited": "Too many requests were sent from this connection. Try again later.",
+    "rateLimitUnavailable": "This form is temporarily unavailable. Please try again later.",
+    "databaseNotConfigured": "Application storage is not configured. Contact support.",
+    "databaseUnavailable": "We could not save this request. Please try again later.",
+    "emailNotConfigured": "Application email is not configured. Contact support.",
+    "storedEmailFailed": "Your request was saved, but one or more emails could not be sent. Do not submit it again; contact support.",
+    "configurationRequired": "This form is unavailable until its required services are configured.",
+    "spam": "The request could not be accepted."
+  },
+  "confirmation": {
+    "title": "Request received",
+    "body": "Your request was saved and confirmation emails were sent to you and our team.",
+    "return": "Return to the visa checker"
+  },
+  "email": {
+    "teamHeading": "New application request",
+    "teamSubject": "New application request",
+    "applicantSubject": "We received your request",
+    "applicantBody": "We received your application request. Our team has also received the details you submitted.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "service": "Service",
+    "purpose": "Travel purpose",
+    "passport": "Passport country",
+    "destination": "Destination",
+    "travelDates": "Travel dates",
+    "message": "Additional details",
+    "notProvided": "Not provided"
+  }
+}

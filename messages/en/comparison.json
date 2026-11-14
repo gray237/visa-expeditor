@@ -5,61 +5,51 @@
   "cta": "Start Your Application",
   "us": {
     "title": "With Visa Expeditor",
-    "tagline": "Done Right The First Time"
+    "tagline": "Guidance for your request"
   },
   "diy": {
     "title": "Doing It Yourself",
-    "tagline": "No Guidance, No Review"
+    "tagline": "Prepare the request yourself"
   },
   "points": {
     "guidance": {
       "us": {
         "title": "Plain-language guidance",
-        "description": "Every form explained step by step — no government jargon to decode."
+        "description": "Our team can help clarify form fields and supporting information."
       },
       "diy": {
-        "title": "Dense official forms",
-        "description": "Navigate government terminology and formatting that varies by country."
+        "title": "Official instructions",
+        "description": "Use the forms and instructions provided by the relevant authority."
       }
     },
     "review": {
       "us": {
-        "title": "Reviewed by former visa officers",
-        "description": "A second set of expert eyes on your application before it's ever submitted."
+        "title": "Application preparation guidance",
+        "description": "Get help understanding the fields and supporting information requested."
       },
       "diy": {
-        "title": "No second opinion",
-        "description": "Submit and hope — mistakes are usually caught only after a rejection."
-      }
-    },
-    "pricing": {
-      "us": {
-        "title": "Upfront, itemized pricing",
-        "description": "See the full cost — government and service fees — before you commit to anything."
-      },
-      "diy": {
-        "title": "Fees you discover along the way",
-        "description": "Notarization, courier, and processing costs often surface one at a time."
+        "title": "Self-managed preparation",
+        "description": "Complete and check the forms and supporting information yourself."
       }
     },
     "tracking": {
       "us": {
-        "title": "Real-time status tracking",
-        "description": "Know exactly where your application stands, from submission to delivery."
+        "title": "Status updates by email",
+        "description": "We send status updates by email."
       },
       "diy": {
-        "title": "Radio silence while you wait",
-        "description": "Once it's submitted, there's little visibility into where things stand."
+        "title": "Check with the relevant authority",
+        "description": "Use the status and contact channels the authority provides."
       }
     },
     "language": {
       "us": {
-        "title": "Help in your language",
-        "description": "Get guidance and support in the language you're most comfortable with."
+        "title": "Support in English, Spanish and French",
+        "description": "Guidance and support are available in English, Spanish and French."
       },
       "diy": {
-        "title": "Requirements in one language only",
-        "description": "Instructions are typically published only in the destination country's official language."
+        "title": "Language options vary",
+        "description": "Check which languages the authority offers for its instructions and forms."
       }
     }
   }

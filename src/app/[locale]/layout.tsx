@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Fraunces, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { PassportProvider } from "@/components/providers/passport-provider";
+import { SiteStructuredData } from "@/components/structured-data";
+import { SITE_URL } from "@/lib/seo";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -31,9 +33,9 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Visa Expeditor — Passport & Visa Help, Done Right",
-  description:
-    "Passport renewals, visa applications, and travel document help — reviewed by real people, not a chatbot.",
+  description: "Passport and visa information to help you prepare for your next trip.",
   icons: {
     icon: "/favicon.svg",
   },
@@ -57,6 +59,7 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "common" });
 
   return (
     <html lang={locale}>
@@ -65,9 +68,18 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider>
           <PassportProvider>
+            <a
+              href="#main-content"
+              className="sr-only z-100 rounded-lg bg-white px-4 py-3 text-[#161B22] focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A6D3F]"
+            >
+              {t("skipToContent")}
+            </a>
             <SiteHeader />
-            <main>{children}</main>
+            <main id="main-content" tabIndex={-1}>
+              {children}
+            </main>
             <SiteFooter />
+            <SiteStructuredData locale={locale} />
           </PassportProvider>
         </NextIntlClientProvider>
       </body>

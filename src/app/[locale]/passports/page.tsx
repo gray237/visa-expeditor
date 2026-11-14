@@ -3,14 +3,13 @@ import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/seo";
 import { passportsHubConfig } from "@/content/passports";
 import { PageHero } from "@/components/kit/page-hero";
 import { Breadcrumbs } from "@/components/kit/breadcrumbs";
 import { HubGrid } from "@/components/kit/hub-grid";
 import { FaqSection } from "@/components/kit/faq-section";
 import { CtaBand } from "@/components/kit/cta-band";
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://visaexpeditor.com";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -24,29 +23,12 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: "passports" });
-  const path = locale === "en" ? "/passports" : `/${locale}/passports`;
-  const url = `${SITE_URL}${path}`;
-
-  return {
+  return buildMetadata({
+    locale,
+    path: "/passports",
     title: t("meta.title"),
     description: t("meta.description"),
-    alternates: {
-      canonical: url,
-      languages: {
-        en: `${SITE_URL}/passports`,
-        es: `${SITE_URL}/es/passports`,
-        fr: `${SITE_URL}/fr/passports`,
-      },
-    },
-    openGraph: {
-      title: t("meta.title"),
-      description: t("meta.description"),
-      url,
-      siteName: "Visa Expeditor",
-      locale,
-      type: "website",
-    },
-  };
+  });
 }
 
 export default async function PassportsHubPage({
