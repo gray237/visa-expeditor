@@ -29,6 +29,14 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      new URL("https://i.pravatar.cc/150?img=12"),
+      new URL("https://i.pravatar.cc/150?img=33"),
+      new URL("https://i.pravatar.cc/150?img=47"),
+      new URL("https://i.pravatar.cc/150?img=68"),
+    ],
+  },
   turbopack: {
     root: process.cwd(),
   },

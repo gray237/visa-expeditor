@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "@/i18n/navigation";
@@ -8,6 +9,13 @@ import { PassportSelector } from "@/components/passport-selector";
 import { DestinationSelector } from "@/components/destination-selector";
 import { usePassport } from "@/components/providers/passport-provider";
 import { shortCountryName } from "@/lib/countries";
+
+const EXPERT_AVATARS = [
+  "https://i.pravatar.cc/150?img=12",
+  "https://i.pravatar.cc/150?img=33",
+  "https://i.pravatar.cc/150?img=47",
+  "https://i.pravatar.cc/150?img=68",
+];
 
 export function Hero() {
   const { passport: passportCode, setPassport: setPassportCode } = usePassport();
@@ -52,6 +60,18 @@ export function Hero() {
       <div className="relative mx-auto max-w-350 px-6">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 py-1.5 pl-1.5 pr-4 backdrop-blur-md">
+            <div className="flex -space-x-2">
+              {EXPERT_AVATARS.map((src) => (
+                <Image
+                  key={src}
+                  src={src}
+                  alt=""
+                  width={28}
+                  height={28}
+                  className="h-7 w-7 rounded-full object-cover ring-2 ring-[#0F2444]"
+                />
+              ))}
+            </div>
             <span className="font-body text-[13px] text-[#F5F6F4]/90">
               {t("badge", { country: shortCountryName(passportCode, locale) })}
             </span>
