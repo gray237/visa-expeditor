@@ -56,7 +56,8 @@
   "sampleBadge": "Datos de muestra",
   "verifiedBadge": "Verificado el {date}",
   "sampleNotice": "Solo son datos de muestra. Los registros no se han verificado de forma independiente y podrían no reflejar las normas actuales. Confirma los requisitos con la fuente oficial del gobierno de destino antes de viajar.",
-  "disclaimer": "Referencia general; no constituye asesoramiento legal ni migratorio. Las autoridades gubernamentales deciden sobre la entrada.",
+  "disclaimer": "Los requisitos de visa y entrada pueden cambiar sin previo aviso. Visa Expeditor resume fuentes oficiales únicamente como orientación general. La fuente oficial y las autoridades fronterizas del destino son la autoridad final. Confirma siempre antes de reservar o viajar.",
+  "notAdmittedNotice": "El conjunto de datos registra la entrada como no permitida. Este estado requiere una revisión manual antes de hacer planes: consulta la fuente oficial y contacta con las autoridades del destino. No te bases únicamente en esta página.",
   "maximumStay": "Estancia máxima: {days} días",
   "emptyHeading": "Elige un destino para ver los requisitos de entrada",
   "emptyBody": "Consulta los destinos de abajo o elige uno arriba. Confirma todos los requisitos con fuentes oficiales antes de viajar.",
@@ -86,7 +87,8 @@
   "datasetBadge": "Conjunto de datos con fuentes oficiales",
   "importedNotice": "Recopilado de fuentes oficiales por TravelRequirements.info y adaptado por Visa Expeditor. El proveedor del conjunto de datos comprobó los registros importados con la fuente enlazada, pero Visa Expeditor no ha verificado de forma independiente cada registro. La fuente oficial es la autoridad.",
   "verifiedNotice": "Verificado de forma independiente por Visa Expeditor con la fuente oficial enlazada.",
-  "attribution": "Datos importados: TravelRequirements.info Entry Requirements Dataset, AXG Sp. z o.o. — CC BY 4.0. Adaptado para Visa Expeditor; no cuenta con el respaldo del editor.",
+  "attribution": "TravelRequirements.info — Entry Requirements Dataset, AXG Sp. z o.o., https://travelrequirements.info/data/ (CC BY 4.0). Visa Expeditor adapta este conjunto de datos a su propio esquema, lo limita a los destinos admitidos y añade sus propias etiquetas de verificación. Visa Expeditor no cuenta con el respaldo de AXG Sp. z o.o. ni de TravelRequirements.info.",
   "importedBadgeShort": "Verificado por la fuente",
-  "verifiedBadgeShort": "Verificado de forma independiente"
+  "verifiedBadgeShort": "Verificado de forma independiente",
+  "notIndependentlyVerified": "No verificado de forma independiente"
 }

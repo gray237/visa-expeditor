@@ -35,6 +35,8 @@ Imported rows are never labelled “independently verified.” The official sour
 
 - `src/data/visa/{ISO2}.json`: deterministic per-passport records. Do not hand-edit.
 - `src/data/visa/source.json`: machine-readable commit, licence, attribution and import metadata.
+- `src/data/visa/summary.generated.json`: compact client summary. Do not hand-edit.
+- `src/data/visa/datasets.generated.ts`: static server-side dataset imports. Do not hand-edit.
 - `reports/visa-coverage.json`: coverage, provenance and staleness report.
 - `reports/visa-verification-queue.json`: the 68 launch corridors awaiting independent verification.
 - `reports/visa-coverage.md`: human-readable coverage summary.
@@ -50,6 +52,9 @@ node scripts/import-travelrequirements.mjs --passports US,GB,CA,AU
 
 # Validate all passport files
 npm run visa:validate
+
+# Rebuild the client summary and server dataset map
+npm run visa:summary
 
 # Rebuild coverage and the verification queue
 npm run visa:coverage

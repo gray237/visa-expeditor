@@ -12,7 +12,7 @@
     "govFeeUsd": null,
     "applyUrl": "https://icp.gov.ae/en/",
     "sourceUrl": "https://www.visitdubai.com/en/plan-your-trip/visa-information",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Dubai Department of Economy and Tourism (Visit Dubai) — visa requirements by nationality",
@@ -21,7 +21,6 @@
     "sourceRequirement": "evisa",
     "lastChanged": "2026-10-09",
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
@@ -32,7 +31,9 @@
     },
     "passportValidityRule": "6-months-on-arrival",
     "visaTypeId": "tourist-evisa-30",
-    "visaTypeName": "Single-entry tourist visa — 30 days"
+    "visaTypeName": "Single-entry tourist visa — 30 days",
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -47,7 +48,7 @@
     "govFeeUsd": null,
     "applyUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600",
     "sourceUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Department of Home Affairs — Visitor visa (subclass 600): open to any genuine visitor; ETA (601) and eVisitor (651) only for listed passports",
@@ -56,7 +57,6 @@
     "sourceRequirement": "evisa",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
@@ -67,7 +67,9 @@
     },
     "passportValidityRule": "valid-for-stay",
     "visaTypeId": "visitor-600",
-    "visaTypeName": "Visitor visa (subclass 600)"
+    "visaTypeName": "Visitor visa (subclass 600)",
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -82,7 +84,7 @@
     "govFeeUsd": null,
     "applyUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
     "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/facts.html",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "IRCC — Electronic travel authorization (eTA): find out if you can apply",
@@ -91,7 +93,6 @@
     "sourceRequirement": "eta",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
@@ -102,7 +103,9 @@
     },
     "passportValidityRule": "other",
     "visaTypeId": "eta",
-    "visaTypeName": "Electronic Travel Authorization (eTA)"
+    "visaTypeName": "Electronic Travel Authorization (eTA)",
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -117,7 +120,7 @@
     "govFeeUsd": null,
     "applyUrl": null,
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Regulation (EU) 2018/1806 listing visa-required and visa-exempt nationalities, consolidated text — EUR-Lex",
@@ -126,14 +129,15 @@
     "sourceRequirement": "visa-free",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
     "govFee": null,
     "passportValidityRule": "3-months-beyond-departure",
     "visaTypeId": null,
-    "visaTypeName": null
+    "visaTypeName": null,
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -148,7 +152,7 @@
     "govFeeUsd": null,
     "applyUrl": null,
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Regulation (EU) 2018/1806 listing visa-required and visa-exempt nationalities, consolidated text — EUR-Lex",
@@ -157,14 +161,15 @@
     "sourceRequirement": "visa-free",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
     "govFee": null,
     "passportValidityRule": "3-months-beyond-departure",
     "visaTypeId": null,
-    "visaTypeName": null
+    "visaTypeName": null,
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -179,7 +184,7 @@
     "govFeeUsd": null,
     "applyUrl": null,
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Regulation (EU) 2018/1806 listing visa-required and visa-exempt nationalities, consolidated text — EUR-Lex",
@@ -188,14 +193,15 @@
     "sourceRequirement": "visa-free",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
     "govFee": null,
     "passportValidityRule": "3-months-beyond-departure",
     "visaTypeId": null,
-    "visaTypeName": null
+    "visaTypeName": null,
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -210,7 +216,7 @@
     "govFeeUsd": null,
     "applyUrl": null,
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Regulation (EU) 2018/1806 listing visa-required and visa-exempt nationalities, consolidated text — EUR-Lex",
@@ -219,14 +225,15 @@
     "sourceRequirement": "visa-free",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
     "govFee": null,
     "passportValidityRule": "3-months-beyond-departure",
     "visaTypeId": null,
-    "visaTypeName": null
+    "visaTypeName": null,
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -241,7 +248,7 @@
     "govFeeUsd": null,
     "applyUrl": "https://www.gov.uk/eta",
     "sourceUrl": "https://www.gov.uk/eta",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "GOV.UK — Electronic travel authorisation (ETA)",
@@ -250,7 +257,6 @@
     "sourceRequirement": "eta",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
@@ -261,7 +267,9 @@
     },
     "passportValidityRule": "valid-for-stay",
     "visaTypeId": "eta",
-    "visaTypeName": "Electronic Travel Authorisation (ETA)"
+    "visaTypeName": "Electronic Travel Authorisation (ETA)",
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -276,7 +284,7 @@
     "govFeeUsd": null,
     "applyUrl": null,
     "sourceUrl": "https://www.irishimmigration.ie/coming-to-visit-ireland/visit-ireland-travel-path/",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Irish Immigration Service — visa and non-visa required nationalities",
@@ -285,14 +293,15 @@
     "sourceRequirement": "visa-free",
     "lastChanged": "2026-10-06",
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
     "govFee": null,
     "passportValidityRule": "other",
     "visaTypeId": null,
-    "visaTypeName": null
+    "visaTypeName": null,
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -307,7 +316,7 @@
     "govFeeUsd": null,
     "applyUrl": null,
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Regulation (EU) 2018/1806 listing visa-required and visa-exempt nationalities, consolidated text — EUR-Lex",
@@ -316,14 +325,15 @@
     "sourceRequirement": "visa-free",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
     "govFee": null,
     "passportValidityRule": "3-months-beyond-departure",
     "visaTypeId": null,
-    "visaTypeName": null
+    "visaTypeName": null,
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -342,7 +352,7 @@
     "govFeeUsd": null,
     "applyUrl": "https://www.mofa.go.jp/j_info/visit/visa/index.html",
     "sourceUrl": "https://www.mofa.go.jp/j_info/visit/visa/index.html",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Ministry of Foreign Affairs of Japan — Visa (Short-Term Stay: \"All nationals of the countries and regions listed below require a visa to enter Japan\", including \"Other Nationalities\")",
@@ -351,7 +361,6 @@
     "sourceRequirement": "embassy-visa",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
@@ -362,7 +371,9 @@
     },
     "passportValidityRule": "valid-for-stay",
     "visaTypeId": "short-term-single",
-    "visaTypeName": "Short-Term Stay Visa — Single Entry"
+    "visaTypeName": "Short-Term Stay Visa — Single Entry",
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -377,7 +388,7 @@
     "govFeeUsd": null,
     "applyUrl": "https://www.k-eta.go.kr/",
     "sourceUrl": "https://www.k-eta.go.kr/portal/guide/viewetaalification.do",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "K-ETA — Eligible countries and allowed period of stay",
@@ -386,7 +397,6 @@
     "sourceRequirement": "eta",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
@@ -397,7 +407,9 @@
     },
     "passportValidityRule": "valid-for-stay",
     "visaTypeId": "k-eta",
-    "visaTypeName": "K-ETA (Korea Electronic Travel Authorization)"
+    "visaTypeName": "K-ETA (Korea Electronic Travel Authorization)",
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -412,7 +424,7 @@
     "govFeeUsd": null,
     "applyUrl": "https://consulmex.sre.gob.mx/",
     "sourceUrl": "https://www.gob.mx/inm/documentos/paises-y-regiones-que-requieren-visa-para-viajar-a-mexico",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "INM — Países y regiones que requieren visa para viajar a México (list of nationalities that need a visa under any entry condition)",
@@ -421,14 +433,15 @@
     "sourceRequirement": "embassy-visa",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
     "govFee": null,
     "passportValidityRule": "other",
     "visaTypeId": "visitor-visa",
-    "visaTypeName": "Visitor Visa Without Permission to Work (Visa de Visitante)"
+    "visaTypeName": "Visitor Visa Without Permission to Work (Visa de Visitante)",
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -443,7 +456,7 @@
     "govFeeUsd": null,
     "applyUrl": null,
     "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018R1806-20251230",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Regulation (EU) 2018/1806 listing visa-required and visa-exempt nationalities, consolidated text — EUR-Lex",
@@ -452,14 +465,15 @@
     "sourceRequirement": "visa-free",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
     "govFee": null,
     "passportValidityRule": "3-months-beyond-departure",
     "visaTypeId": null,
-    "visaTypeName": null
+    "visaTypeName": null,
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -474,7 +488,7 @@
     "govFeeUsd": null,
     "applyUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/visitor-visa",
     "sourceUrl": "https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Immigration New Zealand — NZeTA and visa-waiver countries",
@@ -483,7 +497,6 @@
     "sourceRequirement": "evisa",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
@@ -494,7 +507,9 @@
     },
     "passportValidityRule": "3-months-beyond-departure",
     "visaTypeId": "visitor-visa",
-    "visaTypeName": "Visitor Visa"
+    "visaTypeName": "Visitor Visa",
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -509,7 +524,7 @@
     "govFeeUsd": null,
     "applyUrl": null,
     "sourceUrl": "https://canberra.mfa.gov.sg/consular-services/visa-information/",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Singapore High Commission in Canberra (MFA) — Visa information: \"If your travel document is issued from a country or region that is not listed above (ie Australia), you do not require a visa\"",
@@ -518,14 +533,15 @@
     "sourceRequirement": "visa-free",
     "lastChanged": null,
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
     "govFee": null,
     "passportValidityRule": "6-months-on-arrival",
     "visaTypeId": null,
-    "visaTypeName": null
+    "visaTypeName": null,
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   },
   {
     "passport": "WS",
@@ -540,7 +556,7 @@
     "govFeeUsd": null,
     "applyUrl": "https://www.thaievisa.go.th/",
     "sourceUrl": "https://washingtondc.thaiembassy.org/en/page/visaexempt-voajul2024",
-    "lastVerified": "2026-10-13",
+    "lastVerified": null,
     "confidence": "imported",
     "notesKey": "importedDataset",
     "sourceName": "Royal Thai Embassy, Washington D.C. — New Visa Exemption and Visa on Arrival to Thailand (summary adapted from the Ministry of Foreign Affairs, effective 15 September 2026, information as of 31 August 2026)",
@@ -549,7 +565,6 @@
     "sourceRequirement": "evisa",
     "lastChanged": "2026-10-07",
     "datasetVersion": "travelrequirements@1.3.0+a566cc4",
-    "importedAt": "2026-11-14",
     "extendableDays": null,
     "validUntil": null,
     "stayWindow": null,
@@ -560,6 +575,8 @@
     },
     "passportValidityRule": "6-months-on-arrival",
     "visaTypeId": "tourist-evisa-single",
-    "visaTypeName": "Tourist Visa (TR) — single entry"
+    "visaTypeName": "Tourist Visa (TR) — single entry",
+    "sourceVerifiedOn": "2026-10-13",
+    "importedOn": "2026-11-14"
   }
 ]

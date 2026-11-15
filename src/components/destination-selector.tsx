@@ -4,7 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Search } from "lucide-react";
 import * as Flags from "country-flag-icons/react/3x2";
-import { localizedCountries, POPULAR_COUNTRY_CODES } from "@/lib/countries";
+import {
+  destinationCountries,
+  POPULAR_DESTINATION_CODES,
+} from "@/lib/countries";
 
 function CountryFlag({ code }: { code: string }) {
   const Flag = Flags[code as keyof typeof Flags];
@@ -38,9 +41,9 @@ export function DestinationSelector({
     return () => document.removeEventListener("mousedown", handleOutside);
   }, []);
 
-  const countries = localizedCountries(locale);
+  const countries = destinationCountries(locale);
   const selected = countries.find((c) => c.code === value);
-  const popular = countries.filter((c) => POPULAR_COUNTRY_CODES.includes(c.code));
+  const popular = countries.filter((c) => POPULAR_DESTINATION_CODES.includes(c.code));
   const list = query
     ? countries.filter((c) => c.name.toLowerCase().includes(query.toLowerCase()))
     : popular;
@@ -59,13 +62,14 @@ export function DestinationSelector({
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-controls="destination-options"
+        aria-label={`${t("myDestination")} ${selected ? selected.name : t("whereGoing")}`}
         className="flex w-full items-center gap-2 px-2 py-1.5 text-left"
       >
-        <Search className="h-4 w-4 shrink-0 text-[#161B22]/40" />
+        <Search className="h-4 w-4 shrink-0 text-[#161B22]/70" />
         <span className="flex-1 overflow-hidden">
-          <span className="block font-mono text-[10px] uppercase tracking-wider text-[#161B22]/40">
+          <span className="block font-mono text-[10px] uppercase tracking-wider text-[#161B22]/70">
             {t("myDestination")}
-          </span>
+          </span>{" "}
           <span className="block truncate text-sm text-[#161B22]">
             {selected ? selected.name : t("whereGoing")}
           </span>
@@ -75,7 +79,7 @@ export function DestinationSelector({
       {open && (
         <div className="absolute left-0 top-full z-50 mt-2 w-72 rounded-2xl border border-[#0F2444]/10 bg-white p-3 shadow-xl dark:border-white/10 dark:bg-[#1a1b20]">
           <div className="flex items-center gap-2 rounded-xl border border-[#0F2444]/10 px-3 py-2 dark:border-white/10">
-            <Search className="h-4 w-4 shrink-0 text-[#161B22]/40 dark:text-[#F5F6F4]/40" />
+            <Search className="h-4 w-4 shrink-0 text-[#161B22]/70 dark:text-[#F5F6F4]/40" />
             <input
               autoFocus
               type="search"
@@ -103,7 +107,7 @@ export function DestinationSelector({
           </div>
 
           {!query && (
-            <p className="mb-1 mt-3 px-1 font-mono text-[10px] uppercase tracking-wider text-[#161B22]/40 dark:text-[#F5F6F4]/40">
+            <p className="mb-1 mt-3 px-1 font-mono text-[10px] uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/40">
               {t("popular")}
             </p>
           )}
@@ -128,7 +132,7 @@ export function DestinationSelector({
               </button>
             ))}
             {list.length === 0 && (
-              <p className="p-4 text-center text-sm text-[#161B22]/50 dark:text-[#F5F6F4]/50">
+              <p className="p-4 text-center text-sm text-[#161B22]/70 dark:text-[#F5F6F4]/50">
                 {t("noMatches")}
               </p>
             )}

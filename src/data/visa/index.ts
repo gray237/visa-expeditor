@@ -1,35 +1,62 @@
-import australia from "./AU.json";
-import canada from "./CA.json";
-import unitedKingdom from "./GB.json";
-import unitedStates from "./US.json";
+import summary from "./summary.generated.json";
 import sourceMetadata from "./source.json";
-import { VisaDatasetSchema, type VisaRecord } from "./schema.mjs";
+import type { VisaConfidence, VisaStatus } from "./schema.mjs";
 import { DESTINATIONS } from "@/lib/destinations";
 
 export const VISA_DATA_SOURCE = sourceMetadata;
+export const VISA_SUMMARY_SOURCE = summary.generatedFrom;
+export const VISA_PASSPORT_CODES: string[] = summary.passports;
+export const VISA_DESTINATION_CODES: string[] = summary.destinations;
+export const VISA_DESTINATIONS_COUNT = VISA_DESTINATION_CODES.length;
 
-export const VISA_DATASETS: Record<string, VisaRecord[]> = {
-  US: VisaDatasetSchema.parse(unitedStates),
-  GB: VisaDatasetSchema.parse(unitedKingdom),
-  CA: VisaDatasetSchema.parse(canada),
-  AU: VisaDatasetSchema.parse(australia),
+export type VisaSummaryRecord = {
+  passport: string;
+  destination: string;
+  purpose: "tourism";
+  status: VisaStatus;
+  maxStayDays: number | null;
+  confidence: VisaConfidence;
+  lastVerified: string | null;
+  sourceVerifiedOn: string | null;
+  importedOn: string | null;
 };
 
-export const VISA_RECORDS = Object.values(VISA_DATASETS).flat();
-export const VISA_DESTINATIONS_COUNT = DESTINATIONS.length;
+type StoredSummaryRecord = Omit<
+  VisaSummaryRecord,
+  "passport" | "destination" | "purpose"
+>;
+
+const SUMMARY_RECORDS = summary.records as unknown as Record<
+  string,
+  Record<string, StoredSummaryRecord>
+>;
+
+const recordsByPassport = new Map<string, VisaSummaryRecord[]>();
 
 export function visaRecordsForPassport(passport: string) {
-  return VISA_DATASETS[passport.toUpperCase()] ?? [];
+  const code = passport.toUpperCase();
+  const cached = recordsByPassport.get(code);
+  if (cached) return cached;
+
+  const destinations = SUMMARY_RECORDS[code] ?? {};
+  const records = Object.entries(destinations).map(([destination, record]) => ({
+    passport: code,
+    destination,
+    purpose: "tourism" as const,
+    ...record,
+  }));
+  recordsByPassport.set(code, records);
+  return records;
 }
 
 export function findVisaRecord(
   passport: string,
   destination: string,
-  purpose: VisaRecord["purpose"] = "tourism",
+  purpose: VisaSummaryRecord["purpose"] = "tourism",
 ) {
+  if (purpose !== "tourism") return undefined;
   return visaRecordsForPassport(passport).find(
-    (record) =>
-      record.destination === destination.toUpperCase() && record.purpose === purpose,
+    (record) => record.destination === destination.toUpperCase(),
   );
 }
 

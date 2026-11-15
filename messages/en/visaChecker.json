@@ -56,7 +56,8 @@
   "sampleBadge": "Sample data",
   "verifiedBadge": "Verified {date}",
   "sampleNotice": "Sample data only. Entries have not been independently verified and may not reflect current rules. Confirm with the destination's official government source before making travel plans.",
-  "disclaimer": "General reference only; not legal or immigration advice. Entry decisions are made by government authorities.",
+  "disclaimer": "Visa and entry requirements can change without notice. Visa Expeditor summarises official sources for general guidance only. The official source and the destination's border authorities are the final authority. Always confirm before booking or travelling.",
+  "notAdmittedNotice": "The dataset records entry as not permitted. This status needs manual review before you make plans: check the official source and contact the destination's authorities. Do not rely on this page alone.",
   "maximumStay": "Maximum stay: {days} days",
   "emptyHeading": "Choose a destination to view entry requirements",
   "emptyBody": "Browse the destinations below or choose one above. Confirm all requirements with official sources before travel.",
@@ -86,7 +87,8 @@
   "datasetBadge": "Official-source dataset",
   "importedNotice": "Compiled from official sources by TravelRequirements.info and mapped by Visa Expeditor. Imported rows were checked against the linked source by the dataset provider, but Visa Expeditor has not independently verified every row. The official source is the authority.",
   "verifiedNotice": "Independently verified by Visa Expeditor against the linked official source.",
-  "attribution": "Imported data: TravelRequirements.info Entry Requirements Dataset, AXG Sp. z o.o. — CC BY 4.0. Modified for Visa Expeditor; not endorsed by the publisher.",
+  "attribution": "TravelRequirements.info — Entry Requirements Dataset, AXG Sp. z o.o., https://travelrequirements.info/data/ (CC BY 4.0). Visa Expeditor maps this dataset into its own schema, subsets it to supported destinations, and adds its own verification labels. Visa Expeditor is not endorsed by AXG Sp. z o.o. or TravelRequirements.info.",
   "importedBadgeShort": "Source-verified",
-  "verifiedBadgeShort": "Independently verified"
+  "verifiedBadgeShort": "Independently verified",
+  "notIndependentlyVerified": "Not independently verified"
 }

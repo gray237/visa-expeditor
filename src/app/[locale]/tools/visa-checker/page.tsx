@@ -7,12 +7,16 @@ import { Link } from "@/i18n/navigation";
 import { VisaCheckerSearch } from "@/components/visa-checker-search";
 import { DESTINATIONS, PASSPORT_OVERVIEW_CODES } from "@/lib/destinations";
 import { DESTINATIONS_WITH_GUIDES } from "@/lib/destination-guides";
-import { COUNTRY_CODES, fullCountryName, localizedCountries } from "@/lib/countries";
+import {
+  DESTINATION_CODES,
+  destinationCountries,
+  fullCountryName,
+} from "@/lib/countries";
 import {
   findVisaRecord,
   getVisaStats,
   visaRecordsForPassport,
-} from "@/data/visa";
+} from "@/data/visa/full";
 import type { VisaStatus } from "@/data/visa/schema.mjs";
 import { routing } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
@@ -24,8 +28,8 @@ const ELECTRONIC_STATUSES: VisaStatus[] = ["evisa", "eta", "visa_on_arrival"];
 function resolveDestinationCode(value: string, locale: string) {
   const code = value.trim().toUpperCase();
   return (
-    COUNTRY_CODES.find((countryCode) => countryCode === code) ??
-    localizedCountries(locale).find(
+    DESTINATION_CODES.find((countryCode) => countryCode === code) ??
+    destinationCountries(locale).find(
       (country) => country.name.toLocaleLowerCase(locale) === value.trim().toLocaleLowerCase(locale),
     )?.code ??
     code
@@ -81,10 +85,7 @@ function confidenceBadge(
   if (record.confidence === "verified" && record.lastVerified) {
     return t("verifiedBadge", { date: record.lastVerified });
   }
-  if (record.confidence === "imported" && record.lastVerified) {
-    return t("importedBadge", { date: record.lastVerified });
-  }
-  return t("sampleBadge");
+  return t("notIndependentlyVerified");
 }
 
 export default async function VisaCheckerPage({
@@ -103,7 +104,9 @@ export default async function VisaCheckerPage({
   const passport = requestedPassport.toUpperCase();
   const purpose = PURPOSES.find((value) => value === requestedPurpose) ?? "tourism";
   const destinationCode = resolveDestinationCode(to, locale);
-  const knownDestinationCode = COUNTRY_CODES.find((code) => code === destinationCode);
+  const knownDestinationCode = DESTINATION_CODES.find(
+    (code) => code === destinationCode,
+  );
   const destination = DESTINATIONS.find((item) => item.countryCode === destinationCode);
   const record =
     knownDestinationCode && passport.length === 2
@@ -173,7 +176,7 @@ export default async function VisaCheckerPage({
       <div className="mx-auto max-w-350 px-6">
         <nav
           aria-label={t("breadcrumbs.label")}
-          className="flex items-center gap-2 font-body text-sm text-[#161B22]/55 dark:text-[#F5F6F4]/55"
+          className="flex items-center gap-2 font-body text-sm text-[#161B22]/70 dark:text-[#F5F6F4]/55"
         >
           <Link href="/tools" className="underline-offset-4 hover:underline">
             {t("breadcrumbs.tools")}
@@ -184,7 +187,7 @@ export default async function VisaCheckerPage({
 
         <div className="mt-6 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">
-            <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#8A6D3F]">
+            <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#836539]">
               {t("eyebrow")}
             </p>
             <h1 className="mt-2 font-display text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
@@ -222,7 +225,7 @@ export default async function VisaCheckerPage({
           >
             {t("stats.heading")}
           </h2>
-          <p className="mt-1 text-sm text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+          <p className="mt-1 text-sm text-[#161B22]/70 dark:text-[#F5F6F4]/60">
             {t("stats.coverage", { covered: stats.covered, total: stats.total })}
           </p>
           <div className="mt-5 grid gap-4 sm:grid-cols-3">
@@ -243,7 +246,7 @@ export default async function VisaCheckerPage({
                 <h3 className="mt-1 text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                   {t(`stats.${key}`)}
                 </h3>
-                <p className="mt-1 text-xs leading-relaxed text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+                <p className="mt-1 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
                   {t(`stats.${key}Description`)}
                 </p>
               </div>
@@ -260,7 +263,7 @@ export default async function VisaCheckerPage({
               >
                 {t("list.heading")}
               </h2>
-              <p className="mt-1 text-sm text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+              <p className="mt-1 text-sm text-[#161B22]/70 dark:text-[#F5F6F4]/60">
                 {t("list.description")}
               </p>
             </div>
@@ -295,7 +298,7 @@ export default async function VisaCheckerPage({
                             </span>
                           </div>
                           {item.maxStayDays !== null && (
-                            <p className="mt-2 text-xs text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+                            <p className="mt-2 text-xs text-[#161B22]/70 dark:text-[#F5F6F4]/60">
                               {t("maximumStay", { days: item.maxStayDays })}
                             </p>
                           )}
@@ -310,7 +313,7 @@ export default async function VisaCheckerPage({
               ))}
             </div>
           ) : (
-            <p className="mt-4 rounded-2xl border border-[#0F2444]/10 p-5 text-sm text-[#161B22]/65 dark:border-white/10 dark:text-[#F5F6F4]/65">
+            <p className="mt-4 rounded-2xl border border-[#0F2444]/10 p-5 text-sm text-[#161B22]/70 dark:border-white/10 dark:text-[#F5F6F4]/65">
               {t("list.noEntries")}
             </p>
           )}
@@ -321,11 +324,11 @@ export default async function VisaCheckerPage({
           <p className="mt-2 text-sm leading-relaxed text-[#161B22]/75 dark:text-[#F5F6F4]/75">
             {dataNotice}
           </p>
-          <p className="mt-2 text-xs leading-relaxed text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+          <p className="mt-2 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
             {t("disclaimer")}
           </p>
           {hasImported && (
-            <p className="mt-2 text-xs leading-relaxed text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+            <p className="mt-2 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
               {t("attribution")}{" "}
               <a
                 href="https://travelrequirements.info/data/"
@@ -341,7 +344,7 @@ export default async function VisaCheckerPage({
 
         {hasPassportOverview && (
           <section className="mt-10" aria-labelledby="travel-guide-heading">
-            <p className="font-mono text-[11px] uppercase tracking-wider text-[#8A6D3F]">
+            <p className="font-mono text-[11px] uppercase tracking-wider text-[#836539]">
               {tp(`${passport}.eyebrow`)}
             </p>
             <h2
@@ -377,7 +380,7 @@ export default async function VisaCheckerPage({
               <h2 className="mt-4 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                 {t("emptyHeading")}
               </h2>
-              <p className="mt-2 text-sm leading-relaxed text-[#161B22]/65 dark:text-[#F5F6F4]/65">
+              <p className="mt-2 text-sm leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/65">
                 {t("emptyBody")}
               </p>
             </div>
@@ -387,7 +390,7 @@ export default async function VisaCheckerPage({
               <h2 className="mt-4 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                 {t("notFoundHeading")}
               </h2>
-              <p className="mt-2 text-sm leading-relaxed text-[#161B22]/65 dark:text-[#F5F6F4]/65">
+              <p className="mt-2 text-sm leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/65">
                 {t("notFoundBody")}
               </p>
             </div>
@@ -399,12 +402,12 @@ export default async function VisaCheckerPage({
                   country: fullCountryName(passport, locale),
                 })}
               </h2>
-              <p className="mt-2 text-sm leading-relaxed text-[#161B22]/65 dark:text-[#F5F6F4]/65">
+              <p className="mt-2 text-sm leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/65">
                 {t("noDataBody")}
               </p>
               <Link
                 href={`/start?passport=${passport}&to=${knownDestinationCode}&purpose=${purpose}`}
-                className="mt-6 inline-flex items-center justify-center rounded-2xl bg-[#0F2444] px-6 py-3.5 text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
+                className="mt-6 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#0F2444] px-6 py-3.5 text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
               >
                 {t("talkToSpecialist")}
               </Link>
@@ -430,7 +433,7 @@ export default async function VisaCheckerPage({
 
                 <dl className="mt-6 grid gap-4 border-t border-[#0F2444]/10 pt-5 sm:grid-cols-2 dark:border-white/10">
                   <div>
-                    <dt className="text-xs uppercase tracking-wider text-[#161B22]/50 dark:text-[#F5F6F4]/50">
+                    <dt className="text-xs uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/50">
                       {t("result.statusLabel")}
                     </dt>
                     <dd className="mt-1 font-semibold text-[#161B22] dark:text-[#F5F6F4]">
@@ -439,7 +442,7 @@ export default async function VisaCheckerPage({
                   </div>
                   {record.maxStayDays !== null && (
                     <div>
-                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/50 dark:text-[#F5F6F4]/50">
+                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/50">
                         {t("result.maximumStayLabel")}
                       </dt>
                       <dd className="mt-1 font-semibold text-[#161B22] dark:text-[#F5F6F4]">
@@ -449,7 +452,7 @@ export default async function VisaCheckerPage({
                   )}
                   {record.govFee && (
                     <div>
-                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/50 dark:text-[#F5F6F4]/50">
+                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/50">
                         {t("result.feeLabel")}
                       </dt>
                       <dd className="mt-1 font-semibold text-[#161B22] dark:text-[#F5F6F4]">
@@ -461,24 +464,24 @@ export default async function VisaCheckerPage({
                       </dd>
                     </div>
                   )}
-                  {record.lastVerified && (
+                  {(record.lastVerified || record.sourceVerifiedOn) && (
                     <div>
-                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/50 dark:text-[#F5F6F4]/50">
+                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/50">
                         {t("result.lastVerifiedLabel")}
                       </dt>
                       <dd className="mt-1 font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                        {record.lastVerified}
+                        {record.lastVerified ?? record.sourceVerifiedOn}
                       </dd>
                     </div>
                   )}
                   {record.sourceUrl && (
                     <div>
-                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/50 dark:text-[#F5F6F4]/50">
+                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/50">
                         {t("result.sourceLabel")}
                       </dt>
                       <dd className="mt-1">
                         {record.sourceName && (
-                          <p className="mb-1 text-xs leading-relaxed text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+                          <p className="mb-1 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
                             {record.sourceName}
                           </p>
                         )}
@@ -495,12 +498,20 @@ export default async function VisaCheckerPage({
                   )}
                 </dl>
 
-                <Link
-                  href={`/start?passport=${passport}&to=${knownDestinationCode}&purpose=${purpose}`}
-                  className="mt-7 flex items-center justify-center rounded-2xl bg-[#0F2444] px-6 py-3.5 text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
-                >
-                  {t("startApplication")}
-                </Link>
+                {record.status === "not_admitted" && (
+                  <p className="mt-6 rounded-2xl border border-[#B23B3B]/25 bg-[#B23B3B]/5 p-4 text-sm leading-relaxed text-[#161B22]/75 dark:text-[#F5F6F4]/75">
+                    {t("notAdmittedNotice")}
+                  </p>
+                )}
+
+                {record.status !== "not_admitted" && (
+                  <Link
+                    href={`/start?passport=${passport}&to=${knownDestinationCode}&purpose=${purpose}`}
+                    className="mt-7 flex items-center justify-center gap-2 rounded-2xl bg-[#0F2444] px-6 py-3.5 text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
+                  >
+                    {t("startApplication")}
+                  </Link>
+                )}
               </article>
 
               <article className="rounded-3xl border border-[#0F2444]/10 bg-white p-7 dark:border-white/10 dark:bg-[#1a1b20]">
@@ -544,7 +555,7 @@ export default async function VisaCheckerPage({
                         <p className="text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                           {attraction.name}
                         </p>
-                        <p className="mt-1 text-xs text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+                        <p className="mt-1 text-xs text-[#161B22]/70 dark:text-[#F5F6F4]/60">
                           {attraction.description}
                         </p>
                       </div>

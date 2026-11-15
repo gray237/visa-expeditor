@@ -42,6 +42,7 @@ export function CtaCarousel() {
         <div
           key={slide.key}
           aria-hidden={i !== active}
+          inert={i !== active}
           className={`absolute inset-0 flex flex-col items-center justify-center px-6 text-center transition-opacity duration-700 ease-out ${
             i === active ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
@@ -80,17 +81,24 @@ export function CtaCarousel() {
         </div>
       ))}
 
-      <div className="absolute bottom-7 left-1/2 flex -translate-x-1/2 gap-2">
+      <div className="absolute bottom-7 left-1/2 flex -translate-x-1/2 gap-1">
         {SLIDES.map((slide, i) => (
           <button
             key={slide.key}
             type="button"
             onClick={() => setActive(i)}
             aria-label={tc("slide", { number: i + 1 })}
-            className={`h-2 rounded-full transition-all ${
-              i === active ? "w-6 bg-[#B8925A]" : "w-2 bg-white/25 hover:bg-white/40"
-            }`}
-          />
+            aria-current={i === active}
+            className="group flex h-6 min-w-6 items-center justify-center rounded-full px-1"
+          >
+            <span
+              className={`block h-2 rounded-full transition-all ${
+                i === active
+                  ? "w-6 bg-[#B8925A]"
+                  : "w-2 bg-white/40 group-hover:bg-white/60"
+              }`}
+            />
+          </button>
         ))}
       </div>
     </section>

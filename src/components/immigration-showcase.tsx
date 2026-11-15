@@ -7,6 +7,7 @@ import * as Flags from "country-flag-icons/react/3x2";
 import { Link } from "@/i18n/navigation";
 import { IMMIGRATION_SERVICES } from "@/lib/immigration-programs";
 import { getImage } from "@/lib/image-slots";
+import { ComingSoonBadge } from "@/components/coming-soon-badge";
 
 function PanelFlag({ code }: { code: string }) {
   const Flag = Flags[code as keyof typeof Flags];
@@ -23,7 +24,6 @@ const DRAG_CLICK_THRESHOLD = 6;
 
 export function ImmigrationShowcase() {
   const t = useTranslations("immigrationShowcase");
-  const tCommon = useTranslations("common");
   const viewportRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const offsetRef = useRef(0);
@@ -125,7 +125,7 @@ export function ImmigrationShowcase() {
     <section className="relative py-10 sm:py-18">
       <div className="mx-auto max-w-350 px-6">
         <div className="max-w-xl">
-          <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#B8925A]">
+          <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#836539]">
             {t("eyebrow")}
           </p>
           <h2 className="mt-2 font-display text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
@@ -197,11 +197,7 @@ export function ImmigrationShowcase() {
                 </div>
 
                 <div className="relative z-20 mt-auto p-5 sm:p-6">
-                  {service.soon && (
-                    <span className="mb-2 inline-flex rounded-full bg-[#B8925A]/20 px-2.5 py-1 font-body text-[11px] font-semibold text-[#F5E6CB] ring-1 ring-[#B8925A]/40">
-                      {tCommon("comingSoon")}
-                    </span>
-                  )}
+                  {service.soon && <ComingSoonBadge variant="dark" className="mb-2" />}
                   <p className="font-body text-[13px] leading-relaxed text-[#F5F6F4]/85 sm:text-sm">
                     {t(`items.${service.key}.description`)}
                   </p>

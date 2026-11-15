@@ -52,7 +52,8 @@ export const VisaRecordSchema = z
     sourceRequirement: z.string().min(1).nullable().optional(),
     lastChanged: z.iso.date().nullable().optional(),
     datasetVersion: z.string().min(1).nullable().optional(),
-    importedAt: z.iso.date().nullable().optional(),
+    importedOn: z.iso.date().nullable().optional(),
+    sourceVerifiedOn: z.iso.date().nullable().optional(),
     extendableDays: nullablePositiveInteger.optional(),
     validUntil: z.iso.date().nullable().optional(),
     stayWindow: z
@@ -127,11 +128,19 @@ export const VisaRecordSchema = z
           message: "Imported records require a source URL.",
         });
       }
-      if (!record.lastVerified) {
+      if (record.lastVerified) {
         context.addIssue({
           code: "custom",
           path: ["lastVerified"],
-          message: "Imported records require a source verification date.",
+          message:
+            "Imported records must not carry lastVerified; use sourceVerifiedOn and importedOn.",
+        });
+      }
+      if (!record.sourceVerifiedOn) {
+        context.addIssue({
+          code: "custom",
+          path: ["sourceVerifiedOn"],
+          message: "Imported records require the provider's source verification date.",
         });
       }
       if (!record.datasetVersion) {
@@ -141,10 +150,10 @@ export const VisaRecordSchema = z
           message: "Imported records require a dataset version.",
         });
       }
-      if (!record.importedAt) {
+      if (!record.importedOn) {
         context.addIssue({
           code: "custom",
-          path: ["importedAt"],
+          path: ["importedOn"],
           message: "Imported records require an import date.",
         });
       }

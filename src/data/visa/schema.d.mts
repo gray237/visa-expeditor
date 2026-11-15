@@ -41,7 +41,8 @@ export interface VisaRecord {
   sourceRequirement?: string | null;
   lastChanged?: string | null;
   datasetVersion?: string | null;
-  importedAt?: string | null;
+  importedOn?: string | null;
+  sourceVerifiedOn?: string | null;
   extendableDays?: number | null;
   validUntil?: string | null;
   stayWindow?: {

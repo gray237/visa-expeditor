@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { StartApplicationForm } from "@/components/start-application-form";
-import { COUNTRY_CODES } from "@/lib/countries";
+import { COUNTRY_CODES, DESTINATION_CODES } from "@/lib/countries";
 import { routing } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
 
@@ -39,7 +39,7 @@ export default async function StartPage({
 
   const query = await searchParams;
   const passport = COUNTRY_CODES.find((code) => code === query.passport?.toUpperCase());
-  const destination = COUNTRY_CODES.find((code) => code === query.to?.toUpperCase()) ?? "";
+  const destination = DESTINATION_CODES.find((code) => code === query.to?.toUpperCase()) ?? "";
   const purpose = PURPOSES.find((value) => value === query.purpose) ?? "tourism";
   const turnstileConfigured = Boolean(
     process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim() &&
@@ -61,7 +61,7 @@ export default async function StartPage({
     <div className="bg-[#F5F6F4] py-12 sm:py-20 dark:bg-[#101115]">
       <div className="mx-auto max-w-4xl px-6">
         <div className="max-w-2xl">
-          <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#8A6D3F]">
+          <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#836539]">
             {t("eyebrow")}
           </p>
           <h1 className="mt-2 font-display text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">

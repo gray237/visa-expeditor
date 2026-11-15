@@ -38,7 +38,7 @@ export async function LegalPage({
 
       {LEGAL_DRAFT_BANNER && (
         <div className="mx-auto max-w-350 px-6 pt-6">
-          <p className="rounded-xl border border-[#B8925A]/40 bg-[#B8925A]/10 px-4 py-3 font-body text-sm text-[#8A6D3F]">
+          <p className="rounded-xl border border-[#B8925A]/40 bg-[#B8925A]/10 px-4 py-3 font-body text-sm text-[#836539]">
             {t("draftBanner")}
           </p>
         </div>

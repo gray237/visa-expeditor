@@ -32,9 +32,7 @@ export function DocumentChecklist() {
   const dataBadge = record
     ? record.confidence === "verified" && record.lastVerified
       ? tv("verifiedBadge", { date: record.lastVerified })
-      : record.confidence === "imported" && record.lastVerified
-        ? tv("importedBadge", { date: record.lastVerified })
-        : tv("sampleBadge")
+      : tv("notIndependentlyVerified")
     : null;
 
   const showEmpty = !destination;

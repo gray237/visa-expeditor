@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight, Send } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { AuthError } from "@/components/auth/auth-card";
 import { Turnstile } from "@/components/turnstile";
-import { countryName, COUNTRY_CODES } from "@/lib/countries";
+import { countryName, COUNTRY_CODES, DESTINATION_CODES } from "@/lib/countries";
 import { submitApplication, type ApplicationState } from "@/lib/start/actions";
 
 const STEPS = ["service", "traveler", "contact", "review"] as const;
@@ -161,7 +161,7 @@ export function StartApplicationForm({
               className={inputClass}
             >
               <option value="">{t("fields.chooseDestination")}</option>
-              {COUNTRY_CODES.map((code) => (
+              {DESTINATION_CODES.map((code) => (
                 <option key={code} value={code}>
                   {countryName(code, locale)}
                 </option>

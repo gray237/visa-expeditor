@@ -79,13 +79,13 @@ export function Services() {
     <section className="py-10 sm:py-18">
       <div className="mx-auto max-w-350 px-6">
         <div className="max-w-xl">
-          <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#B8925A]">
+          <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#836539]">
             {t("eyebrow")}
           </p>
           <h2 className="mt-2 font-display text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
             {t("heading")}
           </h2>
-          <p className="mt-3 font-body text-[#161B22]/60 dark:text-[#F5F6F4]/70">
+          <p className="mt-3 font-body text-[#161B22]/70 dark:text-[#F5F6F4]/70">
             {t("subheading")}
           </p>
         </div>

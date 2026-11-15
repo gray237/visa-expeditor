@@ -14,7 +14,6 @@ export interface ComingSoonRoute {
  * (P1-2). They are intentionally excluded from the sitemap.
  */
 export const COMING_SOON_ROUTES: ComingSoonRoute[] = [
-  { path: "/start", key: "start", slot: "page.about.hero" },
   { path: "/tools/passport-power", key: "toolsPassportPower", slot: "page.tools.hero" },
   { path: "/resources/guides", key: "resourcesGuides", slot: "page.resources.hero" },
   { path: "/resources/processing-times", key: "resourcesProcessingTimes", slot: "page.resources.hero" },

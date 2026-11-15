@@ -33,7 +33,7 @@ export function DestinationGrid() {
             <h2 className="font-display text-3xl font-semibold text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
               {t("heading")}
             </h2>
-            <p className="mt-2 font-body text-[#161B22]/60 dark:text-[#F5F6F4]/70">
+            <p className="mt-2 font-body text-[#161B22]/70 dark:text-[#F5F6F4]/70">
               {t("subheading", { country: fullCountryName(passportCode, locale) })}
             </p>
           </div>
@@ -75,9 +75,7 @@ export function DestinationGrid() {
                       <span className="rounded-full bg-white/15 px-2 py-1 font-body text-xs text-white">
                         {requirement.confidence === "verified"
                           ? tv("verifiedBadgeShort")
-                          : requirement.confidence === "imported"
-                            ? tv("importedBadgeShort")
-                            : tv("sampleBadge")}
+                          : tv("notIndependentlyVerified")}
                       </span>
                     </div>
                   ) : (

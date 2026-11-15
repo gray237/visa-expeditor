@@ -12,10 +12,6 @@
     "home": "Accueil"
   },
   "items": {
-    "start": {
-      "title": "Commencer",
-      "description": "Le formulaire guidé de demande est en cours de préparation."
-    },
     "toolsIdp": {
       "title": "Permis de Conduire International",
       "description": "Conseils pour demander un permis de conduire international."

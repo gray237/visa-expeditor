@@ -15,7 +15,7 @@ export function HowItWorks() {
     <section className="py-10 sm:py-18">
       <div className="mx-auto max-w-350 px-6">
         <div className="max-w-xl">
-          <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#B8925A]">
+          <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#836539]">
             {t("eyebrow")}
           </p>
           <h2 className="mt-2 font-display text-3xl font-semibold leading-tight text-[#161B22] dark:text-[#F5F6F4] sm:text-4xl">
@@ -34,7 +34,7 @@ export function HowItWorks() {
                 key={step.key}
                 className="rounded-3xl border border-[#0F2444]/10 bg-[#0F2444]/5 p-6 transition-colors dark:border-white/15 dark:bg-white/10"
               >
-                <span className="font-display text-5xl font-bold text-[#B8925A]/45 dark:text-[#B8925A]/35">
+                <span className="font-display text-5xl font-bold text-[#836539] dark:text-[#B8925A]/35">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span className="mt-3 flex h-11 w-11 items-center justify-center rounded-xl border border-[#0F2444]/10 bg-[#0F2444]/5 text-[#B8925A] dark:border-white/15 dark:bg-white/10">

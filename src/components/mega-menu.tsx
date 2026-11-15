@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import type { NavItem } from "@/lib/nav";
+import { ComingSoonBadge } from "@/components/coming-soon-badge";
 
 export function MegaMenuTrigger({ item }: { item: NavItem }) {
   const [open, setOpen] = useState(false);
@@ -86,8 +87,9 @@ export function MegaMenuTrigger({ item }: { item: NavItem }) {
                     <Icon className="h-4.5 w-4.5" strokeWidth={1.75} />
                   </span>
                   <span>
-                    <span className="block font-body text-sm font-semibold text-[#161B22]">
+                    <span className="flex flex-wrap items-center gap-2 font-body text-sm font-semibold text-[#161B22]">
                       {t(`items.${sub.key}.label`)}
+                      {sub.soon && <ComingSoonBadge />}
                     </span>
                     <span className="mt-0.5 block font-body text-[13px] text-[#161B22]/60">
                       {t(`items.${sub.key}.description`)}

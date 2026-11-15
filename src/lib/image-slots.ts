@@ -76,14 +76,14 @@ function destinationSlots(): ImageSlotDef[] {
         width: 1200,
         height: 1600,
         usage: `Destination card: ${destination.key}`,
-        launchBlocking: true,
+        launchBlocking: false,
       },
       {
         id: `destination.${destination.key}.hero` as ImageSlot,
         width: 2400,
         height: 1000,
         usage: `Destination hero: ${destination.key}`,
-        launchBlocking: true,
+        launchBlocking: false,
       }
     );
   }
@@ -101,8 +101,8 @@ function immigrationSlots(): ImageSlotDef[] {
 }
 
 export const IMAGE_SLOTS: ImageSlotDef[] = [
-  { id: "hero.background", width: 2400, height: 1350, usage: "Homepage background", launchBlocking: true },
-  { id: "og.default", width: 1200, height: 630, usage: "Default Open Graph image", launchBlocking: true },
+  { id: "hero.background", width: 2400, height: 1350, usage: "Homepage background (not rendered yet)", launchBlocking: false },
+  { id: "og.default", width: 1200, height: 630, usage: "Default Open Graph image (not rendered yet)", launchBlocking: false },
   ...pageHeroSlots(),
   ...destinationSlots(),
   ...immigrationSlots(),

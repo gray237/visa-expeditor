@@ -108,7 +108,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
             <h2 id="passport-selector-title" className="font-display text-xl font-semibold text-[#0F2444]">
               {t("selectPassport")}
             </h2>
-            <p className="mt-1 font-body text-sm text-[#161B22]/60">
+            <p className="mt-1 font-body text-sm text-[#161B22]/70">
               {t("selectPassportSubtitle")}
             </p>
           </div>
@@ -116,7 +116,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
             type="button"
             onClick={closeModal}
             aria-label={t("close")}
-            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[#161B22]/50 transition-colors hover:bg-[#0F2444]/5 hover:text-[#0F2444]"
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[#161B22]/70 transition-colors hover:bg-[#0F2444]/5 hover:text-[#0F2444]"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path
@@ -145,7 +145,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
               height="16"
               viewBox="0 0 16 16"
               fill="none"
-              className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[#161B22]/40"
+              className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[#161B22]/70"
             >
               <circle cx="7" cy="7" r="5.25" stroke="currentColor" strokeWidth="1.5" />
               <path d="M11 11L14 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -176,7 +176,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
 
         <div className="mt-2 flex-1 overflow-y-auto px-6 pb-2">
           {!filtered && (
-            <p className="mb-1.5 mt-3 px-1 font-mono text-[11px] uppercase tracking-wider text-[#161B22]/40">
+            <p className="mb-1.5 mt-3 px-1 font-mono text-[11px] uppercase tracking-wider text-[#161B22]/70">
               {t("popular")}
             </p>
           )}
@@ -219,7 +219,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
           </ul>
 
           {filtered && filtered.length === 0 && (
-            <p className="px-3 py-8 text-center font-body text-sm text-[#161B22]/50">
+            <p className="px-3 py-8 text-center font-body text-sm text-[#161B22]/70">
               {t("noMatches")} {t("noMatchesHint")}
             </p>
           )}
@@ -304,7 +304,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
           </span>
         ) : (
           <span className="flex flex-col">
-            <span className="font-mono text-[11px] uppercase tracking-wider text-[#161B22]/50">
+            <span className="font-mono text-[11px] uppercase tracking-wider text-[#161B22]/70">
               {t("myPassport")}
             </span>
             <span className="font-body text-sm font-semibold text-[#161B22]">
@@ -312,7 +312,7 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
             </span>
           </span>
         )}
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="shrink-0 text-[#161B22]/50">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="shrink-0 text-[#161B22]/70">
           <path
             d="M2.5 4.5L6 8L9.5 4.5"
             stroke="currentColor"

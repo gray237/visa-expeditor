@@ -26,6 +26,7 @@ export type MegaMenuItem = {
   key: string;
   href: string;
   icon: LucideIcon;
+  soon?: boolean;
 };
 
 export type NavItem = {
@@ -72,7 +73,7 @@ export const NAV_ITEMS: NavItem[] = [
     href: "/tools",
     items: [
       { key: "visaChecker", href: "/tools/visa-checker", icon: Search },
-      { key: "passportPower", href: "/tools/passport-power", icon: BarChart3 },
+      { key: "passportPower", href: "/tools/passport-power", icon: BarChart3, soon: true },
       { key: "checklist", href: "/tools/checklist", icon: ClipboardCheck },
       { key: "passportValidity", href: "/tools/passport-validity", icon: CalendarCheck },
     ],
@@ -83,10 +84,10 @@ export const NAV_ITEMS: NavItem[] = [
     key: "resources",
     href: "/resources",
     items: [
-      { key: "processingTimes", href: "/resources/processing-times", icon: Clock },
-      { key: "guides", href: "/resources/guides", icon: BookOpen },
+      { key: "processingTimes", href: "/resources/processing-times", icon: Clock, soon: true },
+      { key: "guides", href: "/resources/guides", icon: BookOpen, soon: true },
       { key: "faqs", href: "/resources/faqs", icon: HelpCircle },
-      { key: "insights", href: "/insights", icon: Newspaper },
+      { key: "insights", href: "/insights", icon: Newspaper, soon: true },
     ],
     viewAllHref: "/resources",
     align: "end",

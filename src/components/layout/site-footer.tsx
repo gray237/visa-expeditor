@@ -59,7 +59,31 @@ export function SiteFooter() {
           ))}
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-[#0F2444]/10 pt-8 font-mono text-xs text-[#161B22]/60 md:flex-row">
+        <div className="mt-12 max-w-4xl border-t border-[#0F2444]/10 pt-8">
+          <p className="font-body text-xs leading-relaxed text-[#161B22]/70">
+            {t("dataAttribution")}{" "}
+            <a
+              href="https://travelrequirements.info/data/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-2 hover:text-[#0F2444]"
+            >
+              {t("dataSourceLink")}
+            </a>
+            . {t("dataModification")}{" "}
+            <a
+              href="https://creativecommons.org/licenses/by/4.0/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-2 hover:text-[#0F2444]"
+            >
+              {t("dataLicense")}
+            </a>
+            .
+          </p>
+        </div>
+
+        <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-[#0F2444]/10 pt-8 font-mono text-xs text-[#161B22]/70 md:flex-row">
           <p>{t("copyright", { year: new Date().getFullYear() })}</p>
           <div className="flex gap-6">
             <Link href="/terms" className="hover:text-[#0F2444]">

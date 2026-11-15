@@ -7,7 +7,7 @@ export default function LocaleNotFound() {
   const t = useTranslations("common");
   return (
     <div className="mx-auto max-w-3xl px-6 py-24 text-center">
-      <p className="font-mono text-sm font-semibold uppercase tracking-wider text-[#8A6D3F]">
+      <p className="font-mono text-sm font-semibold uppercase tracking-wider text-[#836539]">
         Visa Expeditor
       </p>
       <h1 className="mt-4 font-display text-4xl font-semibold text-[#161B22]">

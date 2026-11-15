@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/validate-visa-data.mjs && node scripts/build-image-manifest.mjs",
+    "predev": "node scripts/build-visa-summary.mjs && node scripts/validate-visa-data.mjs && node scripts/build-image-manifest.mjs",
     "dev": "next dev",
-    "prebuild": "node scripts/validate-visa-data.mjs && node scripts/build-image-manifest.mjs",
+    "prebuild": "node scripts/build-visa-summary.mjs && node scripts/validate-visa-data.mjs && node scripts/build-image-manifest.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
@@ -13,8 +13,12 @@
     "i18n:check": "node scripts/check-i18n.mjs",
     "visa:validate": "node scripts/validate-visa-data.mjs",
     "visa:coverage": "node scripts/visa-coverage.mjs",
+    "visa:summary": "node scripts/build-visa-summary.mjs",
     "visa:import": "node scripts/import-visa-csv.mjs",
-    "visa:import:travelrequirements": "node scripts/import-travelrequirements.mjs"
+    "visa:import:travelrequirements": "node scripts/import-travelrequirements.mjs && node scripts/build-visa-summary.mjs",
+    "launch-check": "node scripts/launch-check.mjs",
+    "images:placeholders": "node scripts/generate-placeholders.mjs",
+    "images:manifest": "node scripts/build-image-manifest.mjs"
   },
   "dependencies": {
     "@marsidev/react-turnstile": "^1.6.3",

@@ -14,7 +14,7 @@ export function Comparison() {
           <h2 className="font-display text-3xl font-semibold text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
             {t("heading")}
           </h2>
-          <p className="mt-3 font-body text-[#161B22]/60 dark:text-[#F5F6F4]/70">
+          <p className="mt-3 font-body text-[#161B22]/70 dark:text-[#F5F6F4]/70">
             {t("subheading")}
           </p>
         </div>
@@ -34,7 +34,7 @@ export function Comparison() {
                 <h3 className="font-display text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                   {t("us.title")}
                 </h3>
-                <p className="font-mono text-[10px] uppercase tracking-wider text-[#B8925A]">
+                <p className="font-mono text-[10px] uppercase tracking-wider text-[#836539]">
                   {t("us.tagline")}
                 </p>
               </div>
@@ -48,7 +48,7 @@ export function Comparison() {
                     <p className="font-body text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                       {t(`points.${key}.us.title`)}
                     </p>
-                    <p className="mt-0.5 font-body text-[13px] text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+                    <p className="mt-0.5 font-body text-[13px] text-[#161B22]/70 dark:text-[#F5F6F4]/60">
                       {t(`points.${key}.us.description`)}
                     </p>
                   </div>
@@ -58,7 +58,7 @@ export function Comparison() {
 
             <Link
               href="/start"
-              className="mt-6 flex items-center justify-center rounded-2xl bg-[#0F2444] px-6 py-3.5 font-body text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
+              className="mt-6 flex items-center justify-center gap-2 rounded-2xl bg-[#0F2444] px-6 py-3.5 font-body text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
             >
               {t("cta")}
             </Link>
@@ -74,7 +74,7 @@ export function Comparison() {
                 <h3 className="font-display text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                   {t("diy.title")}
                 </h3>
-                <p className="font-mono text-[10px] uppercase tracking-wider text-[#161B22]/40 dark:text-[#F5F6F4]/40">
+                <p className="font-mono text-[10px] uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/40">
                   {t("diy.tagline")}
                 </p>
               </div>
@@ -88,7 +88,7 @@ export function Comparison() {
                     <p className="font-body text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
                       {t(`points.${key}.diy.title`)}
                     </p>
-                    <p className="mt-0.5 font-body text-[13px] text-[#161B22]/60 dark:text-[#F5F6F4]/60">
+                    <p className="mt-0.5 font-body text-[13px] text-[#161B22]/70 dark:text-[#F5F6F4]/60">
                       {t(`points.${key}.diy.description`)}
                     </p>
                   </div>

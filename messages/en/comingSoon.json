@@ -12,10 +12,6 @@
     "home": "Home"
   },
   "items": {
-    "start": {
-      "title": "Get Started",
-      "description": "The guided application intake is being prepared."
-    },
     "toolsIdp": {
       "title": "International Driving Permit",
       "description": "Guidance on applying for an International Driving Permit."

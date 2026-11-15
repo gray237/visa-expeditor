@@ -50,7 +50,7 @@ export function VisaCheckerSearch({
       </div>
 
       <label className="flex min-w-36 flex-col gap-1 px-2 py-1.5">
-        <span className="font-mono text-[10px] uppercase tracking-wider text-[#161B22]/40">
+        <span className="font-mono text-[10px] uppercase tracking-wider text-[#161B22]/70">
           {checker("filters.purpose")}
         </span>
         <select

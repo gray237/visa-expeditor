@@ -51,9 +51,9 @@ export const resourcesHubConfig: HubRouteConfig = {
   ctaHref: "/contact",
   items: [
     { key: "faqs", href: "/resources/faqs" },
-    { key: "guides", href: "/resources/guides" },
-    { key: "processingTimes", href: "/resources/processing-times" },
-    { key: "insights", href: "/insights" },
+    { key: "guides", href: "/resources/guides", soon: true },
+    { key: "processingTimes", href: "/resources/processing-times", soon: true },
+    { key: "insights", href: "/insights", soon: true },
   ],
 };
 

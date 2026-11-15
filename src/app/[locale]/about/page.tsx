@@ -70,7 +70,7 @@ export default async function AboutPage({
           title={t("cta.title")}
           body={t("cta.body")}
           buttonLabel={t("cta.button")}
-          buttonHref="/tools/visa-checker"
+          buttonHref={aboutPageConfig.ctaHref}
         />
       </div>
     </div>

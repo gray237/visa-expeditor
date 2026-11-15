@@ -56,7 +56,8 @@
   "sampleBadge": "Données d’exemple",
   "verifiedBadge": "Vérifié le {date}",
   "sampleNotice": "Données d’exemple uniquement. Les entrées n’ont pas été vérifiées de manière indépendante et peuvent ne pas refléter les règles en vigueur. Confirmez les exigences auprès de la source officielle du gouvernement de destination avant votre voyage.",
-  "disclaimer": "Référence générale uniquement ; ne constitue pas un conseil juridique ou en immigration. Les décisions d’entrée relèvent des autorités gouvernementales.",
+  "disclaimer": "Les exigences de visa et d’entrée peuvent changer sans préavis. Visa Expeditor résume des sources officielles à titre d’orientation générale uniquement. La source officielle et les autorités frontalières de la destination font autorité. Vérifiez toujours avant de réserver ou de voyager.",
+  "notAdmittedNotice": "Le jeu de données indique que l’entrée n’est pas autorisée. Ce statut nécessite une vérification manuelle avant toute planification : consultez la source officielle et contactez les autorités de la destination. Ne vous fiez pas uniquement à cette page.",
   "maximumStay": "Durée maximale du séjour : {days} jours",
   "emptyHeading": "Choisissez une destination pour afficher les conditions d’entrée",
   "emptyBody": "Consultez les destinations ci-dessous ou choisissez-en une ci-dessus. Confirmez toutes les exigences auprès de sources officielles avant votre voyage.",
@@ -88,5 +89,6 @@
   "verifiedNotice": "Vérifié de manière indépendante par Visa Expeditor auprès de la source officielle liée.",
   "attribution": "Données importées : TravelRequirements.info Entry Requirements Dataset, AXG Sp. z o.o. — CC BY 4.0. Adapté pour Visa Expeditor ; non approuvé par l’éditeur.",
   "importedBadgeShort": "Vérifié par la source",
-  "verifiedBadgeShort": "Vérifié indépendamment"
+  "verifiedBadgeShort": "Vérifié indépendamment",
+  "notIndependentlyVerified": "Non vérifié indépendamment"
 }

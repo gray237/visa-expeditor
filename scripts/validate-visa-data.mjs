@@ -98,18 +98,26 @@ for (const file of files) {
     if (!row.sourceLevel) {
       fail(`${file}: ${row.destination} is missing sourceLevel.`);
     }
-    if (!isIsoDate(row.lastVerified)) {
+    if (row.confidence === "verified" && !isIsoDate(row.lastVerified)) {
       fail(`${file}: ${row.destination} has an invalid lastVerified.`);
     }
 
     if (row.confidence === "imported") {
+      if (row.lastVerified !== null) {
+        fail(
+          `${file}: ${row.destination} is imported but carries lastVerified; imported rows use sourceVerifiedOn and importedOn only.`,
+        );
+      }
+      if (!isIsoDate(row.sourceVerifiedOn)) {
+        fail(`${file}: ${row.destination} has an invalid sourceVerifiedOn.`);
+      }
       if (row.datasetVersion !== expectedDatasetVersion) {
         fail(
           `${file}: ${row.destination} datasetVersion is ${row.datasetVersion ?? "missing"}; expected ${expectedDatasetVersion}.`,
         );
       }
-      if (!isIsoDate(row.importedAt)) {
-        fail(`${file}: ${row.destination} has an invalid importedAt.`);
+      if (!isIsoDate(row.importedOn)) {
+        fail(`${file}: ${row.destination} has an invalid importedOn.`);
       }
     }
     if (row.confidence === "verified" && !row.verification) {

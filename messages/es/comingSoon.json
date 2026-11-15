@@ -12,10 +12,6 @@
     "home": "Inicio"
   },
   "items": {
-    "start": {
-      "title": "Comenzar",
-      "description": "El registro guiado de solicitudes está en preparación."
-    },
     "toolsIdp": {
       "title": "Permiso Internacional de Conducir",
       "description": "Orientación para solicitar un Permiso Internacional de Conducir."

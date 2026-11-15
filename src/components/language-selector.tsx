@@ -40,7 +40,7 @@ export function LanguageSelector() {
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        aria-label={t("changeLanguage")}
+        aria-label={`${t("changeLanguage")} ${locale.toUpperCase()}`}
         className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#0F2444]/15 bg-white text-[#161B22] transition-colors hover:bg-[#0F2444]/5"
       >
         <span className="font-mono text-[12px] font-semibold tracking-wide">

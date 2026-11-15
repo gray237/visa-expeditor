@@ -15,5 +15,9 @@
   "cookies": "Cookies",
   "accessibility": "Accesibilidad",
   "disclaimer": "Aviso Legal",
-  "copyright": "© {year} Visa Expeditor. No afiliado con ninguna agencia gubernamental."
+  "copyright": "© {year} Visa Expeditor. No afiliado con ninguna agencia gubernamental.",
+  "dataAttribution": "Datos de visados: TravelRequirements.info — Entry Requirements Dataset, AXG Sp. z o.o., https://travelrequirements.info/data/ (CC BY 4.0).",
+  "dataModification": "Visa Expeditor adapta este conjunto de datos a su propio esquema, lo limita a los destinos admitidos y añade sus propias etiquetas de verificación. No cuenta con el respaldo de AXG Sp. z o.o. ni de TravelRequirements.info.",
+  "dataSourceLink": "Fuente del conjunto de datos",
+  "dataLicense": "Licencia CC BY 4.0"
 }

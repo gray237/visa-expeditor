@@ -11,6 +11,7 @@ import { AuthButton } from "@/components/auth-button";
 import { LanguageSelector } from "@/components/language-selector";
 import { NAV_ITEMS } from "@/lib/nav";
 import { usePassport } from "@/components/providers/passport-provider";
+import { ComingSoonBadge } from "@/components/coming-soon-badge";
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -104,8 +105,9 @@ export function SiteHeader() {
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#0F2444]/6 text-[#0F2444]">
                             <Icon className="h-4 w-4" strokeWidth={1.75} />
                           </span>
-                          <span className="font-body text-sm text-[#161B22]">
+                          <span className="flex flex-wrap items-center gap-2 font-body text-sm text-[#161B22]">
                             {t(`nav.${item.key}.items.${sub.key}.label`)}
+                            {sub.soon && <ComingSoonBadge />}
                           </span>
                         </Link>
                       );
