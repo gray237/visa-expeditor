@@ -218,51 +218,57 @@ export default async function VisaCheckerPage({
           />
         </div>
 
-        <VisaResult
-          locale={locale}
-          passport={passport}
-          hasQuery={Boolean(to)}
-          knownDestinationCode={knownDestinationCode}
-          purpose={purpose}
-          record={record}
-          guide={guide}
-        />
-
-        <section className="mt-10" aria-labelledby="checker-stats-heading">
-          <h2
-            id="checker-stats-heading"
-            className="font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]"
-          >
-            {t("stats.heading")}
-          </h2>
-          <p className="mt-1 text-sm text-[#161B22]/70 dark:text-[#F5F6F4]/60">
-            {t("stats.coverage", { covered: stats.covered, total: stats.total })}
-          </p>
-          <div className="mt-5 grid gap-4 sm:grid-cols-3">
-            {(
-              [
-                ["visaFree", stats.visaFree],
-                ["electronic", stats.electronic],
-                ["paper", stats.paper],
-              ] as const
-            ).map(([key, count]) => (
-              <div
-                key={key}
-                className="rounded-2xl border border-[#0F2444]/10 bg-white p-5 dark:border-white/10 dark:bg-[#1a1b20]"
-              >
-                <p className="font-display text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
-                  {count}
-                </p>
-                <h3 className="mt-1 text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                  {t(`stats.${key}`)}
-                </h3>
-                <p className="mt-1 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
-                  {t(`stats.${key}Description`)}
-                </p>
-              </div>
-            ))}
+        <div className="mt-7 flex flex-col lg:flex-row lg:gap-8">
+          <div className="flex-1">
+            <VisaResult
+              locale={locale}
+              passport={passport}
+              hasQuery={Boolean(to)}
+              knownDestinationCode={knownDestinationCode}
+              purpose={purpose}
+              record={record}
+              guide={guide}
+            />
           </div>
-        </section>
+          <section
+            className="mt-10 lg:mt-0 w-full lg:w-64 lg:flex-shrink-0"
+            aria-labelledby="checker-stats-heading"
+          >
+            <h2
+              id="checker-stats-heading"
+              className="font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]"
+            >
+              {t("stats.heading")}
+            </h2>
+            <p className="mt-1 text-sm text-[#161B22]/70 dark:text-[#F5F6F4]/60">
+              {t("stats.coverage", { covered: stats.covered, total: stats.total })}
+            </p>
+            <div className="mt-5 grid gap-4 sm:grid-cols-1">
+              {(
+                [
+                  ["visaFree", stats.visaFree],
+                  ["electronic", stats.electronic],
+                  ["paper", stats.paper],
+                ] as const
+              ).map(([key, count]) => (
+                <div
+                  key={key}
+                  className="rounded-2xl border border-[#0F2444]/10 bg-white p-5 dark:border-white/10 dark:bg-[#1a1b20]"
+                >
+                  <p className="font-display text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
+                    {count}
+                  </p>
+                  <h3 className="mt-1 text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                    {t(`stats.${key}`)}
+                  </h3>
+                  <p className="mt-1 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
+                    {t(`stats.${key}Description`)}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
 
         <section className="mt-10" aria-labelledby="visa-list-heading">
           <div className="flex flex-wrap items-end justify-between gap-3">
