@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { CheckCircle2, CircleAlert, Info, Mail, MessageCircle, Phone } from "lucide-react";
+import { Info, Mail, MessageCircle, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import * as Flags from "country-flag-icons/react/3x2";
 import { Link } from "@/i18n/navigation";
 import { VisaCheckerSearch } from "@/components/visa-checker-search";
+import { VisaResult, confidenceBadge, type VisaGuide } from "@/components/visa-result";
 import { DataSourceAttribution } from "@/components/data-source-attribution";
 import { DESTINATIONS, PASSPORT_OVERVIEW_CODES } from "@/lib/destinations";
 import { DESTINATIONS_WITH_GUIDES } from "@/lib/destination-guides";
@@ -63,15 +64,6 @@ export async function generateMetadata({
   });
 }
 
-function ResultFlag({ code }: { code: string }) {
-  const Flag = Flags[code as keyof typeof Flags];
-  return (
-    <span className="relative inline-block h-8 w-12 shrink-0 overflow-hidden rounded-lg ring-1 ring-[#0F2444]/10 [&>svg]:absolute! [&>svg]:inset-0! [&>svg]:h-full! [&>svg]:w-full! [&>svg]:object-cover dark:ring-white/15">
-      {Flag ? <Flag title={code} /> : null}
-    </span>
-  );
-}
-
 function statusBucket(status: VisaStatus) {
   if (status === "visa_free" || status === "freedom_of_movement") return "visaFree";
   if (ELECTRONIC_STATUSES.includes(status)) return "electronic";
@@ -79,14 +71,17 @@ function statusBucket(status: VisaStatus) {
   return "other";
 }
 
-function confidenceBadge(
-  record: { confidence: string; lastVerified: string | null },
-  t: (key: string, values?: Record<string, string>) => string,
-) {
-  if (record.confidence === "verified" && record.lastVerified) {
-    return t("verifiedBadge", { date: record.lastVerified });
-  }
-  return t("notIndependentlyVerified");
+function ListFlagWatermark({ code }: { code: string }) {
+  const Flag = Flags[code as keyof typeof Flags];
+  if (!Flag) return null;
+  return (
+    <span
+      aria-hidden="true"
+      className="pointer-events-none absolute -bottom-4 -right-4 h-24 w-32 rotate-[-12deg] opacity-[0.08] [&>svg]:h-full [&>svg]:w-full [&>svg]:object-cover dark:opacity-[0.12]"
+    >
+      <Flag />
+    </span>
+  );
 }
 
 export default async function VisaCheckerPage({
@@ -127,6 +122,10 @@ export default async function VisaCheckerPage({
     hasGuide && destination
       ? (tg.raw(`${destination.key}.attractions`) as { name: string; description: string }[])
       : [];
+  const guide: VisaGuide | null =
+    hasGuide && destination
+      ? { key: destination.key, overview: guideOverview, attractions: guideAttractions }
+      : null;
   const groups = (["visaFree", "electronic", "paper", "other"] as const)
     .map((key) => ({
       key,
@@ -219,6 +218,16 @@ export default async function VisaCheckerPage({
           />
         </div>
 
+        <VisaResult
+          locale={locale}
+          passport={passport}
+          hasQuery={Boolean(to)}
+          knownDestinationCode={knownDestinationCode}
+          purpose={purpose}
+          record={record}
+          guide={guide}
+        />
+
         <section className="mt-10" aria-labelledby="checker-stats-heading">
           <h2
             id="checker-stats-heading"
@@ -288,24 +297,27 @@ export default async function VisaCheckerPage({
                       <li key={`${item.destination}-${item.purpose}`}>
                         <Link
                           href={`/tools/visa-checker?passport=${passport}&to=${item.destination}&purpose=${item.purpose}`}
-                          className="block h-full rounded-2xl border border-[#0F2444]/10 bg-white p-4 transition-colors hover:border-[#B8925A]/50 dark:border-white/10 dark:bg-[#1a1b20] dark:hover:border-[#B8925A]/50"
+                          className="relative block h-full overflow-hidden rounded-2xl border border-[#0F2444]/10 bg-white p-4 transition-colors hover:border-[#B8925A]/50 dark:border-white/10 dark:bg-[#1a1b20] dark:hover:border-[#B8925A]/50"
                         >
-                          <div className="flex items-start justify-between gap-3">
-                            <span className="font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                              {fullCountryName(item.destination, locale)}
-                            </span>
-                            <span className="rounded-full bg-[#0F2444]/5 px-2.5 py-1 text-xs text-[#161B22]/75 dark:bg-white/10 dark:text-[#F5F6F4]/75">
-                              {t(`statuses.${item.status}`)}
+                          <ListFlagWatermark code={item.destination} />
+                          <div className="relative">
+                            <div className="flex items-start justify-between gap-3">
+                              <span className="font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                                {fullCountryName(item.destination, locale)}
+                              </span>
+                              <span className="rounded-full bg-[#0F2444]/5 px-2.5 py-1 text-xs text-[#161B22]/75 dark:bg-white/10 dark:text-[#F5F6F4]/75">
+                                {t(`statuses.${item.status}`)}
+                              </span>
+                            </div>
+                            {item.maxStayDays !== null && (
+                              <p className="mt-2 text-xs text-[#161B22]/70 dark:text-[#F5F6F4]/60">
+                                {t("maximumStay", { days: item.maxStayDays })}
+                              </p>
+                            )}
+                            <span className="mt-3 inline-block rounded-full bg-[#B8925A]/10 px-2.5 py-1 text-[11px] font-semibold text-[#72572F] dark:text-[#E2C58F]">
+                              {confidenceBadge(item, t)}
                             </span>
                           </div>
-                          {item.maxStayDays !== null && (
-                            <p className="mt-2 text-xs text-[#161B22]/70 dark:text-[#F5F6F4]/60">
-                              {t("maximumStay", { days: item.maxStayDays })}
-                            </p>
-                          )}
-                          <span className="mt-3 inline-block rounded-full bg-[#B8925A]/10 px-2.5 py-1 text-[11px] font-semibold text-[#72572F] dark:text-[#E2C58F]">
-                            {confidenceBadge(item, t)}
-                          </span>
                         </Link>
                       </li>
                     ))}
@@ -328,19 +340,6 @@ export default async function VisaCheckerPage({
           <p className="mt-2 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
             {t("disclaimer")}
           </p>
-          {hasImported && (
-            <p className="mt-2 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
-              {t("attribution")}{" "}
-              <a
-                href="https://travelrequirements.info/data/"
-                target="_blank"
-                rel="noreferrer"
-                className="underline underline-offset-2"
-              >
-                travelrequirements.info/data
-              </a>
-            </p>
-          )}
         </div>
 
         {hasPassportOverview && (
@@ -373,200 +372,6 @@ export default async function VisaCheckerPage({
             </div>
           </section>
         )}
-
-        <section className="mt-10 max-w-3xl" aria-live="polite">
-          {!to ? (
-            <div className="rounded-3xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-7 dark:border-white/10 dark:bg-white/5">
-              <CircleAlert className="h-6 w-6 text-[#8A6D3F]" strokeWidth={1.75} />
-              <h2 className="mt-4 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                {t("emptyHeading")}
-              </h2>
-              <p className="mt-2 text-sm leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/65">
-                {t("emptyBody")}
-              </p>
-            </div>
-          ) : !knownDestinationCode ? (
-            <div className="rounded-3xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-7 dark:border-white/10 dark:bg-white/5">
-              <CircleAlert className="h-6 w-6 text-[#8A6D3F]" strokeWidth={1.75} />
-              <h2 className="mt-4 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                {t("notFoundHeading")}
-              </h2>
-              <p className="mt-2 text-sm leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/65">
-                {t("notFoundBody")}
-              </p>
-            </div>
-          ) : !record || record.status === "unknown" ? (
-            <div className="rounded-3xl border border-[#B8925A]/30 bg-[#B8925A]/5 p-7 dark:bg-[#B8925A]/10">
-              <MessageCircle className="h-6 w-6 text-[#8A6D3F]" strokeWidth={1.75} />
-              <h2 className="mt-4 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                {t("noDataHeading", {
-                  country: fullCountryName(passport, locale),
-                })}
-              </h2>
-              <p className="mt-2 text-sm leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/65">
-                {t("noDataBody")}
-              </p>
-              <Link
-                href={`/start?passport=${passport}&to=${knownDestinationCode}&purpose=${purpose}`}
-                className="mt-6 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#0F2444] px-6 py-3.5 text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
-              >
-                {t("talkToSpecialist")}
-              </Link>
-            </div>
-          ) : (
-            <div className="space-y-5">
-              <article className="rounded-3xl border border-[#0F2444]/10 bg-white p-7 dark:border-white/10 dark:bg-[#1a1b20]">
-                <div className="flex items-start gap-4">
-                  <ResultFlag code={knownDestinationCode} />
-                  <div>
-                    <h2 className="font-display text-xl font-semibold text-[#161B22] sm:text-2xl dark:text-[#F5F6F4]">
-                      {t("resultHeading", {
-                        purpose: t(`purposes.${purpose}`),
-                        passport: fullCountryName(passport, locale),
-                        destination: fullCountryName(knownDestinationCode, locale),
-                      })}
-                    </h2>
-                    <span className="mt-3 inline-block rounded-full bg-[#B8925A]/10 px-3 py-1 text-xs font-semibold text-[#72572F] dark:text-[#E2C58F]">
-                      {confidenceBadge(record, t)}
-                    </span>
-                  </div>
-                </div>
-
-                <dl className="mt-6 grid gap-4 border-t border-[#0F2444]/10 pt-5 sm:grid-cols-2 dark:border-white/10">
-                  <div>
-                    <dt className="text-xs uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/50">
-                      {t("result.statusLabel")}
-                    </dt>
-                    <dd className="mt-1 font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                      {t(`statuses.${record.status}`)}
-                    </dd>
-                  </div>
-                  {record.maxStayDays !== null && (
-                    <div>
-                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/50">
-                        {t("result.maximumStayLabel")}
-                      </dt>
-                      <dd className="mt-1 font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                        {t("maximumStay", { days: record.maxStayDays })}
-                      </dd>
-                    </div>
-                  )}
-                  {record.govFee && (
-                    <div>
-                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/50">
-                        {t("result.feeLabel")}
-                      </dt>
-                      <dd className="mt-1 font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                        {new Intl.NumberFormat(locale, {
-                          style: "currency",
-                          currency: record.govFee.currency,
-                          maximumFractionDigits: 2,
-                        }).format(record.govFee.amount)}
-                      </dd>
-                    </div>
-                  )}
-                  {(record.lastVerified || record.sourceVerifiedOn) && (
-                    <div>
-                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/50">
-                        {t("result.lastVerifiedLabel")}
-                      </dt>
-                      <dd className="mt-1 font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                        {record.lastVerified ?? record.sourceVerifiedOn}
-                      </dd>
-                    </div>
-                  )}
-                  {record.sourceUrl && (
-                    <div>
-                      <dt className="text-xs uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/50">
-                        {t("result.sourceLabel")}
-                      </dt>
-                      <dd className="mt-1">
-                        {record.sourceName && (
-                          <p className="mb-1 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
-                            {record.sourceName}
-                          </p>
-                        )}
-                        <a
-                          href={record.sourceUrl}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="break-all text-sm font-semibold text-[#72572F] underline underline-offset-2 dark:text-[#E2C58F]"
-                        >
-                          {t("result.officialSource")}
-                        </a>
-                      </dd>
-                    </div>
-                  )}
-                </dl>
-
-                {record.status === "not_admitted" && (
-                  <p className="mt-6 rounded-2xl border border-[#B23B3B]/25 bg-[#B23B3B]/5 p-4 text-sm leading-relaxed text-[#161B22]/75 dark:text-[#F5F6F4]/75">
-                    {t("notAdmittedNotice")}
-                  </p>
-                )}
-
-                {record.status !== "not_admitted" && (
-                  <Link
-                    href={`/start?passport=${passport}&to=${knownDestinationCode}&purpose=${purpose}`}
-                    className="mt-7 flex items-center justify-center gap-2 rounded-2xl bg-[#0F2444] px-6 py-3.5 text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
-                  >
-                    {t("startApplication")}
-                  </Link>
-                )}
-              </article>
-
-              <article className="rounded-3xl border border-[#0F2444]/10 bg-white p-7 dark:border-white/10 dark:bg-[#1a1b20]">
-                <h3 className="font-display text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                  {t("checklist.heading")}
-                </h3>
-                <ul className="mt-4 space-y-3">
-                  {(["passport", "purpose", "officialSource"] as const).map((key) => (
-                    <li key={key} className="flex gap-3">
-                      <CheckCircle2
-                        className="mt-0.5 h-4 w-4 shrink-0 text-[#8A6D3F]"
-                        strokeWidth={2}
-                      />
-                      <span className="text-sm text-[#161B22]/80 dark:text-[#F5F6F4]/80">
-                        {t(`checklist.${key}`)}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </article>
-
-              {hasGuide && destination && (
-                <article className="rounded-3xl border border-[#0F2444]/10 bg-white p-7 dark:border-white/10 dark:bg-[#1a1b20]">
-                  {guideOverview.map((paragraph, index) => (
-                    <p
-                      key={index}
-                      className="text-sm leading-relaxed text-[#161B22]/75 dark:text-[#F5F6F4]/75 [&:not(:first-child)]:mt-3"
-                    >
-                      {paragraph}
-                    </p>
-                  ))}
-                  <h3 className="mt-6 font-display text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                    {tg(`${destination.key}.attractionsHeading`)}
-                  </h3>
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                    {guideAttractions.map((attraction, index) => (
-                      <div
-                        key={index}
-                        className="rounded-xl border border-[#0F2444]/10 p-3 dark:border-white/10"
-                      >
-                        <p className="text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                          {attraction.name}
-                        </p>
-                        <p className="mt-1 text-xs text-[#161B22]/70 dark:text-[#F5F6F4]/60">
-                          {attraction.description}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </article>
-              )}
-            </div>
-          )}
-        </section>
 
         <DataSourceAttribution
           locale={locale}

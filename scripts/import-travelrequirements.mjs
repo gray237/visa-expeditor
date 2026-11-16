@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { VisaDatasetSchema, VisaRecordSchema } from "../src/data/visa/schema.mjs";
 
@@ -81,7 +81,7 @@ async function downloadDestination(slug, destinationDirectory) {
   for (let attempt = 1; attempt <= 3; attempt += 1) {
     try {
       const response = await fetch(sourceUrlFor(slug), {
-        signal: AbortSignal.timeout(90_000),
+        signal: AbortSignal.timeout(120_000),
       });
       if (!response.ok) {
         throw new Error(`HTTP ${response.status} for ${slug}`);
@@ -103,6 +103,30 @@ async function downloadDestination(slug, destinationDirectory) {
   );
 }
 
+function readCachedDestinations(sourceDirectory) {
+  const files = readdirSync(sourceDirectory).filter(
+    (file) => file.endsWith(".json") && !file.startsWith("_"),
+  );
+  const entries = [];
+  for (const file of files) {
+    let data;
+    try {
+      data = JSON.parse(readFileSync(join(sourceDirectory, file), "utf8"));
+    } catch {
+      console.warn(`Skipping unreadable source file: ${file}`);
+      continue;
+    }
+    if (!/^[A-Z]{2}$/.test(data?.iso2 ?? "")) {
+      console.warn(`Skipping ${file}: missing iso2.`);
+      continue;
+    }
+    entries.push({ code: data.iso2, slug: file.slice(0, -5), data });
+  }
+  return entries;
+}
+
+const unmappedRequirements = new Set();
+
 function mapStatus(requirement) {
   const statuses = {
     "visa-free": "visa_free",
@@ -118,7 +142,8 @@ function mapStatus(requirement) {
   };
   const status = statuses[requirement];
   if (!status) {
-    throw new Error(`Unmapped TravelRequirements requirement: ${requirement}`);
+    unmappedRequirements.add(requirement);
+    return "unknown";
   }
   return status;
 }
@@ -206,9 +231,7 @@ function feeFor(visaType) {
 function sourceFor(destination, row) {
   const source = row.source ?? destination.visaPolicy?.defaultSource;
   if (!source?.url || !source?.lastVerified) {
-    throw new Error(
-      `${destination.iso2}: no row or policy source with a verification date.`,
-    );
+    return null;
   }
   return {
     sourceUrl: source.url,
@@ -222,11 +245,11 @@ function sourceFor(destination, row) {
 
 function recordFor(destination, passport, importDate) {
   const row = destination.visaPolicy?.byPassport?.[passport];
-  if (!row) {
-    throw new Error(`${destination.iso2}: no row for passport ${passport}.`);
-  }
+  if (!row) return null;
 
   const source = sourceFor(destination, row);
+  if (!source) return null;
+
   const visaType = visaTypeFor(destination, row, row.requirement);
   const validity = mapPassportValidity(
     destination.entryRequirements?.passportValidity?.rule,
@@ -267,21 +290,22 @@ function recordFor(destination, passport, importDate) {
     passportValidityRule: validity.rule,
     visaTypeId: visaType?.id ?? null,
     visaTypeName: visaType?.name ?? null,
+    notes: typeof row.notes === "string" ? row.notes : null,
+    evidenceRule:
+      typeof row.evidence?.rule === "string" ? row.evidence.rule : null,
+    evidenceUrl: typeof row.evidence?.url === "string" ? row.evidence.url : null,
   });
 }
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const importAllPassports = args.passports === "all";
+  const importAllDestinations = args.destinations === "all";
   const requestedPassports = importAllPassports
     ? []
     : splitList(args.passports, DEFAULT_PASSPORTS).map((code) =>
         code.toUpperCase(),
       );
-  const destinationCodes = splitList(
-    args.destinations,
-    Object.keys(DESTINATIONS),
-  ).map((code) => code.toUpperCase());
   const sourceDirectory =
     typeof args["source-dir"] === "string"
       ? args["source-dir"]
@@ -296,32 +320,44 @@ async function main() {
       throw new Error(`Invalid passport code: ${code}`);
     }
   }
-  for (const code of destinationCodes) {
-    if (!DESTINATIONS[code]) {
-      throw new Error(`Unsupported destination code: ${code}`);
-    }
-  }
 
   mkdirSync(sourceDirectory, { recursive: true });
   mkdirSync(OUTPUT_DIRECTORY, { recursive: true });
 
-  const destinations = [];
-  for (const code of destinationCodes) {
-    const slug = DESTINATIONS[code];
-    const path = typeof args["source-dir"] === "string"
-      ? join(sourceDirectory, `${slug}.json`)
-      : await downloadDestination(slug, sourceDirectory);
-    if (!existsSync(path)) {
-      throw new Error(`Missing source file: ${path}`);
-    }
-    const destination = JSON.parse(readFileSync(path, "utf8"));
-    if (destination.iso2 !== code) {
+  let destinationEntries;
+  if (importAllDestinations) {
+    destinationEntries = readCachedDestinations(sourceDirectory);
+    if (destinationEntries.length === 0) {
       throw new Error(
-        `${path}: expected ${code}, found ${destination.iso2 ?? "no iso2"}.`,
+        `No cached destination files in ${sourceDirectory}; run scripts/fetch-travelrequirements.mjs first.`,
       );
     }
-    destinations.push(destination);
+  } else {
+    const destinationCodes = splitList(
+      args.destinations,
+      Object.keys(DESTINATIONS),
+    ).map((code) => code.toUpperCase());
+    destinationEntries = [];
+    for (const code of destinationCodes) {
+      const slug = DESTINATIONS[code];
+      if (!slug) throw new Error(`Unsupported destination code: ${code}`);
+      const path =
+        typeof args["source-dir"] === "string"
+          ? join(sourceDirectory, `${slug}.json`)
+          : await downloadDestination(slug, sourceDirectory);
+      if (!existsSync(path)) throw new Error(`Missing source file: ${path}`);
+      const data = JSON.parse(readFileSync(path, "utf8"));
+      if (data.iso2 !== code) {
+        throw new Error(
+          `${path}: expected ${code}, found ${data.iso2 ?? "no iso2"}.`,
+        );
+      }
+      destinationEntries.push({ code, slug, data });
+    }
   }
+
+  const destinations = destinationEntries.map((entry) => entry.data);
+  const destinationCodes = destinationEntries.map((entry) => entry.code);
 
   const passports = importAllPassports
     ? [
@@ -340,9 +376,20 @@ async function main() {
   }
 
   const grouped = new Map(passports.map((code) => [code, []]));
+  let skipped = 0;
+  let failed = 0;
   for (const passport of passports) {
     for (const destination of destinations) {
-      grouped.get(passport).push(recordFor(destination, passport, importDate));
+      try {
+        const record = recordFor(destination, passport, importDate);
+        if (record) grouped.get(passport).push(record);
+        else skipped += 1;
+      } catch (error) {
+        failed += 1;
+        console.warn(
+          `${destination.iso2}/${passport}: ${error instanceof Error ? error.message : String(error)}`,
+        );
+      }
     }
   }
 
@@ -355,8 +402,21 @@ async function main() {
       `${JSON.stringify(validated, null, 2)}\n`,
     );
     total += validated.length;
-    console.log(`${passport}: ${validated.length} imported rows`);
   }
+
+  const profiles = {};
+  for (const { code, data } of destinationEntries) {
+    profiles[code] = {
+      name: data.names?.common ?? null,
+      officialName: data.names?.official ?? null,
+      region: data.region ?? null,
+      summary: typeof data.summary === "string" ? data.summary : null,
+    };
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "destinations.generated.json"),
+    `${JSON.stringify(profiles, null, 2)}\n`,
+  );
 
   const metadata = {
     ...SOURCE,
@@ -375,6 +435,14 @@ async function main() {
   console.log(
     `Imported ${total} rows from ${SOURCE.name} (${SOURCE.version}, ${SOURCE.commit.slice(0, 7)}).`,
   );
+  console.log(
+    `${passports.length} passports, ${destinationCodes.length} destinations. Skipped ${skipped} empty cells, ${failed} failed rows.`,
+  );
+  if (unmappedRequirements.size > 0) {
+    console.log(
+      `Unmapped requirements (treated as unknown): ${[...unmappedRequirements].join(", ")}`,
+    );
+  }
 }
 
 await main();

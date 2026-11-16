@@ -69,6 +69,9 @@
   "result": {
     "statusLabel": "Status",
     "maximumStayLabel": "Maximum stay",
+    "visaTypeLabel": "Visa type",
+    "notesLabel": "Notes",
+    "evidenceLabel": "Evidence",
     "lastVerifiedLabel": "Last checked at source",
     "sourceLabel": "Source",
     "officialSource": "Open official source",
@@ -87,7 +90,6 @@
   "datasetBadge": "Official-source dataset",
   "importedNotice": "Compiled from official sources by TravelRequirements.info and mapped by Visa Expeditor. Imported rows were checked against the linked source by the dataset provider, but Visa Expeditor has not independently verified every row. The official source is the authority.",
   "verifiedNotice": "Independently verified by Visa Expeditor against the linked official source.",
-  "attribution": "TravelRequirements.info — Entry Requirements Dataset, AXG Sp. z o.o., https://travelrequirements.info/data/ (CC BY 4.0). Visa Expeditor maps this dataset into its own schema, subsets it to supported destinations, and adds its own verification labels. Visa Expeditor is not endorsed by AXG Sp. z o.o. or TravelRequirements.info.",
   "importedBadgeShort": "Source-verified",
   "verifiedBadgeShort": "Independently verified",
   "notIndependentlyVerified": "Not independently verified"

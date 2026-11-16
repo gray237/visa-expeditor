@@ -69,6 +69,9 @@
   "result": {
     "statusLabel": "Statut",
     "maximumStayLabel": "Durée maximale du séjour",
+    "visaTypeLabel": "Type de visa",
+    "notesLabel": "Notes",
+    "evidenceLabel": "Preuve",
     "lastVerifiedLabel": "Dernière vérification à la source",
     "sourceLabel": "Source",
     "officialSource": "Ouvrir la source officielle",
@@ -87,7 +90,6 @@
   "datasetBadge": "Jeu de données à sources officielles",
   "importedNotice": "Compilé à partir de sources officielles par TravelRequirements.info et adapté par Visa Expeditor. Les entrées importées ont été vérifiées par le fournisseur du jeu de données auprès de la source liée, mais Visa Expeditor n’a pas vérifié chaque entrée de manière indépendante. La source officielle fait autorité.",
   "verifiedNotice": "Vérifié de manière indépendante par Visa Expeditor auprès de la source officielle liée.",
-  "attribution": "Données importées : TravelRequirements.info Entry Requirements Dataset, AXG Sp. z o.o. — CC BY 4.0. Adapté pour Visa Expeditor ; non approuvé par l’éditeur.",
   "importedBadgeShort": "Vérifié par la source",
   "verifiedBadgeShort": "Vérifié indépendamment",
   "notIndependentlyVerified": "Non vérifié indépendamment"

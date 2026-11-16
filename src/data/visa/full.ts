@@ -1,20 +1,31 @@
-import { VISA_DATASETS_GENERATED } from "./datasets.generated";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import sourceMetadata from "./source.json";
 import type { VisaRecord } from "./schema.mjs";
-import { DESTINATIONS } from "@/lib/destinations";
 
 export const VISA_DATA_SOURCE = sourceMetadata;
-export const VISA_DESTINATIONS_COUNT = DESTINATIONS.length;
+export const VISA_DESTINATIONS_COUNT = sourceMetadata.destinations.length;
 
-export const VISA_DATASETS = VISA_DATASETS_GENERATED as unknown as Record<
-  string,
-  VisaRecord[]
->;
+const DATA_DIRECTORY = join(process.cwd(), "src/data/visa");
+const recordsCache = new Map<string, VisaRecord[]>();
 
-export const VISA_RECORDS = Object.values(VISA_DATASETS).flat();
+export function visaRecordsForPassport(passport: string): VisaRecord[] {
+  const code = passport.toUpperCase();
+  const cached = recordsCache.get(code);
+  if (cached) return cached;
 
-export function visaRecordsForPassport(passport: string) {
-  return VISA_DATASETS[passport.toUpperCase()] ?? [];
+  let records: VisaRecord[] = [];
+  if (/^[A-Z]{2}$/.test(code)) {
+    try {
+      records = JSON.parse(
+        readFileSync(join(DATA_DIRECTORY, `${code}.json`), "utf8"),
+      ) as VisaRecord[];
+    } catch {
+      records = [];
+    }
+  }
+  recordsCache.set(code, records);
+  return records;
 }
 
 export function findVisaRecord(

@@ -1,13 +1,10 @@
-import summary from "./summary.generated.json";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import sourceMetadata from "./source.json";
 import type { VisaConfidence, VisaStatus } from "./schema.mjs";
 import { DESTINATIONS } from "@/lib/destinations";
 
 export const VISA_DATA_SOURCE = sourceMetadata;
-export const VISA_SUMMARY_SOURCE = summary.generatedFrom;
-export const VISA_PASSPORT_CODES: string[] = summary.passports;
-export const VISA_DESTINATION_CODES: string[] = summary.destinations;
-export const VISA_DESTINATIONS_COUNT = VISA_DESTINATION_CODES.length;
 
 export type VisaSummaryRecord = {
   passport: string;
@@ -26,10 +23,49 @@ type StoredSummaryRecord = Omit<
   "passport" | "destination" | "purpose"
 >;
 
-const SUMMARY_RECORDS = summary.records as unknown as Record<
-  string,
-  Record<string, StoredSummaryRecord>
->;
+type SummaryFile = {
+  generatedFrom: {
+    dataset: string;
+    version: string;
+    commit: string;
+    importedAt: string;
+  };
+  passports: string[];
+  destinations: string[];
+  records: Record<string, Record<string, StoredSummaryRecord>>;
+};
+
+let summaryCache: SummaryFile | null = null;
+
+function loadSummary(): SummaryFile {
+  if (summaryCache) return summaryCache;
+  try {
+    summaryCache = JSON.parse(
+      readFileSync(
+        join(process.cwd(), "src/data/visa/summary.generated.json"),
+        "utf8",
+      ),
+    ) as SummaryFile;
+  } catch {
+    summaryCache = {
+      generatedFrom: {
+        dataset: sourceMetadata.name,
+        version: sourceMetadata.version,
+        commit: sourceMetadata.commit,
+        importedAt: sourceMetadata.importedAt,
+      },
+      passports: [],
+      destinations: [],
+      records: {},
+    };
+  }
+  return summaryCache;
+}
+
+export const VISA_SUMMARY_SOURCE = loadSummary().generatedFrom;
+export const VISA_PASSPORT_CODES: string[] = loadSummary().passports;
+export const VISA_DESTINATION_CODES: string[] = loadSummary().destinations;
+export const VISA_DESTINATIONS_COUNT = VISA_DESTINATION_CODES.length;
 
 const recordsByPassport = new Map<string, VisaSummaryRecord[]>();
 
@@ -38,7 +74,7 @@ export function visaRecordsForPassport(passport: string) {
   const cached = recordsByPassport.get(code);
   if (cached) return cached;
 
-  const destinations = SUMMARY_RECORDS[code] ?? {};
+  const destinations = loadSummary().records[code] ?? {};
   const records = Object.entries(destinations).map(([destination, record]) => ({
     passport: code,
     destination,

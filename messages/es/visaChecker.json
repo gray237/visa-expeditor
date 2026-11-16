@@ -69,6 +69,9 @@
   "result": {
     "statusLabel": "Estado",
     "maximumStayLabel": "Estancia máxima",
+    "visaTypeLabel": "Tipo de visa",
+    "notesLabel": "Notas",
+    "evidenceLabel": "Evidencia",
     "lastVerifiedLabel": "Última comprobación en la fuente",
     "sourceLabel": "Fuente",
     "officialSource": "Abrir fuente oficial",
@@ -87,7 +90,6 @@
   "datasetBadge": "Conjunto de datos con fuentes oficiales",
   "importedNotice": "Recopilado de fuentes oficiales por TravelRequirements.info y adaptado por Visa Expeditor. El proveedor del conjunto de datos comprobó los registros importados con la fuente enlazada, pero Visa Expeditor no ha verificado de forma independiente cada registro. La fuente oficial es la autoridad.",
   "verifiedNotice": "Verificado de forma independiente por Visa Expeditor con la fuente oficial enlazada.",
-  "attribution": "TravelRequirements.info — Entry Requirements Dataset, AXG Sp. z o.o., https://travelrequirements.info/data/ (CC BY 4.0). Visa Expeditor adapta este conjunto de datos a su propio esquema, lo limita a los destinos admitidos y añade sus propias etiquetas de verificación. Visa Expeditor no cuenta con el respaldo de AXG Sp. z o.o. ni de TravelRequirements.info.",
   "importedBadgeShort": "Verificado por la fuente",
   "verifiedBadgeShort": "Verificado de forma independiente",
   "notIndependentlyVerified": "No verificado de forma independiente"

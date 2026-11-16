@@ -1,11 +1,8 @@
 import visaSource from "@/data/visa/source.json";
-import { DESTINATIONS } from "@/lib/destinations";
 
 export const PASSPORT_CODES: string[] = visaSource.passports;
 
-export const DESTINATION_CODES: string[] = DESTINATIONS.map(
-  (destination) => destination.countryCode,
-);
+export const DESTINATION_CODES: string[] = visaSource.destinations;
 
 export const COUNTRY_CODES = PASSPORT_CODES;
 

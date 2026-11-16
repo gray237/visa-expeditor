@@ -65,6 +65,9 @@ export interface VisaRecord {
     | null;
   visaTypeId?: string | null;
   visaTypeName?: string | null;
+  notes?: string | null;
+  evidenceRule?: string | null;
+  evidenceUrl?: string | null;
   verification?: {
     reviewer: string;
     date: string;

@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 const nullablePositiveInteger = z.number().int().positive().nullable();
+const nullableNonNegativeInteger = z.number().int().nonnegative().nullable();
 
 const sourceTypeSchema = z.enum(["government", "igo", "official-airline-db"]);
 const sourceLevelSchema = z.enum(["row", "policy"]);
@@ -25,7 +26,7 @@ export const VisaRecordSchema = z
     maxStayDays: nullablePositiveInteger,
     stayWindowDays: nullablePositiveInteger,
     passportValidityMonths: nullablePositiveInteger,
-    blankPagesRequired: nullablePositiveInteger,
+    blankPagesRequired: nullableNonNegativeInteger,
     processing: z
       .union([
         z.literal("instant"),
@@ -85,6 +86,9 @@ export const VisaRecordSchema = z
       .optional(),
     visaTypeId: z.string().min(1).nullable().optional(),
     visaTypeName: z.string().min(1).nullable().optional(),
+    notes: z.string().nullable().optional(),
+    evidenceRule: z.string().nullable().optional(),
+    evidenceUrl: z.url().nullable().optional(),
     verification: z
       .object({
         reviewer: z.string().min(1),
