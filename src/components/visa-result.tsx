@@ -146,7 +146,7 @@ export async function VisaResult({
                     {t("result.visaTypeLabel")}
                   </dt>
                   <dd className="mt-1 font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                    {t(`visaTypes.${record.visaTypeName}`)}
+                    {record.visaTypeName}
                   </dd>
                 </div>
               )}
@@ -182,7 +182,7 @@ export async function VisaResult({
                   <dd className="mt-1">
                     {record.evidenceRule && (
                       <p className="mb-1 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
-                        {t(`evidenceRules.${record.evidenceRule}`)}
+                        {record.evidenceRule}
                       </p>
                     )}
                     <a
