@@ -6,7 +6,8 @@ import { ClipboardCheck, Printer } from "lucide-react";
 import { PassportSelector } from "@/components/passport-selector";
 import { DestinationSelector } from "@/components/destination-selector";
 import { usePassport } from "@/components/providers/passport-provider";
-import { findVisaRecord } from "@/data/visa";
+import { useVisaRecords } from "@/components/use-visa-records";
+import type { VisaSummaryRecord } from "@/data/visa";
 import type { VisaStatus } from "@/data/visa/schema.mjs";
 
 function entryTypeForStatus(status: VisaStatus): "visaFree" | "etaRequired" | null {
@@ -15,15 +16,22 @@ function entryTypeForStatus(status: VisaStatus): "visaFree" | "etaRequired" | nu
   return null;
 }
 
-export function DocumentChecklist() {
+export function DocumentChecklist({
+  initialPassport,
+  initialRecords,
+}: {
+  initialPassport: string;
+  initialRecords: VisaSummaryRecord[];
+}) {
   const t = useTranslations("tools.checklistPage");
   const tEntry = useTranslations("entryTypeInfo");
   const tv = useTranslations("visaChecker");
   const { passport, setPassport } = usePassport();
   const [destination, setDestination] = useState("");
+  const records = useVisaRecords(passport, initialPassport, initialRecords);
 
   const record = destination
-    ? findVisaRecord(passport, destination, "tourism")
+    ? records.find((item) => item.destination === destination)
     : undefined;
   const entryType = record ? entryTypeForStatus(record.status) : null;
   const documents = entryType

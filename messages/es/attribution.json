@@ -1,0 +1,4 @@
+{
+  "heading": "Fuente de datos y atribución",
+  "body": "Los datos sobre requisitos de entrada por destino provienen del <source>TravelRequirements.info — Entry Requirements Dataset</source> de AXG Sp. z o.o., utilizados bajo la licencia <license>Creative Commons Attribution 4.0 (CC BY 4.0)</license>. Visa Expeditor reformateó los datos a su propio esquema, los limitó a los destinos admitidos y añadió sus propias etiquetas de verificación. El creador del conjunto de datos no respalda a Visa Expeditor."
+}

@@ -3,6 +3,7 @@ import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
+import { visaRecordsForPassport } from "@/data/visa";
 import { Hero } from "@/components/hero";
 import { DestinationGrid } from "@/components/destination-grid";
 import { Services } from "@/components/services";
@@ -46,10 +47,15 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const defaultPassport = "US";
+
   return (
     <>
       <Hero />
-      <DestinationGrid />
+      <DestinationGrid
+        initialPassport={defaultPassport}
+        initialRecords={visaRecordsForPassport(defaultPassport)}
+      />
       <Services />
       <ImmigrationShowcase />
       <HowItWorks />

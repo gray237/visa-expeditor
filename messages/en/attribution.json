@@ -1,0 +1,4 @@
+{
+  "heading": "Data source and attribution",
+  "body": "Destination entry-requirement data comes from the <source>TravelRequirements.info — Entry Requirements Dataset</source> by AXG Sp. z o.o., used under the <license>Creative Commons Attribution 4.0 (CC BY 4.0)</license> licence. Visa Expeditor reformatted the data into its own schema, limited it to supported destinations, and added its own verification labels. The dataset creator does not endorse Visa Expeditor."
+}

@@ -1,13 +1,15 @@
 "use client";
 
+import { useMemo } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import * as Flags from "country-flag-icons/react/3x2";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { DESTINATIONS, MOST_VISITED_BY_PASSPORT, DEFAULT_FEATURED } from "@/lib/destinations";
 import { fullCountryName } from "@/lib/countries";
-import { findVisaRecord } from "@/data/visa";
+import type { VisaSummaryRecord } from "@/data/visa";
 import { usePassport } from "@/components/providers/passport-provider";
+import { useVisaRecords } from "@/components/use-visa-records";
 
 function CardFlag({ code }: { code: string }) {
   const Flag = Flags[code as keyof typeof Flags];
@@ -18,11 +20,22 @@ function CardFlag({ code }: { code: string }) {
   );
 }
 
-export function DestinationGrid() {
+export function DestinationGrid({
+  initialPassport,
+  initialRecords,
+}: {
+  initialPassport: string;
+  initialRecords: VisaSummaryRecord[];
+}) {
   const { passport: passportCode } = usePassport();
   const t = useTranslations("destinations");
   const tv = useTranslations("visaChecker");
   const locale = useLocale();
+  const records = useVisaRecords(passportCode, initialPassport, initialRecords);
+  const recordByDestination = useMemo(
+    () => new Map(records.map((record) => [record.destination, record])),
+    [records],
+  );
   const featuredKey = MOST_VISITED_BY_PASSPORT[passportCode] ?? DEFAULT_FEATURED;
 
   return (
@@ -41,10 +54,7 @@ export function DestinationGrid() {
 
         <div className="grid grid-flow-row-dense grid-cols-2 auto-rows-32.5 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {DESTINATIONS.map((destination) => {
-            const requirement = findVisaRecord(
-              passportCode,
-              destination.countryCode,
-            );
+            const requirement = recordByDestination.get(destination.countryCode);
             const isTall = destination.key === featuredKey;
 
             return (

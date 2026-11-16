@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
 import { generateLocaleParams } from "@/lib/page-factories";
+import { visaRecordsForPassport } from "@/data/visa";
 import { PageHero } from "@/components/kit/page-hero";
 import { Breadcrumbs } from "@/components/kit/breadcrumbs";
 import { DocumentChecklist } from "@/components/document-checklist";
@@ -49,7 +50,10 @@ export default async function ChecklistPage({ params }: RouteArgs) {
         <Breadcrumbs items={breadcrumbs} />
       </div>
       <div className="mx-auto max-w-350 px-6 pb-20 pt-8 sm:pt-10">
-        <DocumentChecklist />
+        <DocumentChecklist
+          initialPassport="US"
+          initialRecords={visaRecordsForPassport("US")}
+        />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { hasLocale } from "next-intl";
 import * as Flags from "country-flag-icons/react/3x2";
 import { Link } from "@/i18n/navigation";
 import { VisaCheckerSearch } from "@/components/visa-checker-search";
+import { DataSourceAttribution } from "@/components/data-source-attribution";
 import { DESTINATIONS, PASSPORT_OVERVIEW_CODES } from "@/lib/destinations";
 import { DESTINATIONS_WITH_GUIDES } from "@/lib/destination-guides";
 import {
@@ -566,6 +567,11 @@ export default async function VisaCheckerPage({
             </div>
           )}
         </section>
+
+        <DataSourceAttribution
+          locale={locale}
+          className="mt-12 border-t border-[#0F2444]/10 pt-6 dark:border-white/10"
+        />
       </div>
     </div>
   );

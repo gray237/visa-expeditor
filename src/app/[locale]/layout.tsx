@@ -40,7 +40,11 @@ export const metadata: Metadata = {
   },
   description: "Passport and visa information to help you prepare for your next trip.",
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-180.png", sizes: "180x180", type: "image/png" },
+    ],
+    apple: "/favicon-180.png",
   },
   ...(SITE_IS_PREVIEW ? { robots: { index: false, follow: false } } : {}),
 };
