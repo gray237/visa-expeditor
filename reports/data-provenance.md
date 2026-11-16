@@ -23,6 +23,26 @@ Visa Expeditor maps this dataset into its own schema, subsets it to supported
 destinations, and adds its own verification labels. Visa Expeditor is not
 endorsed by AXG Sp. z o.o. or TravelRequirements.info.
 
+### Upstream source and terms
+
+The dataset does not own the entry rules; it compiles them from **official
+government sources**. Every row carries a `source` whose `sourceLevel` is either
+`row` (the fact comes from a specific official page) or `policy` (the fact comes
+from a general policy statement). The provider's own terms (its `LICENSE` /
+`NOTICE.md`) license the **compilation** — schema, matrix, editorial text, and
+the source/verification trail — under **CC BY 4.0**. The underlying entry rules
+are government facts and are not owned by the provider.
+
+CC BY 4.0 requires credit to the creator, a link to the licence, and an
+indication of changes. Visa Expeditor satisfies this with a **"Data source and
+attribution"** block rendered in the visa-checker footer
+(`src/components/data-source-attribution.tsx`) and on the `/disclaimer` page in
+`en`, `es`, and `fr`. It names the dataset, the creator, the source link
+(`https://travelrequirements.info/data/`) and the licence link
+(`https://creativecommons.org/licenses/by/4.0/`), and states the changes made
+(reformatted to our schema, subset to supported destinations, added verification
+labels).
+
 ### Supported destinations
 
 `AU, CA, CH, DE, ES, FR, GB, IE, IT, JP, KR, MX, NL, NZ, SG, TH, AE`
