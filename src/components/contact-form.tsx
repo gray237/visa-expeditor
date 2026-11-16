@@ -8,7 +8,7 @@ import { AuthError } from "@/components/auth/auth-card";
 import { submitContact, type ContactState } from "@/lib/contact/actions";
 
 const inputClass =
-  "w-full rounded-xl border border-[#0F2444]/15 bg-white px-4 py-3 font-body text-sm text-[#161B22] outline-none transition focus:border-[#0F2444]/40 focus:ring-2 focus:ring-[#0F2444]/10";
+  "w-full rounded-2xl border border-[#0F2444]/15 bg-white/[95] px-4.5 py-3.5 font-body text-sm text-[#161B22] outline-none transition focus:border-[#B8925A] focus:ring-2 focus:ring-[#B8925A]/20 shadow-sm dark:bg-[#0F2444]/20 dark:text-[#F5F6F4]";
 
 const labelClass = "mb-1.5 block font-body text-sm font-semibold text-[#0F2444]";
 

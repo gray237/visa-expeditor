@@ -63,7 +63,7 @@ export async function VisaResult({
   const tg = await getTranslations("destinationGuides");
 
   return (
-    <section className="mt-10 max-w-3xl" aria-live="polite">
+    <section className="mt-10 max-w-full" aria-live="polite">
       {!hasQuery ? (
         <div className="rounded-3xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-7 dark:border-white/10 dark:bg-white/5">
           <CircleAlert className="h-6 w-6 text-[#8A6D3F]" strokeWidth={1.75} />

@@ -13,7 +13,7 @@ const STEPS = ["service", "traveler", "contact", "review"] as const;
 const SERVICES = ["passport", "visa", "immigration"] as const;
 const PURPOSES = ["tourism", "business", "transit", "study", "work"] as const;
 const inputClass =
-  "w-full rounded-xl border border-[#0F2444]/15 bg-white px-4 py-3 text-sm text-[#161B22] outline-none transition focus:border-[#0F2444]/40 focus:ring-2 focus:ring-[#0F2444]/10 dark:bg-[#1a1b20] dark:text-[#F5F6F4]";
+  "w-full rounded-2xl border border-[#0F2444]/15 bg-white/[95] px-4.5 py-3.5 font-body text-sm text-[#161B22] outline-none transition focus:border-[#B8925A] focus:ring-2 focus:ring-[#B8925A]/20 shadow-sm dark:bg-[#0F2444]/20 dark:text-[#F5F6F4]";
 const labelClass =
   "mb-1.5 block text-sm font-semibold text-[#0F2444] dark:text-[#F5F6F4]";
 
