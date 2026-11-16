@@ -72,6 +72,7 @@
     "visaTypeLabel": "Type de visa",
     "notesLabel": "Notes",
     "evidenceLabel": "Preuve",
+    "viewEvidence": "Voir la preuve",
     "lastVerifiedLabel": "Dernière vérification à la source",
     "sourceLabel": "Source",
     "officialSource": "Ouvrir la source officielle",
