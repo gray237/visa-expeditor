@@ -3,27 +3,22 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocale, useTranslations } from "next-intl";
-import * as Flags from "country-flag-icons/react/3x2";
+import { FlagChip } from "@/components/flag-chip";
 import { localizedCountries, POPULAR_COUNTRY_CODES } from "@/lib/countries";
-
-function FlagChip({ code, className = "" }: { code: string; className?: string }) {
-  const Flag = Flags[code as keyof typeof Flags];
-  return (
-    <span
-      className={`relative inline-block h-3.75 w-5.25 shrink-0 overflow-hidden rounded-[3px] ring-1 ring-black/10 [&>svg]:absolute! [&>svg]:inset-0! [&>svg]:h-full! [&>svg]:w-full! [&>svg]:object-cover ${className}`}
-    >
-      {Flag ? <Flag title={code} /> : null}
-    </span>
-  );
-}
 
 type PassportSelectorProps = {
   value: string;
   onChange: (code: string) => void;
   variant?: "pill" | "field";
+  abbreviated?: boolean;
 };
 
-export function PassportSelector({ value, onChange, variant = "pill" }: PassportSelectorProps) {
+export function PassportSelector({
+  value,
+  onChange,
+  variant = "pill",
+  abbreviated = false,
+}: PassportSelectorProps) {
   const locale = useLocale();
   const t = useTranslations("common");
   const [open, setOpen] = useState(false);
@@ -293,34 +288,36 @@ export function PassportSelector({ value, onChange, variant = "pill" }: Passport
         aria-controls="passport-selector-dialog"
         className={
           variant === "pill"
-            ? "flex h-9 items-center gap-2 rounded-full border border-[#0F2444]/15 bg-white px-3.5 text-sm transition-colors hover:bg-[#0F2444]/5"
+            ? "flex h-9 items-center gap-1.5 rounded-full px-1 text-sm transition-colors hover:bg-[#0F2444]/5"
             : "flex w-full items-center gap-3 rounded-2xl px-4 py-3 text-left transition-colors hover:bg-[#0F2444]/5"
         }
       >
         <FlagChip code={selected.code} />
         {variant === "pill" ? (
           <span className="hidden font-body font-medium text-[#161B22] sm:inline">
-            {selected.name}
+            {abbreviated ? selected.code : selected.name}
           </span>
         ) : (
           <span className="flex flex-col">
             <span className="font-mono text-[11px] uppercase tracking-wider text-[#161B22]/70">
-              {t("myPassport")}
+              {abbreviated ? t("passport") : t("myPassport")}
             </span>
             <span className="font-body text-sm font-semibold text-[#161B22]">
-              {selected.name}
+              {abbreviated ? selected.code : selected.name}
             </span>
           </span>
         )}
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="shrink-0 text-[#161B22]/70">
-          <path
-            d="M2.5 4.5L6 8L9.5 4.5"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        {!(variant === "pill" && abbreviated) && (
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="shrink-0 text-[#161B22]/70">
+            <path
+              d="M2.5 4.5L6 8L9.5 4.5"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        )}
       </button>
 
       {open ? createPortal(modal, document.body) : null}

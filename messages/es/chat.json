@@ -2,11 +2,11 @@
   "openChat": "Chatea con Ari",
   "closeChat": "Cerrar chat",
   "chatTitle": "Asistente de visados",
-  "chatSubtitle": "Orientación de nuestra base de datos de visados",
-  "welcome": "Hola, soy Ari. Dime tu pasaporte y destino y resumiré lo que indica la base de datos.",
-  "thinking": "Consultando los requisitos…",
-  "error": "No he podido consultarlo ahora. Inténtalo de nuevo.",
-  "messagePlaceholder": "Pregunta sobre un requisito de visado…",
+  "chatSubtitle": "Aquí para hacerlo más fácil",
+  "welcome": "¡Hola! Soy Ari. Dime tu pasaporte y destino y te busco los detalles.",
+  "thinking": "Un momento, estoy revisando…",
+  "error": "Hmm, no salió bien. ¿Lo intentamos de nuevo?",
+  "messagePlaceholder": "Pregúntame sobre un visado…",
   "sendMessage": "Enviar mensaje",
-  "disclaimer": "Solo orientación: confirma siempre con la fuente oficial del país de destino antes de viajar."
+  "disclaimer": "Una guía rápida: confirma con la fuente oficial antes de viajar."
 }

@@ -2,11 +2,11 @@
   "openChat": "Chat with Ari",
   "closeChat": "Close chat",
   "chatTitle": "Visa assistant",
-  "chatSubtitle": "Guidance from our visa dataset",
-  "welcome": "Hi, I'm Ari. Tell me your passport and destination and I'll summarise what the dataset says.",
-  "thinking": "Checking the requirements…",
-  "error": "I couldn't check that just now. Please try again.",
-  "messagePlaceholder": "Ask about a visa requirement…",
+  "chatSubtitle": "Here to make requirements easier",
+  "welcome": "Hey! I'm Ari. Tell me your passport and destination and I'll pull up the details for you.",
+  "thinking": "Just a sec while I check that…",
+  "error": "Hmm, that didn't go through. Mind trying again?",
+  "messagePlaceholder": "Ask me about a visa…",
   "sendMessage": "Send message",
-  "disclaimer": "Guidance only — always confirm with the destination's official government source before travelling."
+  "disclaimer": "Quick guidance only — please check the official source before you travel."
 }

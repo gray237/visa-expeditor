@@ -21,24 +21,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#0F2444]/10 bg-[#F5F6F4]/95 backdrop-blur print:hidden">
       <div className="mx-auto flex h-20 max-w-350 items-center justify-between px-6">
-        <Logo />
-
-        <nav className="hidden items-center gap-5 lg:flex">
-          {NAV_ITEMS.map((item) => (
-            <MegaMenuTrigger key={item.href} item={item} />
-          ))}
-        </nav>
-
         <div className="flex items-center gap-3">
-          <QuickCheckerTool />
-          <div className="hidden sm:block">
-            <LanguageSelector />
-          </div>
-
-          <div className="hidden lg:block">
-            <AuthButton />
-          </div>
-
           <button
             type="button"
             onClick={() => setMenuOpen((open) => !open)}
@@ -48,22 +31,38 @@ export function SiteHeader() {
           >
             <div className="flex flex-col gap-1.5">
               <span
-                className={`h-0.5 w-6 bg-[#0F2444] transition-transform ${
-                  menuOpen ? "translate-y-2 rotate-45" : ""
+                className={`h-[3px] w-6 rounded-full bg-[#0F2444] transition-transform ${
+                  menuOpen ? "translate-y-[9px] rotate-45" : ""
                 }`}
               />
               <span
-                className={`h-0.5 w-6 bg-[#0F2444] transition-opacity ${
+                className={`h-[3px] w-6 rounded-full bg-[#0F2444] transition-opacity ${
                   menuOpen ? "opacity-0" : ""
                 }`}
               />
               <span
-                className={`h-0.5 w-6 bg-[#0F2444] transition-transform ${
-                  menuOpen ? "-translate-y-2 -rotate-45" : ""
+                className={`h-[3px] w-6 rounded-full bg-[#0F2444] transition-transform ${
+                  menuOpen ? "-translate-y-[9px] -rotate-45" : ""
                 }`}
               />
             </div>
           </button>
+          <Logo />
+        </div>
+
+        <nav className="hidden items-center gap-5 lg:flex">
+          {NAV_ITEMS.map((item) => (
+            <MegaMenuTrigger key={item.href} item={item} />
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-3">
+          <QuickCheckerTool />
+          <LanguageSelector />
+
+          <div className="hidden lg:block">
+            <AuthButton />
+          </div>
         </div>
       </div>
 
@@ -128,13 +127,8 @@ export function SiteHeader() {
               </div>
             );
           })}
-          <div className="mt-4 flex items-center gap-3">
-            <div className="sm:hidden">
-              <LanguageSelector />
-            </div>
-            <div className="flex-1">
-              <AuthButton fullWidth />
-            </div>
+          <div className="mt-4">
+            <AuthButton fullWidth />
           </div>
         </nav>
       )}

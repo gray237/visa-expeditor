@@ -68,12 +68,32 @@ export function Hero() {
           <rect width="100%" height="100%" fill="url(#hero-guilloche)" />
         </svg>
         <svg
-          className="absolute -right-[6%] top-[6%] hidden h-[72%] w-[58%] text-[#B8925A]/25 lg:block"
-          viewBox="0 0 600 420"
+          className="absolute inset-0 h-full w-full text-[#B8925A]/30 lg:text-[#B8925A]/20"
+          viewBox="0 0 400 600"
+          preserveAspectRatio="none"
           fill="none"
         >
-          <path d="M10 400 Q220 360 320 210 T590 30" stroke="currentColor" strokeWidth="1" strokeDasharray="3 10" />
-          <path d="M70 420 Q260 370 350 220 T600 80" stroke="currentColor" strokeWidth="0.6" strokeDasharray="2 12" />
+          <path
+            d="M-20 600 C 70 560 110 480 80 400 C 50 320 110 250 210 270 C 310 290 370 210 330 120 C 310 70 260 40 190 50"
+            stroke="currentColor"
+            strokeWidth="1"
+            strokeDasharray="2 12"
+            vectorEffect="non-scaling-stroke"
+          />
+          <path
+            d="M20 620 C 120 560 150 470 120 390 C 95 320 160 270 250 290 C 340 310 390 230 355 145"
+            stroke="currentColor"
+            strokeWidth="0.6"
+            strokeDasharray="2 14"
+            vectorEffect="non-scaling-stroke"
+          />
+          <path
+            d="M60 600 C 150 540 180 450 150 380 C 130 330 180 300 240 315"
+            stroke="currentColor"
+            strokeWidth="0.6"
+            strokeDasharray="1 12"
+            vectorEffect="non-scaling-stroke"
+          />
         </svg>
       </div>
 
@@ -106,7 +126,7 @@ export function Hero() {
           </p>
         </div>
 
-        <div data-flight-row className="relative z-60 mt-12 w-full max-w-3xl sm:mt-14">
+        <div data-flight-row className="relative z-10 mt-12 w-full max-w-3xl sm:mt-14">
           <div
             className="pointer-events-none absolute inset-x-0 top-0 h-10 overflow-hidden"
             aria-hidden="true"

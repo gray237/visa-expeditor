@@ -37,7 +37,7 @@ export function SocialProviderButtons() {
     try {
       const { error: signInError } = await authClient.signIn.social({
         provider,
-        callbackURL: `/${locale}/post-sign-in`,
+        callbackURL: `${window.location.origin}/${locale}/post-sign-in`,
       });
       if (signInError) throw signInError;
     } catch {

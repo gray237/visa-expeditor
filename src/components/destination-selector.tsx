@@ -3,29 +3,22 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocale, useTranslations } from "next-intl";
-import { Search } from "lucide-react";
-import * as Flags from "country-flag-icons/react/3x2";
+import { Plus, Search } from "lucide-react";
+import { FlagChip } from "@/components/flag-chip";
 import { destinationCountries, POPULAR_DESTINATION_CODES } from "@/lib/countries";
-
-function FlagChip({ code }: { code: string }) {
-  const Flag = Flags[code as keyof typeof Flags];
-  return (
-    <span className="relative inline-block h-3.75 w-5.25 shrink-0 overflow-hidden rounded-[3px] ring-1 ring-[#0F2444]/10 [&>svg]:absolute! [&>svg]:inset-0! [&>svg]:h-full! [&>svg]:w-full! [&>svg]:object-cover">
-      {Flag ? <Flag title={code} /> : null}
-    </span>
-  );
-}
 
 type DestinationSelectorProps = {
   value: string;
   onChange: (code: string) => void;
   variant?: "field" | "compact";
+  abbreviated?: boolean;
 };
 
 export function DestinationSelector({
   value,
   onChange,
   variant = "field",
+  abbreviated = false,
 }: DestinationSelectorProps) {
   const locale = useLocale();
   const t = useTranslations("common");
@@ -217,40 +210,46 @@ export function DestinationSelector({
         aria-controls={dialogId}
         className={
           variant === "compact"
-            ? "flex items-center gap-1.5 rounded-full px-1 py-1 text-left transition-colors hover:bg-[#0F2444]/5"
+            ? "flex h-9 items-center gap-1 rounded-full px-0.5 text-left transition-colors hover:bg-[#0F2444]/5"
             : "flex w-full items-center gap-3 rounded-2xl px-4 py-3 text-left transition-colors hover:bg-[#0F2444]/5"
         }
       >
         {selected ? (
           <FlagChip code={selected.code} />
         ) : (
-          <span className="flex h-3.75 w-5.25 shrink-0 items-center justify-center rounded-full border border-dashed border-[#B8925A]/70 text-[9px] font-bold text-[#B8925A]">
-            +
+          <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-dashed border-[#B8925A]/70 bg-[#B8925A]/8 text-[#B8925A]">
+            <Plus className="h-2.5 w-2.5" strokeWidth={2} aria-hidden />
           </span>
         )}
         {variant === "compact" ? (
-          <span className="hidden font-body text-sm font-medium text-[#161B22] md:inline">
-            {selected?.name ?? t("whereGoing")}
-          </span>
+          selected && (
+            <span className="hidden font-body text-xs font-semibold text-[#161B22] sm:inline">
+              {selected.code}
+            </span>
+          )
         ) : (
           <span className="flex min-w-0 flex-col">
             <span className="font-mono text-[11px] uppercase tracking-wider text-[#161B22]/70">
-              {t("myDestination")}
+              {abbreviated ? t("destination") : t("myDestination")}
             </span>
             <span className="truncate font-body text-sm font-semibold text-[#161B22]">
-              {selected?.name ?? t("whereGoing")}
+              {abbreviated
+                ? selected?.code ?? t("destination")
+                : selected?.name ?? t("whereGoing")}
             </span>
           </span>
         )}
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="shrink-0 text-[#161B22]/70">
-          <path
-            d="M2.5 4.5L6 8L9.5 4.5"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        {(variant !== "compact" || !selected) && (
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="shrink-0 text-[#161B22]/70">
+            <path
+              d="M2.5 4.5L6 8L9.5 4.5"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        )}
       </button>
 
       {open ? createPortal(modal, document.body) : null}

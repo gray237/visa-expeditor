@@ -18,6 +18,10 @@ function lerp(from: number, to: number, amount: number) {
   return from + (to - from) * amount;
 }
 
+function closestAngle(current: number, target: number) {
+  return current + ((((target - current) % 360) + 540) % 360) - 180;
+}
+
 function subscribe() {
   return () => {};
 }
@@ -34,6 +38,7 @@ export function HeroFlight() {
   const mounted = useSyncExternalStore(subscribe, getClientSnapshot, getServerSnapshot);
   const planeRef = useRef<HTMLDivElement>(null);
   const directionRef = useRef(1);
+  const headingRef = useRef(0);
 
   useEffect(() => {
     if (!mounted) return;
@@ -58,6 +63,10 @@ export function HeroFlight() {
       if (!rowRect.width) return;
 
       const target = document.querySelector<HTMLElement>("[data-flight-target]");
+      const headerIcon = document.querySelector<HTMLElement>("[data-flight-plane-icon]");
+      const visible = progress > 0.03 && progress < 0.97;
+      if (headerIcon) headerIcon.style.opacity = visible ? "0" : "1";
+
       const inset = Math.min(28, rowRect.width * 0.06);
       const travel = clamp01(progress / 0.62);
       const dock = clamp01((progress - 0.62) / 0.38);
@@ -67,20 +76,22 @@ export function HeroFlight() {
       let x = lerp(rowRect.left + inset, rowRect.right - inset, easedTravel);
       let y =
         rowRect.top - Math.sin(travel * Math.PI) * Math.min(18, rowRect.width * 0.035);
-      let scale = 1;
 
       if (target) {
         const targetRect = target.getBoundingClientRect();
         x = lerp(x, targetRect.left + targetRect.width / 2, easedDock);
         y = lerp(y, targetRect.top + targetRect.height / 2, easedDock);
-        scale = lerp(1, 0.68, easedDock);
       }
 
+      const scale = 1 + Math.sin(dock * Math.PI) * 0.06;
       const bank =
-        directionRef.current * Math.sin(travel * Math.PI) * 8 * (1 - easedDock);
+        directionRef.current * Math.sin(travel * Math.PI) * 7 * (1 - easedDock);
+      const rotation = headingRef.current + bank;
       const size = 36;
-      plane!.style.transform = `translate3d(${x - size / 2}px, ${y - size / 2}px, 0) scale(${scale}) rotate(${bank}deg)`;
-      plane!.style.opacity = "1";
+      plane!.style.transform = `translate3d(${x - size / 2}px, ${y - size / 2}px, 0) scale(${scale}) rotate(${rotation}deg)`;
+      plane!.style.opacity = String(
+        Math.min(clamp01(progress / 0.03), clamp01((1 - progress) / 0.03)),
+      );
     }
 
     function tick(now: number) {
@@ -88,13 +99,22 @@ export function HeroFlight() {
       const delta = lastTime ? Math.min(now - lastTime, 64) : 16;
       lastTime = now;
       const target = targetProgress();
+      const smoothing = 1 - Math.exp(-delta / 90);
       directionRef.current = target >= current ? 1 : -1;
+      const headingTarget = closestAngle(
+        headingRef.current,
+        directionRef.current === 1 ? 0 : 180,
+      );
+      headingRef.current = lerp(headingRef.current, headingTarget, smoothing);
       current =
         Math.abs(target - current) < 0.0004
           ? target
-          : current + (target - current) * (1 - Math.exp(-delta / 90));
+          : current + (target - current) * smoothing;
       paint(current);
-      if (Math.abs(target - current) > 0.0004) {
+      if (
+        Math.abs(target - current) > 0.0004 ||
+        Math.abs(headingRef.current - headingTarget) > 0.4
+      ) {
         frameId = requestAnimationFrame(tick);
       } else {
         lastTime = 0;
@@ -113,6 +133,7 @@ export function HeroFlight() {
     function onMotionChange() {
       current = 0;
       directionRef.current = 1;
+      headingRef.current = 0;
       paint(0);
       schedule();
     }
@@ -135,6 +156,8 @@ export function HeroFlight() {
       reduceMotion.removeEventListener("change", onMotionChange);
       resizeObserver?.disconnect();
       if (frameId) cancelAnimationFrame(frameId);
+      const headerIcon = document.querySelector<HTMLElement>("[data-flight-plane-icon]");
+      if (headerIcon) headerIcon.style.opacity = "";
     };
   }, [mounted]);
 

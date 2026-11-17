@@ -17,24 +17,24 @@ type Locale = (typeof routing.locales)[number];
 type IncomingMessage = { role?: unknown; content?: unknown };
 
 const PROMPTS: Record<Locale, string> = {
-  en: "Try: “US passport to Japan” or “Do I need a visa for France with a Canadian passport?”",
-  es: "Prueba: “pasaporte de EE. UU. a Japón” o “¿necesito visado para Francia con pasaporte canadiense?”",
-  fr: "Essayez : « passeport américain vers le Japon » ou « ai-je besoin d'un visa pour la France avec un passeport canadien ? »",
+  en: "Tell me both pieces and I'll check — for example, “US passport to Japan”.",
+  es: "Dime las dos partes y lo reviso — por ejemplo, “pasaporte de EE. UU. a Japón”.",
+  fr: "Donnez-moi les deux infos et je vérifie — par exemple, « passeport américain vers le Japon ».",
 };
 
 const PREFIX: Record<Locale, (passport: string, destination: string, status: string) => string> = {
   en: (passport, destination, status) =>
-    `For a ${passport} passport travelling to ${destination} for tourism, the dataset lists: ${status}.`,
+    `Happy to help! For a ${passport} passport heading to ${destination} for tourism, the dataset shows ${status}.`,
   es: (passport, destination, status) =>
-    `Para un pasaporte de ${passport} que viaja a ${destination} por turismo, el dataset indica: ${status}.`,
+    `¡Claro! Para un pasaporte de ${passport} que va a ${destination} por turismo, los datos indican: ${status}.`,
   fr: (passport, destination, status) =>
-    `Pour un passeport ${passport} voyageant vers ${destination} pour tourisme, la base indique : ${status}.`,
+    `Avec plaisir ! Pour un passeport ${passport} vers ${destination} en tourisme, la base indique : ${status}.`,
 };
 
 const FOOTER: Record<Locale, string> = {
-  en: " This is sample data only — confirm with the destination's official government source before travelling.",
-  es: " Solo son datos de muestra: confirma con la fuente oficial del destino antes de viajar.",
-  fr: " Données indicatives seulement — confirmez auprès de la source officielle de la destination avant de voyager.",
+  en: " Just double-check with the official source before you go.",
+  es: " Solo confirma con la fuente oficial antes de viajar.",
+  fr: " Vérifiez quand même la source officielle avant de partir.",
 };
 
 function detectCodes(text: string, locale: Locale) {
