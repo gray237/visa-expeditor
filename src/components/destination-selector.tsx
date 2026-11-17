@@ -1,144 +1,259 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useLocale, useTranslations } from "next-intl";
 import { Search } from "lucide-react";
 import * as Flags from "country-flag-icons/react/3x2";
-import {
-  destinationCountries,
-  POPULAR_DESTINATION_CODES,
-} from "@/lib/countries";
+import { destinationCountries, POPULAR_DESTINATION_CODES } from "@/lib/countries";
 
-function CountryFlag({ code }: { code: string }) {
+function FlagChip({ code }: { code: string }) {
   const Flag = Flags[code as keyof typeof Flags];
   return (
-    <span className="relative inline-block h-5 w-7 shrink-0 overflow-hidden rounded ring-1 ring-[#0F2444]/10 [&>svg]:absolute! [&>svg]:inset-0! [&>svg]:h-full! [&>svg]:w-full! [&>svg]:object-cover dark:ring-white/15">
+    <span className="relative inline-block h-3.75 w-5.25 shrink-0 overflow-hidden rounded-[3px] ring-1 ring-[#0F2444]/10 [&>svg]:absolute! [&>svg]:inset-0! [&>svg]:h-full! [&>svg]:w-full! [&>svg]:object-cover">
       {Flag ? <Flag title={code} /> : null}
     </span>
   );
 }
 
+type DestinationSelectorProps = {
+  value: string;
+  onChange: (code: string) => void;
+  variant?: "field" | "compact";
+};
+
 export function DestinationSelector({
   value,
   onChange,
-}: {
-  value: string;
-  onChange: (code: string) => void;
-}) {
+  variant = "field",
+}: DestinationSelectorProps) {
   const locale = useLocale();
   const t = useTranslations("common");
+  const uid = useId().replace(/:/g, "");
+  const dialogId = `destination-dialog-${uid}`;
+  const titleId = `destination-title-${uid}`;
+  const listId = `destination-options-${uid}`;
+
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
-  const rootRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleOutside(e: MouseEvent) {
-      if (rootRef.current && !rootRef.current.contains(e.target as Node)) {
-        setOpen(false);
-      }
-    }
-    document.addEventListener("mousedown", handleOutside);
-    return () => document.removeEventListener("mousedown", handleOutside);
-  }, []);
+  const searchRef = useRef<HTMLInputElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
 
   const countries = destinationCountries(locale);
-  const selected = countries.find((c) => c.code === value);
-  const popular = countries.filter((c) => POPULAR_DESTINATION_CODES.includes(c.code));
-  const list = query
-    ? countries.filter((c) => c.name.toLowerCase().includes(query.toLowerCase()))
-    : popular;
+  const selected = countries.find((country) => country.code === value);
+  const popular = countries.filter((country) => POPULAR_DESTINATION_CODES.includes(country.code));
+  const filtered = query
+    ? countries.filter((country) => country.name.toLowerCase().includes(query.toLowerCase()))
+    : null;
 
-  function handleSelect(code: string) {
-    onChange(code);
+  useEffect(() => {
+    if (!open) return;
+
+    function handleKey(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        close();
+      }
+      if (event.key === "Tab") {
+        const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), input:not([disabled])',
+        );
+        if (!focusable?.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    }
+
+    document.addEventListener("keydown", handleKey);
+    document.body.style.overflow = "hidden";
+    searchRef.current?.focus();
+
+    return () => {
+      document.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  function close() {
     setOpen(false);
     setQuery("");
+    requestAnimationFrame(() => triggerRef.current?.focus());
   }
 
-  return (
-    <div ref={rootRef} className="relative">
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        aria-haspopup="listbox"
-        aria-expanded={open}
-        aria-controls="destination-options"
-        aria-label={`${t("myDestination")} ${selected ? selected.name : t("whereGoing")}`}
-        className="flex w-full items-center gap-2 px-2 py-1.5 text-left"
-      >
-        <Search className="h-4 w-4 shrink-0 text-[#161B22]/70" />
-        <span className="flex-1 overflow-hidden">
-          <span className="block font-mono text-[10px] uppercase tracking-wider text-[#161B22]/70">
-            {t("myDestination")}
-          </span>{" "}
-          <span className="block truncate text-sm text-[#161B22]">
-            {selected ? selected.name : t("whereGoing")}
-          </span>
-        </span>
-      </button>
+  function choose(code: string) {
+    onChange(code);
+    close();
+  }
 
-      {open && (
-        <div className="absolute left-0 top-full z-50 mt-2 w-72 rounded-2xl border border-[#0F2444]/10 bg-white p-3 shadow-xl dark:border-white/10 dark:bg-[#1a1b20]">
-          <div className="flex items-center gap-2 rounded-xl border border-[#0F2444]/10 px-3 py-2 dark:border-white/10">
-            <Search className="h-4 w-4 shrink-0 text-[#161B22]/70 dark:text-[#F5F6F4]/40" />
+  const modal = (
+    <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
+      <div className="absolute inset-0 bg-[#0B1B33]/70 backdrop-blur-sm" onClick={close} />
+
+      <div
+        ref={dialogRef}
+        id={dialogId}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        className="relative flex max-h-[85vh] w-full max-w-md flex-col overflow-hidden rounded-3xl bg-[#F5F6F4] shadow-2xl"
+      >
+        <div className="flex items-start justify-between px-6 pt-6">
+          <div>
+            <h2 id={titleId} className="font-display text-xl font-semibold text-[#0F2444]">
+              {t("selectDestination")}
+            </h2>
+            <p className="mt-1 font-body text-sm text-[#161B22]/70">
+              {t("selectDestinationSubtitle")}
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={close}
+            aria-label={t("close")}
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[#161B22]/70 transition-colors hover:bg-[#0F2444]/5 hover:text-[#0F2444]"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M3.5 3.5L12.5 12.5M12.5 3.5L3.5 12.5"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div className="px-6 pt-5">
+          <div className="relative">
+            <Search
+              className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[#161B22]/70"
+              aria-hidden
+            />
             <input
-              autoFocus
+              ref={searchRef}
               type="search"
               role="combobox"
               aria-label={t("searchDestinations")}
               aria-autocomplete="list"
-              aria-expanded={open}
-              aria-controls="destination-options"
+              aria-expanded
+              aria-controls={listId}
               value={query}
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={(event) => setQuery(event.target.value)}
               onKeyDown={(event) => {
-                if (event.key === "Escape") {
-                  setOpen(false);
-                  setQuery("");
-                } else if (event.key === "ArrowDown") {
+                if (event.key === "ArrowDown") {
                   event.preventDefault();
-                  rootRef.current
-                    ?.querySelector<HTMLElement>('[role="option"]')
-                    ?.focus();
+                  dialogRef.current?.querySelector<HTMLElement>('[role="option"]')?.focus();
                 }
               }}
               placeholder={t("searchDestinations")}
-              className="w-full bg-transparent text-sm text-[#161B22] outline-none focus-visible:outline-none dark:text-[#F5F6F4]"
+              className="w-full rounded-xl border border-[#0F2444]/15 bg-white py-2.5 pl-10 pr-3.5 font-body text-sm outline-none focus:border-[#B8925A]"
             />
           </div>
+        </div>
 
-          {!query && (
-            <p className="mb-1 mt-3 px-1 font-mono text-[10px] uppercase tracking-wider text-[#161B22]/70 dark:text-[#F5F6F4]/40">
+        <div className="mt-2 flex-1 overflow-y-auto px-6 pb-5">
+          {!filtered && (
+            <p className="mb-1.5 mt-3 px-1 font-mono text-[11px] uppercase tracking-wider text-[#161B22]/70">
               {t("popular")}
             </p>
           )}
-
-          <div
-            id="destination-options"
-            role="listbox"
-            aria-label={t("searchDestinations")}
-            className="mt-1 max-h-64 overflow-y-auto"
-          >
-            {list.map((country) => (
-              <button
-                key={country.code}
-                type="button"
-                role="option"
-                aria-selected={country.code === value}
-                onClick={() => handleSelect(country.code)}
-                className="flex w-full items-center gap-3 rounded-xl p-2 text-left transition-colors hover:bg-[#0F2444]/5 dark:hover:bg-white/10"
-              >
-                <CountryFlag code={country.code} />
-                <span className="text-sm text-[#161B22] dark:text-[#F5F6F4]">{country.name}</span>
-              </button>
+          <ul id={listId} role="listbox" aria-label={t("selectDestination")} className="space-y-1">
+            {(filtered ?? popular).map((country) => (
+              <li key={country.code}>
+                <button
+                  type="button"
+                  role="option"
+                  aria-selected={country.code === value}
+                  onClick={() => choose(country.code)}
+                  className={`flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left transition-colors ${
+                    country.code === value ? "bg-[#0F2444]/6" : "hover:bg-[#0F2444]/4"
+                  }`}
+                >
+                  <span className="flex items-center gap-3">
+                    <FlagChip code={country.code} />
+                    <span className="font-body text-sm text-[#161B22]">{country.name}</span>
+                  </span>
+                  {country.code === value && (
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0 text-[#B8925A]">
+                      <path
+                        d="M3 8.5L6.5 12L13 4.5"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  )}
+                </button>
+              </li>
             ))}
-            {list.length === 0 && (
-              <p className="p-4 text-center text-sm text-[#161B22]/70 dark:text-[#F5F6F4]/50">
-                {t("noMatches")}
-              </p>
-            )}
-          </div>
+          </ul>
+          {filtered?.length === 0 && (
+            <p className="px-3 py-8 text-center font-body text-sm text-[#161B22]/70">
+              {t("noMatches")} {t("noMatchesHint")}
+            </p>
+          )}
         </div>
-      )}
+      </div>
     </div>
+  );
+
+  return (
+    <>
+      <button
+        ref={triggerRef}
+        type="button"
+        onClick={() => setOpen(true)}
+        aria-haspopup="dialog"
+        aria-expanded={open}
+        aria-controls={dialogId}
+        className={
+          variant === "compact"
+            ? "flex items-center gap-1.5 rounded-full px-1 py-1 text-left transition-colors hover:bg-[#0F2444]/5"
+            : "flex w-full items-center gap-3 rounded-2xl px-4 py-3 text-left transition-colors hover:bg-[#0F2444]/5"
+        }
+      >
+        {selected ? (
+          <FlagChip code={selected.code} />
+        ) : (
+          <span className="flex h-3.75 w-5.25 shrink-0 items-center justify-center rounded-full border border-dashed border-[#B8925A]/70 text-[9px] font-bold text-[#B8925A]">
+            +
+          </span>
+        )}
+        {variant === "compact" ? (
+          <span className="hidden font-body text-sm font-medium text-[#161B22] md:inline">
+            {selected?.name ?? t("whereGoing")}
+          </span>
+        ) : (
+          <span className="flex min-w-0 flex-col">
+            <span className="font-mono text-[11px] uppercase tracking-wider text-[#161B22]/70">
+              {t("myDestination")}
+            </span>
+            <span className="truncate font-body text-sm font-semibold text-[#161B22]">
+              {selected?.name ?? t("whereGoing")}
+            </span>
+          </span>
+        )}
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="shrink-0 text-[#161B22]/70">
+          <path
+            d="M2.5 4.5L6 8L9.5 4.5"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </button>
+
+      {open ? createPortal(modal, document.body) : null}
+    </>
   );
 }

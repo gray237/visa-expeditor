@@ -1,0 +1,12 @@
+{
+  "openChat": "Discuter avec Ari",
+  "closeChat": "Fermer le chat",
+  "chatTitle": "Assistant visa",
+  "chatSubtitle": "Conseils issus de notre base de données visas",
+  "welcome": "Bonjour, je suis Ari. Indiquez votre passeport et votre destination et je résumerai les données.",
+  "thinking": "Vérification des conditions…",
+  "error": "Je n'ai pas pu vérifier maintenant. Veuillez réessayer.",
+  "messagePlaceholder": "Posez une question sur un visa…",
+  "sendMessage": "Envoyer le message",
+  "disclaimer": "Informations indicatives seulement — vérifiez toujours auprès de la source officielle du pays de destination."
+}

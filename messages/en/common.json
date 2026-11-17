@@ -20,6 +20,8 @@
   "myPassport": "My passport",
   "selectPassport": "Select your passport",
   "selectPassportSubtitle": "Requirements are personalized to your passport country.",
+  "selectDestination": "Select your destination",
+  "selectDestinationSubtitle": "Choose where you're heading to see the right entry requirements.",
   "searchCountry": "Search country...",
   "searchDestinations": "Search destinations...",
   "liveElsewhere": "I currently live somewhere other than {country}",
@@ -43,5 +45,8 @@
   "loading": "Loading",
   "draftBanner": "Draft — pending legal review",
   "notAffiliated": "Not affiliated with any government agency.",
-  "notLawFirm": "Visa Expeditor is not a law firm and does not provide legal advice."
+  "notLawFirm": "Visa Expeditor is not a law firm and does not provide legal advice.",
+  "destinationsTitle": "Destinations",
+  "destinationsSubtitle": "Visa and entry requirements for every country.",
+  "visaFreeShort": "visa-free"
 }

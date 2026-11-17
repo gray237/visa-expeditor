@@ -5,17 +5,15 @@ import { useTranslations } from "next-intl";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/logo";
-import { PassportSelector } from "@/components/passport-selector";
+import { QuickCheckerTool } from "@/components/layout/quick-checker-tool";
 import { MegaMenuTrigger } from "@/components/mega-menu";
 import { AuthButton } from "@/components/auth-button";
 import { LanguageSelector } from "@/components/language-selector";
 import { NAV_ITEMS } from "@/lib/nav";
-import { usePassport } from "@/components/providers/passport-provider";
 import { ComingSoonBadge } from "@/components/coming-soon-badge";
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { passport: passportCode, setPassport: setPassportCode } = usePassport();
   const [expandedMobile, setExpandedMobile] = useState<string | null>(null);
   const t = useTranslations();
   const tc = useTranslations("common");
@@ -32,8 +30,10 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <PassportSelector value={passportCode} onChange={setPassportCode} variant="pill" />
-          <LanguageSelector />
+          <QuickCheckerTool />
+          <div className="hidden sm:block">
+            <LanguageSelector />
+          </div>
 
           <div className="hidden lg:block">
             <AuthButton />
@@ -128,8 +128,13 @@ export function SiteHeader() {
               </div>
             );
           })}
-          <div className="mt-4">
-            <AuthButton fullWidth />
+          <div className="mt-4 flex items-center gap-3">
+            <div className="sm:hidden">
+              <LanguageSelector />
+            </div>
+            <div className="flex-1">
+              <AuthButton fullWidth />
+            </div>
           </div>
         </nav>
       )}

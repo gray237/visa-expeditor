@@ -63,10 +63,10 @@ export async function VisaResult({
   const tg = await getTranslations("destinationGuides");
 
   return (
-    <section className="mt-10 max-w-full" aria-live="polite">
+    <section className="mt-0 max-w-full" aria-live="polite">
       {!hasQuery ? (
-        <div className="rounded-3xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-7 dark:border-white/10 dark:bg-white/5">
-          <CircleAlert className="h-6 w-6 text-[#8A6D3F]" strokeWidth={1.75} />
+        <div className="reveal-card flex h-full min-h-64 flex-col justify-center rounded-3xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-7 text-center dark:border-white/10 dark:bg-white/5">
+          <CircleAlert className="mx-auto h-6 w-6 text-[#8A6D3F]" strokeWidth={1.75} />
           <h2 className="mt-4 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
             {t("emptyHeading")}
           </h2>
@@ -75,8 +75,8 @@ export async function VisaResult({
           </p>
         </div>
       ) : !knownDestinationCode ? (
-        <div className="rounded-3xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-7 dark:border-white/10 dark:bg-white/5">
-          <CircleAlert className="h-6 w-6 text-[#8A6D3F]" strokeWidth={1.75} />
+        <div className="reveal-card flex h-full min-h-64 flex-col justify-center rounded-3xl border border-[#0F2444]/10 bg-[#0F2444]/3 p-7 text-center dark:border-white/10 dark:bg-white/5">
+          <CircleAlert className="mx-auto h-6 w-6 text-[#8A6D3F]" strokeWidth={1.75} />
           <h2 className="mt-4 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
             {t("notFoundHeading")}
           </h2>
@@ -85,8 +85,8 @@ export async function VisaResult({
           </p>
         </div>
       ) : !record || record.status === "unknown" ? (
-        <div className="rounded-3xl border border-[#B8925A]/30 bg-[#B8925A]/5 p-7 dark:bg-[#B8925A]/10">
-          <MessageCircle className="h-6 w-6 text-[#8A6D3F]" strokeWidth={1.75} />
+        <div className="reveal-card flex h-full min-h-64 flex-col justify-center rounded-3xl border border-[#B8925A]/30 bg-[#B8925A]/5 p-7 text-center dark:bg-[#B8925A]/10">
+          <MessageCircle className="mx-auto h-6 w-6 text-[#8A6D3F]" strokeWidth={1.75} />
           <h2 className="mt-4 font-display text-xl font-semibold text-[#161B22] dark:text-[#F5F6F4]">
             {t("noDataHeading", { country: fullCountryName(passport, locale) })}
           </h2>
@@ -95,14 +95,14 @@ export async function VisaResult({
           </p>
           <Link
             href={`/start?passport=${passport}&to=${knownDestinationCode}&purpose=${purpose}`}
-            className="mt-6 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#0F2444] px-6 py-3.5 text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
+            className="mx-auto mt-6 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#0F2444] px-6 py-3.5 text-sm font-semibold text-[#F5F6F4] transition-colors hover:bg-[#0F2444]/90"
           >
             {t("talkToSpecialist")}
           </Link>
         </div>
       ) : (
         <div className="space-y-5">
-          <article className="rounded-3xl border border-[#0F2444]/10 bg-white p-7 dark:border-white/10 dark:bg-[#1a1b20]">
+          <article className="reveal-card rounded-3xl border border-[#0F2444]/10 bg-white p-7 shadow-sm dark:border-white/10 dark:bg-[#1a1b20]">
             <div className="flex items-start gap-4">
               <ResultFlag code={knownDestinationCode} />
               <div>
@@ -246,7 +246,7 @@ export async function VisaResult({
             )}
           </article>
 
-          <article className="rounded-3xl border border-[#0F2444]/10 bg-white p-7 dark:border-white/10 dark:bg-[#1a1b20]">
+          <article className="reveal-card rounded-3xl border border-[#0F2444]/10 bg-white p-7 shadow-sm dark:border-white/10 dark:bg-[#1a1b20]">
             <h3 className="font-display text-lg font-semibold text-[#161B22] dark:text-[#F5F6F4]">
               {t("checklist.heading")}
             </h3>
@@ -266,7 +266,7 @@ export async function VisaResult({
           </article>
 
           {guide && (
-            <article className="rounded-3xl border border-[#0F2444]/10 bg-white p-7 dark:border-white/10 dark:bg-[#1a1b20]">
+            <article className="reveal-card rounded-3xl border border-[#0F2444]/10 bg-white p-7 shadow-sm dark:border-white/10 dark:bg-[#1a1b20]">
               {guide.overview.map((paragraph, index) => (
                 <p
                   key={index}

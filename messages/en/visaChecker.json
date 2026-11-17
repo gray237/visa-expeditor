@@ -1,11 +1,7 @@
 {
-  "eyebrow": "Visa Checker",
-  "title": "Check visa requirements",
-  "breadcrumbs": {
-    "label": "Breadcrumbs",
-    "tools": "Tools",
-    "checker": "Visa checker"
-  },
+  "title": "Visa Checker",
+  "heroPill": "Trusted entry guidance, in seconds",
+  "heroDescription": "Check visa requirements for your passport, destination and trip purpose. Browse the destinations below or choose one above. Confirm all requirements with official sources before travel.",
   "filters": {
     "purpose": "Travel purpose"
   },
@@ -22,19 +18,19 @@
     "whatsapp": "Message on WhatsApp"
   },
   "stats": {
-    "heading": "Dataset summary",
-    "coverage": "{covered} of {total} destinations covered in this dataset",
+    "heading": "At a glance",
+    "coverage": "{covered} of {total} destinations covered",
     "visaFree": "No visa required",
-    "visaFreeDescription": "Rows where no visa is required.",
+    "visaFreeDescription": "Destinations you can enter without a visa.",
     "electronic": "Electronic permission",
-    "electronicDescription": "eVisa, ETA and visa-on-arrival rows.",
+    "electronicDescription": "eVisas, ETAs and visas on arrival.",
     "paper": "Paper visa",
-    "paperDescription": "Rows marked as requiring a visa before travel."
+    "paperDescription": "Destinations that require a visa before you travel."
   },
   "list": {
-    "heading": "Destinations in this dataset",
+    "heading": "Destinations we cover",
     "description": "Choose a destination to view its entry details.",
-    "noEntries": "There are no records for this passport."
+    "noEntries": "There are no destinations available for this passport yet."
   },
   "buckets": {
     "visaFree": "No visa required",
@@ -64,7 +60,7 @@
   "notFoundHeading": "Destination not recognized",
   "notFoundBody": "Choose a destination from the list to check whether a record is available.",
   "noDataHeading": "No entry record for {country}",
-  "noDataBody": "There is no matching dataset row for this passport, destination and travel purpose. We do not infer missing requirements. Contact us if you would like to ask about assistance.",
+  "noDataBody": "We don't have entry details for this passport, destination and travel purpose yet. We never guess missing requirements. Contact us if you'd like help with your plans.",
   "resultHeading": "{purpose} entry information for {passport} passport holders traveling to {destination}",
   "result": {
     "statusLabel": "Status",

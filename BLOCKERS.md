@@ -22,6 +22,8 @@ value; replace the stub when the owner supplies the real thing.
 | B-14 | Neon Auth preview smoke test | Neon Auth replaced Clerk with owner approval; the preview deployment exists but auth has not been smoke-tested | On the Vercel preview, test sign up, sign in, sign out, and that `/dashboard` redirects to sign-in when signed out |
 | B-15 | Turnstile and rate limiting | Contact and intake forms fail closed in production when protection is not configured | Create Cloudflare Turnstile keys and configure both Turnstile and Upstash REST env vars in Vercel |
 | B-16 | Error monitoring and uptime | Sentry and `/api/health` are wired; no Sentry project or external uptime monitor is configured | Set `NEXT_PUBLIC_SENTRY_DSN` in Vercel and monitor `/api/health` with an uptime service |
+| B-17 | Repository access policy | Local git identity is `gray237 <grayleft21@gmail.com>`; older history contains `motomenda` commits | Verify/remove `motomenda` from GitHub collaborators and confirm only `gray237` has write access. `motomenda` is not associated with this project and must never be added as a collaborator |
+| B-18 | Social login + admin auto-redirect | Google/Apple buttons and `/{locale}/post-sign-in` callback are coded; admin allowlist reads `ADMIN_EMAILS` | Enable Google and Apple providers in the Neon Console, set `ADMIN_EMAILS="visaexpeditor00@gmail.com"` in Vercel, and smoke-test sign-in → `/admin` |
 
 The roadmap assumes Clerk, but the owner approved using Neon Auth (Managed
 Better Auth) instead. Vercel preview/production must set the Neon Auth and

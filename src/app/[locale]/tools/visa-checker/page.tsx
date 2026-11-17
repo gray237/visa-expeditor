@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Info, Mail, MessageCircle, Phone } from "lucide-react";
+import { Info, Mail, MessageCircle, Phone, ShieldCheck } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import * as Flags from "country-flag-icons/react/3x2";
@@ -59,7 +59,7 @@ export async function generateMetadata({
     locale,
     path: "/tools/visa-checker",
     title: t("title"),
-    description: t("emptyBody"),
+    description: t("heroDescription"),
     noindex,
   });
 }
@@ -172,54 +172,74 @@ export default async function VisaCheckerPage({
   ];
 
   return (
-    <div className="py-10 sm:py-16">
+    <div className="pb-14 sm:pb-20">
+      <section className="relative isolate overflow-hidden bg-[#0F2444] px-6 pb-16 pt-16 sm:pb-24 sm:pt-20">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10"
+          style={{
+            background:
+              "radial-gradient(900px 520px at 50% -12%, rgba(184,146,90,0.24), transparent 65%), " +
+              "radial-gradient(620px 420px at 6% 108%, rgba(58,90,122,0.30), transparent 60%), " +
+              "radial-gradient(620px 420px at 94% 108%, rgba(58,90,122,0.30), transparent 60%), " +
+              "linear-gradient(165deg, #12294c 0%, #0F2444 48%, #081729 100%)",
+          }}
+        />
+        <div className="pointer-events-none absolute inset-0 -z-10 opacity-[0.05]" aria-hidden="true">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="checker-guilloche" x="0" y="0" width="80" height="32" patternUnits="userSpaceOnUse">
+                <path d="M-20,8 Q0,-4 20,8 T60,8 T100,8" stroke="#B8925A" strokeWidth="0.6" fill="none" />
+                <path d="M-20,16 Q0,4 20,16 T60,16 T100,16" stroke="#B8925A" strokeWidth="0.6" fill="none" />
+                <path d="M-20,24 Q0,12 20,24 T60,24 T100,24" stroke="#B8925A" strokeWidth="0.6" fill="none" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#checker-guilloche)" />
+          </svg>
+        </div>
+
+        <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
+          <span className="hero-reveal inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium text-[#F5F6F4]/90 backdrop-blur-md">
+            <ShieldCheck className="h-3.5 w-3.5 text-[#B8925A]" strokeWidth={2} />
+            {t("heroPill")}
+          </span>
+          <h1 className="hero-reveal hero-reveal-1 mt-6 max-w-3xl font-display text-4xl font-semibold leading-[1.1] tracking-tight text-[#F5F6F4] sm:text-5xl lg:text-6xl">
+            {t("title")}
+          </h1>
+          <p className="hero-reveal hero-reveal-2 mt-5 max-w-2xl text-base leading-relaxed text-[#F5F6F4]/75 sm:text-lg">
+            {t("heroDescription")}
+          </p>
+        </div>
+      </section>
+
       <div className="mx-auto max-w-350 px-6">
-        <nav
-          aria-label={t("breadcrumbs.label")}
-          className="flex items-center gap-2 font-body text-sm text-[#161B22]/70 dark:text-[#F5F6F4]/55"
-        >
-          <Link href="/tools" className="underline-offset-4 hover:underline">
-            {t("breadcrumbs.tools")}
-          </Link>
-          <span aria-hidden="true">/</span>
-          <span aria-current="page">{t("breadcrumbs.checker")}</span>
-        </nav>
-
-        <div className="mt-6 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-3xl">
-            <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-[#836539]">
-              {t("eyebrow")}
-            </p>
-            <h1 className="mt-2 font-display text-3xl font-semibold leading-tight text-[#161B22] sm:text-4xl dark:text-[#F5F6F4]">
-              {t("title")}
-            </h1>
+        <div className="-mt-8 sm:-mt-10">
+          <div className="hero-reveal hero-reveal-3 mx-auto max-w-5xl rounded-[28px] bg-white p-2 shadow-[0_24px_70px_-20px_rgba(15,36,68,0.28)] ring-1 ring-[#0F2444]/5 sm:p-3">
+            <VisaCheckerSearch
+              initialPassport={passport}
+              initialDestination={destinationCode}
+              initialPurpose={purpose}
+            />
           </div>
-          {supportLinks.length > 0 && (
-            <div className="flex flex-wrap gap-2">
-              {supportLinks.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="inline-flex items-center gap-2 rounded-full border border-[#0F2444]/10 px-4 py-2 text-sm text-[#161B22] transition-colors hover:bg-[#0F2444]/5 dark:border-white/15 dark:text-[#F5F6F4] dark:hover:bg-white/10"
-                >
-                  {item.icon}
-                  {item.label}
-                </a>
-              ))}
-            </div>
-          )}
         </div>
 
-        <div className="mt-7 max-w-5xl">
-          <VisaCheckerSearch
-            initialPassport={passport}
-            initialDestination={destinationCode}
-            initialPurpose={purpose}
-          />
-        </div>
+        {supportLinks.length > 0 && (
+          <div className="hero-reveal hero-reveal-3 mt-6 flex flex-wrap items-center justify-center gap-2">
+            {supportLinks.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="inline-flex items-center gap-2 rounded-full border border-[#0F2444]/10 bg-white px-4 py-2 text-sm text-[#161B22] shadow-sm transition-colors hover:bg-[#0F2444]/5"
+              >
+                {item.icon}
+                {item.label}
+              </a>
+            ))}
+          </div>
+        )}
 
-        <div className="mt-7 flex flex-col lg:flex-row lg:gap-8">
-          <div className="flex-1">
+        <div className="mt-10 grid items-stretch gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,20rem)]">
+          <div className="min-w-0">
             <VisaResult
               locale={locale}
               passport={passport}
@@ -231,7 +251,7 @@ export default async function VisaCheckerPage({
             />
           </div>
           <section
-            className="mt-10 lg:mt-0 w-full lg:w-64 lg:flex-shrink-0"
+            className="flex h-full w-full min-w-0 flex-col self-stretch"
             aria-labelledby="checker-stats-heading"
           >
             <h2
@@ -240,20 +260,21 @@ export default async function VisaCheckerPage({
             >
               {t("stats.heading")}
             </h2>
-            <p className="mt-1 text-sm text-[#161B22]/70 dark:text-[#F5F6F4]/60">
+            <p className="mt-1 text-sm leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
               {t("stats.coverage", { covered: stats.covered, total: stats.total })}
             </p>
-            <div className="mt-5 grid gap-4 sm:grid-cols-1">
+            <div className="mt-5 grid flex-1 gap-4 sm:grid-cols-3 lg:grid-cols-1">
               {(
                 [
                   ["visaFree", stats.visaFree],
                   ["electronic", stats.electronic],
                   ["paper", stats.paper],
                 ] as const
-              ).map(([key, count]) => (
+              ).map(([key, count], index) => (
                 <div
                   key={key}
-                  className="rounded-2xl border border-[#0F2444]/10 bg-white p-5 dark:border-white/10 dark:bg-[#1a1b20]"
+                  className="reveal-card flex flex-col rounded-2xl border border-[#0F2444]/10 bg-white p-5 shadow-sm transition-shadow hover:shadow-md dark:border-white/10 dark:bg-[#1a1b20]"
+                  style={{ animationDelay: `${index * 90}ms` }}
                 >
                   <p className="font-display text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
                     {count}
@@ -299,11 +320,11 @@ export default async function VisaCheckerPage({
                     {t(`buckets.${group.key}`)}
                   </h3>
                   <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {group.records.map((item) => (
-                      <li key={`${item.destination}-${item.purpose}`}>
+                    {group.records.map((item, index) => (
+                      <li key={`${item.destination}-${item.purpose}`} className="reveal-card" style={{ animationDelay: `${Math.min(index, 12) * 45}ms` }}>
                         <Link
                           href={`/tools/visa-checker?passport=${passport}&to=${item.destination}&purpose=${item.purpose}`}
-                          className="relative block h-full overflow-hidden rounded-2xl border border-[#0F2444]/10 bg-white p-4 transition-colors hover:border-[#B8925A]/50 dark:border-white/10 dark:bg-[#1a1b20] dark:hover:border-[#B8925A]/50"
+                          className="group relative block h-full overflow-hidden rounded-2xl border border-[#0F2444]/10 bg-white p-4 shadow-sm transition-all hover:-translate-y-0.5 hover:border-[#B8925A]/50 hover:shadow-md dark:border-white/10 dark:bg-[#1a1b20] dark:hover:border-[#B8925A]/50"
                         >
                           <ListFlagWatermark code={item.destination} />
                           <div className="relative">

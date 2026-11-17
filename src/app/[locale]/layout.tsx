@@ -2,35 +2,15 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Fraunces, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { PassportProvider } from "@/components/providers/passport-provider";
+import { DestinationProvider } from "@/components/providers/destination-provider";
 import { SiteStructuredData } from "@/components/structured-data";
+import { AriChatBot } from "@/components/chat/ari-chatbot";
 import { SITE_IS_PREVIEW, SITE_URL } from "@/lib/seo";
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  variable: "--font-fraunces",
-  weight: ["400", "500", "600"],
-  display: "swap",
-});
-
-const plexSans = IBM_Plex_Sans({
-  subsets: ["latin"],
-  variable: "--font-plex-sans",
-  weight: ["400", "500", "600"],
-  display: "swap",
-});
-
-const plexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  variable: "--font-plex-mono",
-  weight: ["400", "500"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -71,24 +51,29 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body
-        className={`${fraunces.variable} ${plexSans.variable} ${plexMono.variable} font-body antialiased`}
-      >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
+      <body className="font-body antialiased">
         <NextIntlClientProvider>
           <PassportProvider>
-            <a
-              href="#main-content"
-              className="sr-only z-100 rounded-lg bg-white px-4 py-3 text-[#161B22] focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A6D3F]"
-            >
-              {t("skipToContent")}
-            </a>
-            <SiteHeader />
-            <main id="main-content" tabIndex={-1}>
-              {children}
-            </main>
-            <SiteFooter />
-            <SiteStructuredData locale={locale} />
-          </PassportProvider>
+            <DestinationProvider>
+              <a
+                href="#main-content"
+                className="sr-only z-100 rounded-lg bg-white px-4 py-3 text-[#161B22] focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A6D3F]"
+              >
+                {t("skipToContent")}
+              </a>
+              <SiteHeader />
+              <main id="main-content" tabIndex={-1}>
+                {children}
+              </main>
+              <SiteFooter />
+              <AriChatBot />
+              <SiteStructuredData locale={locale} />
+            </DestinationProvider>
+            </PassportProvider>
         </NextIntlClientProvider>
       </body>
     </html>

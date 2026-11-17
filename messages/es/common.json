@@ -20,6 +20,8 @@
   "myPassport": "Mi pasaporte",
   "selectPassport": "Selecciona tu pasaporte",
   "selectPassportSubtitle": "Los requisitos se personalizan según tu país de pasaporte.",
+  "selectDestination": "Selecciona tu destino",
+  "selectDestinationSubtitle": "Elige a dónde vas para ver los requisitos de entrada correctos.",
   "searchCountry": "Buscar país...",
   "searchDestinations": "Buscar destinos...",
   "liveElsewhere": "Actualmente vivo en un país distinto de {country}",
@@ -43,5 +45,8 @@
   "loading": "Cargando",
   "draftBanner": "Borrador — pendiente de revisión legal",
   "notAffiliated": "No afiliado con ninguna agencia gubernamental.",
-  "notLawFirm": "Visa Expeditor no es un bufete de abogados y no ofrece asesoría legal."
+  "notLawFirm": "Visa Expeditor no es un bufete de abogados y no ofrece asesoría legal.",
+  "destinationsTitle": "Destinos",
+  "destinationsSubtitle": "Requisitos de visa y entrada para cada país.",
+  "visaFreeShort": "sin visado"
 }

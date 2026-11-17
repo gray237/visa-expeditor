@@ -1,0 +1,21 @@
+{
+  "title": "Estudio de administración",
+  "eyebrow": "Administración de Visa Expeditor",
+  "welcome": "Bienvenido de nuevo, {name}",
+  "signedInAs": "Sesión iniciada como",
+  "role": "Administrador",
+  "notAdmin": "No autorizado",
+  "notAdminBody": "Tu cuenta no aparece como administradora. Contacta con el propietario de la cuenta para solicitar acceso.",
+  "notConfigured": "La autenticación no está configurada aún. Añade NEON_AUTH_BASE_URL, NEON_AUTH_COOKIE_SECRET y ADMIN_EMAILS para habilitar el estudio de administración.",
+  "studio": "Estudio",
+  "overview": "Resumen",
+  "destinations": "Destinos",
+  "destinationsCount": "{count} destinos",
+  "passports": "Pasaportes",
+  "passportsCount": "{count} países de pasaporte",
+  "quickLinks": "Enlaces rápidos",
+  "goDashboard": "Ir al panel",
+  "viewDestinations": "Ver destinos",
+  "signOut": "Cerrar sesión",
+  "adminDescription": "Admin Studio — panel de administración de Visa Expeditor."
+}

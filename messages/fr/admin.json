@@ -1,0 +1,21 @@
+{
+  "title": "Studio d'administration",
+  "eyebrow": "Administration Visa Expeditor",
+  "welcome": "Bienvenue à nouveau, {name}",
+  "signedInAs": "Connecté en tant que",
+  "role": "Administrateur",
+  "notAdmin": "Non autorisé",
+  "notAdminBody": "Votre compte n'est pas répertorié comme administrateur. Contactez le propriétaire du compte pour demander l'accès.",
+  "notConfigured": "L'authentification n'est pas encore configurée. Ajoutez NEON_AUTH_BASE_URL, NEON_AUTH_COOKIE_SECRET et ADMIN_EMAILS pour activer le studio d'administration.",
+  "studio": "Studio",
+  "overview": "Vue d'ensemble",
+  "destinations": "Destinations",
+  "destinationsCount": "{count} destinations",
+  "passports": "Passeports",
+  "passportsCount": "{count} pays de passeport",
+  "quickLinks": "Liens rapides",
+  "goDashboard": "Aller au tableau de bord",
+  "viewDestinations": "Voir les destinations",
+  "signOut": "Déconnexion",
+  "adminDescription": "Studio d'administration — tableau de bord d'administration Visa Expeditor."
+}

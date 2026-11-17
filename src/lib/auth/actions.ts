@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import { after } from "next/server";
 import { auth } from "@/lib/auth/server";
+import { isAdminEmail } from "@/lib/auth/isAdmin";
 import { escapeHtml, sendEmail } from "@/lib/resend";
 import { SITE_URL } from "@/lib/seo";
 import { verifyTurnstile } from "@/lib/turnstile";
@@ -109,6 +110,8 @@ export async function signInAction(
   if (error) return { error: normalizeAuthError(error) };
 
   const locale = await getLocale();
+  const { data: session } = await auth.getSession();
+  if (isAdminEmail(session?.user?.email ?? email)) redirect(`/${locale}/admin`);
   redirect(`/${locale}/dashboard`);
 }
 
@@ -141,7 +144,10 @@ export async function signUpAction(
   after(() => sendWelcomeEmail({ to: email, name: displayName, locale }));
 
   const { data: session } = await auth.getSession();
-  if (session?.user) redirect(`/${locale}/dashboard`);
+  if (session?.user) {
+    if (isAdminEmail(session.user.email ?? email)) redirect(`/${locale}/admin`);
+    redirect(`/${locale}/dashboard`);
+  }
 
   redirect(`/${locale}/sign-in?registered=1`);
 }

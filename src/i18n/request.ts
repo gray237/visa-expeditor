@@ -30,6 +30,8 @@ import enStart from "../../messages/en/start.json";
 import enLegal from "../../messages/en/legal.json";
 import enConsent from "../../messages/en/consent.json";
 import enAttribution from "../../messages/en/attribution.json";
+import enAdmin from "../../messages/en/admin.json";
+import enChat from "../../messages/en/chat.json";
 
 import esNav from "../../messages/es/nav.json";
 import esAuth from "../../messages/es/auth.json";
@@ -59,6 +61,8 @@ import esStart from "../../messages/es/start.json";
 import esLegal from "../../messages/es/legal.json";
 import esConsent from "../../messages/es/consent.json";
 import esAttribution from "../../messages/es/attribution.json";
+import esAdmin from "../../messages/es/admin.json";
+import esChat from "../../messages/es/chat.json";
 
 import frNav from "../../messages/fr/nav.json";
 import frAuth from "../../messages/fr/auth.json";
@@ -88,6 +92,8 @@ import frStart from "../../messages/fr/start.json";
 import frLegal from "../../messages/fr/legal.json";
 import frConsent from "../../messages/fr/consent.json";
 import frAttribution from "../../messages/fr/attribution.json";
+import frAdmin from "../../messages/fr/admin.json";
+import frChat from "../../messages/fr/chat.json";
 
 const messagesByLocale = {
   en: {
@@ -119,6 +125,8 @@ const messagesByLocale = {
     legal: enLegal,
     consent: enConsent,
     attribution: enAttribution,
+    admin: enAdmin,
+    chat: enChat,
   },
   es: {
     nav: esNav,
@@ -149,6 +157,8 @@ const messagesByLocale = {
     legal: esLegal,
     consent: esConsent,
     attribution: esAttribution,
+    admin: esAdmin,
+    chat: esChat,
   },
   fr: {
     nav: frNav,
@@ -179,6 +189,8 @@ const messagesByLocale = {
     legal: frLegal,
     consent: frConsent,
     attribution: frAttribution,
+    admin: frAdmin,
+    chat: frChat,
   },
 } as const;
 

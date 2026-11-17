@@ -1,11 +1,7 @@
 {
-  "eyebrow": "Vérificateur de visa",
-  "title": "Consulter les exigences de visa",
-  "breadcrumbs": {
-    "label": "Fil d’Ariane",
-    "tools": "Outils",
-    "checker": "Vérificateur de visa"
-  },
+  "title": "Vérificateur de visa",
+  "heroPill": "Des conseils de voyage clairs et rapides",
+  "heroDescription": "Vérifiez les exigences de visa selon votre passeport, votre destination et le motif de votre voyage. Parcourez les destinations ci-dessous ou choisissez-en une ci-dessus. Confirmez toujours les exigences auprès de sources officielles avant de voyager.",
   "filters": {
     "purpose": "Motif du voyage"
   },
@@ -22,19 +18,19 @@
     "whatsapp": "Écrire sur WhatsApp"
   },
   "stats": {
-    "heading": "Résumé du jeu de données",
-    "coverage": "{covered} destinations sur {total} figurent dans ce jeu de données",
+    "heading": "En un coup d’œil",
+    "coverage": "{covered} destinations sur {total} couvertes",
     "visaFree": "Aucun visa requis",
-    "visaFreeDescription": "Entrées pour lesquelles aucun visa n’est requis.",
+    "visaFreeDescription": "Destinations accessibles sans visa.",
     "electronic": "Autorisation électronique",
-    "electronicDescription": "Entrées eVisa, AVE et visa à l’arrivée.",
+    "electronicDescription": "eVisas, AVE et visas à l’arrivée.",
     "paper": "Visa sur papier",
-    "paperDescription": "Entrées indiquant qu’un visa est requis avant le départ."
+    "paperDescription": "Destinations qui exigent un visa avant le départ."
   },
   "list": {
-    "heading": "Destinations de ce jeu de données",
+    "heading": "Destinations couvertes",
     "description": "Choisissez une destination pour consulter ses conditions d’entrée.",
-    "noEntries": "Aucun enregistrement pour ce passeport."
+    "noEntries": "Aucune destination n’est encore disponible pour ce passeport."
   },
   "buckets": {
     "visaFree": "Aucun visa requis",

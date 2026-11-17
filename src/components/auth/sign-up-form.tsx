@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { Turnstile } from "@/components/turnstile";
 import { AuthError } from "@/components/auth/auth-card";
 import { signUpAction, type AuthActionState } from "@/lib/auth/actions";
+import { SocialProviderButtons } from "@/components/auth/social-provider-buttons";
 
 const inputClass =
   "w-full rounded-2xl border border-[#0F2444]/15 bg-white/[95] px-4.5 py-3.5 font-body text-sm text-[#161B22] outline-none transition focus:border-[#B8925A] focus:ring-2 focus:ring-[#B8925A]/20 shadow-sm dark:bg-[#0F2444]/20 dark:text-[#F5F6F4]";
@@ -21,6 +22,8 @@ export function SignUpForm() {
 
   return (
     <form action={formAction} className="space-y-4">
+      <SocialProviderButtons />
+
       <div>
         <label htmlFor="name" className={labelClass}>
           {t("nameLabel")}

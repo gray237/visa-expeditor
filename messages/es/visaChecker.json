@@ -1,11 +1,7 @@
 {
-  "eyebrow": "Verificador de visas",
-  "title": "Consulta los requisitos de visa",
-  "breadcrumbs": {
-    "label": "Ruta de navegación",
-    "tools": "Herramientas",
-    "checker": "Verificador de visas"
-  },
+  "title": "Verificador de visas",
+  "heroPill": "Orientación de viaje clara y rápida",
+  "heroDescription": "Consulta los requisitos de visa según tu pasaporte, destino y motivo del viaje. Explora los destinos de abajo o elige uno arriba. Confirma siempre los requisitos con fuentes oficiales antes de viajar.",
   "filters": {
     "purpose": "Motivo del viaje"
   },
@@ -22,19 +18,19 @@
     "whatsapp": "Escribir por WhatsApp"
   },
   "stats": {
-    "heading": "Resumen del conjunto de datos",
-    "coverage": "{covered} de {total} destinos incluidos en este conjunto de datos",
+    "heading": "De un vistazo",
+    "coverage": "{covered} de {total} destinos incluidos",
     "visaFree": "No se requiere visa",
-    "visaFreeDescription": "Registros en los que no se requiere visa.",
+    "visaFreeDescription": "Destinos a los que puedes entrar sin visa.",
     "electronic": "Autorización electrónica",
-    "electronicDescription": "Registros de eVisa, ETA y visa a la llegada.",
+    "electronicDescription": "eVisas, ETA y visas a la llegada.",
     "paper": "Visa en papel",
-    "paperDescription": "Registros que indican que se requiere visa antes de viajar."
+    "paperDescription": "Destinos que requieren visa antes de viajar."
   },
   "list": {
-    "heading": "Destinos de este conjunto de datos",
-    "description": "Elige un destino para consultar sus datos de entrada.",
-    "noEntries": "No hay registros para este pasaporte."
+    "heading": "Destinos que cubrimos",
+    "description": "Elige un destino para consultar sus condiciones de entrada.",
+    "noEntries": "Todavía no hay destinos disponibles para este pasaporte."
   },
   "buckets": {
     "visaFree": "No se requiere visa",
@@ -64,7 +60,7 @@
   "notFoundHeading": "No se reconoce el destino",
   "notFoundBody": "Elige un destino de la lista para comprobar si hay un registro disponible.",
   "noDataHeading": "No hay registro de entrada para {country}",
-  "noDataBody": "No hay un registro coincidente para este pasaporte, destino y motivo de viaje. No suponemos los requisitos que faltan. Contáctanos si quieres consultar sobre asistencia.",
+  "noDataBody": "Todavía no tenemos datos de entrada para este pasaporte, destino y motivo de viaje. No suponemos los requisitos que faltan. Contáctanos si quieres ayuda con tus planes.",
   "resultHeading": "Información de entrada por {purpose} para titulares de pasaporte de {passport} que viajan a {destination}",
   "result": {
     "statusLabel": "Estado",

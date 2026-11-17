@@ -1,0 +1,21 @@
+{
+  "title": "Admin Studio",
+  "eyebrow": "Visa Expeditor Administration",
+  "welcome": "Welcome back, {name}",
+  "signedInAs": "Signed in as",
+  "role": "Administrator",
+  "notAdmin": "Not authorized",
+  "notAdminBody": "Your account is not listed as an administrator. Contact the account owner to request access.",
+  "notConfigured": "Authentication is not configured yet. Add NEON_AUTH_BASE_URL, NEON_AUTH_COOKIE_SECRET and ADMIN_EMAILS to enable the admin studio.",
+  "studio": "Studio",
+  "overview": "Overview",
+  "destinations": "Destinations",
+  "destinationsCount": "{count} destinations",
+  "passports": "Passports",
+  "passportsCount": "{count} passport countries",
+  "quickLinks": "Quick links",
+  "goDashboard": "Go to dashboard",
+  "viewDestinations": "View destinations",
+  "signOut": "Sign out",
+  "adminDescription": "Admin Studio — Visa Expeditor administrator dashboard."
+}
