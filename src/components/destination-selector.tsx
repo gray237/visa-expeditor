@@ -210,7 +210,7 @@ export function DestinationSelector({
         aria-controls={dialogId}
         className={
           variant === "compact"
-            ? "flex h-9 items-center gap-1 rounded-full px-0.5 text-left transition-colors hover:bg-[#0F2444]/5"
+            ? "flex h-9 w-9 items-center justify-center gap-0.5 rounded-full px-0 text-left transition-colors hover:bg-[#0F2444]/5 sm:w-auto sm:justify-start sm:gap-1.5 sm:px-2.5"
             : "flex w-full items-center gap-3 rounded-2xl px-4 py-3 text-left transition-colors hover:bg-[#0F2444]/5"
         }
       >

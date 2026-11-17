@@ -10,7 +10,7 @@ export function Logo() {
         width={158}
         height={80}
         priority
-        className="h-10 w-auto drop-shadow-[0_1px_3px_rgba(15,36,68,0.2)]"
+        className="h-9 w-auto drop-shadow-[0_1px_3px_rgba(15,36,68,0.2)] sm:h-10"
       />
     </Link>
   );

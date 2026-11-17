@@ -20,12 +20,12 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#0F2444]/10 bg-[#F5F6F4]/95 backdrop-blur print:hidden">
-      <div className="mx-auto flex h-20 max-w-350 items-center justify-between px-6">
-        <div className="flex items-center gap-3">
+      <div className="mx-auto flex h-20 max-w-350 items-center justify-between px-1 sm:px-6">
+        <div className="flex items-center gap-1 sm:gap-3">
           <button
             type="button"
             onClick={() => setMenuOpen((open) => !open)}
-            className="flex h-10 w-10 items-center justify-center rounded-full lg:hidden"
+            className="flex h-9 w-9 items-center justify-center rounded-full lg:hidden"
             aria-label={menuOpen ? tc("closeMenu") : tc("openMenu")}
             aria-expanded={menuOpen}
           >
@@ -56,7 +56,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1 sm:gap-3">
           <QuickCheckerTool />
           <LanguageSelector />
 
@@ -67,7 +67,7 @@ export function SiteHeader() {
       </div>
 
       {menuOpen && (
-        <nav className="flex flex-col border-t border-[#0F2444]/10 px-6 py-4 lg:hidden">
+        <nav className="flex flex-col border-t border-[#0F2444]/10 px-1 py-4 sm:px-6 lg:hidden">
           {NAV_ITEMS.map((item) => {
             const isExpanded = expandedMobile === item.href;
             return (
