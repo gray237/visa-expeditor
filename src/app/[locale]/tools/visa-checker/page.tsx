@@ -213,7 +213,7 @@ export default async function VisaCheckerPage({
       </section>
 
       <div className="mx-auto max-w-350 px-6">
-        <div className="-mt-8 sm:-mt-10">
+        <div className="relative z-10 -mt-8 sm:-mt-10">
           <div className="hero-reveal hero-reveal-3 mx-auto max-w-5xl rounded-[28px] bg-white p-2 shadow-[0_24px_70px_-20px_rgba(15,36,68,0.28)] ring-1 ring-[#0F2444]/5 sm:p-3">
             <VisaCheckerSearch
               initialPassport={passport}
