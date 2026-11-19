@@ -13,7 +13,13 @@ const inputClass =
 
 const labelClass = "mb-1.5 block font-body text-sm font-semibold text-[#0F2444]";
 
-export function SignInForm({ registered = false }: { registered?: boolean }) {
+export function SignInForm({
+  registered = false,
+  socialError = false,
+}: {
+  registered?: boolean;
+  socialError?: boolean;
+}) {
   const t = useTranslations("auth");
   const [state, formAction, isPending] = useActionState<AuthActionState, FormData>(
     signInAction,
@@ -23,6 +29,7 @@ export function SignInForm({ registered = false }: { registered?: boolean }) {
   return (
     <form action={formAction} className="space-y-4">
       {registered && <AuthNotice>{t("registeredNotice")}</AuthNotice>}
+      {socialError && <AuthError>{t("socialUnavailable")}</AuthError>}
       <SocialProviderButtons />
 
       <div>

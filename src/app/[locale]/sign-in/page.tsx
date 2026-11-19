@@ -33,14 +33,14 @@ export default async function SignInPage({
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ registered?: string }>;
+  searchParams: Promise<{ registered?: string; error?: string }>;
 }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
   const t = await getTranslations("auth");
-  const { registered } = await searchParams;
+  const { registered, error } = await searchParams;
 
   return (
     <div className="bg-[#F5F6F4] py-16 sm:py-24">
@@ -51,7 +51,7 @@ export default async function SignInPage({
           subtitle={t("signInSubtitle")}
         >
           {isAuthConfigured ? (
-            <SignInForm registered={registered === "1"} />
+            <SignInForm registered={registered === "1"} socialError={error === "social"} />
           ) : (
             <p className="rounded-xl border border-[#B8925A]/30 bg-[#B8925A]/8 px-4 py-3 font-body text-sm leading-relaxed text-[#161B22]/75">
               {t("notConfigured")}

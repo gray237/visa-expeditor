@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import fs from "node:fs";
+import path from "node:path";
 import { Info, Mail, MessageCircle, Phone, ShieldCheck } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { hasLocale } from "next-intl";
@@ -26,6 +28,49 @@ import { buildMetadata } from "@/lib/seo";
 const PURPOSES = ["tourism", "business", "transit", "study", "work"] as const;
 const OVERVIEW_SECTION_KEYS = ["howItVaries", "whatYouNeed", "howWeHelp"] as const;
 const ELECTRONIC_STATUSES: VisaStatus[] = ["evisa", "eta", "visa_on_arrival"];
+
+const STAT_BLURB_CANDIDATES: Record<"visaFree" | "electronic" | "paper", string[]> = {
+  visaFree: ["visa-free", "no-visa-required", "no-visa", "visa_free"],
+  electronic: ["electronic", "electronic-permission", "evisa-eta", "evisa"],
+  paper: ["paper", "paper-visa", "visa-required"],
+};
+const IMAGE_EXTS = [".webp", ".jpg", ".jpeg", ".png", ".avif", ".svg"];
+
+function getStatBlurbImages() {
+  const dir = path.join(process.cwd(), "public/images/blurbs");
+  let files: string[] = [];
+  try {
+    files = fs.readdirSync(dir);
+  } catch {
+    return {} as Partial<Record<"visaFree" | "electronic" | "paper", string>>;
+  }
+  const lower = files.map((file) => ({ file, lower: file.toLowerCase() }));
+  const result: Partial<Record<"visaFree" | "electronic" | "paper", string>> = {};
+
+  (Object.keys(STAT_BLURB_CANDIDATES) as Array<keyof typeof STAT_BLURB_CANDIDATES>).forEach(
+    (key) => {
+      const found = lower.find(
+        ({ lower: name }) =>
+          STAT_BLURB_CANDIDATES[key].some((candidate) => name.startsWith(candidate)) &&
+          IMAGE_EXTS.some((ext) => name.endsWith(ext)),
+      );
+      if (found) result[key] = `/images/blurbs/${found.file}`;
+    },
+  );
+
+  if (Object.keys(result).length === 0) {
+    const images = files
+      .filter((file) => IMAGE_EXTS.includes(path.extname(file).toLowerCase()))
+      .sort();
+    if (images.length >= 3) {
+      (["visaFree", "electronic", "paper"] as const).forEach((key, index) => {
+        result[key] = `/images/blurbs/${images[index]}`;
+      });
+    }
+  }
+
+  return result;
+}
 
 function resolveDestinationCode(value: string, locale: string) {
   const code = value.trim().toUpperCase();
@@ -139,6 +184,8 @@ export default async function VisaCheckerPage({
         ),
     }))
     .filter((group) => group.records.length > 0);
+  const showStatBlurbs = Boolean(to);
+  const blurbImages = getStatBlurbImages();
   const hasSample = records.some((record) => record.confidence === "sample");
   const hasImported = records.some((record) => record.confidence === "imported");
   const hasVerified = records.some((record) => record.confidence === "verified");
@@ -270,23 +317,41 @@ export default async function VisaCheckerPage({
                   ["electronic", stats.electronic],
                   ["paper", stats.paper],
                 ] as const
-              ).map(([key, count], index) => (
-                <div
-                  key={key}
-                  className="reveal-card flex flex-col rounded-2xl border border-[#0F2444]/10 bg-white p-5 shadow-sm transition-shadow hover:shadow-md dark:border-white/10 dark:bg-[#1a1b20]"
-                  style={{ animationDelay: `${index * 90}ms` }}
-                >
-                  <p className="font-display text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
-                    {count}
-                  </p>
-                  <h3 className="mt-1 text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
-                    {t(`stats.${key}`)}
-                  </h3>
-                  <p className="mt-1 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
-                    {t(`stats.${key}Description`)}
-                  </p>
-                </div>
-              ))}
+              ).map(([key, count], index) => {
+                const bg = showStatBlurbs ? blurbImages[key] : undefined;
+                return (
+                  <div
+                    key={key}
+                    className="reveal-card relative flex flex-col overflow-hidden rounded-2xl border border-[#0F2444]/10 bg-white p-5 shadow-sm transition-shadow hover:shadow-md dark:border-white/10 dark:bg-[#1a1b20]"
+                    style={{ animationDelay: `${index * 90}ms` }}
+                  >
+                    {bg && (
+                      <>
+                        <div
+                          className="absolute inset-0 bg-cover bg-center"
+                          style={{ backgroundImage: `url(${bg})` }}
+                          aria-hidden="true"
+                        />
+                        <div
+                          className="absolute inset-0 bg-white/80 dark:bg-[#1a1b20]/80"
+                          aria-hidden="true"
+                        />
+                      </>
+                    )}
+                    <div className={bg ? "relative" : undefined}>
+                      <p className="font-display text-3xl font-bold text-[#161B22] dark:text-[#F5F6F4]">
+                        {count}
+                      </p>
+                      <h3 className="mt-1 text-sm font-semibold text-[#161B22] dark:text-[#F5F6F4]">
+                        {t(`stats.${key}`)}
+                      </h3>
+                      <p className="mt-1 text-xs leading-relaxed text-[#161B22]/70 dark:text-[#F5F6F4]/60">
+                        {t(`stats.${key}Description`)}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </section>
         </div>
