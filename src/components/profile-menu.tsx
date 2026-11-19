@@ -48,7 +48,7 @@ export function ProfileMenu() {
   }
 
   const name = session.user.name || session.user.email || "";
-  const initial = name.slice(0, 1).toUpperCase();
+  const initial = (name || "?").slice(0, 1).toUpperCase();
   const email = session.user.email || "";
 
   async function handleSignOut() {
@@ -91,7 +91,7 @@ export function ProfileMenu() {
           type="button"
           aria-label={t("closeAccountMenu")}
           tabIndex={open ? 0 : -1}
-          className={`absolute inset-0 bg-[#0F2444]/40 transition-opacity duration-300 ease-out ${
+          className={`absolute inset-0 bg-[#0F2444]/40 backdrop-blur-[1px] transition-opacity duration-300 ease-out ${
             open ? "opacity-100" : "opacity-0"
           }`}
           onClick={() => setOpen(false)}
@@ -101,26 +101,13 @@ export function ProfileMenu() {
           role="dialog"
           aria-modal="true"
           aria-label={t("accountMenu")}
-          className={`absolute inset-y-0 right-0 flex h-full w-full max-w-sm flex-col overflow-hidden border-l border-[#0F2444]/10 bg-[#F5F6F4] shadow-2xl transition-transform duration-300 ease-out ${
+          className={`absolute inset-y-0 right-0 flex w-full max-w-sm flex-col border-l border-[#0F2444]/10 bg-[#F5F6F4] shadow-2xl transition-transform duration-300 ease-out ${
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex items-center justify-between border-b border-[#0F2444]/10 bg-[#F5F6F4] px-5 py-4">
-            <p className="font-body text-sm font-semibold text-[#0F2444]">{t("accountMenu")}</p>
-            <button
-              type="button"
-              onClick={() => setOpen(false)}
-              tabIndex={open ? 0 : -1}
-              aria-label={t("closeAccountMenu")}
-              className="flex h-9 w-9 items-center justify-center rounded-full text-[#161B22]/70 transition-colors hover:bg-[#0F2444]/5 hover:text-[#0F2444]"
-            >
-              <X className="h-5 w-5" />
-            </button>
-          </div>
-
-          <div className="border-b border-[#0F2444]/10 bg-[#F5F6F4] px-5 py-5">
-            <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#0F2444] font-body text-sm font-bold text-[#F5F6F4]">
+          <div className="flex items-start justify-between gap-3 border-b border-[#0F2444]/10 bg-[#F5F6F4] px-5 py-5">
+            <div className="flex min-w-0 items-center gap-3">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#0F2444] font-body text-sm font-bold text-[#F5F6F4] ring-2 ring-[#B8925A]/30">
                 {initial}
               </span>
               <div className="min-w-0">
@@ -133,9 +120,18 @@ export function ProfileMenu() {
                 </p>
               </div>
             </div>
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              tabIndex={open ? 0 : -1}
+              aria-label={t("closeAccountMenu")}
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-[#161B22]/70 transition-colors hover:bg-[#0F2444]/5 hover:text-[#0F2444]"
+            >
+              <X className="h-5 w-5" />
+            </button>
           </div>
 
-          <nav className="flex-1 overflow-y-auto bg-[#F5F6F4] px-3 py-3">
+          <nav className="flex-1 overflow-y-auto bg-[#F5F6F4] px-3 py-4">
             <ul className="flex flex-col gap-1">
               {links.map(({ href, label, icon: Icon }) => (
                 <li key={href}>
@@ -144,7 +140,9 @@ export function ProfileMenu() {
                     tabIndex={open ? 0 : -1}
                     className="flex items-center gap-3 rounded-xl px-3 py-2.5 font-body text-sm font-medium text-[#161B22]/80 transition-colors hover:bg-[#0F2444]/5 hover:text-[#0F2444]"
                   >
-                    <Icon className="h-4.5 w-4.5 text-[#0F2444]/70" strokeWidth={1.75} />
+                    <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#0F2444]/5 text-[#0F2444]">
+                      <Icon className="h-4 w-4" strokeWidth={1.75} />
+                    </span>
                     {label}
                   </Link>
                 </li>
